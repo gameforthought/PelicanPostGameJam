@@ -2,6 +2,8 @@
 // You can write your code in this editor
 
 //get left or right key press and change variables accordingly
+if instance_exists(obj_playerChar) {} else {
+
 switch (keyboard_key) {
 case ord("A"):
 case vk_left:
@@ -41,24 +43,4 @@ if (xspeed < max_xspeed) {
 }
 
 xdirection_prev = xdirection;
-
-//jump
-if ((keyboard_check_pressed(vk_up)) || (keyboard_check_pressed(ord("W")))) {
-	if (place_meeting(x, y, obj_colliderbox)) {
-		yspeed = -1 * jump_height;
-	}
-}
-
-
-
-y += yspeed;
-
-//ground collision
-if (place_meeting(x, y + yspeed, obj_colliderbox)) {
-
-yspeed = 0;
-} else {
-	if (yspeed < jump_height) {
-	yspeed += grav;	
-}
 }

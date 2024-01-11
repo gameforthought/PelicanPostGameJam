@@ -16,7 +16,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Fonts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"player_char","folderPath":"folders/Objects/player_char.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"player_char","folderPath":"folders/Sprites/player_char.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Particle Systems","folderPath":"folders/Particle Systems.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Paths","folderPath":"folders/Paths.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy",},
@@ -35,8 +35,12 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
+    {"id":{"name":"obj_colliderbox","path":"objects/obj_colliderbox/obj_colliderbox.yy",},},
+    {"id":{"name":"spr_colliderbox","path":"sprites/spr_colliderbox/spr_colliderbox.yy",},},
+    {"id":{"name":"obj_truck","path":"objects/obj_truck/obj_truck.yy",},},
     {"id":{"name":"obj_playerChar","path":"objects/obj_playerChar/obj_playerChar.yy",},},
     {"id":{"name":"spr_playerTemp","path":"sprites/spr_playerTemp/spr_playerTemp.yy",},},
+    {"id":{"name":"spr_trucktemp","path":"sprites/spr_trucktemp/spr_trucktemp.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
