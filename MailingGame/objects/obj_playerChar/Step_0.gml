@@ -15,6 +15,10 @@ if (keyboard_check(vk_left)){
 if (!keyboard_check(vk_left) && !keyboard_check(vk_right)){
 	if hspd != 0 {
     hspd -= sign(hspd) * 2 * haccel;
+	
+	if (hspd > -0.2) && (hspd < 0.2) {
+		hspd = 0;	
+	}
 	}
 }
 
