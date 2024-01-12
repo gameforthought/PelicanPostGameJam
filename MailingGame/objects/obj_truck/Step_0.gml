@@ -1,4 +1,4 @@
-/// @description movement
+/// @description activates every frame
 // You can write your code in this editor
 
 //get left or right key press and change variables accordingly
@@ -36,6 +36,17 @@ if (!keyboard_check(vk_left) && !keyboard_check(vk_right)){
 hspd = clamp(hspd, -maxhspd, maxhspd);
 
 x += hspd;
+
+
+
+//body squashing
+if (!keyboard_check(vk_left) && !keyboard_check(vk_right)){
+	squash = 0;
+} else {
+	squash += 1;	
+}
+
+image_yscale = 1 - (0.02 * sin(0.3 * squash));
 }
 
 //wheel rotation
@@ -49,4 +60,20 @@ if hspd > 0 {
 } else {
 	image_angle = 0;
 }
+
+//character animation
+char_anim += 1;
+
+if char_anim > 252 {
+char_anim = 0;	
+}
+
+if char_anim > 240 {
+blink = 1;	
+} else {
+	blink = 0;
+}
+
+
+
 	

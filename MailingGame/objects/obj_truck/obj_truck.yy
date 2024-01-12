@@ -34,8 +34,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_trucktemp",
-    "path": "sprites/spr_trucktemp/spr_trucktemp.yy",
+    "name": "spr_truck",
+    "path": "sprites/spr_truck/spr_truck.yy",
   },
   "spriteMaskId": null,
   "visible": true,

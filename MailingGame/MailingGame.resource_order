@@ -13,11 +13,12 @@
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+    {"name":"truck","order":3,"path":"folders/Sprites/truck.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"truck","order":3,"path":"folders/Sprites/truck.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"spr_truckChar","order":2,"path":"sprites/spr_truckChar/spr_truckChar.yy",},
     {"name":"obj_colliderbox","order":2,"path":"objects/obj_colliderbox/obj_colliderbox.yy",},
     {"name":"spr_colliderbox","order":1,"path":"sprites/spr_colliderbox/spr_colliderbox.yy",},
     {"name":"obj_truck","order":3,"path":"objects/obj_truck/obj_truck.yy",},
