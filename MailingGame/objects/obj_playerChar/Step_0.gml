@@ -2,63 +2,44 @@
 // You can write your code in this editor
 
 //get left or right key press and change variables accordingly
-switch (keyboard_key) {
-case ord("A"):
-case vk_left:
-	//change direction vector
-	xdirection = -1;
-	speed_change = 1;
-	//change direction of the current sprite
-	image_xscale = 	-1;
-break;
-case ord("D"):
-case vk_right:
-	xdirection = 1;
-	speed_change = 1;
-	image_xscale = 	1;
-break;
-case vk_nokey:
-	xdirection = 0;
-	speed_change = 0;
-break;
-//default:
-	//hdirection = 0;
-//break;
+if (keyboard_check(vk_right)){
+    hspd += haccel;
+	image_xscale = 1;
 }
 
-//moves the character
-x += xdirection * xspeed;
-
-
-//detects change in direction and adjusts momentum
-if (xdirection_prev != xdirection) {
-	xspeed = 0;	
-	//show_debug_message("direction changed " + string(xdirection_prev) + " " + string(xdirection) )
+if (keyboard_check(vk_left)){
+    hspd -= haccel;
+	image_xscale = -1;
 }
 
-if (xspeed < max_xspeed) {
-	xspeed += xaccel;	
+if (!keyboard_check(vk_left) && !keyboard_check(vk_right)){
+	if hspd != 0 {
+    hspd -= sign(hspd) * 2 * haccel;
+	}
 }
 
-xdirection_prev = xdirection;
+hspd = clamp(hspd, -maxhspd, maxhspd);
+
+x += hspd;
+
 
 //jump
 if ((keyboard_check_pressed(vk_up)) || (keyboard_check_pressed(ord("W")))) {
 	if (place_meeting(x, y, obj_colliderbox)) {
-		yspeed = -1 * jump_height;
+		yspd = -1 * jump_height;
 	}
 }
 
 
 
-y += yspeed;
+y += yspd;
 
 //ground collision
-if (place_meeting(x, y + yspeed, obj_colliderbox)) {
+if (place_meeting(x, y + yspd, obj_colliderbox)) {
 
-yspeed = 0;
+yspd = 0;
 } else {
-	if (yspeed < jump_height) {
-	yspeed += grav;	
+	if (yspd < jump_height) {
+	yspd += grav;	
 }
 }
