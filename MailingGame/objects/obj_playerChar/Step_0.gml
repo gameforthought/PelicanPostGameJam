@@ -14,7 +14,7 @@ if (keyboard_check(vk_left)){
 
 if (!keyboard_check(vk_left) && !keyboard_check(vk_right)){
 	if hspd != 0 {
-    hspd -= sign(hspd) * 2 * haccel;
+    hspd -= sign(hspd) * 3 * haccel;
 	
 	if (hspd > -0.2) && (hspd < 0.2) {
 		hspd = 0;	
@@ -42,8 +42,19 @@ y += yspd;
 if (place_meeting(x, y + yspd, obj_colliderbox)) {
 
 yspd = 0;
+
+
+if abs(hspd) > 0 {
+	if irandom_range(0, 8 / abs(hspd)) = 0 {
+		instance_create_layer(x - (sign(hspd) * irandom_range(0, 10)), y, "dust", obj_grounddust);
+	}
+}
+
+
 } else {
 	if (yspd < jump_height) {
 	yspd += grav;	
 }
+
+
 }

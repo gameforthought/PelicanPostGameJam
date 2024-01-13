@@ -38,6 +38,14 @@ hspd = clamp(hspd, -maxhspd, maxhspd);
 x += hspd;
 
 
+//dust
+if abs(hspd) > 0 {
+	if irandom_range(0, 5 / abs(hspd)) = 0 {
+		instance_create_layer(x - (sign(hspd) * 70) - (sign(hspd) * irandom_range(0, 20)), y, "dust", obj_grounddust);
+	}
+}
+
+
 
 //body squashing
 if (!keyboard_check(vk_left) && !keyboard_check(vk_right)){

@@ -20,10 +20,13 @@
   "ResourceOrderSettings": [
     {"name":"spr_truckChar","order":2,"path":"sprites/spr_truckChar/spr_truckChar.yy",},
     {"name":"obj_colliderbox","order":2,"path":"objects/obj_colliderbox/obj_colliderbox.yy",},
+    {"name":"spr_groundtemp","order":5,"path":"sprites/spr_groundtemp/spr_groundtemp.yy",},
     {"name":"spr_colliderbox","order":1,"path":"sprites/spr_colliderbox/spr_colliderbox.yy",},
     {"name":"obj_truck","order":3,"path":"objects/obj_truck/obj_truck.yy",},
     {"name":"spr_wheel","order":1,"path":"sprites/spr_wheel/spr_wheel.yy",},
     {"name":"obj_playerChar","order":1,"path":"objects/obj_playerChar/obj_playerChar.yy",},
+    {"name":"obj_grounddust","order":4,"path":"objects/obj_grounddust/obj_grounddust.yy",},
+    {"name":"spr_dust","order":4,"path":"sprites/spr_dust/spr_dust.yy",},
     {"name":"spr_playerTemp","order":1,"path":"sprites/spr_playerTemp/spr_playerTemp.yy",},
   ],
 }
