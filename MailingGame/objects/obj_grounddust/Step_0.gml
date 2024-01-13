@@ -3,7 +3,7 @@
 
 x += 0.4 * dir;
 
-scale -= 0.05;
+scale -= 0.05 * decay;
 
 if scale <= 0 {
 	instance_destroy();

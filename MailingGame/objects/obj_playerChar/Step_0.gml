@@ -36,6 +36,11 @@ if ((keyboard_check_pressed(vk_up)) || (keyboard_check_pressed(ord("W")))) {
 	if (place_meeting(x, y, obj_colliderbox)) {
 		yspd = -1 * jump_height;
 		jump = true;
+		for (var i = 0; i < 15; i += 1) {
+			if jump = true {
+				instance_create_layer(x - (image_xscale * irandom_range(-20, 30)), y + irandom_range(0, -6), "dust", obj_grounddust);
+			}
+		}
 	}
 }
 
@@ -45,13 +50,18 @@ y += yspd;
 
 //ground collision
 if (place_meeting(x, y + yspd, obj_colliderbox)) {
+for (var i = 0; i < 10; i += 1) {
+	if jump = true {
+		instance_create_layer(x - (image_xscale * irandom_range(-20, 25)), y, "dust", obj_grounddust);
+	}
+}
 jump = false;
 yspd = 0;
 
 
 if abs(hspd) > 0 {
 	if irandom_range(0, 8 / abs(hspd)) = 0 {
-		instance_create_layer(x - (sign(hspd) * irandom_range(0, 10)), y, "dust", obj_grounddust);
+		instance_create_layer(x - (image_xscale * irandom_range(5, 20)), y - 2, "dust", obj_grounddust);
 	}
 	
 }
