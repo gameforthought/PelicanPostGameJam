@@ -91,11 +91,18 @@ if yspd = 0 {
 if walk = true && jump = false {
 	sprite_index = spr_playerLegs_walk;
 	image_speed = 0.25;
+	swing_width = 40;
 } else {
 	image_speed = 0;
 	if jump = true {
-		sprite_index = spr_playerLegs_idle;
+		sprite_index = spr_playerLegs_jump;
 	} else {
 		sprite_index = spr_playerLegs_idle;
+		swing_width = 10;
 	}
 }
+
+//swing arms
+swing_num += 0.5 + 0.4 * abs(hspd);
+
+swing = swing_width * sin(0.1 * swing_num);

@@ -27,9 +27,11 @@
     {"name":"spr_playerBody","order":3,"path":"sprites/spr_playerBody/spr_playerBody.yy",},
     {"name":"spr_wheel","order":1,"path":"sprites/spr_wheel/spr_wheel.yy",},
     {"name":"obj_playerChar","order":1,"path":"objects/obj_playerChar/obj_playerChar.yy",},
+    {"name":"spr_playerLegs_jump","order":5,"path":"sprites/spr_playerLegs_jump/spr_playerLegs_jump.yy",},
     {"name":"spr_playerLegs_walk","order":2,"path":"sprites/spr_playerLegs_walk/spr_playerLegs_walk.yy",},
     {"name":"obj_grounddust","order":4,"path":"objects/obj_grounddust/obj_grounddust.yy",},
     {"name":"spr_dust","order":4,"path":"sprites/spr_dust/spr_dust.yy",},
+    {"name":"spr_playerWing","order":6,"path":"sprites/spr_playerWing/spr_playerWing.yy",},
     {"name":"spr_playerTemp","order":1,"path":"sprites/spr_playerTemp/spr_playerTemp.yy",},
   ],
 }

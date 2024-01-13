@@ -14,3 +14,7 @@ walk = false;
 idle = true;
 
 jump = false;
+
+swing_num = 0;
+swing = 0;
+swing_width = 10;
