@@ -61,13 +61,7 @@ image_yscale = 1 - (0.02 * sin(0.3 * squash));
 wheel_rotate -= (hspd / (29 * pi)) * 60;
 
 //body rotation
-if hspd > 0 {
-	image_angle = 1;	
-} else if hspd < 0 {
-	image_angle = -1;
-} else {
-	image_angle = 0;
-}
+image_angle = hspd / 3;
 
 //character animation
 char_anim += 1;

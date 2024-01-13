@@ -6,6 +6,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":32,"eventType":9,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -40,8 +41,8 @@
   ],
   "solid": true,
   "spriteId": {
-    "name": "spr_playerTemp",
-    "path": "sprites/spr_playerTemp/spr_playerTemp.yy",
+    "name": "spr_playerLegs_walk",
+    "path": "sprites/spr_playerLegs_walk/spr_playerLegs_walk.yy",
   },
   "spriteMaskId": null,
   "visible": true,
