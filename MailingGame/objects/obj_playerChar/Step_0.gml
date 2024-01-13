@@ -50,9 +50,9 @@ y += yspd;
 
 //ground collision
 if (place_meeting(x, y + yspd, obj_colliderbox)) {
-for (var i = 0; i < 10; i += 1) {
+for (var i = 0; i < 8; i += 1) {
 	if jump = true {
-		instance_create_layer(x - (image_xscale * irandom_range(-20, 25)), y, "dust", obj_grounddust);
+		instance_create_layer(x - (image_xscale * irandom_range(-20 - (10 * abs(hspd)), 20)), y, "dust", obj_grounddust);
 	}
 }
 jump = false;
