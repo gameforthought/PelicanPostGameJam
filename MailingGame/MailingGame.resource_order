@@ -22,6 +22,7 @@
     {"name":"spr_playerLegs_idle","order":4,"path":"sprites/spr_playerLegs_idle/spr_playerLegs_idle.yy",},
     {"name":"obj_colliderbox","order":2,"path":"objects/obj_colliderbox/obj_colliderbox.yy",},
     {"name":"spr_groundtemp","order":5,"path":"sprites/spr_groundtemp/spr_groundtemp.yy",},
+    {"name":"obj_cameraManager","order":6,"path":"objects/obj_cameraManager/obj_cameraManager.yy",},
     {"name":"spr_colliderbox","order":1,"path":"sprites/spr_colliderbox/spr_colliderbox.yy",},
     {"name":"spr_sidewalk","order":6,"path":"sprites/spr_sidewalk/spr_sidewalk.yy",},
     {"name":"obj_truck","order":3,"path":"objects/obj_truck/obj_truck.yy",},
