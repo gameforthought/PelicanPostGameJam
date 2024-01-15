@@ -20,8 +20,8 @@ C_join = random_range(-10, 10);
 branching_array = [];
 
 array_push(branching_array, 2);
-array_push(branching_array, irandom_range(0,2));
-array_push(branching_array, irandom_range(0,2));
+array_push(branching_array, irandom_range(0,1));
+array_push(branching_array, irandom_range(0,1));
 
 if (branching_array[0] != 2) && (branching_array[1] != 2) {
 	branching_array[irandom_range(0,1)] = 2;
