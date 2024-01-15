@@ -35,6 +35,7 @@
     {"name":"spr_playerLegs_walk","order":2,"path":"sprites/spr_playerLegs_walk/spr_playerLegs_walk.yy",},
     {"name":"obj_sidewalkGenerator","order":5,"path":"objects/obj_sidewalkGenerator/obj_sidewalkGenerator.yy",},
     {"name":"obj_grounddust","order":4,"path":"objects/obj_grounddust/obj_grounddust.yy",},
+    {"name":"obj_treeGen2","order":8,"path":"objects/obj_treeGen2/obj_treeGen2.yy",},
     {"name":"spr_dust","order":4,"path":"sprites/spr_dust/spr_dust.yy",},
     {"name":"spr_playerWing","order":6,"path":"sprites/spr_playerWing/spr_playerWing.yy",},
     {"name":"spr_playerTemp","order":1,"path":"sprites/spr_playerTemp/spr_playerTemp.yy",},
