@@ -29,6 +29,7 @@
     {"name":"spr_sidewalk","order":6,"path":"sprites/spr_sidewalk/spr_sidewalk.yy",},
     {"name":"obj_truck","order":3,"path":"objects/obj_truck/obj_truck.yy",},
     {"name":"spr_playerBody","order":3,"path":"sprites/spr_playerBody/spr_playerBody.yy",},
+    {"name":"obj_distortShader","order":10,"path":"objects/obj_distortShader/obj_distortShader.yy",},
     {"name":"spr_wheel","order":1,"path":"sprites/spr_wheel/spr_wheel.yy",},
     {"name":"obj_playerChar","order":1,"path":"objects/obj_playerChar/obj_playerChar.yy",},
     {"name":"spr_playerLegs_jump","order":5,"path":"sprites/spr_playerLegs_jump/spr_playerLegs_jump.yy",},

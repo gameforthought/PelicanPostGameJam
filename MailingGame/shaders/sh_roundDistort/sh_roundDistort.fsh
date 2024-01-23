@@ -9,7 +9,7 @@ uniform sampler2D distortion_texture_page; // the name of the surface in the sha
 void main()
 {
     // find the offset colour for this location (this is where the magic happens) 
-    vec2 distort_amount = vec2( (v_vColour * texture2D( distortion_texture_page, v_vTexcoord)).xy);
+    vec2 distort_amount = vec2( (v_vColour * texture2D(distortion_texture_page, v_vTexcoord)).xy);
 
 	
     // FOR NORMAL MAPS:  (	either directX or OpenGL flip the green channel, 
