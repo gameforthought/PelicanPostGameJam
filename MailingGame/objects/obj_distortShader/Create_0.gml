@@ -10,6 +10,7 @@ surface_depth_disable(true);
 distortion_stage = shader_get_sampler_index(sh_roundDistort, "distortion_texture_page")
 
 
+
 application_surface_draw_enable(false);
 
 
