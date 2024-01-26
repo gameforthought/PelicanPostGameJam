@@ -1,39 +1,25 @@
-/// @description Insert description here
-// You can write your code in this editor
+tree_height = irandom_range(5, 8);
 
-random_set_seed(irandom(100));
+tree_struct_array = [];
 
-tex = sprite_get_texture(spr_treeTex, 0);
 
-initial_width = random_range(10, 25);
+tree_direction_start = choose(-1, 1);
+tree_direction = tree_direction_start;
 
-height = random_range(100, 300);
-
-branchA_height = random_range(1, 2) * (height / 3);
-branchB_height = random_range(1, 2) * (height / 3);
-branchC_height = random_range(1, 2) * (height / 3);
-
-A_join = random_range(-10, 10);
-B_join = random_range(-10, 10);
-C_join = random_range(-10, 10);
-
-branching_array = [];
-
-array_push(branching_array, 2);
-array_push(branching_array, irandom_range(0,1));
-array_push(branching_array, irandom_range(0,1));
-
-if (branching_array[0] != 2) && (branching_array[1] != 2) {
-	branching_array[irandom_range(0,1)] = 2;
+for (var i = 0; i < tree_height; i += 1) {
+	var _tree_struct = {
+		subimage: irandom_range(0, 0),
+	}
+	if irandom_range(0, 10) = 0 {
+		_tree_struct.dir = -1;	
+		_tree_struct.change = true;	
+	} else {
+		_tree_struct.dir = 1;
+		_tree_struct.change = false;
+	}
+	
+	
+	
+	array_push(tree_struct_array, _tree_struct);
 }
-
-show_debug_message(string(branching_array))
-
-
-
-
-
-
-
-
 
