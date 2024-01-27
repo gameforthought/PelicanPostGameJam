@@ -46,6 +46,7 @@
     {"id":{"name":"spr_sidewalk","path":"sprites/spr_sidewalk/spr_sidewalk.yy",},},
     {"id":{"name":"spr_treeTex","path":"sprites/spr_treeTex/spr_treeTex.yy",},},
     {"id":{"name":"obj_truck","path":"objects/obj_truck/obj_truck.yy",},},
+    {"id":{"name":"spr_tree_branch","path":"sprites/spr_tree_branch/spr_tree_branch.yy",},},
     {"id":{"name":"sh_roundDistort","path":"shaders/sh_roundDistort/sh_roundDistort.yy",},},
     {"id":{"name":"spr_playerBody","path":"sprites/spr_playerBody/spr_playerBody.yy",},},
     {"id":{"name":"obj_distortShader","path":"objects/obj_distortShader/obj_distortShader.yy",},},

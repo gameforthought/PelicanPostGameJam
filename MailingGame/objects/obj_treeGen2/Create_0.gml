@@ -16,7 +16,7 @@ start_width = segments * 1.3;
 growth_dir = irandom_range(-5, 5);
 growth_val = 0;
 growth_change = 0;
-branch = 0;
+branch = choose(-1, 1);
 
 segment_array = [];
 
@@ -41,8 +41,17 @@ for (var i = 0; i < segments; i += 1) {
 	
 	growth_val += growth_change;
 	
+	var _branch_struct;
+	if (i = round((2 * segments) / 5)) || (i = round((3 * segments) / 5)) || (i = round((4 * segments) / 5)) {
+		 _branch_struct = {
+			subimage: irandom_range(0, 3)
+		}
+	} else {
+		 _branch_struct = 0;	
+	}
 	
-	array_push(segment_array, [width, growth_val, irandom_range(0, 3)]);
+	
+	array_push(segment_array, [width, growth_val, irandom_range(0, 3), _branch_struct]);
 }
 
 
