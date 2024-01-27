@@ -18,6 +18,8 @@ growth_val = 0;
 growth_change = 0;
 branch = choose(-1, 1);
 
+crown_leaf = irandom_range(0, 3);
+
 segment_array = [];
 
 for (var i = 0; i < segments; i += 1) {
@@ -44,8 +46,32 @@ for (var i = 0; i < segments; i += 1) {
 	var _branch_struct;
 	if (i = round((2 * segments) / 5)) || (i = round((3 * segments) / 5)) || (i = round((4 * segments) / 5)) {
 		 _branch_struct = {
-			subimage: irandom_range(0, 3)
+			subimage: irandom_range(0, 3),
+			place: choose(0, 1),
+			dir: branch,
+			leaf: irandom_range(0, 3)
 		}
+		switch _branch_struct.subimage {
+			case 0:
+				_branch_struct.leaf_x = 40;
+				_branch_struct.leaf_y = 56;
+			break;
+			case 1:
+				_branch_struct.leaf_x = 85;
+				_branch_struct.leaf_y = 47;
+			break;
+			case 2:
+				_branch_struct.leaf_x = 17;
+				_branch_struct.leaf_y = 69;
+				_branch_struct.place = 0;
+			break;
+			case 3:
+				_branch_struct.leaf_x = 50;
+				_branch_struct.leaf_y = 28;
+			break;
+		}
+		
+		branch *= -1;
 	} else {
 		 _branch_struct = 0;	
 	}
