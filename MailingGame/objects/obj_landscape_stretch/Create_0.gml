@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-width = 5000;
+width = 16 * image_xscale;
+
 tree_layer = choose(-1, 1);
 
 for (var i = 0; i < width; i += 100) {

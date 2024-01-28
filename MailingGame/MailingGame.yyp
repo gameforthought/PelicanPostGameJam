@@ -65,6 +65,7 @@
     {"id":{"name":"spr_dust","path":"sprites/spr_dust/spr_dust.yy",},},
     {"id":{"name":"spr_playerWing","path":"sprites/spr_playerWing/spr_playerWing.yy",},},
     {"id":{"name":"spr_playerTemp","path":"sprites/spr_playerTemp/spr_playerTemp.yy",},},
+    {"id":{"name":"obj_wind","path":"objects/obj_wind/obj_wind.yy",},},
     {"id":{"name":"spr_truck","path":"sprites/spr_truck/spr_truck.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
