@@ -3,7 +3,7 @@
 
 leaves_array = [];
 
-segments = irandom_range(12, 20);
+segments = irandom_range(10, 16);
 
 tex_array = [];
 
@@ -19,6 +19,8 @@ growth_change = 0;
 branch = choose(-1, 1);
 
 crown_leaf = irandom_range(0, 3);
+
+big_leaves = irandom_range(1, 3);
 
 segment_array = [];
 
