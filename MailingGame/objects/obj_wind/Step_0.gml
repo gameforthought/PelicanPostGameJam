@@ -15,7 +15,7 @@ if global.wind < 0 {
 }
 
 if global.wind > 0 {
-	if irandom_range(0, lerp(50, 25, global.wind)) = 0 {
+	if irandom_range(0, lerp(70, 35, global.wind)) = 0 {
 		instance_create_layer(irandom_range(camera_get_view_x(camera) - 100, camera_get_view_x(camera)) - 10, irandom_range(-200, 1 * room_height), "dust", obj_wind_leaf);
 	}
 }
