@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "landscape",
+    "path": "folders/Objects/landscape.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -27,7 +27,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_invisible_box",
+    "path": "sprites/spr_invisible_box/spr_invisible_box.yy",
+  },
   "spriteMaskId": null,
   "visible": false,
 }

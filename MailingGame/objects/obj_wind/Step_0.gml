@@ -14,4 +14,11 @@ if global.wind < 0 {
 	alarm[0] = irandom_range(60, 2000);
 }
 
-//fx_set_parameter(particles,"param_num_particles", 10 * global.wind);
+if global.wind > 0 {
+	if irandom_range(0, lerp(50, 25, global.wind)) = 0 {
+		instance_create_layer(irandom_range(camera_get_view_x(camera) - 100, camera_get_view_x(camera)) - 10, irandom_range(-200, 1 * room_height), "dust", obj_wind_leaf);
+	}
+}
+
+
+

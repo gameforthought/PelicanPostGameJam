@@ -16,5 +16,10 @@ for (var i = 0; i < width; i += 100) {
 }
 
 
+for (var i = 0; i < width; i += 150) {
+	instance_create_layer(i + irandom_range(-30, 30), y - 10, "bushes", obj_bushGen);
+	
+}
+
 
 
