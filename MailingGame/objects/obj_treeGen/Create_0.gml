@@ -5,6 +5,8 @@ wind = 0;
 wind_mod = random_range(0.5, 1.2);
 wind_amount = 20;
 
+sway = random_range(0, 200);
+
 leaves_array = [];
 
 segments = irandom_range(10, 16);

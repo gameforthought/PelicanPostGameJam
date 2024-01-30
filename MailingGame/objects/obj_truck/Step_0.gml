@@ -49,13 +49,23 @@ if abs(hspd) > 0 {
 
 //body squashing
 if (!keyboard_check(vk_left) && !keyboard_check(vk_right)){
-	squash = 0;
+	if dismount_anim = false {
+		squash = 0;
+	}
 } else {
 	squash += 1;	
 }
 
-image_yscale = 1 - (0.02 * sin(0.3 * squash));
+
+
 }
+
+if dismount_anim = true {
+	squash += 1;
+	
+}
+
+image_yscale = 1 - (0.02 * sin(0.3 * squash));
 
 //wheel rotation
 wheel_rotate -= (hspd / (29 * pi)) * 60;

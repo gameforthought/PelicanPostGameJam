@@ -18,3 +18,6 @@ jump = false;
 swing_num = 0;
 swing = 0;
 swing_width = 10;
+
+obj_truck.alarm[0] = 20;
+obj_truck.dismount_anim = true;

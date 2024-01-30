@@ -9,3 +9,5 @@ squash = 0;
 
 char_anim = 0;
 blink = 0;
+
+dismount_anim = false;
