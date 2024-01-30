@@ -40,6 +40,7 @@
   "resources": [
     {"id":{"name":"spr_truckChar","path":"sprites/spr_truckChar/spr_truckChar.yy",},},
     {"id":{"name":"spr_playerLegs_idle","path":"sprites/spr_playerLegs_idle/spr_playerLegs_idle.yy",},},
+    {"id":{"name":"spr_wind_leaf","path":"sprites/spr_wind_leaf/spr_wind_leaf.yy",},},
     {"id":{"name":"spr_invisible_box","path":"sprites/spr_invisible_box/spr_invisible_box.yy",},},
     {"id":{"name":"obj_colliderbox","path":"objects/obj_colliderbox/obj_colliderbox.yy",},},
     {"id":{"name":"spr_groundtemp","path":"sprites/spr_groundtemp/spr_groundtemp.yy",},},

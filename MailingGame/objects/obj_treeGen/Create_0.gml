@@ -3,12 +3,22 @@
 
 wind = 0;
 wind_mod = random_range(0.5, 1.2);
+wind_amount = 20;
 
 leaves_array = [];
 
 segments = irandom_range(10, 16);
 
 tex_array = [];
+
+darker_a = make_color_hsv(0, 0, 180);
+darker_b = make_color_hsv(0, 0, 130);
+
+if layer_get_name(layer) = "trees" {
+	layer_color = darker_a;
+} else {
+	layer_color = c_white;
+}
 
 for (var i = 0; i < 4; i += 1) {
 array_push(tex_array, sprite_get_texture(spr_treeTex, i));
@@ -84,6 +94,8 @@ for (var i = 0; i < segments; i += 1) {
 	
 	array_push(segment_array, [width, growth_val, irandom_range(0, 3), _branch_struct]);
 }
+
+
 
 
 

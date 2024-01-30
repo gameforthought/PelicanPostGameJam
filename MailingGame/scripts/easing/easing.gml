@@ -34,3 +34,27 @@ if (_input_value < 1)
 
 return _output_max * -0.5 * (--_input_value * (_input_value - 2) - 1) + _output_min;
 }
+
+function EaseInOutBack(_inputvalue,_outputmin,_outputmax,_inputmax) {
+var _s = 1.70158;
+
+_inputvalue = _inputvalue/_inputmax*2
+
+if (_inputvalue < 1)
+{
+    _s *= 1.525;
+    return _outputmax * 0.5 * (_inputvalue * _inputvalue * ((_s + 1) * _inputvalue - _s)) + _outputmin;
+}
+
+_inputvalue -= 2;
+_s *= 1.525
+
+return _outputmax * 0.5 * (_inputvalue * _inputvalue * ((_s + 1) * _inputvalue + _s) + 2) + _outputmin;
+}
+
+function EaseInBack(_inputvalue,_outputmin,_outputmax,_inputmax) {
+var _s = 1.70158;
+
+_inputvalue /= _inputmax;
+return _outputmax * _inputvalue * _inputvalue * ((_s + 1) * _inputvalue - _s) + _outputmin;
+}
