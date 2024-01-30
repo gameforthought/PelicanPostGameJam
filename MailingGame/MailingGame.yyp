@@ -40,6 +40,7 @@
   "resources": [
     {"id":{"name":"spr_truckChar","path":"sprites/spr_truckChar/spr_truckChar.yy",},},
     {"id":{"name":"spr_playerLegs_idle","path":"sprites/spr_playerLegs_idle/spr_playerLegs_idle.yy",},},
+    {"id":{"name":"spr_train","path":"sprites/spr_train/spr_train.yy",},},
     {"id":{"name":"spr_wind_leaf","path":"sprites/spr_wind_leaf/spr_wind_leaf.yy",},},
     {"id":{"name":"spr_invisible_box","path":"sprites/spr_invisible_box/spr_invisible_box.yy",},},
     {"id":{"name":"obj_colliderbox","path":"objects/obj_colliderbox/obj_colliderbox.yy",},},
@@ -57,6 +58,7 @@
     {"id":{"name":"spr_playerBody","path":"sprites/spr_playerBody/spr_playerBody.yy",},},
     {"id":{"name":"obj_distortShader","path":"objects/obj_distortShader/obj_distortShader.yy",},},
     {"id":{"name":"obj_wind_leaf","path":"objects/obj_wind_leaf/obj_wind_leaf.yy",},},
+    {"id":{"name":"obj_train","path":"objects/obj_train/obj_train.yy",},},
     {"id":{"name":"easing","path":"scripts/easing/easing.yy",},},
     {"id":{"name":"obj_bushGen","path":"objects/obj_bushGen/obj_bushGen.yy",},},
     {"id":{"name":"spr_wheel","path":"sprites/spr_wheel/spr_wheel.yy",},},
@@ -64,6 +66,7 @@
     {"id":{"name":"spr_playerLegs_jump","path":"sprites/spr_playerLegs_jump/spr_playerLegs_jump.yy",},},
     {"id":{"name":"spr_playerLegs_walk","path":"sprites/spr_playerLegs_walk/spr_playerLegs_walk.yy",},},
     {"id":{"name":"obj_landscape_stretch","path":"objects/obj_landscape_stretch/obj_landscape_stretch.yy",},},
+    {"id":{"name":"spr_train_tracks","path":"sprites/spr_train_tracks/spr_train_tracks.yy",},},
     {"id":{"name":"obj_sidewalkGenerator","path":"objects/obj_sidewalkGenerator/obj_sidewalkGenerator.yy",},},
     {"id":{"name":"obj_grounddust","path":"objects/obj_grounddust/obj_grounddust.yy",},},
     {"id":{"name":"obj_treeGen","path":"objects/obj_treeGen/obj_treeGen.yy",},},
