@@ -4,7 +4,7 @@
 //get left or right key press and change variables accordingly
 if instance_exists(obj_playerChar) {} else {
 //get left or right key press and change variables accordingly
-if (keyboard_check(vk_right)){
+if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))) {
 	//checks if turning vs starting from stopped position
 	if hspd < 0 { 
 		hspd += haccel + (haccel * abs(hspd));
@@ -14,7 +14,7 @@ if (keyboard_check(vk_right)){
 	image_xscale = 1;
 }
 
-if (keyboard_check(vk_left)){
+if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {
 	if hspd > 0 { 
 		hspd -= haccel + (haccel * abs(hspd));
 	} else {
@@ -23,7 +23,7 @@ if (keyboard_check(vk_left)){
 	image_xscale = -1;
 }
 
-if (!keyboard_check(vk_left) && !keyboard_check(vk_right)){
+if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(ord("D"))  && !keyboard_check(ord("A")){
 	if hspd != 0 {
     hspd -= sign(hspd) * 3 * haccel;
 	}
@@ -48,7 +48,7 @@ if abs(hspd) > 0 {
 
 
 //body squashing
-if (!keyboard_check(vk_left) && !keyboard_check(vk_right)){
+if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(ord("D"))  && !keyboard_check(ord("A")){
 	if dismount_anim = false {
 		squash = 0;
 	}
@@ -68,7 +68,7 @@ if dismount_anim = true {
 image_yscale = 1 - (0.02 * sin(0.3 * squash));
 
 //wheel rotation
-wheel_rotate -= (hspd / (29 * pi)) * 60;
+wheel_rotate -= (hspd / (30 * pi)) * 60;
 
 //body rotation
 image_angle = hspd / 3;

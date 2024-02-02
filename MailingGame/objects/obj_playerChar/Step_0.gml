@@ -2,17 +2,17 @@
 // You can write your code in this editor
 
 //get left or right key press and change variables accordingly
-if (keyboard_check(vk_right)){
+if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))){
     hspd += haccel;
 	//image_xscale = 1;
 }
 
-if (keyboard_check(vk_left)){
+if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {
     hspd -= haccel;
 	//image_xscale = -1;
 }
 
-if (!keyboard_check(vk_left) && !keyboard_check(vk_right)){
+if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(ord("D"))  && !keyboard_check(ord("A")){
 	if hspd != 0 {
     hspd -= sign(hspd) * 3 * haccel;
 	
