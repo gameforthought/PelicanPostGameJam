@@ -57,6 +57,7 @@
     {"id":{"name":"spr_ride_bt","path":"sprites/spr_ride_bt/spr_ride_bt.yy",},},
     {"id":{"name":"obj_truck","path":"objects/obj_truck/obj_truck.yy",},},
     {"id":{"name":"spr_tree_crown","path":"sprites/spr_tree_crown/spr_tree_crown.yy",},},
+    {"id":{"name":"obj_walk_bt","path":"objects/obj_walk_bt/obj_walk_bt.yy",},},
     {"id":{"name":"spr_tree_branch","path":"sprites/spr_tree_branch/spr_tree_branch.yy",},},
     {"id":{"name":"sh_roundDistort","path":"shaders/sh_roundDistort/sh_roundDistort.yy",},},
     {"id":{"name":"obj_wind","path":"objects/obj_wind/obj_wind.yy",},},
