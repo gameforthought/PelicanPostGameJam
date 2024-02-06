@@ -86,6 +86,20 @@ blink = 1;
 	blink = 0;
 }
 
+if instance_exists(obj_playerChar) {
+	if distance_to_point(obj_playerChar.x, y) < 30 {
+		clickable = true;	
+	} else {
+		clickable = false;
+	}
+} else {
+	if hspd = 0 {
+		clickable = true;
+	} else {
+		clickable = false;
+	}
+}
+
 
 
 	

@@ -11,3 +11,5 @@ char_anim = 0;
 blink = 0;
 
 dismount_anim = false;
+
+clickable = false;

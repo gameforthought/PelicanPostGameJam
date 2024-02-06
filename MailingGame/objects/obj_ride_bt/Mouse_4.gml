@@ -6,4 +6,6 @@ obj_truck.dismount_anim = true;
 instance_destroy(obj_playerChar.id);
 
 
-instance_destroy(obj_posUI_container.id);
+if instance_exists(obj_posUI_container) {
+	instance_destroy(obj_posUI_container.id);
+}
