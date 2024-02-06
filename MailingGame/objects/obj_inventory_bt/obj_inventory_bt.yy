@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_walk_bt",
+  "name": "obj_inventory_bt",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dismount_bt",
-    "path": "sprites/spr_dismount_bt/spr_dismount_bt.yy",
+    "name": "spr_inventory_bt",
+    "path": "sprites/spr_inventory_bt/spr_inventory_bt.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -13,7 +13,7 @@ for (var i = 0; i < length; i += 1) {
 			_button_spawn = obj_ride_bt;
 		break;
 		case "inventory":
-			_button_spawn = obj_ride_bt;
+			_button_spawn = obj_inventory_bt;
 		break;
 		case "walk":
 		_button_spawn = obj_walk_bt;
