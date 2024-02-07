@@ -48,6 +48,6 @@ if sunset_bool = true {
 }
 
 if night_bool =  true {
-	colorA = merge_color(day_colorA, sunset_colorA, sunset_progress / 10);	
-	colorB = merge_color(day_colorB, sunset_colorB, sunset_progress / 10);	
+	colorA = merge_color(sunset_colorA, night_colorA, night_progress / 10);	
+	colorB = merge_color(sunset_colorB, night_colorB, night_progress / 10);	
 }
