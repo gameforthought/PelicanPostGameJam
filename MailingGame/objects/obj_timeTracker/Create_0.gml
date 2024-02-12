@@ -26,4 +26,4 @@ night_colorB = #655c6f;
 colorA = day_colorA;
 colorB = day_colorB;
 
-camera = view_camera;
+camera = view_get_camera(0);
