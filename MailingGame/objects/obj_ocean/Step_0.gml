@@ -5,7 +5,7 @@ if obj_timeTracker.sunset_bool = true {
 	color = merge_color(day_color, night_color, obj_timeTracker.sunset_progress / 10);	
 }
 
-sin_pos = 4 * sin(step);
+sin_pos = 8 * sin(step);
 
 step += 0.01;
 

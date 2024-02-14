@@ -3,6 +3,8 @@
 
 day_progress += 1;
 
+star_step += 1;
+
 if (day_progress > (sunset_start * day_length)) && (night_bool = false) {
 	sunset_bool = true;
 } else {

@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+camera = view_get_camera(0);
+
 wind = 0;
 wind_mod = random_range(0.5, 1.2);
 wind_amount = 20;

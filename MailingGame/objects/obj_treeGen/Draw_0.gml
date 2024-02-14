@@ -1,8 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-wind =  EaseInBack(global.wind, 0, 1, 1) * wind_mod;
 sway += 2;
+
+if (x > obj_cameraManager.camera_target - 620) && (x < obj_cameraManager.camera_target + 620) {
+
+wind =  EaseInBack(global.wind, 0, 1, 1) * wind_mod;
 
 draw_set_color(layer_color);
 
@@ -49,4 +52,4 @@ draw_sprite_ext(spr_tree_leaves, crown_leaf, x + (4 * sin(0.001 * pi * sway)) + 
 
 
 
-
+}
