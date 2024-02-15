@@ -1,15 +1,15 @@
 /// @description movement
 // You can write your code in this editor
 
-//get left or right key press and change variables accordingly
+//get left or right key press and change speed and orientation accordingly
 if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))){
     hspd += haccel;
-	//image_xscale = 1;
+	image_xscale = 1;
 }
 
 if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {
     hspd -= haccel;
-	//image_xscale = -1;
+	image_xscale = -1;
 }
 
 if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(ord("D"))  && !keyboard_check(ord("A")){
@@ -27,7 +27,7 @@ hspd = clamp(hspd, -maxhspd, maxhspd);
 x += hspd;
 //show_debug_message(string(sign(hspd)))
 if abs(hspd) > 0 {
-	image_xscale = sign(hspd);
+	image_xscale = sign(image_xscale);
 }
 
 
