@@ -21,7 +21,7 @@ for (var i = 0; i < length; i += 1) {
 	}
 	
 	
-	instance_create_depth(x + (i * 33), y - 10, depth - 1, _button_spawn)
+	instance_create_depth(x + (i * 33), y - 12, depth - 1, _button_spawn)
 }
 
 

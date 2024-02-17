@@ -9,4 +9,8 @@ inventory[1] = 0;
 inventory[2] = 1;
 
 
+x = 0;
+y = 0;
+
+
 

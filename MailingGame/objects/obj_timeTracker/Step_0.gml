@@ -32,9 +32,9 @@ if night_bool = true {
 	}
 }
 
-fx_set_parameter(sunset_balance,"g_ColourBalanceShadows", [lerp(0,0.2, sunset_progress / 10), lerp(0,-0.05, sunset_progress / 10), lerp(0,0.15, sunset_progress / 10)]);
-fx_set_parameter(sunset_balance,"g_ColourBalanceMidtones", [lerp(0,0.15, sunset_progress / 10), lerp(0,0.05, sunset_progress / 10), 0]);
-fx_set_parameter(sunset_balance,"g_ColourBalanceHighlights", [lerp(0,0.15, sunset_progress / 10), 0, 0]);
+fx_set_parameter(sunset_balance,"g_ColourBalanceShadows", [lerp(0,0.2, sunset_progress / 12), lerp(0,-0.05, sunset_progress / 10), lerp(0,0.15, sunset_progress / 10)]);
+fx_set_parameter(sunset_balance,"g_ColourBalanceMidtones", [lerp(0,0.15, sunset_progress / 12), lerp(0,0.05, sunset_progress / 10), 0]);
+fx_set_parameter(sunset_balance,"g_ColourBalanceHighlights", [lerp(0,0.15, sunset_progress / 12), 0, 0]);
 
 
 var _sunset_tint_col = merge_colour(c_white, sunset_color, sunset_progress / 10);
