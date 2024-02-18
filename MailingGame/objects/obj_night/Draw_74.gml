@@ -13,10 +13,11 @@ if (!surface_exists(app_surf)) {
 surface_set_target(srf_lights);
 
 var lights_strength = light;
+var _windowScale = windowScale
 	var vx = camera_get_view_x(view_camera[0]);
 	var vy = camera_get_view_y(view_camera[0]);
 	with(par_lights)
-		draw_sprite_ext(sprite_index, image_index, 1.5 * (x - vx), 1.5 * (y - vy), 1.5 * image_xscale, 1.5 * image_yscale, image_angle, image_blend, image_alpha * lights_strength);
+		draw_sprite_ext(sprite_index, image_index, _windowScale * (x - vx), _windowScale * (y - vy), _windowScale * image_xscale, _windowScale * image_yscale, image_angle, image_blend, image_alpha * lights_strength);
 
 
 gpu_set_tex_filter(false); // optional

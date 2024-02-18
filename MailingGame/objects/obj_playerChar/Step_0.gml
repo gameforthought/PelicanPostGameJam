@@ -3,16 +3,29 @@
 
 //get left or right key press and change speed and orientation accordingly
 if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))){
+	if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {} else {
     hspd += haccel;
-	image_xscale = 1;
+	}
+	if hspd > 0 {
+		image_xscale = 1;
+	}
+	
 }
 
 if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {
+	if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))){} else {
     hspd -= haccel;
-	image_xscale = -1;
+	}
+	if hspd < 0 {
+		image_xscale = -1;
+	}
 }
 
+
+
+
 if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(ord("D"))  && !keyboard_check(ord("A")){
+	
 	if hspd != 0 {
     hspd -= sign(hspd) * 3 * haccel;
 	
@@ -24,11 +37,35 @@ if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(or
 
 hspd = clamp(hspd, -maxhspd, maxhspd);
 
+
+if (keyboard_check(vk_left) || keyboard_check(vk_right)) || keyboard_check(ord("D"))  || keyboard_check(ord("A")){
+
+
+
+if hspd != 0 {
+
+if hspd > hspd_prev {
+
+	image_xscale = 1;
+} else if hspd < hspd_prev {
+
+	image_xscale = -1;
+}
+
+}
+
+}
+
+
+hspd_prev = hspd;
+
+
+
+
+
 x += hspd;
 //show_debug_message(string(sign(hspd)))
-if abs(hspd) > 0 {
-	image_xscale = sign(image_xscale);
-}
+
 
 
 //jump

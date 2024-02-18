@@ -13,11 +13,14 @@ color_mix = -1;
 con_sat_brt_mix	= -1;
 
 
-sunset_color = [154/255, 110/255, 100/255];
+sunset_color = [134/255, 125/255, 105/255];
 night_color = [80/255, 95/255, 188/255];
 
-col_param = [0.8, 0.6, -0.15, 0, 1];
+sunset_col_param = [1, 1.1, -0.05, 0, 1];
+night_col_param = [0.8, 0.6, -0.15, 0, 1];
 
 light = 0;
 
 app_surf = -1;
+
+windowScale = window_get_height() / room_height;

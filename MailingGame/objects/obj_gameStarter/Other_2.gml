@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-image_alpha = 0;
+randomSeed = irandom(2000);
+random_set_seed(randomSeed);
 
-windowScale = window_get_height() / room_height;
+

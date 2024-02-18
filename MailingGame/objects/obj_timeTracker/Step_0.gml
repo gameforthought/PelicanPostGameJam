@@ -32,17 +32,8 @@ if night_bool = true {
 	}
 }
 
-fx_set_parameter(sunset_balance,"g_ColourBalanceShadows", [lerp(0,0.2, sunset_progress / 12), lerp(0,-0.05, sunset_progress / 10), lerp(0,0.15, sunset_progress / 10)]);
-fx_set_parameter(sunset_balance,"g_ColourBalanceMidtones", [lerp(0,0.15, sunset_progress / 12), lerp(0,0.05, sunset_progress / 10), 0]);
-fx_set_parameter(sunset_balance,"g_ColourBalanceHighlights", [lerp(0,0.15, sunset_progress / 12), 0, 0]);
 
 
-var _sunset_tint_col = merge_colour(c_white, sunset_color, sunset_progress / 10);
-fx_set_parameter(sunset_tint, "g_TintCol", [color_get_red(_sunset_tint_col) / 255, color_get_green(_sunset_tint_col) / 255, color_get_blue(_sunset_tint_col) / 255, 1])
-
-
-var _night_tint_col = merge_colour(c_white, night_color, night_progress / 10);
-fx_set_parameter(night_tint, "g_TintCol", [color_get_red(_night_tint_col) / 255, color_get_green(_night_tint_col) / 255, color_get_blue(_night_tint_col) / 255, 1]);
 
 if sunset_bool = true {
 	colorA = merge_color(day_colorA, sunset_colorA, sunset_progress / 10);	
