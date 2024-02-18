@@ -22,3 +22,27 @@ if hspd = 0.1 {
 
 
 image_yscale = 1 - (0.02 * sin(0.3 * squash));
+
+
+//character animation
+char_anim += 1;
+
+if char_anim > 252 {
+char_anim = 0;	
+}
+
+if char_anim > 240 {
+blink = 1;	
+} else {
+	blink = 0;
+}
+
+if wave = 1 {
+	wave_anim += 1;
+	blink = 1;
+	
+	if wave_anim > 200 {
+		wave = 0;
+		wave_anim = 0;
+	}
+}

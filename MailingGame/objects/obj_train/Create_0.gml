@@ -9,4 +9,7 @@ dir = 1;
 
 squash = 0;
 
-
+blink = 0;
+char_anim = 0;
+wave = 0;
+wave_anim = 0;
