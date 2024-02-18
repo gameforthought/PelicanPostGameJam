@@ -128,6 +128,7 @@ blink = 1;
 if yspd = 0 {
 	if abs(hspd) > 0 {
 		walk = true;
+		
 		idle = false;
 	} else {
 		walk = false;
@@ -137,7 +138,7 @@ if yspd = 0 {
 
 if walk = true && jump = false {
 	sprite_index = spr_playerLegs_walk;
-	image_speed = 0.25;
+	image_speed = lerp(0, 0.3, abs(hspd) / maxhspd);
 	swing_width = 40;
 } else {
 	image_speed = 0;

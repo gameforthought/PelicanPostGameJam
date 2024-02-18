@@ -28,3 +28,4 @@ swing_width = 10;
 
 obj_truck.alarm[0] = 20;
 obj_truck.dismount_anim = true;
+

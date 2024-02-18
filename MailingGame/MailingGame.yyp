@@ -44,6 +44,7 @@
   },
   "resources": [
     {"id":{"name":"spr_truckChar","path":"sprites/spr_truckChar/spr_truckChar.yy",},},
+    {"id":{"name":"spr_LUT","path":"sprites/spr_LUT/spr_LUT.yy",},},
     {"id":{"name":"spr_playerLegs_idle","path":"sprites/spr_playerLegs_idle/spr_playerLegs_idle.yy",},},
     {"id":{"name":"obj_inventory_bt","path":"objects/obj_inventory_bt/obj_inventory_bt.yy",},},
     {"id":{"name":"spr_train","path":"sprites/spr_train/spr_train.yy",},},

@@ -15,8 +15,8 @@ segments = irandom_range(10, 16);
 
 tex_array = [];
 
-darker_a = make_color_hsv(0, 0, 180);
-darker_b = make_color_hsv(0, 0, 130);
+darker_a = make_color_hsv(69, 33, 144);
+darker_b = make_color_hsv(59, 90, 104);
 
 if layer_get_name(layer) = "trees" {
 	layer_color = darker_a;
