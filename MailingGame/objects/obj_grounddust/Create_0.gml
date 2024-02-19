@@ -18,7 +18,7 @@ if instance_exists(obj_playerChar) {
 	}
 } else {
 	dir = -1 * obj_truck.image_xscale;
-	scale = random_range(0.5, 1.3);
+	scale = random_range(0.5, 1.5);
 }
 
 dark = make_color_rgb(217, 196, 152);

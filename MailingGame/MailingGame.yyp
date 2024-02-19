@@ -80,6 +80,7 @@
     {"id":{"name":"spr_click_prox","path":"sprites/spr_click_prox/spr_click_prox.yy",},},
     {"id":{"name":"spr_train_wheel","path":"sprites/spr_train_wheel/spr_train_wheel.yy",},},
     {"id":{"name":"obj_train","path":"objects/obj_train/obj_train.yy",},},
+    {"id":{"name":"obj_ocean_highlight","path":"objects/obj_ocean_highlight/obj_ocean_highlight.yy",},},
     {"id":{"name":"spr_dismount_bt","path":"sprites/spr_dismount_bt/spr_dismount_bt.yy",},},
     {"id":{"name":"easing","path":"scripts/easing/easing.yy",},},
     {"id":{"name":"obj_bushGen","path":"objects/obj_bushGen/obj_bushGen.yy",},},

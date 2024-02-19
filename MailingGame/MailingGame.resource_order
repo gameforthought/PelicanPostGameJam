@@ -56,6 +56,7 @@
     {"name":"spr_click_prox","order":4,"path":"sprites/spr_click_prox/spr_click_prox.yy",},
     {"name":"spr_train_wheel","order":2,"path":"sprites/spr_train_wheel/spr_train_wheel.yy",},
     {"name":"obj_train","order":8,"path":"objects/obj_train/obj_train.yy",},
+    {"name":"obj_ocean_highlight","order":12,"path":"objects/obj_ocean_highlight/obj_ocean_highlight.yy",},
     {"name":"spr_dismount_bt","order":1,"path":"sprites/spr_dismount_bt/spr_dismount_bt.yy",},
     {"name":"spr_wheel","order":1,"path":"sprites/spr_wheel/spr_wheel.yy",},
     {"name":"spr_inventory_bt","order":2,"path":"sprites/spr_inventory_bt/spr_inventory_bt.yy",},
