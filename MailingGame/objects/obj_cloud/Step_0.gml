@@ -11,3 +11,19 @@ x = pos + vx;
 if pos > 480 + 130 {
 	pos = -130;
 }
+
+if obj_timeTracker.sunset_bool = true {
+	sky_color = merge_color(c_white, sunset_color, obj_timeTracker.sunset_progress / 10);	
+	
+}
+
+if obj_timeTracker.night_bool =  true {
+	sky_color = merge_color(sunset_color, night_color, obj_timeTracker.night_progress / 10);
+}
+
+if layer_get_name(layer) = "clouds2" {
+	color = merge_color(sky_color, darker_a, 0.2);
+} else {
+	color = sky_color;
+}
+

@@ -7,13 +7,16 @@ image_speed = 0;
 
 image_index = irandom(5);
 
-darker_a = make_color_rgb(205, 205, 230);
+sky_color = c_white;
+color = c_white;
 
-if layer_get_name(layer) = "clouds2" {
-	layer_color = darker_a;
-} else {
-	layer_color = c_white;
-}
+
+sunset_color = #FFD3B2;
+night_color = #48558A;
+
+darker_a = c_black;
+
+
 
 cloud_speed = random_range(0, 0.05);
 
