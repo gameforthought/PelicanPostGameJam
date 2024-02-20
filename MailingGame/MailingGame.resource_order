@@ -27,6 +27,7 @@
   "ResourceOrderSettings": [
     {"name":"spr_truckChar","order":2,"path":"sprites/spr_truckChar/spr_truckChar.yy",},
     {"name":"spr_playerLegs_idle","order":4,"path":"sprites/spr_playerLegs_idle/spr_playerLegs_idle.yy",},
+    {"name":"obj_mouse","order":7,"path":"objects/obj_mouse/obj_mouse.yy",},
     {"name":"obj_inventory_bt","order":3,"path":"objects/obj_inventory_bt/obj_inventory_bt.yy",},
     {"name":"spr_wind_leaf","order":4,"path":"sprites/spr_wind_leaf/spr_wind_leaf.yy",},
     {"name":"spr_invisible_box","order":7,"path":"sprites/spr_invisible_box/spr_invisible_box.yy",},

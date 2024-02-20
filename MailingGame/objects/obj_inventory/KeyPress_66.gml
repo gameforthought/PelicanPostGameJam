@@ -1,0 +1,1 @@
+inventory_remove(id,1);
