@@ -55,7 +55,7 @@
         {"name":"g_GlowIntensity","type":0,"value":"0.22",},
         {"name":"g_GlowGamma","type":0,"value":"0",},
         {"name":"g_GlowAlpha","type":0,"value":"1",},
-      ],"userdefinedDepth":false,"visible":false,},
+      ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"color_adj","depth":100,"effectEnabled":true,"effectType":"_filter_colour_balance","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_ColourBalanceShadows","type":0,"value":"-0.05",},
         {"name":"g_ColourBalanceShadows","type":0,"value":"0.1",},
@@ -71,7 +71,7 @@
         {"name":"g_WhiteNoiseIntensity","type":0,"value":"0.075",},
         {"name":"g_WhiteNoiseAnimation","type":0,"value":"0.025",},
         {"name":"g_WhiteNoiseTexture","type":2,"value":"_filter_whitenoise_noise",},
-      ],"userdefinedDepth":false,"visible":false,},
+      ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"click","assets":[],"depth":300,"effectEnabled":true,"effectType":"_filter_outline","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_OutlineColour","type":1,"value":"#FF000000",},
         {"name":"g_OutlineRadius","type":0,"value":"3",},
