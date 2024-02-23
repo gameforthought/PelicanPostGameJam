@@ -13,7 +13,9 @@ day_colorA = #228ba2;
 day_colorB = #81d7de;
 
 sunset_colorA = #8a80c5;
-sunset_colorB = #b96787;
+//sunset_colorB = #b96787;
+sunset_colorB = #f7862e;
+
 
 night_colorA = #0b2b46;
 night_colorB = #655c6f;

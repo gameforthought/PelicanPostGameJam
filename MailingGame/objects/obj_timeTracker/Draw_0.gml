@@ -16,3 +16,5 @@ for (var i = 0; i < array_length(star_array); i += 1) {
 		draw_circle(camera_get_view_x(camera) + star_array[i].xpos, star_array[i].ypos, 1.5 + clamp(8 * sin(0.005 * pi * (star_step + star_array[i].step)) - 7, 0, 1), false);	
 	}
 }
+
+draw_sprite(spr_mountain, 0, camera_get_view_x(camera), 130);
