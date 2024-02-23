@@ -3,9 +3,9 @@
 
 wheel_rotate -= (hspd / (17 * pi)) * 60;
 
-hspd = dir * ease_in_out_quad(lerp(1, 0, (distance_to_point(station_b.x / 2, y)) / (station_b.x / 2)), 0, 3, 1);
+hspd = dir * ease_in_out_quad(lerp(1, 0, (distance_to_point((station_b.x + 160) / 2, y)) / ((station_b.x + 160 - (station_a.x - 140)) / 2)), 0, 3, 1);
 
-if (distance_to_point(station_a.x, y) < 12) || (distance_to_point(station_b.x, y) < 12) {
+if (distance_to_point(station_a.x - 140, y) < 14) || (distance_to_point(station_b.x + 160, y) < 12) {
 	dir *= -1;
 	x += 2 * dir;
 }
