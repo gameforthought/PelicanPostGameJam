@@ -3,4 +3,4 @@
 
 randomSeed = irandom(2000);
 
-
+global.pause = 0;

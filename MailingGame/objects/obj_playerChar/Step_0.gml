@@ -1,6 +1,7 @@
 /// @description movement
 // You can write your code in this editor
-
+//checks if movement is paused
+if global.pause = 0 {
 //get left or right key press and change speed and orientation accordingly
 if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))){
 	if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {} else {
@@ -19,6 +20,7 @@ if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {
 	if hspd < 0 {
 		image_xscale = -1;
 	}
+}
 }
 
 
