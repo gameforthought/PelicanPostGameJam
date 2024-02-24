@@ -2,9 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_door",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
-  ],
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -25,13 +23,11 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dialogue","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":5,},
-  ],
+  "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_doorTest",
-    "path": "sprites/spr_doorTest/spr_doorTest.yy",
+    "name": "spr_colliderbox",
+    "path": "sprites/spr_colliderbox/spr_colliderbox.yy",
   },
   "spriteMaskId": null,
   "visible": true,

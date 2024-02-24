@@ -17,10 +17,10 @@
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
-    {"name":"train","order":8,"path":"folders/Sprites/train.yy",},
+    {"name":"train","order":10,"path":"folders/Sprites/train.yy",},
     {"name":"tree","order":6,"path":"folders/Sprites/tree.yy",},
     {"name":"truck","order":2,"path":"folders/Sprites/truck.yy",},
-    {"name":"ui","order":9,"path":"folders/Sprites/ui.yy",},
+    {"name":"ui","order":13,"path":"folders/Sprites/ui.yy",},
     {"name":"inventory","order":5,"path":"folders/Sprites/ui/inventory.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
@@ -42,8 +42,7 @@
     {"name":"Dialogue","order":2,"path":"scripts/Dialogue/Dialogue.yy",},
     {"name":"spr_tree_leaves","order":3,"path":"sprites/spr_tree_leaves/spr_tree_leaves.yy",},
     {"name":"spr_sidewalk","order":5,"path":"sprites/spr_sidewalk/spr_sidewalk.yy",},
-    {"name":"spr_cloud","order":10,"path":"sprites/spr_cloud/spr_cloud.yy",},
-    {"name":"DialogueTesting","order":1,"path":"rooms/DialogueTesting/DialogueTesting.yy",},
+    {"name":"spr_cloud","order":14,"path":"sprites/spr_cloud/spr_cloud.yy",},
     {"name":"obj_truck","order":3,"path":"objects/obj_truck/obj_truck.yy",},
     {"name":"spr_tree_crown","order":2,"path":"sprites/spr_tree_crown/spr_tree_crown.yy",},
     {"name":"obj_walk_bt","order":2,"path":"objects/obj_walk_bt/obj_walk_bt.yy",},
@@ -72,11 +71,7 @@
     {"name":"spr_textbox_test","order":6,"path":"sprites/spr_textbox_test/spr_textbox_test.yy",},
     {"name":"spr_wheel","order":1,"path":"sprites/spr_wheel/spr_wheel.yy",},
     {"name":"spr_inventory_bt","order":2,"path":"sprites/spr_inventory_bt/spr_inventory_bt.yy",},
-<<<<<<< Updated upstream
     {"name":"obj_train_station","order":15,"path":"objects/obj_train_station/obj_train_station.yy",},
-=======
-    {"name":"obj_textbox","order":8,"path":"objects/obj_textbox/obj_textbox.yy",},
->>>>>>> Stashed changes
     {"name":"obj_playerChar","order":1,"path":"objects/obj_playerChar/obj_playerChar.yy",},
     {"name":"spr_playerLegs_jump","order":5,"path":"sprites/spr_playerLegs_jump/spr_playerLegs_jump.yy",},
     {"name":"spr_train_station","order":5,"path":"sprites/spr_train_station/spr_train_station.yy",},
@@ -96,6 +91,5 @@
     {"name":"spr_dust","order":3,"path":"sprites/spr_dust/spr_dust.yy",},
     {"name":"spr_playerWing","order":6,"path":"sprites/spr_playerWing/spr_playerWing.yy",},
     {"name":"spr_playerTemp","order":1,"path":"sprites/spr_playerTemp/spr_playerTemp.yy",},
-    {"name":"spr_doorTest","order":11,"path":"sprites/spr_doorTest/spr_doorTest.yy",},
   ],
 }
