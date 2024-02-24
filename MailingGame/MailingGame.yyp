@@ -60,9 +60,11 @@
     {"id":{"name":"spr_mountain","path":"sprites/spr_mountain/spr_mountain.yy",},},
     {"id":{"name":"spr_colliderbox","path":"sprites/spr_colliderbox/spr_colliderbox.yy",},},
     {"id":{"name":"Dialogue","path":"scripts/Dialogue/Dialogue.yy",},},
+    {"id":{"name":"fnt_test","path":"fonts/fnt_test/fnt_test.yy",},},
     {"id":{"name":"spr_tree_leaves","path":"sprites/spr_tree_leaves/spr_tree_leaves.yy",},},
     {"id":{"name":"spr_sidewalk","path":"sprites/spr_sidewalk/spr_sidewalk.yy",},},
     {"id":{"name":"spr_cloud","path":"sprites/spr_cloud/spr_cloud.yy",},},
+    {"id":{"name":"DialogueTesting","path":"rooms/DialogueTesting/DialogueTesting.yy",},},
     {"id":{"name":"spr_treeTex","path":"sprites/spr_treeTex/spr_treeTex.yy",},},
     {"id":{"name":"spr_ride_bt","path":"sprites/spr_ride_bt/spr_ride_bt.yy",},},
     {"id":{"name":"obj_truck","path":"objects/obj_truck/obj_truck.yy",},},
@@ -97,8 +99,12 @@
     {"id":{"name":"obj_bushGen","path":"objects/obj_bushGen/obj_bushGen.yy",},},
     {"id":{"name":"spr_wheel","path":"sprites/spr_wheel/spr_wheel.yy",},},
     {"id":{"name":"spr_inventory_bt","path":"sprites/spr_inventory_bt/spr_inventory_bt.yy",},},
+<<<<<<< Updated upstream
     {"id":{"name":"obj_train_station","path":"objects/obj_train_station/obj_train_station.yy",},},
     {"id":{"name":"ft_header","path":"fonts/ft_header/ft_header.yy",},},
+=======
+    {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"obj_playerChar","path":"objects/obj_playerChar/obj_playerChar.yy",},},
     {"id":{"name":"spr_playerLegs_jump","path":"sprites/spr_playerLegs_jump/spr_playerLegs_jump.yy",},},
     {"id":{"name":"spr_train_station","path":"sprites/spr_train_station/spr_train_station.yy",},},
@@ -120,11 +126,13 @@
     {"id":{"name":"spr_dust","path":"sprites/spr_dust/spr_dust.yy",},},
     {"id":{"name":"spr_playerWing","path":"sprites/spr_playerWing/spr_playerWing.yy",},},
     {"id":{"name":"spr_playerTemp","path":"sprites/spr_playerTemp/spr_playerTemp.yy",},},
+    {"id":{"name":"spr_doorTest","path":"sprites/spr_doorTest/spr_doorTest.yy",},},
     {"id":{"name":"spr_truck","path":"sprites/spr_truck/spr_truck.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"DialogueTesting","path":"rooms/DialogueTesting/DialogueTesting.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
