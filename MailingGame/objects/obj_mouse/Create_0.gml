@@ -62,6 +62,13 @@ state_drag = function()
 	if(!mouse_check_button(mb_left))
 	{
 		//swap with slot if hovering
+		if(slot_hover != -1) inventory_swap(inventory_drag, slot_drag, inventory_hover, slot_hover);
+		
+		//Return to free state
+		state = state_free;
+		item_drag = -1;
+		inventory_drag = -1;
+		slot_drag_drag = -1;	
 		
 	}
 }
