@@ -7,7 +7,7 @@ hspd = dir * ease_in_out_quad(lerp(1, 0, (distance_to_point((station_b.x + 160) 
 
 if (distance_to_point(station_a.x - 140, y) < 14) || (distance_to_point(station_b.x + 160, y) < 12) {
 	dir *= -1;
-	x += 2 * dir;
+	x += 3 * dir;
 }
 
 
