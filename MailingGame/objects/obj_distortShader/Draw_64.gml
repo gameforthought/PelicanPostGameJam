@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var _surface_distort = surface_create(room_width,room_height);
+var _surface_distort = surface_create(480, room_height);
 
 
 surface_set_target(_surface_distort);
@@ -9,8 +9,8 @@ surface_set_target(_surface_distort);
     draw_clear_alpha(COLOUR_FOR_NO_MOVE,0);
 
     // Anything we draw here will distort the screen
-    for (var i = 0; i < room_width; i += 1) {
-		draw_set_color(make_color_rgb(127, 127 + (20 * sin((1 / room_width) * pi * i)), 255));
+    for (var i = 0; i < 480; i += 1) {
+		draw_set_color(make_color_rgb(127, 127 + (20 * sin((1 / 480) * pi * i)), 255));
 		draw_rectangle(i, 0, i + 1, room_height, false);
 	}
 

@@ -8,6 +8,10 @@ if global.pause = 0 {
 if instance_exists(obj_playerChar) {} else {
 //get left or right key press and change variables accordingly
 if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))) {
+	if x = road_start {
+	x += 1;	
+	}
+	
 	//checks if turning vs starting from stopped position
 	if hspd < 0 { 
 		hspd += haccel + (haccel * abs(hspd));
@@ -18,6 +22,10 @@ if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))) {
 }
 
 if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {
+	if x = road_end {
+	x -= 1;	
+	}
+	
 	if hspd > 0 { 
 		hspd -= haccel + (haccel * abs(hspd));
 	} else {
@@ -39,7 +47,14 @@ if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(or
 
 hspd = clamp(hspd, -maxhspd, maxhspd);
 
+if x = road_start || x = road_end {
+hspd = 0;
+}
+
 x += hspd;
+x = clamp(x, road_start, road_end);
+
+
 
 //speedlines controls
 var layer_id = layer_get_id("speedlines");

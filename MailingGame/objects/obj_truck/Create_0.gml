@@ -13,3 +13,6 @@ blink = 0;
 dismount_anim = false;
 
 clickable = false;
+
+road_start = instance_find(obj_truck_barrier, 0).x + 120;
+road_end = instance_find(obj_truck_barrier, 1).x - 120;

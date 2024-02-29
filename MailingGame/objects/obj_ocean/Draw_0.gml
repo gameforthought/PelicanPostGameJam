@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 draw_set_color(color);
-draw_rectangle(camera_get_view_x(camera), 160, camera_get_view_x(camera) + 480, 200, false);
+draw_rectangle(camera_get_view_x(camera), 160, camera_get_view_x(camera) + 480, 240, false);
 
 //draw_set_color(#0D6066);
 draw_set_color(merge_color(color, c_black, 0.2));
