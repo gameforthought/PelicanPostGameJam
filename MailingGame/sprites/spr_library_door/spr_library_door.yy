@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_suzannah_door",
+  "name": "spr_library_door",
   "bbox_bottom": 81,
   "bbox_left": 0,
   "bbox_right": 47,
@@ -33,7 +33,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_suzannah_door",
+    "name": "spr_library_door",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"039b0fa4-36c8-4a51-a805-0ec7ad29a88b","path":"sprites/spr_suzannah_door/spr_suzannah_door.yy",},},},"Disabled":false,"id":"d3237a85-6f8c-4df2-9ae8-e809bca52a0f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7bf4c975-6b21-4cc8-a5b0-081073b6af78","path":"sprites/spr_suzannah_door/spr_suzannah_door.yy",},},},"Disabled":false,"id":"8e7680d1-60a1-4f8f-b8f1-a1a9a2d7f943","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"039b0fa4-36c8-4a51-a805-0ec7ad29a88b","path":"sprites/spr_library_door/spr_library_door.yy",},},},"Disabled":false,"id":"98d04de4-757e-45df-b477-e2dba0450b5c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7bf4c975-6b21-4cc8-a5b0-081073b6af78","path":"sprites/spr_library_door/spr_library_door.yy",},},},"Disabled":false,"id":"b51b41ef-3be7-49e8-82c7-6a060a37a930","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

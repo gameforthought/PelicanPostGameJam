@@ -39,7 +39,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"haccel","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.1","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"grav","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.1","varType":0,},
   ],
-  "solid": true,
+  "solid": false,
   "spriteId": {
     "name": "spr_playerLegs_walk",
     "path": "sprites/spr_playerLegs_walk/spr_playerLegs_walk.yy",
