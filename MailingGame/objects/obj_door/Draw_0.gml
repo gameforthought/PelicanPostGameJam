@@ -4,11 +4,14 @@
 draw_sprite_ext(sprite, 0, x, y, door_stage / 48, 1, 0, c_white, 1);
 draw_sprite(sprite, 1, x + lerp(44, 0, door_stage / 48), y);
 
-draw_set_color(c_black);
-draw_rectangle(x - door_stage - lerp(7, 0, door_stage / 48), y, x - door_stage, y + 82, false);
-
 draw_set_color(color);
-draw_rectangle(x - door_stage - lerp(5, 0, door_stage / 48), y, x - door_stage - lerp(2, 0, door_stage / 48), y + 82, false);
+draw_rectangle(x - door_stage - lerp(8, 0, door_stage / 48), y, x - door_stage, y + 82, false);
+
+draw_set_color(c_black);
+draw_rectangle(x - door_stage - 1, y, x - door_stage, y + 82, false);
+draw_rectangle(x - door_stage - 1 - lerp(7, 0, door_stage / 48), y, x - door_stage - lerp(7, 0, door_stage / 48), y + 82, false);
+
+
 
 
 

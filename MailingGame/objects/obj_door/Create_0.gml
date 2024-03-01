@@ -3,6 +3,7 @@
 
 open = false;
 door_stage = 48;
+door_speed = 1.5;
 
 sprite = spr_suzannah_door;
 color = #bf5e66;
