@@ -12,6 +12,11 @@ draw_rectangle(x - door_stage - 1, y, x - door_stage, y + 82, false);
 draw_rectangle(x - door_stage - 1 - lerp(7, 0, door_stage / 48), y, x - door_stage - lerp(7, 0, door_stage / 48), y + 82, false);
 
 
+if indicator = true {
+draw_sprite(spr_click_prox, 0, x - 24, y - bounce);
+}
+
+
 
 
 

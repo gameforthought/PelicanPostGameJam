@@ -4,6 +4,9 @@
 hspd = 0;
 hspd_prev = 0;
 
+road_start = 210;
+road_end = room_width;
+
 yspd = 0;
 
 if instance_exists(obj_truck) = true {

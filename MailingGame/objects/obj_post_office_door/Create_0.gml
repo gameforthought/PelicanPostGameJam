@@ -9,7 +9,7 @@ indicator = false;
 bounce = 0;
 step = 0;
 
-sprite = spr_library_door;
+sprite = spr_post_office_door;
 color = #d9c498;
 
 

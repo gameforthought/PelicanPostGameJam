@@ -66,6 +66,8 @@ hspd_prev = hspd;
 
 
 x += hspd;
+
+x = clamp(x, road_start, road_end);
 //show_debug_message(string(sign(hspd)))
 
 

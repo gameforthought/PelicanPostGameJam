@@ -9,3 +9,16 @@ if open = true {
 
 door_stage = clamp(door_stage, 0, 48);
 
+
+//indicator
+
+if instance_exists(obj_playerChar) && point_distance(x - 24, y, obj_playerChar.x, y) < 80 {
+	indicator = true;
+} else {
+	indicator = false;	
+}
+
+bounce = 2 * sin(step);
+
+step += 0.1;
+
