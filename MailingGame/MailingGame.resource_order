@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
@@ -28,7 +28,7 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"spr_truckChar","order":2,"path":"sprites/spr_truckChar/spr_truckChar.yy",},
     {"name":"spr_playerLegs_idle","order":4,"path":"sprites/spr_playerLegs_idle/spr_playerLegs_idle.yy",},
     {"name":"obj_mouse","order":6,"path":"objects/obj_mouse/obj_mouse.yy",},
