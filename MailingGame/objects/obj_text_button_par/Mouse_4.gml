@@ -1,6 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-randomSeed = irandom(2000);
-
-global.pause = 1;
+event_perform_object(event_obj, event, event_num);

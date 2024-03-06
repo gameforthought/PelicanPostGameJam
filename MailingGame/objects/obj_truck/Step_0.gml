@@ -56,12 +56,7 @@ x = clamp(x, road_start, road_end);
 
 
 
-//speedlines controls
-var layer_id = layer_get_id("speedlines");
-var bg_id = layer_background_get_id(layer_id);
 
-layer_background_alpha(bg_id, lerp(0, 0.5 - 0.05 * (obj_timeTracker.sunset_progress / 10) - 0.08 * (obj_timeTracker.night_progress / 10), (abs(hspd)) /maxhspd));
-layer_hspeed(layer_id, -hspd / 1.5);
 
 
 //dust
@@ -126,6 +121,14 @@ if instance_exists(obj_playerChar) {
 		clickable = false;
 	}
 }
+
+
+//speedlines controls
+var layer_id = layer_get_id("speedlines");
+var bg_id = layer_background_get_id(layer_id);
+
+layer_background_alpha(bg_id, lerp(0, 0.5 - 0.05 * (obj_timeTracker.sunset_progress / 10) - 0.08 * (obj_timeTracker.night_progress / 10), (abs(hspd)) /maxhspd));
+layer_hspeed(layer_id, -hspd / 1.5);
 
 
 

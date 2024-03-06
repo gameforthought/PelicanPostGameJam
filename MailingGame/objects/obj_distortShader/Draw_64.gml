@@ -10,7 +10,7 @@ surface_set_target(_surface_distort);
 
     // Anything we draw here will distort the screen
     for (var i = 0; i < 480; i += 1) {
-		draw_set_color(make_color_rgb(127, 127 + (20 * sin((1 / 480) * pi * i)), 255));
+		draw_set_color(make_color_rgb(127, 127 + (30 * sin((1 / 480) * pi * i)), 255));
 		draw_rectangle(i, 0, i + 1, room_height, false);
 	}
 
