@@ -3,7 +3,8 @@
 
 //text_to_display = "HI";
 if (ink_can_continue()){
-	text_to_display = ink_continue();
+	//text_to_display = ink_continue();
+	next_line();
 }
 else {
 	global.pause = 0;
