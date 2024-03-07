@@ -3,3 +3,6 @@
 
 box_width = sprite_get_width(spr_textbox_test);
 line_height = string_height(text_to_display);
+
+text_to_display = ink_continue();
+def = 0;

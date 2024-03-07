@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"gnomes_changed",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"gnomes_changed",
+  "parent":{
+    "name":"Dialogue_Scripts",
+    "path":"folders/Scripts/Dialogue_Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
