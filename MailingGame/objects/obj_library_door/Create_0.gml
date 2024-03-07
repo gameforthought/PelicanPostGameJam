@@ -17,9 +17,13 @@ char_struct = {
 	anim_speed: 0.05,
 	shoulder_width: 14,
 	shoulder_height: 30,
+	face_y: 33,
+	face_radius: 13,
+	eye_x: 7,
+	eye_y: -1,
 };
 
-character = instance_create_depth(x - 24, 0, layer_get_depth(layer) + 350, obj_character_par, char_struct);
+character = instance_create_depth(600, 0, layer_get_depth(layer) + 350, obj_character_par, char_struct);
 
 
 

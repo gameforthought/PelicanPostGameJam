@@ -7,16 +7,23 @@
 //2: regular eyes
 //3: blink eyes
 //4: wide eyes
+//5: close eyes
 
-//5: regular mouth
-//6: smile
-//7: wide mouth
-//8: frown
+//6: regular mouth
+//7: smile
+//8: wide mouth
+//9: frown
 
 blink = 0;
 char_anim = 0;
 
+emote_anim_state = 0;
+emote_step = 0;
+
+emotion = "neutral";
 eyes = 2;
-mouth = 5;
+mouth = 6;
 
 speed_mod = 1;
+
+show_debug_message(string(cos(30) * face_radius) + ", " + string(sin(30) * face_radius))
