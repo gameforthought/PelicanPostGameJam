@@ -58,3 +58,10 @@ var _s = 1.70158;
 _inputvalue /= _inputmax;
 return _outputmax * _inputvalue * _inputvalue * ((_s + 1) * _inputvalue - _s) + _outputmin;
 }
+
+function EaseInBack_Smaller(_inputvalue,_outputmin,_outputmax,_inputmax) {
+var _s = 1.05158;
+
+_inputvalue /= _inputmax;
+return _outputmax * _inputvalue * _inputvalue * ((_s + 1) * _inputvalue - _s) + _outputmin;
+}

@@ -7,5 +7,5 @@ draw_set_color(color);
 draw_rectangle((x_init + 5 + xmod) * windowScale, (y + 5 + ymod) * windowScale, (x_init + 109.5 + xmod) * windowScale, (y + 24.5 + ymod) * windowScale, false);
 
 draw_set_color(c_white);
-draw_set_font(ft_header);
-draw_text((x_init + 10 + xmod) * windowScale, (y + 9 + ymod) * windowScale, text);
+draw_set_font(ft_gui);
+draw_text((x_init + 10 + xmod) * windowScale, (y + 6 + ymod) * windowScale, text);
