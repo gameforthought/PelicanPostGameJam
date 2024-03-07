@@ -60,6 +60,7 @@
   "name":"MailingGame",
   "resources":[
     {"id":{"name":"GMInk","path":"extensions/GMInk/GMInk.yy",},},
+    {"id":{"name":"ft_small","path":"fonts/ft_small/ft_small.yy",},},
     {"id":{"name":"ft_header","path":"fonts/ft_header/ft_header.yy",},},
     {"id":{"name":"ft_textboxTest","path":"fonts/ft_textboxTest/ft_textboxTest.yy",},},
     {"id":{"name":"obj_bushGen","path":"objects/obj_bushGen/obj_bushGen.yy",},},

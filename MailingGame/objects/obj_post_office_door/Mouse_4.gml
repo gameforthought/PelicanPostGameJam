@@ -3,3 +3,4 @@
 
 event_inherited();
 
+load_story("Susan");

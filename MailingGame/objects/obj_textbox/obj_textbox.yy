@@ -2,7 +2,7 @@
   "$GMObject":"",
   "%Name":"obj_textbox",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -32,6 +32,8 @@
     {"$GMObjectProperty":"","%Name":"complete_text","filters":[],"listItems":[],"multiselect":false,"name":"complete_text","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Bibbitye fkldsfdsaf dsf dsfdsfdsf f sf sf dfd fsf se fes fes fse fds fds few f fds fds f sdfew\"","varType":2,},
     {"$GMObjectProperty":"","%Name":"text_to_display","filters":[],"listItems":[],"multiselect":false,"name":"text_to_display","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Bibbitye fkldsfdsaf dsf dsfdsfdsf f sf sf dfd fsf se fes fes fse fds fds few f fds fds f sdfew\"","varType":2,},
     {"$GMObjectProperty":"","%Name":"line_height","filters":[],"listItems":[],"multiselect":false,"name":"line_height","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"","%Name":"emotion_tag","filters":[],"listItems":[],"multiselect":false,"name":"emotion_tag","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
+    {"$GMObjectProperty":"","%Name":"name_tag","filters":[],"listItems":[],"multiselect":false,"name":"name_tag","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
