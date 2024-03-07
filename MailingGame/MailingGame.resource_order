@@ -73,6 +73,7 @@
     {"name":"obj_walk_bt","order":2,"path":"objects/obj_walk_bt/obj_walk_bt.yy",},
     {"name":"obj_wind_leaf","order":6,"path":"objects/obj_wind_leaf/obj_wind_leaf.yy",},
     {"name":"obj_wind","order":7,"path":"objects/obj_wind/obj_wind.yy",},
+    {"name":"obj_ocean_foreground","order":16,"path":"objects/obj_ocean_foreground/obj_ocean_foreground.yy",},
     {"name":"TEST","order":26,"path":"objects/TEST/TEST.yy",},
     {"name":"DialogueTesting","order":1,"path":"rooms/DialogueTesting/DialogueTesting.yy",},
     {"name":"Dialogue","order":2,"path":"scripts/Dialogue/Dialogue.yy",},

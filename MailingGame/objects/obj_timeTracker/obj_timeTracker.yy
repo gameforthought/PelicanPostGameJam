@@ -29,7 +29,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"","%Name":"day_length","filters":[],"listItems":[],"multiselect":false,"name":"day_length","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2000","varType":0,},
-    {"$GMObjectProperty":"","%Name":"sunset_start","filters":[],"listItems":[],"multiselect":false,"name":"sunset_start","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.75","varType":0,},
+    {"$GMObjectProperty":"","%Name":"sunset_start","filters":[],"listItems":[],"multiselect":false,"name":"sunset_start","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":0,},
     {"$GMObjectProperty":"","%Name":"night_start","filters":[],"listItems":[],"multiselect":false,"name":"night_start","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
     {"$GMObjectProperty":"","%Name":"sunset_color","filters":[],"listItems":[],"multiselect":false,"name":"sunset_color","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FFF2C4FF","varType":7,},
     {"$GMObjectProperty":"","%Name":"night_color","filters":[],"listItems":[],"multiselect":false,"name":"night_color","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF726667","varType":7,},

@@ -12,7 +12,7 @@ function load_story(_dialogue_character) {
 	//tell the ink story what character's knot to go to
 	ink_variable_set_string("character", _dialogue_character);
 
-	instance_create_layer(0,100,"positional_gui", obj_textbox);
+	var textbox = instance_create_layer(0,100,"positional_gui", obj_textbox);
 	
 	//commented out cuz doesn't work yet
 	
@@ -26,5 +26,5 @@ function load_story(_dialogue_character) {
 	
 	//}
 	
-	
+	return textbox;
 }

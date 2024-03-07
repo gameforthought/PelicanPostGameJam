@@ -5,12 +5,18 @@ open = false;
 door_stage = 48;
 door_speed = 1.5;
 
+knock_amount = 0;
+
 indicator = false;
 bounce = 0;
 step = 0;
 
+story = "Susan";
+
 sprite = spr_library_door;
 color = #d9c498;
+knock_time = 60;
+hearing = 100;
 
 char_struct = {
 	sprite: spr_beatrice,
@@ -23,7 +29,7 @@ char_struct = {
 	eye_y: -1,
 };
 
-character = instance_create_depth(600, 0, layer_get_depth(layer) + 350, obj_character_par, char_struct);
+character = instance_create_depth(x - 24, 0, layer_get_depth(layer) + 350, obj_character_par, char_struct);
 
 
 

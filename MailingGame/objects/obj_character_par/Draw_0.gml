@@ -30,7 +30,7 @@ draw_sprite_ext(sprite, mouth, x, 256 - 32, 1, 1 - (lerp(0.04, 0.02, (sprite_get
 
 //emotions drawn over
 switch emotion {
-	case "anger":
+	case "angry":
 		draw_sprite_ext(spr_anger, 0, x + cos(-pi / 4) * face_radius, 256 - 32 - face_y + (sin(-pi / 4) * face_radius), 1 + emote_anim_state * 0.5, 1 + emote_anim_state * 0.5, -20, c_white, 1);
 	break;
 	case "fear":

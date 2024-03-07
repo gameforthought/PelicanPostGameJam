@@ -44,7 +44,7 @@ switch emotion {
 		eyes = 2;
 		mouth = 9;
 	break;
-	case "anger":
+	case "angry":
 		eyes = 2;
 		mouth = 9;
 	break;
@@ -74,6 +74,6 @@ switch emotion {
 	break;
 	default:
 		eyes = 2;
-		mouth = 5;
+		mouth = 6;
 	break;
 }

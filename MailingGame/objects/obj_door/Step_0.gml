@@ -22,3 +22,12 @@ bounce = 2 * sin(step);
 
 step += 0.1;
 
+
+if character != -1 {
+if instance_exists(obj_textbox) {
+character.emotion = obj_textbox.emotion_tag;
+}
+else {
+	character.emotion = "neutral";
+}
+}

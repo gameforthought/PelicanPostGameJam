@@ -2,11 +2,15 @@
 // You can write your code in this editor
 
 //when clicked, make a textbox visible
-if indicator = true {
-if open = false {
-		open = true;
-	} else {
-		open = false;
+if indicator = true && instance_exists(obj_textbox) = false {
+//if open = false {
+//		open = true;
+//	} else {
+//		open = false;
+//	}
+	
+	if alarm[0] = -1 {
+		alarm[0] = knock_time;
 	}
-	//instance_create_layer(x,y-400,"Text", obj_textbox);
+	
 }

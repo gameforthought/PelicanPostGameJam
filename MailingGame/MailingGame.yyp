@@ -60,8 +60,8 @@
   "name":"MailingGame",
   "resources":[
     {"id":{"name":"GMInk","path":"extensions/GMInk/GMInk.yy",},},
-    {"id":{"name":"ft_small","path":"fonts/ft_small/ft_small.yy",},},
     {"id":{"name":"ft_header","path":"fonts/ft_header/ft_header.yy",},},
+    {"id":{"name":"ft_small","path":"fonts/ft_small/ft_small.yy",},},
     {"id":{"name":"ft_textboxTest","path":"fonts/ft_textboxTest/ft_textboxTest.yy",},},
     {"id":{"name":"obj_bushGen","path":"objects/obj_bushGen/obj_bushGen.yy",},},
     {"id":{"name":"obj_cameraManager","path":"objects/obj_cameraManager/obj_cameraManager.yy",},},
@@ -106,6 +106,7 @@
     {"id":{"name":"obj_walk_bt","path":"objects/obj_walk_bt/obj_walk_bt.yy",},},
     {"id":{"name":"obj_wind_leaf","path":"objects/obj_wind_leaf/obj_wind_leaf.yy",},},
     {"id":{"name":"obj_wind","path":"objects/obj_wind/obj_wind.yy",},},
+    {"id":{"name":"obj_ocean_foreground","path":"objects/obj_ocean_foreground/obj_ocean_foreground.yy",},},
     {"id":{"name":"par_lights","path":"objects/par_lights/par_lights.yy",},},
     {"id":{"name":"TEST","path":"objects/TEST/TEST.yy",},},
     {"id":{"name":"demo_room","path":"rooms/demo_room/demo_room.yy",},},

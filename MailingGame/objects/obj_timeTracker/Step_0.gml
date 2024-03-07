@@ -1,17 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-day_progress += 1;
-
 star_step += 1;
 
-if (day_progress > (sunset_start * day_length)) && (night_bool = false) {
+if day_progress = sunset_start {
 	sunset_bool = true;
 } else {
 	sunset_bool = false;
 }
 
-if  (day_progress > (night_start * day_length)) {
+if  (day_progress > sunset_start) {
 	night_bool = true;
 }
 
