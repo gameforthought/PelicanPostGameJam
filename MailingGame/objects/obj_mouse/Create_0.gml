@@ -1,3 +1,4 @@
+/// @desc State Machine
 inventory_hover = -1;
 slot_hover = -1;
 inventory_drag = -1;
@@ -17,27 +18,35 @@ mouse_over = function()
 	//check for inventory slot hover
 	with (obj_inventory)
 	{
+		//show_debug_message("mouse x:" + string(mx) + ", mouse y: " + string(my));
+		//show_debug_message("x:" + string(x) + ", y: " + string(y));
 		if (point_in_rectangle
 		(
 			mx,
 			my,
-			x-6,
-			y-6,
-			x-6 + 12+row_length*36,
-			y-6 + 12+(((INVENTORY_SLOTS-1) div row_length)+1)*36
+			windowScale * 100, 
+			windowScale * 30,
+			windowScale * 220,
+			windowScale * 110
 		))
 		{
+			show_debug_message("Mouse in rectangle");
 			//check for mouseover in each slot
 			for(var i = 0; i < INVENTORY_SLOTS; i++)
 			{
-				var xx = x + (i mod row_length) * 36 + 2;
-				var yy = y + (i div row_length) * 36 + 2;
-				if(point_in_rectangle(mx,my,xx,yy,xx+32,yy+32))
+				var xx = x + 230 +  (i mod row_length) * 36;
+				var yy = y + 83 +  (i div row_length) * 35;
+				
+				if(point_in_circle(mx,my,xx,yy,12))
 				{
 					other.slot_hover = i;
-					other.inventory_hover = i;
+					other.inventory_hover = id;
+					show_debug_message(string(i)+ " hover");
 				}
 			}
+		}
+		else{
+			show_debug_message("mouse not in rectangle");
 		}
 	}
 }
@@ -46,7 +55,7 @@ state_free = function()
 {
 	mouse_over();
 	//Start to drag an item if slot is not empty
-	if (mouse_check_button(mb_left)) && (slot_hover	!= -1) && (inventory_hover.inventory[slot_hover]!= -1)
+	if (mouse_check_button(mb_left)) && (slot_hover	!= -1) && (inventory_hover.inventory[slot_hover] != -1)
 	{
 		//enter drag state
 		state = state_drag;
@@ -68,7 +77,9 @@ state_drag = function()
 		state = state_free;
 		item_drag = -1;
 		inventory_drag = -1;
-		slot_drag_drag = -1;	
+		slot_drag = -1;	
 		
 	}
 }
+
+state = state_free;

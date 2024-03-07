@@ -54,6 +54,7 @@
     {"name":"inst_75F4CD33","path":"rooms/demo_room/demo_room.yy",},
     {"name":"inst_30056F04","path":"rooms/demo_room/demo_room.yy",},
     {"name":"inst_6C9DC882","path":"rooms/demo_room/demo_room.yy",},
+    {"name":"inst_7D6FC996","path":"rooms/demo_room/demo_room.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -91,6 +92,7 @@
         {"$GMRInstance":"","%Name":"inst_7FD58BD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7FD58BD","objectId":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":288.0,},
         {"$GMRInstance":"","%Name":"inst_47222BDC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_47222BDC","objectId":{"name":"obj_truck_offscreen","path":"objects/obj_truck_offscreen/obj_truck_offscreen.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":384.0,},
         {"$GMRInstance":"","%Name":"inst_6C9DC882","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6C9DC882","objectId":{"name":"obj_title_screen","path":"objects/obj_title_screen/obj_title_screen.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":-32.0,},
+        {"$GMRInstance":"","%Name":"inst_7D6FC996","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7D6FC996","objectId":{"name":"obj_mouse","path":"objects/obj_mouse/obj_mouse.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":0.0,},
       ],"layers":[],"name":"positional_gui","properties":[
         {"name":"g_OutlineColour","type":1,"value":"#FF000000",},
         {"name":"g_OutlineRadius","type":0,"value":"3",},
