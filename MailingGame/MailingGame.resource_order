@@ -34,6 +34,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"ft_small","order":2,"path":"fonts/ft_small/ft_small.yy",},
     {"name":"ft_textboxTest","order":1,"path":"fonts/ft_textboxTest/ft_textboxTest.yy",},
     {"name":"obj_cameraManager","order":6,"path":"objects/obj_cameraManager/obj_cameraManager.yy",},
     {"name":"obj_character_par","order":24,"path":"objects/obj_character_par/obj_character_par.yy",},

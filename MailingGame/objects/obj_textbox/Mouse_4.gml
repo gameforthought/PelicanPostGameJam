@@ -6,5 +6,6 @@ if (ink_can_continue()){
 	text_to_display = ink_continue();
 }
 else {
+	global.pause = 0;
 	instance_destroy();
 }
