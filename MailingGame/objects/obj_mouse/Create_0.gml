@@ -9,7 +9,7 @@ slot_select = -1;
 mouse_over = function(view_x, view_y)
 {
 	
-	show_debug_message(string(view_x) + "A, " + string(view_y))
+	//show_debug_message(string(view_x) + "A, " + string(view_y))
 	//empty
 	slot_hover = -1;
 	inventory_hover = -1;

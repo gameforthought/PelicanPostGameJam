@@ -3,7 +3,7 @@
 
 image_alpha = 0;
 
-box_width = 108;
+box_width = 118;
 line_height = string_height(text_to_display);
 
 next_line();

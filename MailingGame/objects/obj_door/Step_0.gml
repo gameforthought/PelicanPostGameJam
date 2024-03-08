@@ -31,3 +31,7 @@ else {
 	character.emotion = "neutral";
 }
 }
+
+if instance_exists(obj_textbox) {
+	open = obj_textbox.door_open_tag;
+}
