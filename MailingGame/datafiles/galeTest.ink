@@ -1,1 +1,49 @@
-﻿{"inkVersion":20,"root":[[{"->":"start"},["done",{"#f":5,"#n":"g-0"}],null],"done",{"start":["ev",{"VAR?":"character"},"/ev",["du","ev","str","^Susan","/str","==","/ev",{"->":".^.b","c":true},{"b":["pop","\n",{"->":"Susan"},{"->":"start.6"},null]}],["du","ev","str","^Clyde","/str","==","/ev",{"->":".^.b","c":true},{"b":["pop","\n",{"->":"Clyde"},{"->":"start.6"},null]}],"pop","nop","\n","done",{"#f":1}],"Susan":["^My name is Susan :) ",{"#":"Susan"},{"#":"neutral"},"\n","^I like popsicles and rainbows. ",{"#":"Susan"},{"#":"happy"},"\n","^I lied. ",{"#":"Susan"},{"#":"angry"},"\n","^LOOOOOOOL. ",{"#":"blush"},"\n","^You have ","ev",{"VAR?":"gnome_count"},"out","/ev","^ gnomes!!","\n","ev",{"VAR?":"gnome_count"},1,"+",{"VAR=":"gnome_count","re":true},"/ev","^Have a gnome!","\n","^Now you have ","ev",{"VAR?":"gnome_count"},"out","/ev","^ gnomes :)","\n","done",{"#f":1}],"Clyde":["^My name is Clyde :)","\n","^I like popsicles and rainbows.","\n","^Yayyyyyyyy.","\n","^GNOME.","\n","^You have ","ev",{"VAR?":"gnome_count"},"out","/ev","^ gnomes!!!","\n","done",{"#f":1}],"global decl":["ev","str","^Susan","/str",{"VAR=":"character"},0,{"VAR=":"gnome_count"},"/ev","end",null],"#f":1}],"listDefs":{}}
+VAR character = "Susan"
+VAR gnome_count = 0
+
+->start
+
+
+===start===
+
+{ character:
+- "Susan":  ->Susan
+- "Clyde":  ->Clyde
+}
+
+
+-> DONE
+
+===Susan===
+
+My name is Susan :) #Susan #neutral
+
+
+I like popsicles and rainbows.  #Susan #happy
+
+I lied. #Susan #angry #closed
+
+LOOOOOOOL. #Susan #blush
+
+You have {gnome_count} gnomes!!#Susan #happy
+
+~gnome_count+=1
+
+Have a gnome!#Susan #blush #open
+
+Now you have {gnome_count} gnomes :) #Susan #happy
+
+->DONE
+
+
+===Clyde===
+My name is Clyde :)
+
+I like popsicles and rainbows.
+
+Yayyyyyyyy.
+
+GNOME.
+
+You have {gnome_count} gnomes!!!
+->DONE
