@@ -18,5 +18,10 @@ draw_set_font(ft_gui);
 draw_text_ext((xpos + 33) * windowScale, 68 * windowScale, text_to_display, line_height - 5, box_width * windowScale);
 
 
-var door_open_string = (door_open_tag ? "Door open!" : "Door closed!");
-draw_text((xpos + 24) * windowScale, 17 * windowScale, emotion_tag + " " + name_tag + " " + door_open_string);
+if (global.debug_mode) {
+	show_tags();
+}
+else {
+	var door_open_string = (door_open_tag ? "Door open!" : "Door closed!");
+draw_text((xpos + 24) * windowScale, 17 * windowScale, name_tag);
+}

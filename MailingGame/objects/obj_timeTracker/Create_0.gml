@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+global.debug_mode = false;
+
 day_progress = 0;
 
 sunset_progress = 0;
