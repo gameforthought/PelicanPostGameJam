@@ -7,7 +7,7 @@ door_speed = 1.5;
 
 knock_amount = 0;
 
-story = "Susan"
+story = "suz1";
 
 indicator = false;
 bounce = 0;

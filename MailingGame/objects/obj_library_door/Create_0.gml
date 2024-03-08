@@ -11,7 +11,9 @@ indicator = false;
 bounce = 0;
 step = 0;
 
-story = "Susan";
+story = "bea1";
+//story = "bea2";
+
 
 sprite = spr_library_door;
 color = #d9c498;

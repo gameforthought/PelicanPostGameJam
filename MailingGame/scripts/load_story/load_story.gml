@@ -5,7 +5,8 @@
 ///Loads the main ink json file, then sets the character variable in the ink story
 function load_story(_dialogue_character) {
 	//load the story
-	ink_load(working_directory + "galeTest.json");
+	ink_load(working_directory + "demo_dialogue.json");
+	
 	
 	//ink_variable_set_real("character",_dialogue_character);
 	
