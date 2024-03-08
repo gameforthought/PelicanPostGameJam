@@ -3,10 +3,14 @@
 #macro INVENTORY_SLOTS 24
 row_length = 6;
 inventory = array_create(INVENTORY_SLOTS, -1);
-randomize();
-inventory[0] = 0;
-inventory[1] = 0;
-inventory[2] = 1;
+//randomize();
+
+
+inventory[0] = {
+	subimage: 0,
+	to: "Beatrice",
+	from: "???",
+};
 
 
 x = 0;
@@ -17,6 +21,8 @@ windowScale = window_get_height() / room_height;
 animation_step = 45;
 
 animation_dir = 1;
+
+select_rotate = 0;
 
 
 
