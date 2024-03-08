@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"Dialogue_debug",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Dialogue_debug",
+  "parent":{
+    "name":"Dialogue_Scripts",
+    "path":"folders/Scripts/Dialogue_Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
