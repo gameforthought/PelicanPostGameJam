@@ -125,6 +125,7 @@
     {"name":"spr_playerWing","order":6,"path":"sprites/spr_playerWing/spr_playerWing.yy",},
     {"name":"spr_post_office_door","order":5,"path":"sprites/spr_post_office_door/spr_post_office_door.yy",},
     {"name":"spr_post_office","order":4,"path":"sprites/spr_post_office/spr_post_office.yy",},
+    {"name":"spr_sewergrate","order":27,"path":"sprites/spr_sewergrate/spr_sewergrate.yy",},
     {"name":"spr_sidewalk","order":5,"path":"sprites/spr_sidewalk/spr_sidewalk.yy",},
     {"name":"spr_sigh","order":3,"path":"sprites/spr_sigh/spr_sigh.yy",},
     {"name":"spr_sleepy","order":5,"path":"sprites/spr_sleepy/spr_sleepy.yy",},
@@ -148,6 +149,6 @@
     {"name":"spr_truckChar","order":2,"path":"sprites/spr_truckChar/spr_truckChar.yy",},
     {"name":"spr_wheel","order":1,"path":"sprites/spr_wheel/spr_wheel.yy",},
     {"name":"spr_wind_leaf","order":4,"path":"sprites/spr_wind_leaf/spr_wind_leaf.yy",},
-    {"name":"spr_sewergrate","order":27,"path":"sprites/spr_sewergrate/spr_sewergrate.yy",},
+    {"name":"spr_road_signs","order":28,"path":"sprites/spr_road_signs/spr_road_signs.yy",},
   ],
 }
