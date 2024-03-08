@@ -34,6 +34,7 @@
     {"$GMObjectProperty":"","%Name":"line_height","filters":[],"listItems":[],"multiselect":false,"name":"line_height","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"","%Name":"emotion_tag","filters":[],"listItems":[],"multiselect":false,"name":"emotion_tag","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
     {"$GMObjectProperty":"","%Name":"name_tag","filters":[],"listItems":[],"multiselect":false,"name":"name_tag","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":2,},
+    {"$GMObjectProperty":"","%Name":"door_open_tag","filters":[],"listItems":[],"multiselect":false,"name":"door_open_tag","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@ image_alpha = 0;
 box_width = 108;
 line_height = string_height(text_to_display);
 
-text_to_display = next_line();
+next_line();
 def = 0;
 
 name = "CLYDE";

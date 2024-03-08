@@ -11,6 +11,10 @@ function next_line(){
 		if (tag_count > 0){
 			emotion_tag = ink_get_tag(1);
 			name_tag = ink_get_tag(0);
+			
+			if (tag_count >= 3) {
+				door_open_tag = (ink_get_tag(2) == "open");
+			}
 		}
 		
 		
