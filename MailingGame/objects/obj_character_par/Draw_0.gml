@@ -45,4 +45,7 @@ switch emotion {
 	case "laugh":
 		draw_sprite_ext(spr_laugh, emote_anim_state, x + cos((-pi / 2) + (-1 + 2 * emote_anim_state) * (pi / 4)) * (face_radius + 3), 256 - 32 - face_y + (sin((-pi / 2) + (-1 + 2 * emote_anim_state) * (pi / 4)) * (face_radius + 3)), 1.5, 1.5, (-1 + 2 * emote_anim_state) * -45, c_white, 1);
 	break;
+	case "sleepy":
+		draw_sprite_ext(spr_sleepy, 0, x + cos((-3 * pi) / 4) * (face_radius + emote_anim_state * 2), 256 - 32 - face_y + (sin((-3 * pi) / 4) * face_radius), 1 + emote_anim_state * 0.25, 1 + emote_anim_state * 0.25, 20, c_white, 1);
+	break;
 }

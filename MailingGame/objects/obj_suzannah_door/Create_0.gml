@@ -7,7 +7,8 @@ door_speed = 1.5;
 
 knock_amount = 0;
 
-story = "suz1";
+story = -1;
+//story = "suz1";
 
 indicator = false;
 bounce = 0;
@@ -15,8 +16,8 @@ step = 0;
 
 sprite = spr_suzannah_door;
 color = #bf5e66;
-knock_time = 200;
-hearing = 50;
+knock_time = 300;
+
 
 char_struct = {
 	sprite: spr_suzannah,

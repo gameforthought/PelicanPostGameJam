@@ -9,8 +9,13 @@ line_height = string_height(text_to_display);
 next_line();
 def = 0;
 
-name = "CLYDE";
+alarm[0] = string_length(text_to_display) * 1.5;
+forward = false;
+
 color = c_red;
+char_x = 0;
+bounce = 0;
+step = 0;
 
 windowScale = window_get_height() / room_height;
 

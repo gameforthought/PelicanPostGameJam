@@ -11,6 +11,8 @@ if indicator = true && instance_exists(obj_textbox) = false {
 	
 	if alarm[0] = -1 {
 		alarm[0] = knock_time;
+	} else if alarm[0] > 20 {
+		alarm[0] -= 10;	
 	}
 	
 }

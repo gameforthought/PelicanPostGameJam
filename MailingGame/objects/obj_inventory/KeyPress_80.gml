@@ -1,1 +1,1 @@
-inventory_add(id,irandom(1));
+//inventory_add(id,irandom(1));

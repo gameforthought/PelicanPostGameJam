@@ -1,1 +1,1 @@
-show_debug_message(inventory_search(id,1) != -1);
+//show_debug_message(inventory_search(id,1) != -1);

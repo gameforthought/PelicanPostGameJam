@@ -57,7 +57,7 @@ switch emotion {
 		mouth = 8;
 	break;
 	case "sleepy":
-		eyes = 3;
+		eyes = 5;
 		mouth = 8;
 	break;
 	case "blush":

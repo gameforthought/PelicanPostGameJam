@@ -1,1 +1,1 @@
-inventory_remove(id,1);
+//inventory_remove(id,1);

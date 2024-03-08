@@ -17,8 +17,7 @@ story = "bea1";
 
 sprite = spr_library_door;
 color = #d9c498;
-knock_time = 60;
-hearing = 100;
+knock_time = 80;
 
 char_struct = {
 	sprite: spr_beatrice,

@@ -23,5 +23,26 @@ if (global.debug_mode) {
 }
 else {
 	var door_open_string = (door_open_tag ? "Door open!" : "Door closed!");
-draw_text((xpos + 24) * windowScale, 17 * windowScale, name_tag);
+//draw_text((xpos + 24) * windowScale, 17 * windowScale, name_tag);
 }
+
+var vx = camera_get_view_x(view_camera[0]);
+var vy = camera_get_view_y(view_camera[0]);
+
+
+draw_set_color(color);
+//draw button
+if forward = true {
+	draw_rectangle((xpos + 140 - 14) * windowScale, 224 * windowScale, (xpos + 140 + 14) * windowScale, (228 - 29) * windowScale, false)
+	draw_sprite_ext(spr_next_bt, 0, (xpos + 140) * windowScale, 225 * windowScale, windowScale, windowScale, 0, c_white, 1);
+}
+
+//draw character speech indicator
+
+var yy = 130;
+draw_triangle((char_x - 6 - vx) * windowScale, (yy - 1 - bounce) * windowScale, (char_x - vx) * windowScale, (yy + 6 - bounce) * windowScale, (char_x + 5 - vx) * windowScale, (yy - 1 - bounce) * windowScale, false)
+
+draw_roundrect_ext((char_x - 16.5 - vx) * windowScale, (yy - 26 - bounce) * windowScale, (char_x + 16 - vx) * windowScale, (yy - bounce) * windowScale, 12, 12, false);
+
+draw_sprite_ext(spr_speaker, 0, (char_x - vx) * windowScale, (yy - bounce) * windowScale, windowScale, windowScale, 0, c_white, 1);
+

@@ -3,7 +3,7 @@
 hspd = 0;
 image_speed = 0.01;
 
-
+textbox_alpha = 1;
 
 wheel_rotate = 0;
 

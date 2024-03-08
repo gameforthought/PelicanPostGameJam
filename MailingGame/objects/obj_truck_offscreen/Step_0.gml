@@ -7,7 +7,7 @@ bounce = 2 * sin(step);
 
 step += 0.1;
 
-if (obj_truck.x < camera_get_view_x(camera) || obj_truck.x > camera_get_view_x(camera) + 480) && global.pause = 0 {
+if (obj_truck.x < camera_get_view_x(camera) || obj_truck.x > camera_get_view_x(camera) + 520) && global.pause = 0 {
 	offscreen = true;
 } else {
 	offscreen = false;

@@ -122,6 +122,15 @@ if instance_exists(obj_playerChar) {
 	}
 }
 
+//disapear during dialogue
+if instance_exists(obj_textbox) {
+	textbox_alpha -= 0.02;
+} else {
+	textbox_alpha += 0.02;
+}
+
+textbox_alpha = clamp(textbox_alpha, 0, 1);
+image_alpha = textbox_alpha;
 
 //speedlines controls
 var layer_id = layer_get_id("speedlines");
