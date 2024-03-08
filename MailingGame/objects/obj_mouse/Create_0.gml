@@ -4,6 +4,7 @@ slot_hover = -1;
 inventory_drag = -1;
 slot_drag = -1;
 item_drag = -1;
+slot_select = -1;
 
 mouse_over = function()
 {
@@ -18,7 +19,7 @@ mouse_over = function()
 	//check for inventory slot hover
 	with (obj_inventory)
 	{
-		//show_debug_message("mouse x:" + string(mx) + ", mouse y: " + string(my));
+		show_debug_message("mouse x:" + string(mx) + ", mouse y: " + string(my));
 		//show_debug_message("x:" + string(x) + ", y: " + string(y));
 		if (point_in_rectangle
 		(
@@ -30,23 +31,23 @@ mouse_over = function()
 			windowScale * 110
 		))
 		{
-			show_debug_message("Mouse in rectangle");
+			//show_debug_message("Mouse in rectangle");
 			//check for mouseover in each slot
 			for(var i = 0; i < INVENTORY_SLOTS; i++)
 			{
-				var xx = x + 230 +  (i mod row_length) * 36;
-				var yy = y + 83 +  (i div row_length) * 35;
+				var xx = camera_get_view_x(view_camera[0]) +  (i mod row_length) * 36;
+				var yy = camera_get_view_y(view_camera[0]) +  (i div row_length) * 35;
 				
 				if(point_in_circle(mx,my,xx,yy,12))
 				{
 					other.slot_hover = i;
 					other.inventory_hover = id;
-					show_debug_message(string(i)+ " hover");
+					//show_debug_message(string(i)+ " hover");
 				}
 			}
 		}
 		else{
-			show_debug_message("mouse not in rectangle");
+			//show_debug_message("mouse not in rectangle");
 		}
 	}
 }
@@ -71,8 +72,17 @@ state_drag = function()
 	if(!mouse_check_button(mb_left))
 	{
 		//swap with slot if hovering
-		if(slot_hover != -1) inventory_swap(inventory_drag, slot_drag, inventory_hover, slot_hover);
-		
+		if(slot_hover != -1 and slot_hover != inventory_hover) inventory_swap(inventory_drag, slot_drag, inventory_hover, slot_hover);
+		else
+		{
+			if(slot_select == id){
+				slot_selecct = -1;
+			}
+			else{
+				slot_select = id;
+			}
+			show_debug_message("slot selected" + string(slot_select));
+		}
 		//Return to free state
 		state = state_free;
 		item_drag = -1;
