@@ -62,7 +62,7 @@ for (var i = 0; i < segments; i += 1) {
 	
 	growth_val += growth_change;
 	
-	var _branch_struct;
+	var _branch_struct = -1;
 	if (i = round((2 * segments) / 5)) || (i = round((3 * segments) / 5)) || (i = round((4 * segments) / 5)) {
 		 _branch_struct = {
 			subimage: irandom_range(0, 3),

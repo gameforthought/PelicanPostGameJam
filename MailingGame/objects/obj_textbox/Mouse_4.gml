@@ -10,7 +10,7 @@ if point_in_rectangle(mouse_x, mouse_y, vx + (xpos + 140 - 15), 225 - 30, vx + (
 if (ink_can_continue()){
 	//text_to_display = ink_continue();
 	next_line();
-	alarm[0] = string_length(text_to_display) * 1.5;
+	alarm[0] = string_length(text_to_display) * 1.2;
 	forward = false;
 }
 else {

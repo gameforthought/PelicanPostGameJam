@@ -9,7 +9,7 @@ line_height = string_height(text_to_display);
 next_line();
 def = 0;
 
-alarm[0] = string_length(text_to_display) * 1.5;
+alarm[0] = string_length(text_to_display) * 1.2;
 forward = false;
 
 color = c_red;

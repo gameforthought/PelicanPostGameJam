@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_gameStarter",
+  "%Name":"obj_lamppost",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_gameStarter",
+  "name":"obj_lamppost",
   "overriddenProperties":[],
   "parent":{
-    "name":"game_management",
-    "path":"folders/Objects/game_management.yy",
+    "name":"landscape",
+    "path":"folders/Objects/landscape.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_lamppost",
+    "path":"sprites/spr_lamppost/spr_lamppost.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

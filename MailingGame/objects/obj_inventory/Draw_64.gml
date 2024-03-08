@@ -68,6 +68,9 @@ for (var i = 0; i < INVENTORY_SLOTS; i++)
 		draw_text(x + 422 * windowScale, (y + 174) * windowScale, inventory[i].from);
 		
 		draw_set_halign(fa_left);
+		
+		var line_height = string_height(inventory[i].desc);
+		draw_text_ext(x + 320 * windowScale, (y + 75) * windowScale, inventory[i].desc, line_height - 6, 100 * windowScale);
 	}
 	
 }

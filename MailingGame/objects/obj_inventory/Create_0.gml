@@ -9,7 +9,8 @@ inventory = array_create(INVENTORY_SLOTS, -1);
 inventory[0] = {
 	subimage: 0,
 	to: "Beatrice",
-	from: "???",
+	from: "UC Books",
+	desc: "A small box from a book publisher",
 };
 
 

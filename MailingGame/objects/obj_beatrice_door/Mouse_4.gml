@@ -10,5 +10,6 @@ if story = "bea1" {
 		subimage: 1,
 		to: "Suzannah",
 		from: "Beatrice",
+		desc: "A letter addressed in a curly script",
 };
 }

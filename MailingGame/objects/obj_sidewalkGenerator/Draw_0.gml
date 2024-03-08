@@ -8,4 +8,8 @@ for (var i = 0; i < ((room_width + 320) / 64); i += 1) {
 	//show_debug_message(string(i - 12 * (i div 12)))
 }
 
+for (var i = 0; i < ((room_width + 320) / 1200); i += 1) {
+	draw_sprite(spr_sewergrate, 0, x + (1200 * i), y);
+}
+
 

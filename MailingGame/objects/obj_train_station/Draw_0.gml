@@ -5,6 +5,7 @@ if id = instance_find(obj_train_station, 0) {
 for (var i = instance_find(obj_train_station, 0).x; i < instance_find(obj_train_station, 1).x; i += 48) {
 	draw_sprite(spr_train_tracks, 0, i, 180);
 }
+
 }
 
 draw_self();
