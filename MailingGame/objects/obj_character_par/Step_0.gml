@@ -72,6 +72,10 @@ switch emotion {
 		eyes = 3;
 		mouth = 6;
 	break;
+	case "confused":
+		eyes = 2;
+		mouth = 8;
+	break;
 	default:
 		eyes = 2;
 		mouth = 6;

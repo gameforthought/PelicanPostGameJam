@@ -27,7 +27,7 @@ char_struct = {
 	face_y: 33,
 	face_radius: 13,
 	eye_x: 7,
-	eye_y: -1,
+	eye_y: 0,
 };
 
 character = instance_create_depth(x - 24, 0, layer_get_depth(layer) + 350, obj_character_par, char_struct);

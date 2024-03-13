@@ -34,10 +34,10 @@ var vy = camera_get_view_y(view_camera[0]);
 
 draw_set_color(color);
 //draw button
-if forward = true {
+//if forward = true {
 	draw_rectangle((xpos + 140 - 14) * windowScale, 224 * windowScale, (xpos + 140 + 14) * windowScale, (228 - 29) * windowScale, false)
 	draw_sprite_ext(spr_next_bt, 0, (xpos + 140) * windowScale, 225 * windowScale, windowScale, windowScale, 0, c_white, 1);
-}
+//}
 
 //draw character speech indicator
 

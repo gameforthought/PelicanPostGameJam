@@ -4,7 +4,7 @@
 image_alpha = 0;
 windowScale = window_get_height() / room_height;
 
-type_speed = (1 / 1.5);
+type_speed = (0.5);
 
 box_width = 118;
 scribble_font_set_default("ft_gui");
@@ -19,7 +19,7 @@ typewriter.in(type_speed, 0);
 
 def = 0;
 
-alarm[0] = string_length(text_to_display) * 1.2;
+//alarm[0] = string_length(text_to_display) * 1.2;
 forward = false;
 
 color = c_red;

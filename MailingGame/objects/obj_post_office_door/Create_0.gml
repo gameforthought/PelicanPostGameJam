@@ -14,6 +14,3 @@ color = #d9c498;
 
 character = -1;
 
-
-
-

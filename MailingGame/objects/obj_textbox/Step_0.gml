@@ -11,6 +11,7 @@ bounce = 2 * sin(step);
 
 step += 0.1;
 
+
 switch name_tag {
 	case "Beatrice":
 		char_x = obj_beatrice_door.x - 24;

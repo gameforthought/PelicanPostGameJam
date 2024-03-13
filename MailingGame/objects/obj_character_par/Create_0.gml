@@ -26,4 +26,4 @@ mouth = 6;
 
 speed_mod = 1;
 
-show_debug_message(string(cos(30) * face_radius) + ", " + string(sin(30) * face_radius))
+//show_debug_message(string(cos(30) * face_radius) + ", " + string(sin(30) * face_radius))
