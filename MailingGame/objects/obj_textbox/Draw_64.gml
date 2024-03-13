@@ -15,7 +15,9 @@ draw_set_color(c_black);
 
 //draw the text
 draw_set_font(ft_gui);
-draw_text_ext((xpos + 33) * windowScale, 68 * windowScale, text_to_display, line_height - 5, box_width * windowScale);
+
+richtext.draw((xpos + 33) * windowScale, 68 * windowScale, typewriter);
+//draw_text_ext((xpos + 33) * windowScale, 68 * windowScale, text_to_display, line_height - 5, box_width * windowScale);
 
 
 if (global.debug_mode) {

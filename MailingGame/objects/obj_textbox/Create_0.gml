@@ -2,11 +2,21 @@
 // You can write your code in this editor
 
 image_alpha = 0;
+windowScale = window_get_height() / room_height;
+
+type_speed = (1 / 1.5);
 
 box_width = 118;
-line_height = string_height(text_to_display);
+scribble_font_set_default("ft_gui");
 
 next_line();
+richtext = scribble("[delay]" + text_to_display);
+richtext.wrap(box_width * windowScale);
+richtext.line_height(-1, string_height(text_to_display) - 5);
+
+typewriter = scribble_typist();
+typewriter.in(type_speed, 0);
+
 def = 0;
 
 alarm[0] = string_length(text_to_display) * 1.2;
@@ -17,7 +27,7 @@ char_x = 0;
 bounce = 0;
 step = 0;
 
-windowScale = window_get_height() / room_height;
+
 
 global.pause = 1;
 
