@@ -20,7 +20,7 @@
   "height":208,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"334623b2-d65c-43fd-8eea-0ba548c753de","blendMode":0,"displayName":"default","isLocked":false,"name":"334623b2-d65c-43fd-8eea-0ba548c753de","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"09262be6-c8aa-418e-a453-887ad07f2606","blendMode":0,"displayName":"default","isLocked":false,"name":"09262be6-c8aa-418e-a453-887ad07f2606","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_post_office",
   "nineSlice":null,

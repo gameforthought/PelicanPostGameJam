@@ -131,6 +131,7 @@
     {"id":{"name":"obj_walk_bt","path":"objects/obj_walk_bt/obj_walk_bt.yy",},},
     {"id":{"name":"obj_wind_leaf","path":"objects/obj_wind_leaf/obj_wind_leaf.yy",},},
     {"id":{"name":"obj_wind","path":"objects/obj_wind/obj_wind.yy",},},
+    {"id":{"name":"obj_room_transition","path":"objects/obj_room_transition/obj_room_transition.yy",},},
     {"id":{"name":"par_lights","path":"objects/par_lights/par_lights.yy",},},
     {"id":{"name":"TEST","path":"objects/TEST/TEST.yy",},},
     {"id":{"name":"demo_room","path":"rooms/demo_room/demo_room.yy",},},

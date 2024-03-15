@@ -7,6 +7,8 @@ wind_level = random_range(0.005, 0.01);
 
 windy = false;
 
+wind = 0;
+
 global.wind = 0;
 
 alarm[0] = irandom_range(60, 2000);

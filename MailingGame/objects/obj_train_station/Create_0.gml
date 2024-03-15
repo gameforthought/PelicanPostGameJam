@@ -3,15 +3,18 @@
 
 station_name = "";
 
-if id = instance_find(obj_train_station, 0) {
+station0 = instance_find(obj_train_station, 0);
+station1 = instance_find(obj_train_station, 1);
+
+if id = station0 {
 	station_name = "Town Line";
 }
 
-if id = instance_find(obj_train_station, 1) {
+if id = station1 {
 	station_name = "Shoreside";
 }
 
-if id = instance_find(obj_train_station, 0) {
+if id = station0 {
 
 
 for (var i = instance_find(obj_train_station, 0).x + 500; i < instance_find(obj_train_station, 1).x - 500; i += 500) {

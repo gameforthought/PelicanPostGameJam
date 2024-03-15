@@ -1,5 +1,5 @@
 
-var wind =  EaseInBack(global.wind, 0, 1, 1);
+var wind =  global.wind * 1.5;
 var sway = 0.5 * (sin(0.001 * pi * sway_time));
 
 
@@ -12,7 +12,7 @@ for (var i = 1; i < segments; i += 1) {
 	
 	if branch_array[i] != -1 {
 		
-		var wind_amount = ease_in_out_quad((i) / segments, 0, 10, 1);
+		var wind_amount = branch_array[i].wind_amount;
 		
 		draw_sprite_ext(spr_tree_branch, branch_array[i].subimage, x + growth_val_array[i] + wind_amount * (wind + sway), y - 20 * i, branch_array[i].dir, 1, 0, layer_color, 1);
 		
@@ -38,7 +38,7 @@ draw_sprite_ext(spr_tree_leaves, crown_leaf, x + growth_val_array[segments - 1] 
 for (var i = 1; i < segments; i += 1) {
 	if branch_array[i] != -1 {
 		
-		var wind_amount = ease_in_out_quad((i) / segments, 0, 10, 1);
+		var wind_amount = branch_array[i].wind_amount;
 		
 		if branch_array[i].place = 1 {
 			draw_sprite_ext(spr_tree_leaves, branch_array[i].leaf, x + growth_val_array[i] + (branch_array[i].dir * branch_array[i].leaf_x) + wind_amount * (wind + sway), y - (20 * i) - branch_array[i].leaf_y, branch_array[i].dir * 1.3, 1.3, 0, c_white, 1);

@@ -82,7 +82,8 @@ for (var i = 0; i < segments; i += 1) {
 			subimage: irandom_range(0, 3),
 			place: choose(0, 1),
 			dir: branch,
-			leaf: irandom_range(0, 3)
+			leaf: irandom_range(0, 3),
+			wind_amount: ease_in_out_quad((i) / segments, 0, 10, 1)
 		}
 		switch _branch_struct.subimage {
 			case 0:
