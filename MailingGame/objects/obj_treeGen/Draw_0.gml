@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 sway += 2;
 
 if (x > obj_cameraManager.camera_target - 620) && (x < obj_cameraManager.camera_target + 620) {

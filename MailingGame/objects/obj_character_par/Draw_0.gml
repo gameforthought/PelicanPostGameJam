@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+if (x > obj_cameraManager.camera_target - 620) && (x < obj_cameraManager.camera_target + 620) {
 //draw arms
 draw_sprite_ext(sprite, 1, x + shoulder_width, 256 - 32 - shoulder_height, 1, -1, (-2 * cos(speed_mod * anim_speed * char_anim)), c_white, 1);
 draw_sprite_ext(sprite, 1, x - shoulder_width, 256 - 32 - shoulder_height, -1, -1, (+2 * cos(speed_mod * anim_speed * char_anim)), c_white, 1);
@@ -55,4 +55,5 @@ switch emotion {
 	case "sleepy":
 		draw_sprite_ext(spr_sleepy, 0, x + cos((-3 * pi) / 4) * (face_radius + emote_anim_state * 2), 256 - 32 - face_y + (sin((-3 * pi) / 4) * face_radius), 1 + emote_anim_state * 0.25, 1 + emote_anim_state * 0.25, 20, c_white, 1);
 	break;
+}
 }
