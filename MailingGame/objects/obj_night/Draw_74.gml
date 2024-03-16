@@ -26,8 +26,13 @@ surface_reset_target();
 
 
 shader_set(shader);
+if room = demo_room {
 	shader_set_uniform_f_array(u_col, color_mix);
 	shader_set_uniform_f_array(u_con_sat_brt, con_sat_brt_mix);
+} else {
+	shader_set_uniform_f_array(u_col, [128/255, 128/255, 128/255]);
+	shader_set_uniform_f_array(u_con_sat_brt, [1, 1, 0, 0, 1]);
+}
 	texture_set_stage(s_lights, tex_lights);
 	var scale = 1;
 	surface_set_target(app_surf);

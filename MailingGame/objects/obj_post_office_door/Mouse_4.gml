@@ -5,4 +5,7 @@
 
 //load_story("Susan");
 
-
+if indicator = true && open = false && instance_exists(obj_playerChar) {
+	alarm[0] = 16;
+	open = true;
+}

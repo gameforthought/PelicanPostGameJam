@@ -198,6 +198,7 @@
     {"$GMRAssetLayer":"","%Name":"house_black","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_730977B8","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_730977B8","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.25,"scaleY":1.5,"spriteId":{"name":"spr_house_black","path":"sprites/spr_house_black/spr_house_black.yy",},"x":3696.0,"y":112.0,},
         {"$GMRSpriteGraphic":"","%Name":"graphic_6D8B6853","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_6D8B6853","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.25,"scaleY":1.5,"spriteId":{"name":"spr_house_black","path":"sprites/spr_house_black/spr_house_black.yy",},"x":7360.0,"y":112.0,},
+        {"$GMRSpriteGraphic":"","%Name":"graphic_29DAF6B8","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_29DAF6B8","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.25,"scaleY":1.5,"spriteId":{"name":"spr_house_black","path":"sprites/spr_house_black/spr_house_black.yy",},"x":368.0,"y":128.0,},
       ],"depth":1800,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"house_black","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"train_station","depth":1900,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_28578283","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_28578283","objectId":{"name":"obj_train_station","path":"objects/obj_train_station/obj_train_station.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":240.0,},
@@ -300,7 +301,7 @@
   "roomSettings":{
     "Height":256,
     "inheritRoomSettings":false,
-    "persistent":false,
+    "persistent":true,
     "Width":7850,
   },
   "sequenceId":null,

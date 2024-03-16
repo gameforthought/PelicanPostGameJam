@@ -12,5 +12,6 @@ step = 0;
 sprite = spr_post_office_door;
 color = #d9c498;
 
+story = -1;
 character = -1;
 

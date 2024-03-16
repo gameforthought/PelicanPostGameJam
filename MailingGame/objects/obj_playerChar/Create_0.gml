@@ -4,8 +4,15 @@
 hspd = 0;
 hspd_prev = 0;
 
-road_start = 210;
-road_end = room_width;
+if room = demo_room {
+	road_start = 210;
+	road_end = room_width;
+}
+
+if room = post_office {
+	road_start = 58;
+	road_end = room_width - 60;
+}
 
 yspd = 0;
 
@@ -15,7 +22,11 @@ if instance_exists(obj_truck) = true {
 	obj_truck.dismount_anim = true;
 	
 } else {
-	image_xscale = 1;
+	if room = demo_room {
+		image_xscale = 1;
+	} else {
+		image_xscale = -1;
+	}
 }
 
 

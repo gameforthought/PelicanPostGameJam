@@ -16,13 +16,19 @@ draw_surface_ext(_surf, 0, 0, windowScale, windowScale, 0, c_white, 1);
 
 surface_free(_surf);
 
-if grow = true && radius > 240 {
-	show_debug_message("bingo")
+if grow = true && radius >= 80 {
+	global.pause = 0;
+}
+
+if grow = true && radius >= 240 {
 	instance_destroy();	
 }
-if grow = false && radius < 0 {
-	if next_room != -1 {
-		room_goto(next_room);	
+if grow = false && radius <= 0 {
+	global.pause = 0;
+	if grow_amount != 0 {
+		alarm[0] = 8;
+		grow_amount = 0;
 	}
-	instance_destroy();	
+	
+	
 }

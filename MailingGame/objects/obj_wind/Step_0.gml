@@ -11,9 +11,6 @@ wind = sin(wind_level * wind_step);
 
 global.wind = EaseInBack(wind, 0, 1, 1);
 
-if global.wind > 0 {
-	show_debug_message(string(global.wind))	
-}
 
 if wind < 0 {
 	windy = false;

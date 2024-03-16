@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if room = demo_room {
+
 if instance_exists(obj_textbox) {
 if instance_exists(obj_playerChar) {
 	dir = obj_playerChar.image_xscale;	
@@ -34,11 +36,17 @@ if instance_exists(obj_playerChar) {
 	move_towards_point(camera_target, y, 0.9 * (obj_truck.hspd * sign(obj_truck.image_xscale)) + (point_distance(camera_target, y, x, y)) / 80);
 }
 
+if room = demo_room {
+	camera_target = clamp(camera_target, 130, 7850);
+	//show_debug_message(string(room_width));
+}
 
 
-camera_set_view_pos(camera, x - (camera_get_view_width(camera) / 2), 0);
+
+camera_set_view_pos(camera, clamp(x - (camera_get_view_width(camera) / 2), -100, room_width - 200), 0);
 
 if speed < 0.1 {
 	speed = 0;	
 }
 
+}
