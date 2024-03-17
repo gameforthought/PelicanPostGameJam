@@ -3,6 +3,8 @@
 
 if start_shift = 1 {
 	shift_step += 1;
+} else {
+	global.pause = 1;
 }
 
 shift = EaseInOutBack(shift_step, 0, 300, 60);

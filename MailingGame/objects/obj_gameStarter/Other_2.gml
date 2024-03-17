@@ -4,6 +4,8 @@
 randomSeed = irandom(2000);
 random_set_seed(randomSeed);
 
+//show_debug_overlay(true);
+
 
 
 

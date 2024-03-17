@@ -16,6 +16,7 @@
     {"name":"inst_142F1DC1","path":"rooms/post_office/post_office.yy",},
     {"name":"inst_28BE2CA7","path":"rooms/post_office/post_office.yy",},
     {"name":"inst_1B3EBDF8","path":"rooms/post_office/post_office.yy",},
+    {"name":"inst_7B4C5B69","path":"rooms/post_office/post_office.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -77,6 +78,7 @@
       ],"depth":900,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"furniture","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"pierre","depth":1000,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_1B3EBDF8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1B3EBDF8","objectId":{"name":"obj_post_office_clock","path":"objects/obj_post_office_clock/obj_post_office_clock.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":103.0,},
+        {"$GMRInstance":"","%Name":"inst_7B4C5B69","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7B4C5B69","objectId":{"name":"obj_pierre","path":"objects/obj_pierre/obj_pierre.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":224.0,},
       ],"layers":[],"name":"pierre","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"room_background","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_552DEC31","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_552DEC31","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_post_office_interior","path":"sprites/spr_post_office_interior/spr_post_office_interior.yy",},"x":16.0,"y":224.0,},

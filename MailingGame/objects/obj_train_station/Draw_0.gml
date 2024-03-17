@@ -3,7 +3,7 @@
 
 if id = station0 {
 for (var i = station0.x; i < station1.x; i += 48) {
-	if (i > obj_cameraManager.camera_target - 360) && (i < obj_cameraManager.camera_target + 360) {
+	if (i > obj_cameraManager.camera_target - 380) && (i < obj_cameraManager.camera_target + 380) {
 		draw_sprite(spr_train_tracks, 0, i, 180);
 	}
 }

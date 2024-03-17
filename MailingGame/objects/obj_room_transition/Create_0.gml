@@ -15,7 +15,7 @@ if player = false {
 	circle_y = 128;
 } else {
 	circle_x = obj_playerChar.x - camera_get_view_x(view_camera[0]);
-	circle_y = obj_playerChar.y - 60;
+	circle_y = obj_playerChar.y - 50;
 }
 
 if grow = true {

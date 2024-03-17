@@ -7,7 +7,7 @@ function next_line(){
 		text_to_display = ink_continue();
 		
 		var tag_count = ink_tag_count();
-		show_debug_message("Tag count: " + string(tag_count));
+		//show_debug_message("Tag count: " + string(tag_count));
 		if (tag_count > 0){
 			emotion_tag = ink_get_tag(1);
 			name_tag = ink_get_tag(0);

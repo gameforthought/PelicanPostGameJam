@@ -14,7 +14,7 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"5a65ffc9-c9c7-435f-8dd6-d27a5698017f","name":"5a65ffc9-c9c7-435f-8dd6-d27a5698017f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"c397e65c-1ee9-4ecf-a4b7-a107328af179","name":"c397e65c-1ee9-4ecf-a4b7-a107328af179","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"7bbbe820-5a98-4806-ba79-af1e2a7cba7a","name":"7bbbe820-5a98-4806-ba79-af1e2a7cba7a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a2f84773-f5e6-4a2e-b069-c6d69332c8bb","name":"a2f84773-f5e6-4a2e-b069-c6d69332c8bb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -77,8 +77,8 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c397e65c-1ee9-4ecf-a4b7-a107328af179","path":"sprites/spr_post_office_interior/spr_post_office_interior.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"0150ca47-777a-4741-a824-8b8be84e32dd","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7bbbe820-5a98-4806-ba79-af1e2a7cba7a","path":"sprites/spr_post_office_interior/spr_post_office_interior.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"30ed1678-95b5-45be-b554-0d99d8841506","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a2f84773-f5e6-4a2e-b069-c6d69332c8bb","path":"sprites/spr_post_office_interior/spr_post_office_interior.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"55eff96a-d85b-4340-be7f-5db64630c11d","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

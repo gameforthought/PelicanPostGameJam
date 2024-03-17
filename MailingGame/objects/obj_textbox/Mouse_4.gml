@@ -22,10 +22,9 @@ if (ink_can_continue()){
 	forward = false;
 }
 else {
-	obj_timeTracker.day_progress += 1;
-	obj_door.open = false;
-	global.pause = 0;
-	instance_destroy();
+	
+	up = false;
+	
 }
 
 }

@@ -158,3 +158,26 @@ if walk = true && jump = false {
 swing_num += 0.5 + 0.4 * abs(hspd);
 
 swing = swing_width * sin(0.1 * swing_num);
+
+
+// emotion drawer
+
+y_scale = 1 - (0.02 * cos(0.1 * char_anim));
+if instance_exists(obj_textbox) {
+	if emotion_drawer = -1 {
+		var _struct = {
+			parent: id,	
+			eye_y: -4,
+		}
+		emotion_drawer = instance_create_depth(x, y, layer_get_depth(layer) - 1, obj_prof_char_emote, _struct);	
+	}
+} else {
+	if emotion_drawer != -1 {
+		instance_destroy(emotion_drawer);
+		emotion_drawer = -1;
+	}
+}
+
+if emotion_drawer != -1 {
+	blink = 2;
+}

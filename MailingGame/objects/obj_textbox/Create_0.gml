@@ -26,6 +26,11 @@ color = c_red;
 char_x = 0;
 bounce = 0;
 step = 0;
+hover = 0;
+
+y_anim = 255;
+up = true;
+y_step = 45;
 
 
 

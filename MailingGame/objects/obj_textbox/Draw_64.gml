@@ -4,11 +4,11 @@
 //color the nametag
 draw_set_color(color);
 //draw_rectangle((xpos + 24) * windowScale, 17 * windowScale, (xpos + 103) * windowScale, 48 * windowScale, false)
-draw_sprite_ext(asset_get_index("spr_" + string_lower(name_tag) + "_nt"), 0, (xpos + 24) * windowScale, 17 * windowScale, windowScale, windowScale, 0, c_white, 1);
+draw_sprite_ext(asset_get_index("spr_" + string_lower(name_tag) + "_nt"), 0, (xpos + 24) * windowScale, (y_anim + 17) * windowScale, windowScale, windowScale, 0, c_white, 1);
 
 
 //draw the textbox
-draw_sprite_ext(spr_textbox_test,0, xpos * windowScale, 0, windowScale, windowScale, 0, c_white, 1);
+draw_sprite_ext(spr_textbox_test,0, xpos * windowScale, y_anim * windowScale, windowScale, windowScale, 0, c_white, 1);
 
 //set the color
 draw_set_color(c_black);
@@ -16,7 +16,7 @@ draw_set_color(c_black);
 //draw the text
 draw_set_font(ft_gui);
 
-richtext.draw((xpos + 33) * windowScale, 68 * windowScale, typewriter);
+richtext.draw((xpos + 33) * windowScale, (y_anim + 68) * windowScale, typewriter);
 //draw_text_ext((xpos + 33) * windowScale, 68 * windowScale, text_to_display, line_height - 5, box_width * windowScale);
 
 
@@ -35,8 +35,8 @@ var vy = camera_get_view_y(view_camera[0]);
 draw_set_color(color);
 //draw button
 //if forward = true {
-	draw_rectangle((xpos + 140 - 14) * windowScale, 224 * windowScale, (xpos + 140 + 14) * windowScale, (228 - 29) * windowScale, false)
-	draw_sprite_ext(spr_next_bt, 0, (xpos + 140) * windowScale, 225 * windowScale, windowScale, windowScale, 0, c_white, 1);
+	draw_rectangle((xpos + 140 - 13) * windowScale, (y_anim + 224) * windowScale, (xpos + 140 + 14) * windowScale, (y_anim + 228 - 29) * windowScale, false)
+	draw_sprite_ext(spr_next_bt, 0, (xpos + 140) * windowScale, (y_anim + 225) * windowScale, windowScale, windowScale, hover, c_white, 1);
 //}
 
 //draw character speech indicator

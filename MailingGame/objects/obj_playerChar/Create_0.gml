@@ -43,5 +43,8 @@ swing_num = 0;
 swing = 0;
 swing_width = 10;
 
+emotion_drawer = -1;
+y_scale = 1;
+
 
 
