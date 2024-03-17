@@ -85,6 +85,7 @@
     {"name":"obj_prof_char_emote","order":30,"path":"objects/obj_prof_char_emote/obj_prof_char_emote.yy",},
     {"name":"obj_room_transition","order":28,"path":"objects/obj_room_transition/obj_room_transition.yy",},
     {"name":"obj_sidewalkGenerator","order":2,"path":"objects/obj_sidewalkGenerator/obj_sidewalkGenerator.yy",},
+    {"name":"obj_studio_logo","order":1,"path":"objects/obj_studio_logo/obj_studio_logo.yy",},
     {"name":"obj_suzannah_door","order":1,"path":"objects/obj_suzannah_door/obj_suzannah_door.yy",},
     {"name":"obj_test_light","order":1,"path":"objects/obj_test_light/obj_test_light.yy",},
     {"name":"obj_text_button_par","order":10,"path":"objects/obj_text_button_par/obj_text_button_par.yy",},
@@ -270,5 +271,6 @@
     {"name":"spr_what","order":7,"path":"sprites/spr_what/spr_what.yy",},
     {"name":"spr_wheel","order":1,"path":"sprites/spr_wheel/spr_wheel.yy",},
     {"name":"spr_wind_leaf","order":4,"path":"sprites/spr_wind_leaf/spr_wind_leaf.yy",},
+    {"name":"spr_studio_logo","order":14,"path":"sprites/spr_studio_logo/spr_studio_logo.yy",},
   ],
 }

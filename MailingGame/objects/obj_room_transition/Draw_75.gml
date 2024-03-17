@@ -24,7 +24,7 @@ if grow = true && radius >= 240 {
 	instance_destroy();	
 }
 if grow = false && radius <= 0 {
-	global.pause = 0;
+	
 	if grow_amount != 0 {
 		alarm[0] = 8;
 		grow_amount = 0;

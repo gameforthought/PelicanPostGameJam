@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+obj_clock.clock_vis = false;
+
 if start_shift = 1 {
 	shift_step += 1;
 } else {
