@@ -26,7 +26,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"ink_file_name","filters":[],"listItems":[],"multiselect":false,"name":"ink_file_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"galeTest.json\"","varType":2,},
+    {"$GMObjectProperty":"","%Name":"ink_file_name","filters":[],"listItems":[],"multiselect":false,"name":"ink_file_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"demo_dialogue.json\"","varType":2,},
     {"$GMObjectProperty":"","%Name":"dialogue_character","filters":[],"listItems":[],"multiselect":false,"name":"dialogue_character","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":2,},
     {"$GMObjectProperty":"","%Name":"gnome_count","filters":[],"listItems":[],"multiselect":false,"name":"gnome_count","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
