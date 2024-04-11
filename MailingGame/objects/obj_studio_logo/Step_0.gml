@@ -13,4 +13,6 @@ if logo_alpha = 0 && alpha_change = -0.01 {
 	alpha_change = 0;
 }
 
+if instance_exists(obj_clock) {
 obj_clock.clock_vis = false;
+}

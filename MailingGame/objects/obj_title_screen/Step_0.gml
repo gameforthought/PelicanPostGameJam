@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+if instance_exists(obj_clock) {
 obj_clock.clock_vis = false;
+}
 
 if start_shift = 1 {
 	shift_step += 1;

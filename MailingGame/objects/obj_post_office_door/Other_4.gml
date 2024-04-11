@@ -3,7 +3,9 @@
   var _transition = {}
   
  if open = true {
-	 obj_playerChar.x = x;
+	 if !instance_exists(obj_studio_logo) {
+		obj_playerChar.x = x;
+	 }
   _transition = {
 	player: true,	 
  }

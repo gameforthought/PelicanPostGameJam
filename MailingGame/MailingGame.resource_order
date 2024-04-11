@@ -253,6 +253,7 @@
     {"name":"spr_small_rock","order":1,"path":"sprites/spr_small_rock/spr_small_rock.yy",},
     {"name":"spr_speaker","order":12,"path":"sprites/spr_speaker/spr_speaker.yy",},
     {"name":"spr_speedlines","order":15,"path":"sprites/spr_speedlines/spr_speedlines.yy",},
+    {"name":"spr_studio_logo","order":14,"path":"sprites/spr_studio_logo/spr_studio_logo.yy",},
     {"name":"spr_surprise","order":2,"path":"sprites/spr_surprise/spr_surprise.yy",},
     {"name":"spr_suzannah_door","order":2,"path":"sprites/spr_suzannah_door/spr_suzannah_door.yy",},
     {"name":"spr_suzannah_nt","order":1,"path":"sprites/spr_suzannah_nt/spr_suzannah_nt.yy",},
@@ -271,6 +272,5 @@
     {"name":"spr_what","order":7,"path":"sprites/spr_what/spr_what.yy",},
     {"name":"spr_wheel","order":1,"path":"sprites/spr_wheel/spr_wheel.yy",},
     {"name":"spr_wind_leaf","order":4,"path":"sprites/spr_wind_leaf/spr_wind_leaf.yy",},
-    {"name":"spr_studio_logo","order":14,"path":"sprites/spr_studio_logo/spr_studio_logo.yy",},
   ],
 }
