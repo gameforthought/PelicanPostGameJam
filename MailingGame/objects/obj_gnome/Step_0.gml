@@ -9,6 +9,7 @@ if image_alpha <= 0 {
 	show_debug_message("gnomed")
 	if obj_inventory.inventory[0] = -1 {
 		obj_inventory.inventory[0] = {
+			key: "gnome1",
 			subimage: 2,
 			to: "???",
 			from: "???",
@@ -16,6 +17,7 @@ if image_alpha <= 0 {
 		};
 	} else {
 		obj_inventory.inventory[1] = {
+			key: "gnome1",
 			subimage: 2,
 			to: "???",
 			from: "???",

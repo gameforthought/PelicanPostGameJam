@@ -7,6 +7,7 @@ inventory = array_create(INVENTORY_SLOTS, -1);
 
 
 inventory[0] = {
+	key: "Bea1",
 	subimage: 0,
 	to: "Beatrice",
 	from: "UC Books",
