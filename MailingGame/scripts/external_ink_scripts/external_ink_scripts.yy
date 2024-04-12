@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"external_ink_scripts",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"external_ink_scripts",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -41,8 +41,9 @@ function __scribble_config_colours()
         c_amaranth:   scribble_rgb_to_bgr(0xe52b50),
 		
 		//Pelican Post Colors
-		c_pp_red: #ca4d35,
-		c_pp_blue: #5a7fc8,
+		c_suzannah: #ca4d35,
+		c_pepper: #5a7fc8,
+		c_beatrice: #5a4a42,
     };
     
     return _colours;

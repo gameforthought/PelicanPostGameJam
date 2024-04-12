@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-open = false;
-door_stage = 48;
+open = true;
+door_stage = 0;
 door_speed = 1.5;
 
 indicator = false;

@@ -16,17 +16,16 @@ if room = post_office {
 
 yspd = 0;
 
-if instance_exists(obj_truck) = true {
-	image_xscale = obj_truck.image_xscale;
+if instance_exists(obj_truck) = true {	
 	obj_truck.alarm[0] = 20;
 	obj_truck.dismount_anim = true;
 	
+}
+
+if variable_instance_exists(id, "start_orient") {
+	image_xscale = start_orient;	
 } else {
-	if room = demo_room {
-		image_xscale = 1;
-	} else {
-		image_xscale = -1;
-	}
+	image_xscale = -1;	
 }
 
 

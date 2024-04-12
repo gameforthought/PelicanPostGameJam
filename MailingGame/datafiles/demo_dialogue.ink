@@ -14,6 +14,12 @@ sigh
 laugh
 */
 
+EXTERNAL give_item(knot_key, type, to_name, from_name, description)
+EXTERNAL remove_item(knot_key)
+EXTERNAL door_set_knot(door, knot_key)
+
+EXTERNAL test_func()
+
 VAR character = "bea1"
 VAR gnome_count = 0
 INCLUDE char_test.ink
@@ -25,12 +31,18 @@ INCLUDE char_test.ink
 
 ->beaTest
 
+===function test_func()===
+~ return 0
+
 === bea1 ===
+~ test_func()
 Oh dear, being nocturnal is not fun with a day job... #Beatrice #sleepy #open
 
+~ test_func()
 O-Oh my!  A new face!  We haven't had one of those in a while! #Beatrice #surprised
 
 Apologies, dear. #Beatrice #blush
+~ test_func()
 
 I'm Beatrice, the town librarian.  It's nice to meet you! #Beatrice #happy
 
@@ -73,6 +85,7 @@ She's what most would call a hermit. #Beatrice #sad
 She wasn't always that way... but now she barely comes to town, if ever. #Beatrice #sad
 
 I haven't gotten to check on her in a while.  Could you take this letter to her? #Beatrice #neutral
+~ give_item("gnome1", "letter", "Suz", "Bea", "Test Desc")  
 
 Oh, of course! #Pepper #neutral
 

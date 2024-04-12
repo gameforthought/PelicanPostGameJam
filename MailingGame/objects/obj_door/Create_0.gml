@@ -5,6 +5,8 @@ open = false;
 door_stage = 48;
 door_speed = 1.5;
 
+
+
 knock_amount = 0;
 
 indicator = false;
