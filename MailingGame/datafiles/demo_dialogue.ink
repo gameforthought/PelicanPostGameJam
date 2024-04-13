@@ -320,7 +320,7 @@ Sounds good, thank you! #Pepper #happy
 
 No problem.  Off you go now, good luck today! #Pierre #happy
 
-Actually, Pepper, one last thing before you go #Pierre #neutral
+Actually, [c_pepper]Pepper[/], one last thing before you go #Pierre #neutral
 
 Hmm?  #Pepper #neutral
 
