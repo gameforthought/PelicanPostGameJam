@@ -380,7 +380,9 @@ As stoic and abraisive as she can be sometimes, [c_suzannah]Suzannah[/]'s got a 
 
 Makes sense.  #Pepper #neutral
 
-Anyways, after that, I stopped back at the library to let [c_beatrice]Beatrice[/] know that I had delivered the letter, and we talked a bit about this party she used to throw for the townspeople.  #Pepper #neutral
+Anyways, after that, I stopped back at the library to let [c_beatrice]Beatrice[/] know that I had delivered the letter. #Pepper #neutral
+
+We talked a bit about this party she used to throw for the townspeople.  #Pepper #neutral
 
 I remember going to that once or twice.  It's a shame it fell through. #Pierre #sigh
 
@@ -394,7 +396,9 @@ I've known you for all of one day, if that.  And I can already tell you have a g
 
 And, being a mailman, you tend to make your way around town and you'll find yourself in the know with everyone and everything soon enough.  #Pierre #neutral
 
-I think that's a pretty good pathway to being able to help bring people back together. Besides, sSmall acts of kindness" is pretty much in the job description.  #Pierre #neutral
+I think that's a pretty good pathway to being able to help bring people back together. #Pierre #neutral
+
+Besides, Small acts of kindness" is pretty much in the job description.  #Pierre #neutral
 
 Thanks, [c_pierre]Pierre[/].  I'll keep doing my best.  #Pepper #happy
 
