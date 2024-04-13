@@ -2,8 +2,8 @@
 // You can write your code in this editor
 show_debug_message("new manager")
 
-ink_load(working_directory + ink_file_name);
-
+//ink_load(working_directory + ink_file_name);
+ink_load(working_directory + "demo_dialogue.json");
 
 
 scribble_typists_add_event("door_set_knot", door_set_knot);

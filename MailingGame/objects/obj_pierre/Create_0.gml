@@ -13,6 +13,7 @@
 //7: smile
 //8: wide mouth
 //9: frown
+global.pause = 0;
 sprite = spr_pierre;
 anim_speed = 0.05;
 shoulder_width = 16;

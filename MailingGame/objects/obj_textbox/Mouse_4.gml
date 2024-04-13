@@ -19,6 +19,8 @@ if (ink_can_continue()){
 	richtext.line_height(-1, string_height(text_to_display) - 5);
 	typewriter = scribble_typist();
 	typewriter.in(type_speed, 0);
+	pitch = 1;
+	typewriter.sound_per_char([sd_type], pitch - 0.1, pitch + 0.1, " !.,?-;:()");
 	forward = false;
 }
 else {

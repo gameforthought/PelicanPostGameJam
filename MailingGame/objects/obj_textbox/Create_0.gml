@@ -17,6 +17,9 @@ richtext.line_height(-1, string_height(text_to_display) - 5);
 typewriter = scribble_typist();
 typewriter.in(type_speed, 0);
 
+pitch = 1;
+typewriter.sound_per_char([sd_type], pitch - 0.1, pitch + 0.1, " !.,?-;:()");
+
 def = 0;
 
 //alarm[0] = string_length(text_to_display) * 1.2;
@@ -41,6 +44,10 @@ if instance_exists(obj_playerChar) {
 	dir = obj_playerChar.image_xscale;	
 } else {
 	dir = obj_truck.image_xscale;	
+}
+
+if room = post_office {
+	dir = 1;	
 }
 
 //turn direction into textbox position

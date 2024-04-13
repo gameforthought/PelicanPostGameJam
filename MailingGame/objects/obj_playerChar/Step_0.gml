@@ -77,6 +77,7 @@ if ((keyboard_check_pressed(vk_up)) || (keyboard_check_pressed(ord("W")))) {
 	if (place_meeting(x, y, obj_colliderbox)) {
 		yspd = -1 * jump_height;
 		jump = true;
+		audio_play_sound(sd_jump,0,false);
 		for (var i = 0; i < 15; i += 1) {
 			if jump = true {
 				instance_create_layer(x - (image_xscale * irandom_range(-20, 30)), y + irandom_range(0, -6), "dust", obj_grounddust);

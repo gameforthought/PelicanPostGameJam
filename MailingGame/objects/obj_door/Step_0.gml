@@ -2,11 +2,17 @@
 // You can write your code in this editor
 
 if open = true {
-	door_stage -= door_speed;	
+	door_stage -= door_speed;
+	
 } else {
 	door_stage += door_speed;	
 }
 
+if door_stage > 20 && door_stage < 28 {
+if !audio_is_playing(sd_door_open) && global.intro = false && room = demo_room {
+	audio_play_sound(sd_door_open, 0, false);	
+}	
+}
 door_stage = clamp(door_stage, 0, 48);
 
 
@@ -25,9 +31,21 @@ step += 0.1;
 
 if character != -1 {
 if instance_exists(obj_textbox) {
-character.emotion = obj_textbox.emotion_tag;
+
+if obj_textbox.name_tag = "Pepper" {
+	if obj_playerChar.emotion_drawer != -1 {
+	obj_playerChar.emotion_drawer.emotion = obj_textbox.emotion_tag;
+	}
+	character.emotion = "neutral";
+} else {
+	character.emotion = obj_textbox.emotion_tag;
+	if obj_playerChar.emotion_drawer != -1 {
+	obj_playerChar.emotion_drawer.emotion = "neutral"
+	}
+}
 }
 else {
+	
 	character.emotion = "neutral";
 }
 }

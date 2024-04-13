@@ -13,7 +13,9 @@ step = 0;
 knock_time = 0;
 hearing = 100;
 
-story = "bea1";
+if global.intro = true {
+	story = "pie1";
+}
 character = obj_pierre.emotion_drawer;
 
 image_alpha = 0;

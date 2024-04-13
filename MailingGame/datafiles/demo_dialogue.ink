@@ -54,13 +54,8 @@ VAR character = "bea1"
 
 ->start
 === start ===
-{ character:
-- "suz1": ->suz1
-- "bea1": ->bea1
-- "bea2": ->bea2
-- "cly1": ->cly1
-- "pie1": ->pie1
-}
+
+->pie1
 
 
 === bea1 ===
@@ -74,7 +69,7 @@ I'm [c_beatrice]Beatrice[/], the town librarian.  It's nice to meet you! #Beatri
 
 Who might you be? #Beatrice #neutral
 
-I'm Pepper, the new mailman.  It's nice to meet you too! #Pepper #neutral
+I'm [c_pepper]Pepper[/c], the new mailman.  It's nice to meet you too! #Pepper #neutral
 
 Ooooh, a mailman!  How nice!  We haven't had one of those in a while! #Beatrice #neutral
 
@@ -92,7 +87,7 @@ Anyways, sorry for rambling at you.  Can I help you? #Beatrice #neutral
 
 Yes, actually I have a package for you. #Pepper #neutral
 
-Oh, silly me, of course that's why you're here!  Thank you, dear! #Beatrice #laugh
+Oh, silly me, of course that's why you're here!  Thank you, dear![remove_item,Bea1] #Beatrice #laugh
 
 Of course! #Pepper #happy
 
@@ -110,13 +105,13 @@ She's what most would call a hermit. #Beatrice #sad
 
 She wasn't always that way... but now she barely comes to town, if ever. #Beatrice #sad
 
-I haven't gotten to check on her in a while.  Could you take this letter to her? #Beatrice #neutral
+I haven't gotten to check on her in a while.  Could you take this letter to her? [give_item,Suz1,letter,Suzannah,Beatrice,A letter addressed in a curly script][door_set_knot,obj_suzannah_door,suz1] #Beatrice #neutral
 
 Oh, of course! #Pepper #neutral
 
 Wonderful!  Thank you so much! #Beatrice #happy
 
-If you go to the right past this library, all the way past [c_location]Shoreside Station[/] on the far edge of town you'll come to a beach.  #Beatrice #neutral
+If you go to the right past this library, all the way past Shoreside Station on the far edge of town you'll come to a beach.  #Beatrice #neutral
 
 That's where her house is! #Beatrice #neutral
 
@@ -141,7 +136,7 @@ Can't say I recognize that voice.  Who are you? #Suzannah #neutral
 
 I'm [c_pepper]Pepper[/], the new mailman.  I have a delivery for you.  It's a letter. #Pepper #neutral
 
-...a letter? #Suzannah #neutral #open
+...a letter?[remove_item,Suz1] #Suzannah #neutral #open
 
 ... #Suzannah #neutral
 
@@ -153,7 +148,7 @@ So she put you up to this?  Then tell her I don't need her concern. #Suzannah #n
 
 ... #Suzannah #neutral
 
-Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And try not to trip on the rocks. #Suzannah #neutral
+Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And try not to trip on the rocks. [door_set_knot,obj_beatrice_door,bea2] #Suzannah #neutral
 
 Of course, take care! #Pepper #neutral
 
@@ -179,7 +174,7 @@ Yeah, but she wasn't too pleased to read who the note was from.  #Pepper #sad
 
 So what's this party she mentioned? #Pepper #neutral
 
-Well, dear, every year I like to throw a little part for everyone in town. #Beatrice #neutral
+Well, dear, every year I like to throw a little party for everyone in town. #Beatrice #neutral
 
 Or I used to, anyway, back when people would show up #Beatrice #sad 
 
@@ -193,11 +188,11 @@ Now I can't seem to get anyone to bother coming. #Beatrice #sad
 
 Maybe I could help you with that?  I am a mailman after all... #Pepper #neutral
 
-Oh, Pepper, dear, that'd be so wonderful!  #Beatrice #happy
+Oh, [c_pepper]Pepper[/c], dear, that'd be so wonderful!  #Beatrice #happy
 
 I'd be happy to!  It's getting late for me though, good night!  #Pepper #neutral
 
-Good night Pepper, thank you so much for your help today!  #Beatrice #happy
+Good night [c_pepper]Pepper[/c], thank you so much for your help today!  #Beatrice #happy
 
 ->DONE
 
@@ -318,13 +313,15 @@ I'm [c_pierre]Pierre[/].  Welcome to Port Pleasant!  How was the move? #Pierre #
 
 It went well!  I'm excited to get to see more of the town. #Pepper #happy
 
-Glad to hear!  You'll be getting to do plenty of that soon enough.  Anyways, let me give you the run down on what you'll be doing here. #Pierre #neutral
+Glad to hear!  You'll be getting to do plenty of that soon enough.  #Pierre #happy
+
+Anyways, let me give you the run down on what you'll be doing here. #Pierre #neutral
 
 Each morning, you'll come in here and get your packages for the day. #Pierre #neutral
 
 Seems like a light day today, so you shouldn't have too much trouble. #Pierre #neutral
 
-Oh, this is for [c_beatrice]Beatrice!  You'll find her at the library.  #Pierre #happy
+Oh, this is for [c_beatrice]Beatrice![/]  You'll find her at the library.  #Pierre #happy
 
 She's a sweetheart, if not a little... batty.  Heh. #Pierre #neutral
 
@@ -336,13 +333,17 @@ Now, for the delivery process.  When you arrive at a house, you'll knock on the 
 
 Once they answer the door, you'll hand the package to them.  #Pierre #neutral
 
-Sometimes, townspeople will have things they'll want you to deliver to other people.  You can feel free to take care of that while you're on the job. #Pierre #neutral
+Sometimes, townspeople will have things they'll want you to deliver to other people. #Pierre #neutral
+
+You can feel free to take care of that while you're on the job. #Pierre #neutral
 
 Anyways, I think that about covers it.  Simple enough? #Pierre #neutral
 
 Mhm! #Pepper #neutral
 
-You'll do just fine then!  You can always feel free to ask me for help if you get lost or forget where you're supposed to go. #Pierre #neutral
+You'll do just fine then!  #Pierre #neutral
+
+You can always feel free to ask me for help if you get lost or forget where you're supposed to go. #Pierre #neutral
 
 Sounds good, thank you! #Pepper #happy
 

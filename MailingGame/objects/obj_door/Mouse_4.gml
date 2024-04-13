@@ -9,6 +9,11 @@ if indicator = true && instance_exists(obj_textbox) = false {
 //		open = false;
 //	}
 	
+	if room = demo_room {
+	audio_play_sound(sd_knock, 0, false);
+	
+	}
+	
 	if alarm[0] = -1 {
 		alarm[0] = knock_time;
 	} else if alarm[0] > 20 {
