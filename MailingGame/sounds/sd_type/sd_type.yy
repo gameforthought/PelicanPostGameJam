@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.109375,
+  "duration":0.042625,
   "name":"sd_type",
   "parent":{
     "name":"voice",
