@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+show_debug_message("textbox")
 image_alpha = 0;
 windowScale = window_get_height() / room_height;
 

@@ -14,11 +14,44 @@ sigh
 laugh
 */
 
-EXTERNAL give_item(knot_key, type, to_name, from_name, description)
-EXTERNAL remove_item(knot_key)
-EXTERNAL door_set_knot(door, knot_key)
+/* SCRIBBLE FUNCTIONS AND FORMATTING
 
-EXTERNAL test_func()
+[/] resets formatting to default, but more specific end tags for each effect are also listed
+
+Animations and Effects:
+[wave][/wave]
+[wheel][/wheel]
+[shake][/shake]
+[slant][/slant]
+
+Colors:
+[{color var name}][/c]
+c_pepper
+c_beatrice
+c_suzannah
+
+Functions:
+[delay {number of milliseconds}]
+
+DO NOT INCLUDE SPACES OR QUOTES IN THE FOLLOWING FUNCTIONS UNLESS YOU WANT THEM TO SHOW UP
+
+Creates an item and puts it in the player's inventory
+[give_item,{associated knot},{letter or package},{to},{from},{description}]
+
+Removes an item from the player's inventory
+[remove_item,{associated knot}]
+
+Loads a coversation into the specified door
+[door_set_knot,{door name},{knot name}]
+
+List of doors:
+obj_beatrice_door
+obj_suzannah_door
+
+*/
+
+
+
 
 VAR character = "bea1"
 VAR gnome_count = 0
@@ -34,14 +67,11 @@ INCLUDE char_test.ink
 
 
 === bea1 ===
-~ test_func()
 Oh dear, being nocturnal is not fun with a day job... #Beatrice #sleepy #open
 
-~ test_func()
 O-Oh my!  A new face!  We haven't had one of those in a while! #Beatrice #surprised
 
 Apologies, dear. #Beatrice #blush
-~ test_func()
 
 I'm Beatrice, the town librarian.  It's nice to meet you! #Beatrice #happy
 
@@ -65,7 +95,7 @@ Anyways, sorry for rambling at you.  Can I help you? #Beatrice #neutral
 
 Yes, actually I have a package for you. #Pepper #neutral
 
-Oh, silly me, of course that's why you're here!  Thank you, dear! #Beatrice #laugh
+Oh, silly me, of course that's why you're here!  Thank you, dear! [remove_item,Bea1] #Beatrice #laugh
 
 Of course! #Pepper #neutral
 
@@ -83,8 +113,7 @@ She's what most would call a hermit. #Beatrice #sad
 
 She wasn't always that way... but now she barely comes to town, if ever. #Beatrice #sad
 
-I haven't gotten to check on her in a while.  Could you take this letter to her? #Beatrice #neutral
-~ give_item("gnome1", "letter", "Suz", "Bea", "Test Desc")  
+I haven't gotten to check on her in a while.  Could you take this letter to her? [give_item,Suz1,letter,Suzannah,Beatrice,A letter addressed in a curly script][door_set_knot,obj_suzannah_door,suz1] #Beatrice #neutral
 
 Oh, of course! #Pepper #neutral
 
@@ -127,7 +156,7 @@ So she put you up to this?  Then tell her I don't need her concern. #Suzannah #n
 
 ... #Suzannah #neutral
 
-Thank you for bringing me this. Now off you go, back to Bea. And try not to trip on the rocks. #Suzannah #neutral
+Thank you for bringing me this. Now off you go, back to Bea. And try not to trip on the rocks.[door_set_knot,obj_beatrice_door,bea2] #Suzannah #neutral
 
 Of course, take care! #Pepper #neutral
 

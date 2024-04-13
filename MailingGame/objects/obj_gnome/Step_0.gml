@@ -7,22 +7,7 @@ if dissolve = true {
 
 if image_alpha <= 0 {
 	show_debug_message("gnomed")
-	if obj_inventory.inventory[0] = -1 {
-		obj_inventory.inventory[0] = {
-			key: "gnome1",
-			subimage: 2,
-			to: "???",
-			from: "???",
-			desc: "An omen of things to come",
-		};
-	} else {
-		obj_inventory.inventory[1] = {
-			key: "gnome1",
-			subimage: 2,
-			to: "???",
-			from: "???",
-			desc: "An omen of things to come",
-		};
-	}
+	give_item(-1,["Gnome1","gnome","???","???","An omen of things to come"],-1)
+	
 	instance_destroy();
 }

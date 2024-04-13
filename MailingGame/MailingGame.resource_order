@@ -193,7 +193,6 @@
     {"name":"scribble_typist","order":11,"path":"scripts/scribble_typist/scribble_typist.yy",},
     {"name":"scribble_typists_add_event","order":6,"path":"scripts/scribble_typists_add_event/scribble_typists_add_event.yy",},
     {"name":"scribble","order":10,"path":"scripts/scribble/scribble.yy",},
-    {"name":"test_func","order":5,"path":"scripts/test_func/test_func.yy",},
     {"name":"string_height_scribble_ext","order":3,"path":"scripts/string_height_scribble_ext/string_height_scribble_ext.yy",},
     {"name":"string_height_scribble","order":2,"path":"scripts/string_height_scribble/string_height_scribble.yy",},
     {"name":"string_length_scribble","order":4,"path":"scripts/string_length_scribble/string_length_scribble.yy",},
