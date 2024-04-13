@@ -5,6 +5,7 @@ inventory_drag = -1;
 slot_drag = -1;
 item_drag = -1;
 slot_select = -1;
+mouse_down = false;
 
 mouse_over = function(view_x, view_y)
 {
@@ -55,17 +56,35 @@ mouse_over = function(view_x, view_y)
 state_free = function(view_x, view_y)
 {
 	mouse_over(view_x, view_y);
-	//Start to drag an item if slot is not empty
-	//if (mouse_check_button(mb_left)) && (slot_hover	!= -1) && (inventory_hover.inventory[slot_hover] != -1)
-	//{
-	//	//enter drag state
-	//	state = state_drag;
-	//	item_drag = inventory_hover.inventory[slot_hover];
-	//	inventory_drag = inventory_hover;
-	//	slot_drag = slot_hover;
-	//}
-}
+	//Select an item if slot is not empty
+		if (mouse_check_button(mb_left)) && (slot_hover	!= -1) && (inventory_hover.inventory[slot_hover] != -1 && slot_hover == slot_select)
+	{
+		if(!mouse_down){
+			show_debug_message(string(slot_hover)+ " deselected");
+		//enter drag state
+		//state = slot_select;
+			slot_select = -1;
+			mouse_down = true;
+		}
+		//item_drag = inventory_hover.inventory[slot_hover];
+		//inventory_drag = inventory_hover;
+		//slot_drag = slot_hover;
+	}
+	else if (mouse_check_button(mb_left)) && (slot_hover	!= -1) && (inventory_hover.inventory[slot_hover] != -1)
+	{
+		if(!mouse_down){
+			show_debug_message(string(slot_hover)+ " selected");
+			slot_select = slot_hover;
+			mouse_down = true;
+		}
+	}
+	if(!mouse_check_button(mb_left)){
+		mouse_down = false;
+	}
+		
 
+}
+/*
 state_drag = function()
 {
 	mouse_over();
@@ -91,5 +110,8 @@ state_drag = function()
 		
 	}
 }
+*/
+
+
 
 state = state_free;

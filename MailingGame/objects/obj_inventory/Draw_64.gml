@@ -32,7 +32,7 @@ for (var i = 0; i < INVENTORY_SLOTS; i++)
 	
 	var display_info = false;
 	//Test Coordinates
-	if(hover){
+	if(hover or obj_mouse.slot_select == i){
 	//draw_set_color(#e6decf);
 	draw_sprite_ext(spr_inventory_select, 0, xx * windowScale, yy * windowScale, windowScale, windowScale, select_rotate, c_white, 1);
 	
