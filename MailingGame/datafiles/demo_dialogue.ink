@@ -320,5 +320,12 @@ Sounds good, thank you! #Pepper #happy
 
 No problem.  Off you go now, good luck today! #Pierre #happy
 
+Actually, Pepper, one last thing before you go #Pierre #neutral
+
+Hmm?  #Pepper #neutral
+
+Stop back here after you finish your deliveries tonight.  I want to hear about how it goes!  #Pierre #neutral
+
+Oh, sure thing!  See you then!  #Pepper #happy
 
 ->DONE
