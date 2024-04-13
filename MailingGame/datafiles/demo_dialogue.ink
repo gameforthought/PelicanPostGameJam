@@ -50,30 +50,27 @@ obj_suzannah_door
 
 */
 
-
-
-
 VAR character = "bea1"
-VAR gnome_count = 0
-INCLUDE char_test.ink
-
-
 
 ->start
 === start ===
-
-->beaTest
-
+{ character:
+- "suz1": ->suz1
+- "bea1": ->bea1
+- "bea2": ->bea2
+- "cly1": ->cly1
+- "pie1": ->pie1
+}
 
 
 === bea1 ===
-Oh dear, being nocturnal is not fun with a day job... #Beatrice #sleepy #open
+Oh dear, being nocturnal is [slant]not[/] fun with a day job... #Beatrice #sleepy #open
 
-O-Oh my!  A new face!  We haven't had one of those in a while! #Beatrice #surprised
+[wave]O-Oh my[/]!  A new face!  What a nice surprise! #Beatrice #surprised
 
 Apologies, dear. #Beatrice #blush
 
-I'm Beatrice, the town librarian.  It's nice to meet you! #Beatrice #happy
+I'm [c_beatrice]Beatrice[/], the town librarian.  It's nice to meet you! #Beatrice #happy
 
 Who might you be? #Beatrice #neutral
 
@@ -81,7 +78,7 @@ I'm Pepper, the new mailman.  It's nice to meet you too! #Pepper #neutral
 
 Ooooh, a mailman!  How nice!  We haven't had one of those in a while! #Beatrice #neutral
 
-You... you what? #Pepper #surprised
+You... you what? #Pepper #neutral
 
 We used to have Bill, but he retired a while back. #Beatrice #neutral
 
@@ -95,9 +92,9 @@ Anyways, sorry for rambling at you.  Can I help you? #Beatrice #neutral
 
 Yes, actually I have a package for you. #Pepper #neutral
 
-Oh, silly me, of course that's why you're here!  Thank you, dear! [remove_item,Bea1] #Beatrice #laugh
+Oh, silly me, of course that's why you're here!  Thank you, dear! #Beatrice #laugh
 
-Of course! #Pepper #neutral
+Of course! #Pepper #happy
 
 If you ever need help finding your way around, I'm your gal! #Beatrice #happy
 
@@ -107,34 +104,34 @@ But while you're still here, could I ask you a favor, dear? #Beatrice #neutral
 
 Sure, what can I help you with? #Pepper #neutral
 
-You see... I have a friend on the edge of town.  Her name is Suzannah. #Beatrice #neutral
+You see... I have a friend on the edge of town.  Her name is [c_suzannah]Suzannah[/]. #Beatrice #neutral
 
 She's what most would call a hermit. #Beatrice #sad
 
 She wasn't always that way... but now she barely comes to town, if ever. #Beatrice #sad
 
-I haven't gotten to check on her in a while.  Could you take this letter to her? [give_item,Suz1,letter,Suzannah,Beatrice,A letter addressed in a curly script][door_set_knot,obj_suzannah_door,suz1] #Beatrice #neutral
+I haven't gotten to check on her in a while.  Could you take this letter to her? #Beatrice #neutral
 
 Oh, of course! #Pepper #neutral
 
 Wonderful!  Thank you so much! #Beatrice #happy
 
-If you go to the right past this library, all the way past Shoreside Station on the far edge of town you'll come to a beach.  #Beatrice #neutral
+If you go to the right past this library, all the way past [c_location]Shoreside Station[/] on the far edge of town you'll come to a beach.  #Beatrice #neutral
 
 That's where her house is! #Beatrice #neutral
 
 I think I can remember that. #Pepper #neutral
 
-Good luck! #Beatrice #happy #closed
+Good luck! #Beatrice #happy
 
 ->DONE
 
 
 === suz1 ===
 
-I already told you Bea; I don’t want anything to do with your party! #Suzannah #angry #closed
+I already [shake]told[/] you [c_beatrice]Bea[/]; I don't want anything to do with your party! #Suzannah #angry #closed
 
-Are you Suzannah? #Pepper #neutral
+Are you [c_suzannah]Suzannah[/]? #Pepper #neutral
 
 Oh... you're not... never mind, I'm sorry. #Suzannah #blush
 
@@ -142,13 +139,13 @@ Oh... you're not... never mind, I'm sorry. #Suzannah #blush
 
 Can't say I recognize that voice.  Who are you? #Suzannah #neutral
 
-I'm Pepper, the new mailman.  I have a delivery for you.  It's a letter. #Pepper #neutral
+I'm [c_pepper]Pepper[/], the new mailman.  I have a delivery for you.  It's a letter. #Pepper #neutral
 
 ...a letter? #Suzannah #neutral #open
 
 ... #Suzannah #neutral
 
-That bothersome old bat... #Suzannah #angry
+That [c_beatrice]bothersome old bat[/]... #Suzannah #angry
 
 She asked me to bring this to you.  She's worried about you. #Pepper #sad
 
@@ -156,49 +153,172 @@ So she put you up to this?  Then tell her I don't need her concern. #Suzannah #n
 
 ... #Suzannah #neutral
 
-Thank you for bringing me this. Now off you go, back to Bea. And try not to trip on the rocks.[door_set_knot,obj_beatrice_door,bea2] #Suzannah #neutral
+Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And try not to trip on the rocks. #Suzannah #neutral
 
 Of course, take care! #Pepper #neutral
 
-...yeah.  #Suzannah #neutral #closed
+...yeah.  #Suzannah #neutral
 
 -> DONE
 
 === bea2 ===
 
-Oh, you're back!  And I'm simply brimming with energy this time!  Woo hoo, evenings! #Beatrice #happy #open
+Oh, you're back!  And I'm simply [wheel]brimming[/] with energy this time!  [wave]Woo hoo[/], evenings! #Beatrice #happy #open
 
 That makes one of us... #Pepper #sleepy
 
-Oh, dear!  You look exhausted! #Beatrice #neutral
+[wave]Oh, dear[/]!  You look exhausted! #Beatrice #surprise
 
-I'm okay, I appreciate your concern though.  #Pepper #neutral
+I'm okay, I appreciate your concern though.  #Pepper #laugh
 
 Did you manage to get the note to Suzannah? #Beatrice #neutral
 
-Yeah, she was't too pleased to read who the note was from.  #Pepper #neutral
+Yeah, but she wasn't too pleased to read who the note was from.  #Pepper #sad
 
-Oh, Suz!  You never change, huh? #Beatrice #laugh
+[wave]Oh, Suz[/]!  You never change, huh? #Beatrice #laugh
 
 So what's this party she mentioned? #Pepper #neutral
 
-Hmm?  Oh, yeah!  You ready for a history lesson, dear? #Beatrice #neutral
+Well, dear, every year I like to throw a little part for everyone in town. #Beatrice #neutral
 
-I- #Pepper #neutral
+Or I used to, anyway, back when people would show up #Beatrice #sad 
 
-Wonderful!  #Beatrice #happy
+Everyone brought all kinds of goodies, there'd be games, music, and all manner of festivities! #Beatrice #happy
 
-For many years, Port Pleasant had a Community Festival. #Beatrice #neutral
+But things changed... #Beatrice #neutral
 
-We've always been a tight knit community.  But hoo boy, did this festival show it! #Beatrice #happy
+People changed... #Beatrice #sad 
 
-People and local businesses would bring all kinds of goodies, there'd be games and music and all kinds of festivities! #Beatrice #happy
+Now I can't seem to get anyone to bother coming. #Beatrice #sad
 
-Ohhh, how I miss it... #Beatrice #sad
+Maybe I could help you with that?  I am a mailman after all... #Pepper #neutral
 
-So, what happened to it? #Pepper #neutral
+Oh, Pepper, dear, that'd be so wonderful!  #Beatrice #happy
 
-Times changed, slowly the residents of Port Pleasant became less active and involved with each other. #Beatrice #neutral
+I'd be happy to!  It's getting late for me though, good night!  #Pepper #neutral
+
+Good night Pepper, thank you so much for your help today!  #Beatrice #happy
+
+->DONE
+
+===cly1===
+
+Hi, delivery fo- #Pepper #neutral
+
+[shake]They're gone.[/] #Clyde #fear
+
+I'm sorry? #Pepper #neutral
+
+They're gone.  They were here this morning and now they're [shake]gone[/]!  Oh no, oh god, this is not good. #Clyde #fear
+
+Slow down.  What's gone? #Pepper #neutral
+
+The gnomes!  They've escaped, and now Port Pleasant will feel their wrath! #Clyde #fear
+
+The... gnomes?  #Pepper #neutral
+
+Wait, do you seriously not know about the gnomes? #Clyde #neutral
+
+I can't say I do.  
+
+Well then my dear, feathered friend, today's your lucky day!  Allow me to enlighten you. #Clyde #neutral
+
+I do have to get back to my deliv- #Pepper #neutral
+
+Don't be silly!  Now, as I was saying... #Clyde #laugh
+
+Oh boy... #Pepper #sigh
+
+The gnomes are creatures who came to us long ago.  When?  Nobody knows!  But there's evidence they've been here a while. #Clyde #neutral
+
+They're alive, I know it, but nobody believes me! #Clyde #neutral
+
+I can't say I do either... #Pepper #neutral
+
+The gnomes are known to be pranksters. They'll disappear in the blink of an eye.  Next thing you know, they're somewhere in town wreaking havoc! #Clyde #neutral
+
+What kind of pranks? #Pepper #neutral
+
+Well, it starts with harmless stuff, like going through peoples' trash, tresspassing, hiding in public places and disturbing people... #Clyde #neutral
+
+But if left unchecked for too long, they'll start getting more and more ambitious.  This could lead to them trying to take over the world! #Clyde #neutral
+
+What on earth... #Pepper #sigh
+
+Say... you're a mailman, right?  #Clyde #neutral
+
+...Yeah? #Pepper #neutral
+
+So you travel around town every day, right? #Clyde #neutral
+
+Yes, typically. #Pepper #neutral
+
+Congratulations, you're my new partner! #Clyde #happy
+
+Wh- you can't just- #Pepper #surprise
+
+Sure I can!  You're gonna help me find the gnomes!  Anyways, the name's [c_clyde]Clyde[/].  It's a pleasure, partner! #Clyde #happy
+
+...[c_pepper]Pepper[/].  Nice to meet you. #Pepper #sigh
+
+Oh, this is too perfect!  I'm sure the first is out there as we speak, waiting for you to track it down! #Clyde #neutral
+
+So... how do I know where to find these gnomes? #Pepper #neutral
+
+Keep your eyes out for something in town that looks... off.  Like something's been tampered with in a strange way. #Clyde #neutral
+
+There should be one of them that comes out every day.  They're... weirdly coordinated in that regard. #Clyde #neutral
+
+So, once I find them, what should I do? #Pepper #neutral
+
+As long as you can see them they won't move, so you can just grab it.  Then, bring it back here! #Clyde #neutral
+
+I see.  Well, I'll keep my eye out for your... gnomes. #Pepper #neutral
+
+Wonderful, thanks a million!  Take care now! #Clyde #happy
+
+->DONE
+
+
+===pie1===
+
+Ah, you must be the new mailman!  [c_pepper]Pepper[/], was it? #Pierre #neutral
+
+Yup, nice to meet you! #Pepper #happy
+
+I'm [c_pierre]Pierre[/].  Welcome to Port Pleasant!  How was the move? #Pierre #neutral
+
+It went well!  I'm excited to get to see more of the town. #Pepper #happy
+
+Glad to hear!  You'll be getting to do plenty of that soon enough.  Anyways, let me give you the run down on what you'll be doing here. #Pierre #neutral
+
+Each morning, you'll come in here and get your packages for the day. #Pierre #neutral
+
+Seems like a light day today, so you shouldn't have too much trouble. #Pierre #neutral
+
+Oh, this is for [c_beatrice]Beatrice!  You'll find her at the library.  #Pierre #happy
+
+She's a sweetheart, if not a little... batty.  Heh. #Pierre #neutral
+
+Now, for the delivery process.  When you arrive at a house, you'll knock on the door. #Pierre #neutral
+
+[wave]"Remember, be patient, and greet each customer with a smile!"[/] #Pierre #neutral
+
+...or something like that, anyways. #Pierre #sigh
+
+Once they answer the door, you'll hand the package to them.  #Pierre #neutral
+
+Sometimes, townspeople will have things they'll want you to deliver to other people.  You can feel free to take care of that while you're on the job. #Pierre #neutral
+
+Anyways, I think that about covers it.  Simple enough? #Pierre #neutral
+
+Mhm! #Pepper #neutral
+
+You'll do just fine then!  You can always feel free to ask me for help if you get lost or forget where you're supposed to go. #Pierre #neutral
+
+Sounds good, thank you! #Pepper #happy
+
+No problem.  Off you go now, good luck today! #Pierre #happy
 
 
 ->DONE
