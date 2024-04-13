@@ -12,6 +12,7 @@ sleepy
 blush
 sigh
 laugh
+confused
 */
 
 /* SCRIBBLE FUNCTIONS AND FORMATTING
@@ -360,5 +361,49 @@ Oh, sure thing!  See you then!  #Pepper #happy
 ->DONE
 
 ===pie2===
+
+Welcome back!  #Pierre #happy
+
+Hey, [c_pierre]Pierre[/].  #Pepper #neutral
+
+So, how was your first day?  #Pierre #neutral
+
+It was good!  [c_beatrice]Beatrice[/] was super sweet. She had me take a letter to the beach for [c_suzannah]Suzannah[/] so I got to see whole town. #Pepper #neutral
+
+Ah, is that so?  Haven't heard that name in a minute.  #Pierre #surprise
+
+Do you know why she's shut herself away like that, [c_pierre]Pierre[/]?  #Pepper #confused
+
+Yes, but unfortunately that's not my information to disclose.  I'm sure you'll find out eventually.  #Pierre #neutral
+
+As stoic and abraisive as she can be sometimes, [c_suzannah]Suzannah[/]'s got a soft heart.  Might just take you some time and effort to get through to her, y'know?  #Pierre #neutral
+
+Makes sense.  #Pepper #neutral
+
+Anyways, after that, I stopped back at the library to let [c_beatrice]Beatrice[/] know that I had delivered the letter, and we talked a bit about this party she used to throw for the townspeople.  #Pepper #neutral
+
+I remember going to that once or twice.  It's a shame it fell through. #Pierre #sigh
+
+Well, I offered to help her put it back together.  After seeing how sad she was that the community drifted apart, I guess it just felt right to offer to help.  I'm just not sure I'll be able to.  I barely know anyone!  #Pepper #neutral
+
+I guess I got ahead of myself.  #Pepper #sad 
+
+Oh, [c_pepper]Pepper[/]! Chin up. #Pierre #laugh
+
+I've known you for all of one day, if that.  And I can already tell you have a good head on your shoulders.  #Pierre #neutral
+
+And, being a mailman, you tend to make your way around town and you'll find yourself in the know with everyone and everything soon enough.  #Pierre #neutral
+
+I think that's a pretty good pathway to being able to help bring people back together. Besides, sSmall acts of kindness" is pretty much in the job description.  #Pierre #neutral
+
+Thanks, [c_pierre]Pierre[/].  I'll keep doing my best.  #Pepper #happy
+
+Of course.  Just take it one step at a time.  Good work today!  #Pierre #neutral
+
+I'll see you tomorrow, then?  #Pierre #neutral
+
+Yup!  See you tomorrow! Take care! #Pepper #happy
+
+Thanks, [c_pepper]Pepper.[/]  You too.  #Pierre #happy
 
 ->DONE
