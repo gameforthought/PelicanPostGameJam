@@ -4,6 +4,7 @@
 randomSeed = irandom(2000);
 
 global.pause = 1;
+global.intro = 1;
 
 instance_create_layer(x,y, "Background", obj_timeTracker);
 
