@@ -279,6 +279,34 @@ Wonderful, thanks a million!  Take care now! #Clyde #happy
 
 ->DONE
 
+===cly2===
+
+Ah, well if it isn't my dear partner!  How goes- #Clyde #neutral
+
+Oh, look what you have here!  You've done it!  Thanks, partner! #Clyde #happy
+
+... #Pepper #fear
+
+You seem perplexed.  Care to tell me wha- #Clyde #neutral
+
+[shake]It blinked at me...[/] #Pepper #fear
+
+Ahhh, so now you see! #Clyde #laugh
+
+No, no, no, that is not normal, lawn ornaments are not supposed to BLINK at me! #Pepper #neutral
+
+It's almost like I've been saying they're alive this whole time! #Clyde #neutral
+
+What are these things?? #Pepper #neutral
+
+I've already explained to you what they are!  Oh, but you didn't believe me! #Clyde #laugh
+
+Clyde, I've been here for only a few days, why would I believe you?? #Pepper #neutral
+
+I understand, Pepper, truly I do.  But now you see! #Clyde #neutral
+
+->DONE
+
 
 ===pie1===
 
@@ -327,5 +355,9 @@ Hmm?  #Pepper #neutral
 Stop back here after you finish your deliveries tonight.  I want to hear about how it goes!  #Pierre #neutral
 
 Oh, sure thing!  See you then!  #Pepper #happy
+
+->DONE
+
+===pie2===
 
 ->DONE
