@@ -345,9 +345,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"post_office","path":"rooms/post_office/post_office.yy",},},
     {"roomId":{"name":"demo_room","path":"rooms/demo_room/demo_room.yy",},},
     {"roomId":{"name":"DialogueTesting","path":"rooms/DialogueTesting/DialogueTesting.yy",},},
+    {"roomId":{"name":"post_office","path":"rooms/post_office/post_office.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

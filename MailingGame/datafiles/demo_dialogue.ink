@@ -31,8 +31,7 @@ INCLUDE char_test.ink
 
 ->beaTest
 
-===function test_func()===
-~ return 0
+
 
 === bea1 ===
 ~ test_func()
