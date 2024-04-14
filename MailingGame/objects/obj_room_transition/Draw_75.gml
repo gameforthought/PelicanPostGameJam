@@ -17,7 +17,9 @@ draw_surface_ext(_surf, 0, 0, windowScale, windowScale, 0, c_white, 1);
 surface_free(_surf);
 
 if grow = true && radius >= 80 {
+	if global.intro = false || room != demo_room {
 	global.pause = 0;
+	}
 }
 
 if grow = true && radius >= 240 {

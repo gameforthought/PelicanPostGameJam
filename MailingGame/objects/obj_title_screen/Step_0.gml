@@ -17,7 +17,7 @@ options_button.xmod = shift;
 close_button.xmod = shift;
 
 if shift_step > 60 {
-	global.pause = 0;
+	//global.pause = 1;
 	instance_destroy(start_button);
 	instance_destroy(options_button);
 	instance_destroy(close_button);

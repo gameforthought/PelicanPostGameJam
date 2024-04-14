@@ -44,6 +44,8 @@ function __scribble_config_colours()
 		c_suzannah: #ca4d35,
 		c_pepper: #5a7fc8,
 		c_beatrice: #5a4a42,
+		c_pierre: #f5735b,
+		c_clyde: #4ab96b,
     };
     
     return _colours;

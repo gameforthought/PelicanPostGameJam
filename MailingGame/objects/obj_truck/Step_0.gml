@@ -6,6 +6,11 @@ if global.pause = 0 {
 
 //get left or right key press and change variables accordingly
 if instance_exists(obj_playerChar) {} else {
+	audio_stop_sound(sd_truck);
+	if !audio_is_playing(sd_truck) {
+	audio_play_sound(sd_truck, 0, true);	
+	}
+	audio_sound_gain(sd_truck, 0.6 * (abs(hspd) / 8), 0);
 //get left or right key press and change variables accordingly
 if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))) {
 	if x = road_start {

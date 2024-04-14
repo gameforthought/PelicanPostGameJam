@@ -4,7 +4,7 @@
 open = false;
 door_stage = 48;
 door_speed = 1.5;
-
+audio_sound_gain(sd_knock, 2, 0)
 
 
 knock_amount = 0;

@@ -12,7 +12,6 @@ bounce = 0;
 step = 0;
 
 story = "bea1";
-//story = "bea2";
 
 
 sprite = spr_library_door;

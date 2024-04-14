@@ -27,10 +27,12 @@ if up = false {
 y_anim = EaseInBack(y_step, 0, 256, 45);
 
 if up = false && y_anim > 255 {
-	obj_timeTracker.day_progress += 1;
+	if room = demo_room {
+		obj_timeTracker.day_progress += 1;
+	}
 	obj_door.open = false;
 	global.pause = 0;
-	show_debug_message("bango")
+	//show_debug_message("bango")
 	instance_destroy();
 }
 
@@ -47,6 +49,10 @@ switch name_tag {
 	case "Pepper":
 		char_x = obj_playerChar.x;
 		color = #5a7fc8;
+	break;
+	case "Pierre":
+		char_x = obj_pierre.x;
+		color = #f5735b;
 	break;
 	default:
 		char_x = -100;
