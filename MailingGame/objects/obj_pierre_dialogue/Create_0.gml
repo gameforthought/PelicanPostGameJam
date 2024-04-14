@@ -23,3 +23,4 @@ if obj_timeTracker.night_bool = true {
 character = obj_pierre.emotion_drawer;
 
 image_alpha = 0;
+show_debug_message("pierre!")

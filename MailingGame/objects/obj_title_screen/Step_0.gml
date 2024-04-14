@@ -13,13 +13,13 @@ if start_shift = 1 {
 shift = EaseInOutBack(shift_step, 0, 300, 60);
 
 start_button.xmod = shift;
-options_button.xmod = shift;
+//options_button.xmod = shift;
 close_button.xmod = shift;
 
 if shift_step > 60 {
 	//global.pause = 1;
 	instance_destroy(start_button);
-	instance_destroy(options_button);
+	//instance_destroy(options_button);
 	instance_destroy(close_button);
 	instance_destroy();	
 }
