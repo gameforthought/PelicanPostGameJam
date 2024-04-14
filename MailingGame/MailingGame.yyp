@@ -145,6 +145,7 @@
     {"id":{"name":"demo_room","path":"rooms/demo_room/demo_room.yy",},},
     {"id":{"name":"DialogueTesting","path":"rooms/DialogueTesting/DialogueTesting.yy",},},
     {"id":{"name":"post_office","path":"rooms/post_office/post_office.yy",},},
+    {"id":{"name":"GaleTestingRoom","path":"rooms/GaleTestingRoom/GaleTestingRoom.yy",},},
     {"id":{"name":"__scribble_class_element","path":"scripts/__scribble_class_element/__scribble_class_element.yy",},},
     {"id":{"name":"__scribble_class_event","path":"scripts/__scribble_class_event/__scribble_class_event.yy",},},
     {"id":{"name":"__scribble_class_font","path":"scripts/__scribble_class_font/__scribble_class_font.yy",},},
@@ -348,6 +349,7 @@
     {"roomId":{"name":"post_office","path":"rooms/post_office/post_office.yy",},},
     {"roomId":{"name":"demo_room","path":"rooms/demo_room/demo_room.yy",},},
     {"roomId":{"name":"DialogueTesting","path":"rooms/DialogueTesting/DialogueTesting.yy",},},
+    {"roomId":{"name":"GaleTestingRoom","path":"rooms/GaleTestingRoom/GaleTestingRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

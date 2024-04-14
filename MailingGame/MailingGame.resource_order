@@ -107,6 +107,7 @@
     {"name":"TEST","order":26,"path":"objects/TEST/TEST.yy",},
     {"name":"DialogueTesting","order":1,"path":"rooms/DialogueTesting/DialogueTesting.yy",},
     {"name":"post_office","order":2,"path":"rooms/post_office/post_office.yy",},
+    {"name":"GaleTestingRoom","order":3,"path":"rooms/GaleTestingRoom/GaleTestingRoom.yy",},
     {"name":"__scribble_class_event","order":1,"path":"scripts/__scribble_class_event/__scribble_class_event.yy",},
     {"name":"__scribble_class_font","order":2,"path":"scripts/__scribble_class_font/__scribble_class_font.yy",},
     {"name":"__scribble_class_model","order":3,"path":"scripts/__scribble_class_model/__scribble_class_model.yy",},
