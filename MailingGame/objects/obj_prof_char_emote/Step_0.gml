@@ -2,6 +2,9 @@
 // You can write your code in this editor
 emote_step += 1;
 
+x = parent.x
+y = parent.y
+
 if parent.char_anim > 240 {
 blink = 1;
 } else {

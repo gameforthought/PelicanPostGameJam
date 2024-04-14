@@ -171,7 +171,7 @@ Did you manage to get the note to Suzannah? #Beatrice #neutral
 
 Yeah, but she wasn't too pleased to read who the note was from.  #Pepper #sad
 
-[wave]Oh, Suz[/]!  You never change, huh? #Beatrice #laugh
+[wave]Oh, [c_suzannah]Suz[/]!  You never change, huh? #Beatrice #laugh
 
 So what's this party she mentioned? #Pepper #neutral
 
@@ -368,7 +368,9 @@ Hey, [c_pierre]Pierre[/].  #Pepper #neutral
 
 So, how was your first day?  #Pierre #neutral
 
-It was good!  [c_beatrice]Beatrice[/] was super sweet. She had me take a letter to the beach for [c_suzannah]Suzannah[/] so I got to see whole town. #Pepper #neutral
+It was good!  [c_beatrice]Beatrice[/] was super sweet. #Pepper #happy
+
+She had me take a letter to the beach for [c_suzannah]Suzannah[/] so I got to see whole town. #Pepper #neutral
 
 Ah, is that so?  Haven't heard that name in a minute.  #Pierre #surprise
 
@@ -376,7 +378,9 @@ Do you know why she's shut herself away like that, [c_pierre]Pierre[/]?  #Pepper
 
 Yes, but unfortunately that's not my information to disclose.  I'm sure you'll find out eventually.  #Pierre #neutral
 
-As stoic and abraisive as she can be sometimes, [c_suzannah]Suzannah[/]'s got a soft heart.  Might just take you some time and effort to get through to her, y'know?  #Pierre #neutral
+As stoic and abraisive as she can be sometimes, [c_suzannah]Suzannah[/]'s got a soft heart. #Pierre #neutral  
+
+Might just take you some time and effort to get through to her, y'know?  #Pierre #neutral
 
 Makes sense.  #Pepper #neutral
 
@@ -386,7 +390,11 @@ We talked a bit about this party she used to throw for the townspeople.  #Pepper
 
 I remember going to that once or twice.  It's a shame it fell through. #Pierre #sigh
 
-Well, I offered to help her put it back together.  After seeing how sad she was that the community drifted apart, I guess it just felt right to offer to help.  I'm just not sure I'll be able to.  I barely know anyone!  #Pepper #neutral
+Well, I offered to help her put it back together. #Pepper #neutral
+
+After seeing how sad she was that the community drifted apart, I guess it just felt right to offer to help.  #Pepper #neutral
+
+I'm just not sure I'll be able to.  I barely know anyone!  #Pepper #neutral
 
 I guess I got ahead of myself.  #Pepper #sad 
 
