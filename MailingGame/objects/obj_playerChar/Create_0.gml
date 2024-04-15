@@ -4,6 +4,10 @@
 hspd = 0;
 hspd_prev = 0;
 
+//initializing movement stats
+road_start = 0;
+road_end = room_width;
+
 if room = demo_room {
 	road_start = 210;
 	road_end = room_width;

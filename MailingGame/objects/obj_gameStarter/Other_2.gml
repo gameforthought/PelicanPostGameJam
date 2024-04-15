@@ -4,7 +4,8 @@
 randomSeed = irandom(2000);
 random_set_seed(randomSeed);
 
-instance_create_depth(x,y, 0, obj_studio_logo);
+if (!is_debug_mode){
+instance_create_depth(x,y, 0, obj_studio_logo); }
 
 
 
