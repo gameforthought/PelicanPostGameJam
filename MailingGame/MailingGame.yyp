@@ -67,6 +67,7 @@
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"char_test.ink","CopyToMask":-1,"filePath":"datafiles","name":"char_test.ink","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"char_test.json","CopyToMask":-1,"filePath":"datafiles","name":"char_test.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"debug_test.ink","CopyToMask":-1,"filePath":"datafiles","name":"debug_test.ink","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"demo_dialogue.ink","CopyToMask":-1,"filePath":"datafiles","name":"demo_dialogue.ink","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"demo_dialogue.json","CopyToMask":-1,"filePath":"datafiles","name":"demo_dialogue.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"demo_dialogue2.json","CopyToMask":-1,"filePath":"datafiles","name":"demo_dialogue2.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},

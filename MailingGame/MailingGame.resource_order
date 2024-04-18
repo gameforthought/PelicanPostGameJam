@@ -58,7 +58,7 @@
     {"name":"ft_small","order":2,"path":"fonts/ft_small/ft_small.yy",},
     {"name":"ft_textboxTest","order":1,"path":"fonts/ft_textboxTest/ft_textboxTest.yy",},
     {"name":"scribble_fallback_font","order":12,"path":"fonts/scribble_fallback_font/scribble_fallback_font.yy",},
-    {"name":"galedoor2plswork","order":31,"path":"objects/galedoor2plswork/galedoor2plswork.yy",},
+    {"name":"galedoor2plswork","order":5,"path":"objects/galedoor2plswork/galedoor2plswork.yy",},
     {"name":"obj_beatrice_door","order":2,"path":"objects/obj_beatrice_door/obj_beatrice_door.yy",},
     {"name":"obj_cameraManager","order":1,"path":"objects/obj_cameraManager/obj_cameraManager.yy",},
     {"name":"obj_character_par","order":24,"path":"objects/obj_character_par/obj_character_par.yy",},

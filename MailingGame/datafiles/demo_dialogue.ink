@@ -1,3 +1,4 @@
+INCLUDE debug_test.ink
 //TAGS: #speaker #emotion #door_status
 
 /*
