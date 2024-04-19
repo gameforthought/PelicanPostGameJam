@@ -2,25 +2,25 @@
 // You can write your code in this editor
 //checks if movement is paused
 if global.pause = 0 {
-//get left or right key press and change speed and orientation accordingly
-if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))){
-	if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {} else {
-    hspd += haccel;
-	}
-	if hspd > 0 {
-		image_xscale = 1;
-	}
+	//get left or right key press and change speed and orientation accordingly
+	if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))){
+		if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {} else {
+	    hspd += haccel;
+		}
+		if hspd > 0 {
+			image_xscale = 1;
+		}
 	
-}
+	}
 
-if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {
-	if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))){} else {
-    hspd -= haccel;
+	if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {
+		if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))){} else {
+	    hspd -= haccel;
+		}
+		if hspd < 0 {
+			image_xscale = -1;
+		}
 	}
-	if hspd < 0 {
-		image_xscale = -1;
-	}
-}
 }
 
 
@@ -29,11 +29,11 @@ if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {
 if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(ord("D"))  && !keyboard_check(ord("A")){
 	
 	if hspd != 0 {
-    hspd -= sign(hspd) * 3 * haccel;
+	    hspd -= sign(hspd) * 3 * haccel;
 	
-	if (hspd > -0.2) && (hspd < 0.2) {
-		hspd = 0;	
-	}
+		if (hspd > -0.2) && (hspd < 0.2) {
+			hspd = 0;	
+		}
 	}
 }
 

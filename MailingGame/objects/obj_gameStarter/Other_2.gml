@@ -8,8 +8,7 @@ if (!is_debug_mode){
 instance_create_depth(x,y, 0, obj_studio_logo); }
 
 
-
-
+//if (is_debug_mode) global.pause = 0;
 
 //show_debug_overlay(true);
 
