@@ -25,4 +25,4 @@ if grow = true {
 	radius = 240;
 	grow_amount = -2;
 }
-windowScale = window_get_height() / room_height;
+windowScale = global.window_scale;

@@ -7,6 +7,8 @@ var vy = camera_get_view_y(view_camera[0]);
 x = vx + xpos;
 y = vy + y_anim;
 
+
+
 bounce = 2 * sin(step);
 
 step += 0.1;

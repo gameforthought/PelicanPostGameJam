@@ -2,7 +2,10 @@
 // You can write your code in this editor
 show_debug_message("textbox")
 image_alpha = 0;
-windowScale = window_get_height() / room_height;
+windowScale = global.window_scale;
+
+
+
 
 type_speed = (0.5);
 
@@ -11,7 +14,7 @@ scribble_font_set_default("ft_gui");
 
 next_line();
 richtext = scribble("[delay]" + text_to_display);
-richtext.wrap(box_width * windowScale);
+richtext.wrap(box_width * 2);
 richtext.line_height(-1, string_height(text_to_display) - 5);
 
 typewriter = scribble_typist();

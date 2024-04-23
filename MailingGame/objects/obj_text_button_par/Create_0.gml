@@ -9,4 +9,4 @@ x_init = x;
 xmod = 0;
 ymod = 0;
 
-windowScale = window_get_height() / room_height;
+windowScale = global.window_scale;

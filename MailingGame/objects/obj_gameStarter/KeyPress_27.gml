@@ -1,8 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-image_alpha = 0;
-
-hover = 0;
-
-windowScale = global.window_scale;
+game_end()

@@ -18,7 +18,7 @@ draw_set_color(c_black);
 //draw the text
 draw_set_font(ft_gui);
 
-richtext.draw((xpos + 33) * windowScale, (y_anim + 68) * windowScale, typewriter);
+richtext.draw((xpos + 33) * 2, (y_anim + 68) * windowScale, typewriter);
 //draw_text_ext((xpos + 33) * windowScale, 68 * windowScale, text_to_display, line_height - 5, box_width * windowScale);
 
 
@@ -31,6 +31,7 @@ else {
 }
 
 var vx = camera_get_view_x(view_camera[0]);
+vx = 0;
 var vy = camera_get_view_y(view_camera[0]);
 
 

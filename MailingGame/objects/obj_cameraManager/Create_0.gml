@@ -3,6 +3,9 @@
 
 camera = view_get_camera(0);
 
+global.window_scale = 2;
+
+
 move_dir = 1;
 
 if instance_exists(obj_truck) {

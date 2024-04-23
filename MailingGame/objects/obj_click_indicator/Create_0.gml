@@ -10,4 +10,4 @@ rotation = irandom_range(-120, 30);
 
 go = false;
 
-windowScale = window_get_height() / room_height;
+windowScale = global.window_scale;

@@ -31,8 +31,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"maxhspd","filters":[],"listItems":[],"multiselect":false,"name":"maxhspd","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8","varType":0,},
-    {"$GMObjectProperty":"","%Name":"haccel","filters":[],"listItems":[],"multiselect":false,"name":"haccel","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.08","varType":0,},
+    {"$GMObjectProperty":"","%Name":"maxhspd","filters":[],"listItems":[],"multiselect":false,"name":"maxhspd","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"6","varType":0,},
+    {"$GMObjectProperty":"","%Name":"haccel","filters":[],"listItems":[],"multiselect":false,"name":"haccel","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.06","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

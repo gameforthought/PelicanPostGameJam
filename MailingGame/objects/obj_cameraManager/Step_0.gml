@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+global.window_scale = 2;
+
 if room = demo_room {
 
 if instance_exists(obj_textbox) {

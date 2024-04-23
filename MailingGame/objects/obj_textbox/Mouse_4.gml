@@ -15,7 +15,7 @@ if (ink_can_continue()){
 	next_line();
 	//alarm[0] = string_length(text_to_display) * 1.2;
 	richtext = scribble(text_to_display);
-	richtext.wrap(box_width * windowScale);
+	richtext.wrap(box_width * 2);
 	richtext.line_height(-1, string_height(text_to_display) - 5);
 	typewriter = scribble_typist();
 	typewriter.in(type_speed, 0);

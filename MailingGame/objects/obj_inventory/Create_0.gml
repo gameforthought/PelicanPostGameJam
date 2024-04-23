@@ -18,7 +18,7 @@ inventory[0] = {
 x = 0;
 y = 256;
 
-windowScale = window_get_height() / room_height;
+windowScale = global.window_scale;
 
 animation_step = 45;
 

@@ -3,4 +3,4 @@
 
 image_alpha = 0;
 hover = 0;
-windowScale = window_get_height() / room_height;
+windowScale = global.window_scale;
