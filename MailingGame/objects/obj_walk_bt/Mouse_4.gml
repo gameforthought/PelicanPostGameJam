@@ -3,7 +3,8 @@
 
 if instance_exists(obj_playerChar) {} else if obj_truck.hspd = 0 {
 	var _struct = {
-		start_orient: obj_truck.image_xscale	
+		start_orient: obj_truck.image_xscale,	
+		pepper_state: PlayerState.FreeMove
 	}
 	instance_create_layer(obj_truck.x - obj_truck.image_xscale * 8, obj_truck.y - 16, "Player", obj_playerChar, _struct);
 }

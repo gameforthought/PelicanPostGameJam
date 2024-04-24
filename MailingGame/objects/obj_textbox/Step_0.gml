@@ -35,6 +35,7 @@ if up = false && y_anim > 255 {
 	obj_door.open = false;
 	global.pause = 0;
 	//show_debug_message("bango")
+	obj_playerChar.pepper_state = PlayerState.FreeMove;
 	instance_destroy();
 }
 

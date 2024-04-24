@@ -7,7 +7,7 @@ function load_story(knot_to_load) {
 	//load the story
 	//ink_load(working_directory + "demo_dialogue.json");
 	
-	
+	obj_playerChar.pepper_state = PlayerState.NoMove;
 	//ink_variable_set_real("character",_dialogue_character);
 	//tell the ink story where to go
 	ink_choose_path(knot_to_load);

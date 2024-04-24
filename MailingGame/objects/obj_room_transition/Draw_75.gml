@@ -18,6 +18,7 @@ surface_free(_surf);
 
 if grow = true && radius >= 80 {
 	if global.intro = false || room != demo_room {
+	obj_playerChar.pepper_state = PlayerState.FreeMove;
 	global.pause = 0;
 	}
 }
@@ -34,3 +35,4 @@ if grow = false && radius <= 0 {
 	
 	
 }
+

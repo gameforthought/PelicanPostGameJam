@@ -5,7 +5,8 @@
 draw_set_color(color);
 //draw_rectangle((xpos + 24) * windowScale, 17 * windowScale, (xpos + 103) * windowScale, 48 * windowScale, false)
 
-if (!obj_gameStarter.is_debug_mode)
+//draw the name tag if the sprite exists
+if (asset_get_index("spr_" + string_lower(name_tag) + "_nt") != -1)
 draw_sprite_ext(asset_get_index("spr_" + string_lower(name_tag) + "_nt"), 0, (xpos + 24) * windowScale, (y_anim + 17) * windowScale, windowScale, windowScale, 0, c_white, 1);
 
 
