@@ -29,13 +29,13 @@ switch emotion {
 		draw_sprite_ext(spr_fear, 0, (x + face_x), 256 - 32 - face_y + char_anim_pos, 1, 1, 0, c_white, 0.9);
 	break;
 	case "surprise":
-		draw_sprite_ext(spr_surprise, 0, (x + face_x) + cos((-pi / 2) + -dir * (-pi / 4)) * (face_radius + emote_anim_state * 2), 256 - 32 - face_y + (sin((-pi / 2) + -dir * (pi / 4)) * face_radius), 1 + emote_anim_state * 0.25, 1 + emote_anim_state * 0.25, dir * -20, c_white, 1);
+		draw_sprite_ext(spr_surprise, 0, (x + face_x) + cos((-pi / 2) + -dir * (-pi / 4)) * (face_radius + emote_anim_state * 2), 256 - 32 - face_y + (sin((-pi / 2) + -dir * (pi / 4)) * face_radius), 1.2 + emote_anim_state * 0.25, 1.2 + emote_anim_state * 0.25, dir * -20, c_white, 1);
 	break;
 	case "confused":
 		draw_sprite_ext(spr_what, 0, (x + face_x) + cos((-pi / 2) + -dir * (-pi / 4)) * (face_radius + emote_anim_state * 2), 256 - 32 - face_y + (sin((-pi / 2) + -dir * (pi / 4)) * face_radius), 1 + emote_anim_state * 0.25, 1 + emote_anim_state * 0.25, dir * -20, c_white, 1);
 	break;
 	case "sigh":
-		draw_sprite_ext(spr_sigh, 0, (x + face_x) + cos((dir * pi) / 4) * face_radius, 256 - 32 - face_y + (sin((dir * pi) / 4) * face_radius), 1 + emote_anim_state * 0.5, 1 + emote_anim_state * 0.5, 45, c_white, 1);
+		draw_sprite_ext(spr_sigh, 0, (x + face_x) + cos((-pi / 2) + ((dir * 3 * pi) / 4)) * face_radius, 256 - 28 - face_y + (sin((-pi / 2) + ((dir * 3 * pi) / 4))), 1 + emote_anim_state * 0.5, 1 + emote_anim_state * 0.5, dir * 45, c_white, 1);
 	break;
 	case "laugh":
 		draw_sprite_ext(spr_laugh, emote_anim_state, (x + face_x) + cos((-pi / 2) + (-1 + 2 * emote_anim_state) * (-pi / 4)) * (face_radius + 3), 256 - 32 - face_y + (sin((-pi / 2) + (-1 + 2 * emote_anim_state) * (pi / 4)) * (face_radius + 3)), 1.5, 1.5, (-1 + 2 * emote_anim_state) * 45, c_white, 1);

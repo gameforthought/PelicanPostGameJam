@@ -35,4 +35,5 @@ start_button = instance_create_layer(355, 155, layer_get_name(layer), obj_text_b
 
 //options_button = instance_create_layer(355, 155 + 32, layer_get_name(layer), obj_text_button_par, options_struct);
 
-close_button = instance_create_layer(355, 155 + 64, layer_get_name(layer), obj_text_button_par, close_struct);
+close_button = instance_create_layer(355, 155 + 32, layer_get_name(layer), obj_text_button_par, close_struct);
+//64

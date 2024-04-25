@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_truck_click_true",
+  "%Name":"obj_clyde_door",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_truck_click_true",
+  "name":"obj_clyde_door",
   "overriddenProperties":[],
   "parent":{
-    "name":"ui",
-    "path":"folders/Objects/ui.yy",
+    "name":"Doors",
+    "path":"folders/Objects/Doors.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_door",
+    "path":"objects/obj_door/obj_door.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_click_prox",
-    "path":"sprites/spr_click_prox/spr_click_prox.yy",
+    "name":"spr_clyde_door",
+    "path":"sprites/spr_clyde_door/spr_clyde_door.yy",
   },
   "spriteMaskId":null,
   "visible":true,

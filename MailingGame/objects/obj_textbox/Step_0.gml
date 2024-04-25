@@ -57,6 +57,10 @@ switch name_tag {
 		char_x = obj_pierre.x;
 		color = #f5735b;
 	break;
+	case "Clyde":
+		char_x = obj_clyde_door.x;
+		color = #4ab96e;
+	break;
 	default:
 		char_x = -100;
 		color = c_black;
