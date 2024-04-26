@@ -8,7 +8,9 @@
   ],
   "managed":true,
   "name":"obj_pierre_dialogue",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"spot_to_go","path":"objects/obj_door/obj_door.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"50",},
+  ],
   "parent":{
     "name":"Doors",
     "path":"folders/Objects/Doors.yy",

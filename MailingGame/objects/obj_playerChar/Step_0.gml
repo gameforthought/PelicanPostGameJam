@@ -24,10 +24,28 @@ if pepper_state == PlayerState.FreeMove{
 	}
 }
 
+//if pepper is in a cutscene, handle that movement here
+if pepper_state == PlayerState.CutsceneMove{
 
+	if (abs(move_dest - x) < maxhspd){
+		pepper_state = PlayerState.NoMove;
+		hspd = 0;
+		image_xscale *= -1;
+	}
+	//move pepper towards the destination if she hasn't reached it yet
+	else if (move_dest > x){
+		hspd = maxhspd;
+		image_xscale = 1;
+	}
+	else if (move_dest < x){
+		hspd = -maxhspd;
+		image_xscale = -1;
+	}
+	
+}
 
-
-if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(ord("D"))  && !keyboard_check(ord("A")){
+//if the player is not holding down a movement key and is not in a cutscene, decelerate
+if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(ord("D"))  && !keyboard_check(ord("A")) && !(pepper_state == PlayerState.CutsceneMove){
 	
 	if hspd != 0 {
 	    hspd -= sign(hspd) * 3 * haccel;
@@ -40,22 +58,20 @@ if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(or
 
 hspd = clamp(hspd, -maxhspd, maxhspd);
 
-
+//if the player is moving, 
 if (keyboard_check(vk_left) || keyboard_check(vk_right)) || keyboard_check(ord("D"))  || keyboard_check(ord("A")){
+	
+	if hspd != 0 {
 
+		if hspd > hspd_prev {
 
+			image_xscale = 1;
+		} else if hspd < hspd_prev {
 
-if hspd != 0 {
+			image_xscale = -1;
+		}
 
-if hspd > hspd_prev {
-
-	image_xscale = 1;
-} else if hspd < hspd_prev {
-
-	image_xscale = -1;
-}
-
-}
+	}
 
 }
 
@@ -165,7 +181,7 @@ swing = swing_width * sin(0.1 * swing_num);
 // emotion drawer
 
 y_scale = 1 - (0.02 * cos(0.1 * char_anim));
-if instance_exists(obj_textbox) {
+if instance_exists(obj_textbox) && pepper_state = PlayerState.NoMove {
 	if emotion_drawer = -1 {
 		var _struct = {
 			parent: id,	

@@ -38,6 +38,7 @@
     {"$GMObjectProperty":"","%Name":"haccel","filters":[],"listItems":[],"multiselect":false,"name":"haccel","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.1","varType":0,},
     {"$GMObjectProperty":"","%Name":"grav","filters":[],"listItems":[],"multiselect":false,"name":"grav","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.1","varType":0,},
     {"$GMObjectProperty":"","%Name":"pepper_state","filters":[],"listItems":[],"multiselect":false,"name":"pepper_state","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"PlayerState.NoMove","varType":0,},
+    {"$GMObjectProperty":"","%Name":"move_dest","filters":[],"listItems":[],"multiselect":false,"name":"move_dest","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

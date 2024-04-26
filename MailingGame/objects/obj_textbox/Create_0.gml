@@ -49,7 +49,7 @@ if instance_exists(obj_playerChar) {
 	dir = obj_truck.image_xscale;	
 }
 
-if room = post_office {
+if room == post_office {
 	dir = 1;	
 }
 
