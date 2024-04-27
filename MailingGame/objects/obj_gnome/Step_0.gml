@@ -7,7 +7,8 @@ if dissolve = true {
 
 if image_alpha <= 0 {
 	show_debug_message("gnomed")
-	give_item(-1,["Gnome1","gnome","???","???","An omen of things to come"],-1)
+	give_item(-1,["Cly2","gnome","???","???","It looks lost"],-1)
+	obj_clyde_door.gnome_collected = 1;
 	
 	instance_destroy();
 }

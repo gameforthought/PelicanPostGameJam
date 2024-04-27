@@ -31,9 +31,9 @@ close_struct = {
 	event_num: 2
 };
 
-start_button = instance_create_layer(355, 155, layer_get_name(layer), obj_text_button_par, start_struct);
+start_button = instance_create_depth(355, 155, depth - 100, obj_text_button_par, start_struct);
 
 //options_button = instance_create_layer(355, 155 + 32, layer_get_name(layer), obj_text_button_par, options_struct);
 
-close_button = instance_create_layer(355, 155 + 32, layer_get_name(layer), obj_text_button_par, close_struct);
+close_button = instance_create_depth(355, 155 + 32, depth - 100, obj_text_button_par, close_struct);
 //64
