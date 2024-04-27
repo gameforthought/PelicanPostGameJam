@@ -9,6 +9,8 @@ if indicator == true && instance_exists(obj_textbox) = false {
 //		open = false;
 //	}
 	
+	if !instance_exists(obj_truck) || !position_meeting(x - 24, y, obj_truck) {
+	
 	if global.pause	== false || global.intro == true {
 	
 	if room == demo_room {
@@ -22,11 +24,24 @@ if indicator == true && instance_exists(obj_textbox) = false {
 		
 		var facing = (obj_playerChar.x - x) == 0 ? 1 : (obj_playerChar.x - x) ;
 		
-		obj_playerChar.move_dest = (x - 25) + sign(facing) * spot_to_go;
+		if abs(point_distance(obj_playerChar.x, y, (x - 25) + sign(facing) * spot_to_go, y)) > 20 {
+			obj_playerChar.move_dest = (x - 25) + sign(facing) * spot_to_go;
+			
+	
+		} else {
+			obj_playerChar.move_dest = obj_playerChar.x;
+			if x > obj_playerChar.x {
+				obj_playerChar.image_xscale = 1;
+			} else {
+				obj_playerChar.image_xscale = -1;	
+			}
+		}
 
 	} else if alarm[0] > 20 {
 		alarm[0] -= 10;	
 	}
 	
 	}
+	}
 }
+

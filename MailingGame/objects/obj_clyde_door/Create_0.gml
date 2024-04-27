@@ -5,6 +5,8 @@ open = false;
 door_stage = 48;
 door_speed = 1.5;
 
+gnome_collected = 0;
+
 knock_amount = 0;
 
 story = -1;

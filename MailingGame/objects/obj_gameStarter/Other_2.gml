@@ -8,7 +8,7 @@ if (!is_debug_mode){
 instance_create_depth(x,y, 0, obj_studio_logo); }
 
 
-//window_set_fullscreen(true)
+window_set_fullscreen(true)
 
 
 //if (is_debug_mode) global.pause = 0;
