@@ -27,6 +27,16 @@ else {
 	
 	up = false;
 	
+	if obj_timeTracker.night_bool = true {
+		var _transition = {
+		grow: false,
+		next_room: ending_room_imagine,
+		player: true
+}
+	instance_create_layer(0, 0, "positional_gui", obj_room_transition, _transition);
+	
+	}
+	
 }
 
 }
