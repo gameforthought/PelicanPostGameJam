@@ -214,7 +214,7 @@ The... gnomes?  #Pepper #neutral
 
 Wait, do you seriously not know about the gnomes? #Clyde #neutral
 
-I can't say I do.  
+I can't say I do.  #Pepper #neutral
 
 Well then my dear, today's your lucky day!  Allow me to enlighten you. #Clyde #neutral
 
