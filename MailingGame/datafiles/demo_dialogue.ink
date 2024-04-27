@@ -236,9 +236,11 @@ They're known to be pranksters. They'll disappear in the blink of an eye... #Cly
 
 What kind of pranks? #Pepper #neutral
 
-Well, it starts with harmless stuff, like going through peoples' trash, tresspassing, hiding in public places and disturbing people... #Clyde #neutral
+Well, it starts with generally messing with people and things in inconsequential ways. #Clyde #neutral
 
-But if left unchecked for too long, they'll start getting more and more ambitious.  This could lead to them trying to take over the world! #Clyde #neutral
+But if left unchecked for too long, they'll start getting more and more ambitious. #Clyde #neutral
+
+This could lead to them trying to take over the world! #Clyde #neutral
 
 What on earth... #Pepper #sigh
 
@@ -254,21 +256,29 @@ Congratulations, you're my new partner! #Clyde #happy
 
 Wh- you can't just- #Pepper #surprise
 
-Sure I can!  You're gonna help me find the gnomes!  Anyways, the name's [c_clyde]Clyde[/].  It's a pleasure, partner! #Clyde #happy
+Sure I can!  You're gonna help me find the gnomes!  #Clyde #neutral
+
+Anyways, the name's [c_clyde]Clyde[/].  It's a pleasure, partner! #Clyde #happy
 
 ...[c_pepper]Pepper[/].  Nice to meet you. #Pepper #sigh
 
-Oh, this is too perfect!  I'm sure the first is out there as we speak, waiting for you to track it down! #Clyde #neutral
+Oh, this is too perfect!  #Clyde #happy
+
+I'm sure the first is out there as we speak, waiting for you to track it down! #Clyde #neutral
 
 So... how do I know where to find these gnomes? #Pepper #neutral
 
-Keep your eyes out for something in town that looks... off.  Like something's been tampered with in a strange way. #Clyde #neutral
+Keep your eyes out for something in town that looks... off.  #Clyde #neutral
 
-There, you'll find a gnome. #Clyde #neutral
+Like something's been tampered with in a strange way. #Clyde #neutral
+
+There, if you look hard enough, you'll find a gnome. #Clyde #neutral
 
 So, once I find them, what should I do? #Pepper #neutral
 
-As long as you can see them they won't move, so you can just grab it.  Then, bring it back here! #Clyde #neutral
+As long as you can see them they won't move, so you can just grab it. #Clyde #neutral
+
+Then, bring it back here! #Clyde #neutral
 
 I see.  Well, I'll keep my eye out for your... gnomes. #Pepper #neutral
 
