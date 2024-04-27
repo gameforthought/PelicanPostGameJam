@@ -168,7 +168,7 @@ That makes one of us... #Pepper #sleepy
 
 I'm okay, I appreciate your concern though.  #Pepper #laugh
 
-Did you manage to get the note to Suzannah? #Beatrice #neutral
+Did you manage to get the note to [c_suzannah]Suzannah[/]? #Beatrice #neutral
 
 Yeah, but she wasn't too pleased to read who the note was from.  #Pepper #sad
 
@@ -188,7 +188,9 @@ People changed... #Beatrice #sad
 
 Now I can't seem to get anyone to bother coming. #Beatrice #sad
 
-Maybe I could help you with that?  I am a mailman after all... #Pepper #neutral
+As a mailman, I'll get around town a lot. #Pepper #neutral
+
+Maybe I could help you with that? #Pepper #neutral
 
 Oh, [c_pepper]Pepper[/c], dear, that'd be so wonderful!  #Beatrice #happy
 
@@ -206,10 +208,6 @@ Hi, delivery fo- #Pepper #neutral
 
 I'm sorry? #Pepper #neutral
 
-They're gone.  They were here this morning and now they're [shake]gone[/]!  Oh no, oh god, this is not good. #Clyde #fear
-
-Slow down.  What's gone? #Pepper #neutral
-
 The gnomes!  They've escaped, and now Port Pleasant will feel their wrath! #Clyde #fear
 
 The... gnomes?  #Pepper #neutral
@@ -218,7 +216,7 @@ Wait, do you seriously not know about the gnomes? #Clyde #neutral
 
 I can't say I do.  
 
-Well then my dear, feathered friend, today's your lucky day!  Allow me to enlighten you. #Clyde #neutral
+Well then my dear, today's your lucky day!  Allow me to enlighten you. #Clyde #neutral
 
 I do have to get back to my deliv- #Pepper #neutral
 
@@ -226,13 +224,15 @@ Don't be silly!  Now, as I was saying... #Clyde #laugh
 
 Oh boy... #Pepper #sigh
 
-The gnomes are creatures who came to us long ago.  When?  Nobody knows!  But there's evidence they've been here a while. #Clyde #neutral
+The gnomes are creatures who came to us long ago.  When?  Nobody knows! #Clyde #neutral
 
 They're alive, I know it, but nobody believes me! #Clyde #neutral
 
 I can't say I do either... #Pepper #neutral
 
-The gnomes are known to be pranksters. They'll disappear in the blink of an eye.  Next thing you know, they're somewhere in town wreaking havoc! #Clyde #neutral
+They're known to be pranksters. They'll disappear in the blink of an eye... #Clyde #neutral
+
+...then next thing you know, they're off pranking the poor townspeople! #Clyde #neutral
 
 What kind of pranks? #Pepper #neutral
 
@@ -264,7 +264,7 @@ So... how do I know where to find these gnomes? #Pepper #neutral
 
 Keep your eyes out for something in town that looks... off.  Like something's been tampered with in a strange way. #Clyde #neutral
 
-There should be one of them that comes out every day.  They're... weirdly coordinated in that regard. #Clyde #neutral
+There, you'll find a gnome. #Clyde #neutral
 
 So, once I find them, what should I do? #Pepper #neutral
 
@@ -290,17 +290,29 @@ You seem perplexed.  Care to tell me wha- #Clyde #neutral
 
 Ahhh, so now you see! #Clyde #laugh
 
-No, no, no, that is not normal, lawn ornaments are not supposed to BLINK at me! #Pepper #neutral
-
-It's almost like I've been saying they're alive this whole time! #Clyde #neutral
+No, no, no, lawn ornaments are not supposed to BLINK at me! #Pepper #neutral
 
 What are these things?? #Pepper #neutral
 
 I've already explained to you what they are!  Oh, but you didn't believe me! #Clyde #laugh
 
-Clyde, I've been here for only a few days, why would I believe you?? #Pepper #neutral
+[c_clyde]Clyde[/], I've been here for only a few days, why would I believe you?? #Pepper #neutral
 
-I understand, Pepper, truly I do.  But now you see! #Clyde #neutral
+Well, that doesn't matter now!  #Clyde #neutral
+
+So you'll keep being my partner, right?  #Clyde #neutral
+
+At this point, I guess I'm committed... #Pepper #sigh
+
+Anyways, here's your gnome.  #Pepper #neutral
+
+Thank you [c_pepper]Pepper![/]  Come here, Bartholomew. #Clyde #happy
+
+Take care, now! #Clyde #happy #closed
+
+What a strange fellow... #Pepper #sigh
+
+Can't believe I'm dealing with sentient gnomes my first day on the job! #Pepper #laugh
 
 ->DONE
 
@@ -344,8 +356,6 @@ Anyways, I think that about covers it.  Simple enough? #Pierre #neutral
 Mhm! #Pepper #neutral
 
 You'll do just fine then!  #Pierre #neutral
-
-You can always feel free to ask me for help if you get lost or forget where you're supposed to go. #Pierre #neutral
 
 Sounds good, thank you! #Pepper #happy
 
@@ -403,11 +413,13 @@ Oh, [c_pepper]Pepper[/]! Chin up. #Pierre #laugh
 
 I've known you for all of one day, if that.  And I can already tell you have a good head on your shoulders.  #Pierre #neutral
 
-And, being a mailman, you tend to make your way around town and you'll find yourself in the know with everyone and everything soon enough.  #Pierre #neutral
+And, being a mailman, you tend to make your way around town.  #Pierre #neutral
+
+That way, you'll find yourself in the know with everything soon enough.  #Pierre #neutral
 
 I think that's a pretty good pathway to being able to help bring people back together. #Pierre #neutral
 
-Besides, Small acts of kindness" is pretty much in the job description.  #Pierre #neutral
+Besides, "Small acts of kindness" is pretty much in the job description.  #Pierre #neutral
 
 Thanks, [c_pierre]Pierre[/].  I'll keep doing my best.  #Pepper #happy
 
