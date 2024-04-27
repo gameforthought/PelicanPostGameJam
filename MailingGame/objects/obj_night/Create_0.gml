@@ -27,7 +27,7 @@ windowScale = global.window_scale;
 
 
 // distort
-surface_depth_disable(true);
+//surface_depth_disable(true);
 
 #macro COLOUR_FOR_NO_MOVE make_colour_rgb(127,127,255)
 
@@ -39,4 +39,4 @@ distortion_stage = shader_get_sampler_index(sh_roundDistort, "distortion_texture
 surf_distort_map = -1;
 surface_texture_page = -1;
 
-application_surface_draw_enable(false);
+//application_surface_draw_enable(false);
