@@ -27,11 +27,11 @@
         {"name":"g_GlowIntensity","type":0,"value":"0.22",},
         {"name":"g_GlowGamma","type":0,"value":"0",},
         {"name":"g_GlowAlpha","type":0,"value":"1",},
-      ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
+      ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMREffectLayer":"","%Name":"bright_contrast","depth":100,"effectEnabled":true,"effectType":"_filter_contrast","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"bright_contrast","properties":[
         {"name":"g_ContrastIntensity","type":0,"value":"0.85",},
         {"name":"g_ContrastBrightness","type":0,"value":"1.1",},
-      ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+      ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMREffectLayer":"","%Name":"grain","depth":200,"effectEnabled":true,"effectType":"_filter_whitenoise","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"grain","properties":[
         {"name":"g_WhiteNoiseIntensity","type":0,"value":"0.075",},
         {"name":"g_WhiteNoiseAnimation","type":0,"value":"0.025",},

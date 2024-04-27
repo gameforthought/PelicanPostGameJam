@@ -202,7 +202,7 @@ Good night [c_pepper]Pepper[/c], thank you so much for your help today!  #Beatri
 
 ===cly1===
 
-Hi, delivery fo- #Pepper #neutral
+Hi, delivery fo- [remove_item,cly1] #Pepper #neutral
 
 [shake]They're gone.[/] #Clyde #fear
 
@@ -288,7 +288,7 @@ Wonderful, thanks a million!  Take care now! #Clyde #happy
 
 ===cly2===
 
-Ah, well if it isn't my dear partner!  How goes- #Clyde #neutral
+Ah, well if it isn't my dear partner!  How goes- [remove_item,cly2] #Clyde #neutral
 
 Oh, look what you have here!  You've done it!  Thanks, partner! #Clyde #happy
 
@@ -347,7 +347,7 @@ Seems like a light day today, so you shouldn't have too much trouble. #Pierre #n
 
 Oh, this is for [c_beatrice]Beatrice![/]  You'll find her at the library.  #Pierre #happy
 
-And this here is for [c_clyde]Clyde[/].  You'll find him at his house down the road, past the library [give_item,cly1,package,Clyde, Gnome Feed, Feeds gnomes].
+And this here is for [c_clyde]Clyde[/].  You'll find him at his house down the road, past the library [give_item,cly1,package,Clyde,Gnome Feed,Feeds gnomes].
 
 She's a sweetheart, if not a little... batty.  Heh. #Pierre #neutral
 
