@@ -23,4 +23,20 @@ light = 0;
 
 app_surf = -1;
 
-windowScale = window_get_height() / room_height;
+windowScale = global.window_scale;
+
+
+// distort
+surface_depth_disable(true);
+
+#macro COLOUR_FOR_NO_MOVE make_colour_rgb(127,127,255)
+
+//_surface_distort = surface_create(room_width,room_height);
+
+// name of what you want it to be called in the shader
+distortion_stage = shader_get_sampler_index(sh_roundDistort, "distortion_texture_page")
+
+surf_distort_map = -1;
+surface_texture_page = -1;
+
+application_surface_draw_enable(false);

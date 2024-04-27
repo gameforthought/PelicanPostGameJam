@@ -2,7 +2,7 @@
 // You can write your code in this editor
 surface_depth_disable(true);
 
-#macro COLOUR_FOR_NO_MOVE make_colour_rgb(127,127,255)
+//#macro COLOUR_FOR_NO_MOVE make_colour_rgb(127,127,255)
 
 //_surface_distort = surface_create(room_width,room_height);
 

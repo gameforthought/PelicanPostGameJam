@@ -34,5 +34,8 @@ shader_set(sh_roundDistort);
 
 shader_reset();
 
+surface_free(obj_night.app_surf);
+surface_free(surf_distort_map);
+
  // always remember to remove the surface from memory 
 

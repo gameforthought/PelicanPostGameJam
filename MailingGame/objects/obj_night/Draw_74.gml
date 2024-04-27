@@ -47,3 +47,42 @@ shader_reset();
 if (surface_exists(srf_lights)) {
 surface_free(srf_lights);
 }
+
+
+
+//distort
+if surface_texture_page = -1 || !surface_exists(surf_distort_map) {
+	surf_distort_map = surface_create(480, room_height);
+	
+	surface_set_target(surf_distort_map);
+	
+	draw_clear_alpha(COLOUR_FOR_NO_MOVE,0);
+
+    // Anything we draw here will distort the screen
+    for (var i = 0; i < 480; i += 1) {
+		draw_set_color(make_color_rgb(127, 127 + (30 * sin((1 / 480) * pi * i)), 255));
+		draw_rectangle(i, 0, i + 1, room_height, false);
+	}
+	
+	surface_texture_page = surface_get_texture(surf_distort_map);
+	
+	surface_reset_target();
+}
+
+
+
+
+shader_set(sh_roundDistort);
+
+    texture_set_stage(distortion_stage, surface_texture_page);
+
+	
+	draw_surface(app_surf,0,0);
+	//draw_surface(application_surface,0,0);
+	
+    
+
+shader_reset();
+
+surface_free(app_surf);
+surface_free(surf_distort_map);
