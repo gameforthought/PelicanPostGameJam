@@ -160,7 +160,7 @@ Of course, take care! #Pepper #neutral
 
 === bea2 ===
 
-Oh, you're back!  And I'm simply [wheel]brimming[/] with energy this time!  [wave]Woo hoo[/], evenings! #Beatrice #happy #open
+Oh, you're back!  And now that it's later in the day I'm simply [wheel]brimming[/] with energy!  [wave]Woo hoo[/]! #Beatrice #happy #open
 
 That makes one of us... #Pepper #sleepy
 
@@ -346,6 +346,8 @@ Each morning, you'll come in here and get your packages for the day. #Pierre #ne
 Seems like a light day today, so you shouldn't have too much trouble. #Pierre #neutral
 
 Oh, this is for [c_beatrice]Beatrice![/]  You'll find her at the library.  #Pierre #happy
+
+And this here is for [c_clyde]Clyde[/].  You'll find him at his house down the road, past the library [give_item,cly1,package,Clyde, Gnome Feed, Feeds gnomes].
 
 She's a sweetheart, if not a little... batty.  Heh. #Pierre #neutral
 

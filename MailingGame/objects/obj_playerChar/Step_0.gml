@@ -41,7 +41,7 @@ if ((keyboard_check_pressed(vk_up)) || (keyboard_check_pressed(ord("W")))) {
 }
 
 //if pepper is in a cutscene, handle that movement here
-if pepper_state == PlayerState.CutsceneMove{
+if pepper_state == PlayerState.CutsceneMove {
 
 show_debug_message(string(move_dest));
 	if (abs(move_dest - x) < (maxhspd * 2)){

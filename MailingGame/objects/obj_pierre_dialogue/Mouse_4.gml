@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //when clicked, make a textbox visible
-if indicator = true && instance_exists(obj_textbox) = false {
+if indicator = true && instance_exists(obj_textbox) = false && story != -1 {
 //if open = false {
 //		open = true;
 //	} else {

@@ -2,12 +2,14 @@
 // You can write your code in this editor
 
 //when clicked, make a textbox visible
-if indicator == true && instance_exists(obj_textbox) = false {
+if indicator == true && instance_exists(obj_textbox) = false  {
 //if open = false {
 //		open = true;
 //	} else {
 //		open = false;
 //	}
+	
+	if object_get_name(object_index) = "obj_post_office_door" || story != -1 {
 	
 	if !instance_exists(obj_truck) || !position_meeting(x - 24, y, obj_truck) {
 	
@@ -43,5 +45,6 @@ if indicator == true && instance_exists(obj_textbox) = false {
 	
 	}
 	}
+}
 }
 

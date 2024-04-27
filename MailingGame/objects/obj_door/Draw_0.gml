@@ -23,3 +23,4 @@ draw_sprite(spr_click_prox, 0, x - 24, y - bounce);
 
 
 
+
