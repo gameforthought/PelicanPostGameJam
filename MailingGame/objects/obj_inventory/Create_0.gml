@@ -14,6 +14,7 @@ inventory[0] = {
 	desc: "A small box from a book publisher",
 };
 
+give_item(-1, ["cly1","package","Clyde","Gnome Feed","Feeds gnomes"], -1)
 
 x = 0;
 y = 256;

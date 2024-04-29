@@ -347,7 +347,7 @@ Seems like a light day today, so you shouldn't have too much trouble. #Pierre #n
 
 Oh, this is for [c_beatrice]Beatrice![/]  You'll find her at the library.  #Pierre #happy
 
-And this here is for [c_clyde]Clyde[/].  You'll find him at his house down the road, past the library [give_item,cly1,package,Clyde,Gnome Feed,Feeds gnomes].
+And this here is for [c_clyde]Clyde[/].  You'll find him at his house down the road, past the library.
 
 She's a sweetheart, if not a little... batty.  Heh. #Pierre #neutral
 

@@ -13,7 +13,7 @@ sin_pos = 0;
 
 reflect_array = [];
 
-instance_create_depth(0, 0, 650, obj_ocean_foreground);
+instance_create_depth(0, 0, layer_get_depth("Ground") - 1, obj_ocean_foreground);
 
 for (var i = 0; i < 50; i += 1) {
 	//var _reflect_x = ease_in_out_quad(-1 * power(((i / 40) - 1), 2), -200, 200, 1);
