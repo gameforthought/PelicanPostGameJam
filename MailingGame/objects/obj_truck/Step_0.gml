@@ -11,6 +11,7 @@ if instance_exists(obj_playerChar) {} else {
 	audio_play_sound(sd_truck, 0, true);	
 	}
 	audio_sound_gain(sd_truck, 0.6 * (abs(hspd) / 8), 0);
+if (truck_state == PlayerState.FreeMove){
 //get left or right key press and change variables accordingly
 if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))) {
 	if x = road_start {
@@ -26,34 +27,64 @@ if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))) {
 	image_xscale = 1;
 }
 
-if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {
-	if x = road_end {
-	x -= 1;	
-	}
+
+
+	if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {
+		if x = road_end {
+		x -= 1;	
+		}
 	
-	if hspd > 0 { 
-		hspd -= haccel + (haccel * abs(hspd));
-	} else {
-		hspd -= haccel;
+		if hspd > 0 { 
+			hspd -= haccel + (haccel * abs(hspd));
+		} else {
+			hspd -= haccel;
+		}
+		image_xscale = -1;
 	}
-	image_xscale = -1;
+
+
+	if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(ord("D"))  && !keyboard_check(ord("A")){
+		if hspd != 0 {
+	    hspd -= sign(hspd) * 3 * haccel;
+		}
+	
+		if (hspd > -0.2) && (hspd < 0.2) {
+			hspd = 0;	
+		}
+	}
+	show_debug_message("Truck speed: " + string(hspd));
+	hspd = clamp(hspd, -maxhspd, maxhspd);
+}
+//if the truck is in cutscene state, move it to the destination
+else if (truck_state == PlayerState.CutsceneMove){
+	show_debug_message("Parking!");
+	//if the truck is already close to the parking spot, slow it down
+	if (abs(parking_dest - x) < parking_lenience){
+		//check if 
+		_sign = sign(hspd);
+		hspd -= sign(hspd) * haccel * 5;
+		
+		if (_sign != sign(hspd)){
+			hspd = 0;
+			
+			ExitTruck();
+		}
+	}
+	//else move the truck closer to the parking spot
+	else {
+		hspd += sign(parking_dest - x) * haccel / 2;
+	}
 }
 
 
-if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(ord("D"))  && !keyboard_check(ord("A")){
-	if hspd != 0 {
-    hspd -= sign(hspd) * 3 * haccel;
-	}
-	
-	if (hspd > -0.2) && (hspd < 0.2) {
-		hspd = 0;	
-	}
-}
-
-hspd = clamp(hspd, -maxhspd, maxhspd);
-
+//if the player is at the end of the road, don't let them move past it
 if x = road_start || x = road_end {
-hspd = 0;
+	hspd = 0;
+
+	//also exit the truck if hitting the end of the road in cutscene mode
+	if (truck_state == PlayerState.CutsceneMove){
+		ExitTruck();
+	}
 }
 
 x += hspd;
@@ -81,7 +112,6 @@ if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(or
 } else {
 	squash += 1;	
 }
-
 
 
 }
