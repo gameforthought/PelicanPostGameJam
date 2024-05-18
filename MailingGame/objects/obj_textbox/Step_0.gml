@@ -59,11 +59,11 @@ switch name_tag {
 		color = #f5735b;
 	break;
 	case "Clyde":
-		char_x = obj_clyde_door.x;
+		char_x = obj_clyde_door.x - 24;
 		color = #4ab96e;
 	break;
 	default:
-		char_x = -100;
+		char_x = obj_playerChar.x;
 		color = c_black;
 	break;
 };
