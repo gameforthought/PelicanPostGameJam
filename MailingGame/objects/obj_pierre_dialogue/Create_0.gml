@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
+shine_step = 0;
+
 knock_amount = 0;
 
 indicator = false;
@@ -24,3 +26,5 @@ character = obj_pierre.emotion_drawer;
 
 image_alpha = 0;
 show_debug_message("pierre!")
+
+depth -= 2;

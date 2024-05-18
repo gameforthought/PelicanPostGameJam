@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+shine_step = 0;
+
 open = true;
 door_stage = 0;
 door_speed = 1.5;

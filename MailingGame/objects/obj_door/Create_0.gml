@@ -20,3 +20,6 @@ hearing = 100;
 
 story = -1;
 character = -1;
+
+
+shine_step = 0;

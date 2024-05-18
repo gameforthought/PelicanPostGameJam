@@ -19,5 +19,29 @@ draw_rectangle(x - door_stage - 1 - lerp(7, 0, door_stage / 48), y, x - door_sta
 
 
 if indicator = true && !instance_exists(obj_textbox) {
-draw_sprite(spr_click_prox, 0, x - 24, y - bounce);
+var _door_shine = surface_create(48, 82);
+surface_set_target(_door_shine);
+
+var _shine_pos = lerp(100, -80, shine_step / 100);
+
+draw_set_color(c_white);
+
+draw_clear_alpha(c_white, 0);
+
+
+
+draw_line_width(-10, -10 + _shine_pos, 58, 58 + _shine_pos, 20);
+draw_line_width(-10, -10 + 20 + _shine_pos, 58, 58 + 20 + _shine_pos, 5);
+
+
+
+surface_reset_target();
+
+//draw_set_alpha(0.7);
+draw_surface(_door_shine, x - 48, y);
+//draw_set_alpha(1);
+
+surface_free(_door_shine);
+
+draw_sprite(spr_click_prox, 0, x - 24, y + 15 - bounce);
 }
