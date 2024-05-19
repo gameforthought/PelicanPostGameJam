@@ -18,7 +18,7 @@ draw_rectangle(x - door_stage - 1 - lerp(7, 0, door_stage / 48), y, x - door_sta
 }
 
 
-if indicator = true && !instance_exists(obj_textbox) {
+if shine_step > 0 && global.intro = false {
 var _door_shine = surface_create(48, 82);
 surface_set_target(_door_shine);
 
@@ -43,5 +43,9 @@ draw_surface(_door_shine, x - 48, y);
 
 surface_free(_door_shine);
 
-draw_sprite(spr_click_prox, 0, x - 24, y + 15 - bounce);
+
+}
+
+if indicator = true {
+	draw_sprite(spr_click_prox, 0, x - 24, y + 15 - bounce);
 }

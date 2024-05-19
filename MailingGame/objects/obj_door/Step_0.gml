@@ -23,7 +23,6 @@ if instance_exists(obj_playerChar) && point_distance(x - 24, y, obj_playerChar.x
 	
 } else {
 	indicator = false;	
-	shine_step = 0;
 }
 
 bounce = 2 * sin(step);
@@ -56,7 +55,9 @@ if instance_exists(obj_textbox) {
 	open = obj_textbox.door_open_tag;
 }
 
-shine_step += 1.5 - (abs(50 - shine_step) / 50);
+if (indicator = true && !instance_exists(obj_textbox) && story != -1) || shine_step > 0 {
+	shine_step += 1.5 - (abs(50 - shine_step) / 50);
+}
 
 if shine_step >= 100 {
 	shine_step = 0;	

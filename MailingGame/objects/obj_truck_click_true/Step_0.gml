@@ -12,7 +12,7 @@ if obj_truck.image_xscale = -1 {
 } else {
 	x = obj_truck.x - 18;
 }
-y = obj_truck.y - 110 - bounce;
+y = obj_truck.y - 110 + 15 - bounce;
 
 bounce = 2 * sin(step);
 
