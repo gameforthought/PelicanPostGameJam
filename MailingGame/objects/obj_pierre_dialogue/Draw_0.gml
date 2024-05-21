@@ -8,11 +8,6 @@ draw_clear_alpha(c_white, 0);
 
 if !instance_exists(obj_textbox) {
 
-	
-	
-
-
-
 
 draw_sprite_ext(spr_pierre, 0, obj_pierre.x, 256 - 32, 1, obj_pierre.y_scale, 0, c_white, 1);
 

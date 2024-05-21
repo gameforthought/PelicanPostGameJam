@@ -101,6 +101,7 @@
     {"id":{"name":"obj_cloud","path":"objects/obj_cloud/obj_cloud.yy",},},
     {"id":{"name":"obj_cloudGen","path":"objects/obj_cloudGen/obj_cloudGen.yy",},},
     {"id":{"name":"obj_clyde_door","path":"objects/obj_clyde_door/obj_clyde_door.yy",},},
+    {"id":{"name":"obj_collectible_par","path":"objects/obj_collectible_par/obj_collectible_par.yy",},},
     {"id":{"name":"obj_colliderbox","path":"objects/obj_colliderbox/obj_colliderbox.yy",},},
     {"id":{"name":"obj_dialogue_manager","path":"objects/obj_dialogue_manager/obj_dialogue_manager.yy",},},
     {"id":{"name":"obj_distortShader","path":"objects/obj_distortShader/obj_distortShader.yy",},},

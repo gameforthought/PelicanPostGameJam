@@ -68,6 +68,7 @@
     {"name":"obj_cloud","order":13,"path":"objects/obj_cloud/obj_cloud.yy",},
     {"name":"obj_cloudGen","order":14,"path":"objects/obj_cloudGen/obj_cloudGen.yy",},
     {"name":"obj_clyde_door","order":6,"path":"objects/obj_clyde_door/obj_clyde_door.yy",},
+    {"name":"obj_collectible_par","order":31,"path":"objects/obj_collectible_par/obj_collectible_par.yy",},
     {"name":"obj_colliderbox","order":2,"path":"objects/obj_colliderbox/obj_colliderbox.yy",},
     {"name":"obj_distortShader","order":3,"path":"objects/obj_distortShader/obj_distortShader.yy",},
     {"name":"obj_gameStarter","order":2,"path":"objects/obj_gameStarter/obj_gameStarter.yy",},
