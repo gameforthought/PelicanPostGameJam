@@ -15,7 +15,7 @@ scribble_font_set_default("ft_gui");
 next_line();
 richtext = scribble("[delay]" + text_to_display);
 richtext.wrap(box_width * 2);
-richtext.line_height(-1, string_height(text_to_display) - 5);
+//richtext.line_height(-1, string_height(text_to_display) - 5);
 
 typewriter = scribble_typist();
 typewriter.in(type_speed, 0);
