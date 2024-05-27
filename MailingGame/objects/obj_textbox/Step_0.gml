@@ -68,6 +68,11 @@ switch name_tag {
 	break;
 };
 
+
+//if hit the tilde key, skip the dialogue
+if (keyboard_check_pressed("1")){
+	skip_dialogue();	
+}
 //spd_increase();
 
 //text_to_display = string(def);

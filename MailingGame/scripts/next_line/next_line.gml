@@ -1,4 +1,4 @@
-///Loads and returns the next line
+///Loads and returns the next line of dialogue
 ///TODO: expand functionality to account for choices
 function next_line(){
 	if (ink_can_continue()){
@@ -20,7 +20,23 @@ function next_line(){
 		
 	}
 	else {
-		
+		//check if the text is paused at a choice
+		var choice_count = ink_choice_count();
+		if (choice_count > 0){
+			
+			//README: The strings for each of the choices can be accessed in ink_choice(i)
+			//Call ink_choose_choice(i) to make a choice
+			
+			
+			//var choice_string = "";
+			//for (var i=0; i<choice_count;i++){
+			//choice_string += string(i) + ": " + ink_choice(i) + "\n";
+			//}
+			
+			//text_to_display = choice_string;
+			
+		}
+
 		//this line of code is used to destroy a textbox when ready
 		//instance_destroy();
 	}

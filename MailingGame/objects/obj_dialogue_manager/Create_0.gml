@@ -3,7 +3,7 @@
 show_debug_message("new manager")
 
 //ink_load(working_directory + ink_file_name);
-ink_load(working_directory + "demo_dialogue.json");
+ink_load(working_directory + ink_file_name);
 
 
 scribble_typists_add_event("door_set_knot", door_set_knot);

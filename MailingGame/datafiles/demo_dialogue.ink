@@ -57,7 +57,7 @@ VAR character = "bea1"
 ->start
 === start ===
 
-->pie1
+->DebugChoice
 
 
 === bea1 ===

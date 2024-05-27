@@ -28,8 +28,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"is_debug_mode","filters":[],"listItems":[],"multiselect":false,"name":"is_debug_mode","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
-    {"$GMObjectProperty":"v1","%Name":"pepper_state","filters":[],"listItems":[],"multiselect":false,"name":"pepper_state","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"PlayerState.NoMove","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"is_debug_mode","filters":[],"listItems":[],"multiselect":false,"name":"is_debug_mode","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"pepper_state","filters":[],"listItems":[],"multiselect":false,"name":"pepper_state","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"PlayerState.NoMove","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
