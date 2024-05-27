@@ -21,7 +21,7 @@ night_col_param = [0.8, 0.6, -0.15, 0, 1];
 
 light = 0;
 
-app_surf = -1;
+
 
 windowScale = global.window_scale;
 
@@ -36,7 +36,6 @@ windowScale = global.window_scale;
 // name of what you want it to be called in the shader
 distortion_stage = shader_get_sampler_index(sh_roundDistort, "distortion_texture_page")
 
-surf_distort_map = -1;
-surface_texture_page = -1;
+
 
 //application_surface_draw_enable(false);

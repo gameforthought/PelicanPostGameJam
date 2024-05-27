@@ -81,7 +81,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"MailingGame",
   "resources":[
@@ -380,8 +380,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"GaleTestingRoom","path":"rooms/GaleTestingRoom/GaleTestingRoom.yy",},},
     {"roomId":{"name":"demo_room","path":"rooms/demo_room/demo_room.yy",},},
+    {"roomId":{"name":"GaleTestingRoom","path":"rooms/GaleTestingRoom/GaleTestingRoom.yy",},},
     {"roomId":{"name":"post_office","path":"rooms/post_office/post_office.yy",},},
     {"roomId":{"name":"DialogueTesting","path":"rooms/DialogueTesting/DialogueTesting.yy",},},
     {"roomId":{"name":"ending_room_imagine","path":"rooms/ending_room_imagine/ending_room_imagine.yy",},},

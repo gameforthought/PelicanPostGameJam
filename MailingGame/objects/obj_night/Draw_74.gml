@@ -1,14 +1,20 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (global.debug_mode) = false {
+
+//var app_surf = -1;
+var surf_distort_map = surface_create(480, room_height);
+var surface_texture_page = -1;
+
 if (!surface_exists(srf_lights)) {
 	srf_lights = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
 	tex_lights = surface_get_texture(srf_lights);
 }
 
-if (!surface_exists(app_surf)) {
-	app_surf = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
-}
+//if (!surface_exists(app_surf)) {
+	var app_surf = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
+//}
 
 surface_set_target(srf_lights);
 
@@ -48,9 +54,12 @@ if (surface_exists(srf_lights)) {
 surface_free(srf_lights);
 }
 
+
+
+
 //distort
 if surface_texture_page = -1 || !surface_exists(surf_distort_map) {
-	surf_distort_map = surface_create(480, room_height);
+	//surf_distort_map = surface_create(480, room_height);
 	
 	surface_set_target(surf_distort_map);
 	
@@ -75,7 +84,7 @@ shader_set(sh_roundDistort);
     texture_set_stage(distortion_stage, surface_texture_page);
 
 	
-	//draw_surface(app_surf,0,0);
+	//draw_surface(_app_surf_copy,0,0);
 	draw_surface(application_surface,0,0);
 	
     
@@ -83,6 +92,7 @@ shader_set(sh_roundDistort);
 shader_reset();
 
 
-
 surface_free(app_surf);
 surface_free(surf_distort_map);
+
+}
