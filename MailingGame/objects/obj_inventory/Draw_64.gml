@@ -34,7 +34,16 @@ for (var i = 0; i < INVENTORY_SLOTS; i++)
 	//Test Coordinates
 	if(hover or obj_mouse.slot_select == i){
 	//draw_set_color(#e6decf);
-	draw_sprite_ext(spr_inventory_select, 0, xx * windowScale, yy * windowScale, windowScale, windowScale, select_rotate, c_white, 1);
+	
+	var select_color = -1;
+	
+	if obj_mouse.slot_select == i {
+		select_color = PP_RED;
+	} else {
+		select_color = PP_BLUE;
+	}
+	
+	draw_sprite_ext(spr_inventory_select, 0, xx * windowScale, yy * windowScale, windowScale, windowScale, select_rotate, select_color, 1);
 	
 	
 	
@@ -64,13 +73,13 @@ for (var i = 0; i < INVENTORY_SLOTS; i++)
 		draw_set_font(ft_gui);
 		draw_set_halign(fa_right);
 		draw_set_color(c_black);
-		draw_text(x + 422 * windowScale, (y + 152) * windowScale, inventory[i].to);
-		draw_text(x + 422 * windowScale, (y + 174) * windowScale, inventory[i].from);
+		draw_text(x + 422 * windowScale, (y + 152 + 11) * windowScale, inventory[i].to);
+		draw_text(x + 422 * windowScale, (y + 174 + 11) * windowScale, inventory[i].from);
 		
 		draw_set_halign(fa_left);
 		
 		var line_height = string_height(inventory[i].desc);
-		draw_text_ext(x + 320 * windowScale, (y + 75) * windowScale, inventory[i].desc, line_height - 6, 100 * windowScale);
+		draw_text_ext(x + 247 * windowScale, (y + 75) * windowScale, inventory[i].desc, line_height - 6, 170 * windowScale);
 	}
 	
 }
