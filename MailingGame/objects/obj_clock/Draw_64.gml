@@ -18,7 +18,7 @@ draw_sprite_ext(spr_clock, 1, 0, y * windowScale, windowScale, windowScale, 0, c
 draw_set_font(ft_gui);
 
 draw_set_color(#ca4d35);
-draw_text(61 * windowScale, (y - 24) * windowScale, week);
+draw_text(61 * windowScale, (y - 22) * windowScale, week);
 
 draw_set_color(#5a7fc8);
-draw_text(61 * windowScale, (y - 46) * windowScale, day);
+draw_text(61 * windowScale, (y - 44) * windowScale, day);

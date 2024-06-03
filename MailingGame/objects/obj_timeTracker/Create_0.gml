@@ -3,6 +3,8 @@
 
 global.debug_mode = false;
 
+
+//edited
 day_progress = 0;
 
 sunset_progress = 0;

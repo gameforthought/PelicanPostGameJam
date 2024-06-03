@@ -29,14 +29,14 @@ shader_set(sh_roundDistort);
     texture_set_stage(distortion_stage, surface_texture_page);
 
 	
-	draw_surface(obj_night.app_surf,0,0);
+	draw_surface(obj_shader.app_surf,0,0);
 	//draw_surface(application_surface,0,0);
 	
     
 
 shader_reset();
 
-surface_free(obj_night.app_surf);
+surface_free(obj_shader.app_surf);
 surface_free(surf_distort_map);
 
 
