@@ -4,7 +4,7 @@
 
 sway += 2;
 
-if (x > obj_cameraManager.camera_target - 620) && (x < obj_cameraManager.camera_target + 620) {
+if (x > obj_camera_manager.camera_target - 620) && (x < obj_camera_manager.camera_target + 620) {
 
 wind =  EaseInBack(global.wind, 0, 1, 1) * wind_mod;
 

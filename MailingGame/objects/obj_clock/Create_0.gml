@@ -6,7 +6,7 @@ clock_vis = false;
 transition_time = 80
 clock_move_step = transition_time;
 
-sunset_start = obj_timeTracker.sunset_start;
+sunset_start = obj_time_tracker.sunset_start;
 day = 1;
 week = 1;
 

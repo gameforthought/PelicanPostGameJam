@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (x > obj_cameraManager.camera_target - 620) && (x < obj_cameraManager.camera_target + 620) {
+if (x > obj_camera_manager.camera_target - 620) && (x < obj_camera_manager.camera_target + 620) {
 
 wind = global.wind * wind_mod;
 draw_set_color(c_white);

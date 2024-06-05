@@ -14,4 +14,4 @@ if distance_to_object(obj_door) < 100 {
 }
 
 
-glow = instance_create_layer(x + 46, y + 30, "lights", obj_test_light);
+glow = instance_create_layer(x + 43, y + 26, "lights", obj_lamp_light);

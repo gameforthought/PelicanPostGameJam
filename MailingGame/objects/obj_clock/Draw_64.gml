@@ -11,7 +11,7 @@ for (var i = 1; i < sunset_start + 1; i += 1) {
 	draw_circle(circle_x + (cos((-i * sep) + (pi / 36)) * 26) * windowScale, circle_y + (sin((-i * sep) + (pi / 36)) * 26) * windowScale, 3.5 * windowScale, false);
 }
 
-draw_sprite_ext(spr_clock_hand, 0, circle_x, circle_y + (2 * windowScale), windowScale, 1.4 * windowScale, 95 - ((190 / (sunset_start + 1)) * obj_timeTracker.day_progress), c_white, 1);
+draw_sprite_ext(spr_clock_hand, 0, circle_x, circle_y + (2 * windowScale), windowScale, 1.4 * windowScale, 95 - ((190 / (sunset_start + 1)) * obj_time_tracker.day_progress), c_white, 1);
 
 draw_sprite_ext(spr_clock, 1, 0, y * windowScale, windowScale, windowScale, 0, c_white, 1);
 

@@ -17,12 +17,12 @@ surface_set_target(surf_lights);
 	draw_clear_alpha(0, 0)
 	camera_apply(view_get_camera(0));
 	
-	var lights_strength = light;
 	with(par_lights)
-		draw_sprite_ext(sprite_index, image_index,
-		x - view_xport[0],
-		y - view_yport[0],
-		1, 1, 0, c_white, 1 * lights_strength);
+		//draw_sprite_ext(sprite_index, image_index,
+		//x - view_xport[0],
+		//y - view_yport[0],
+		//1, 1, 0, c_white, 1 * lights_strength);
+		event_perform(ev_draw, 0);
 	
 surface_reset_target();
 

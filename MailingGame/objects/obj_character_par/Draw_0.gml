@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (x > obj_cameraManager.camera_target - 620) && (x < obj_cameraManager.camera_target + 620) {
+if (x > obj_camera_manager.camera_target - 620) && (x < obj_camera_manager.camera_target + 620) {
 //draw arms
 draw_sprite_ext(sprite, 1, x + shoulder_width, 256 - 32 - shoulder_height, 1, -1, (-2 * cos(speed_mod * anim_speed * char_anim)), c_white, 1);
 draw_sprite_ext(sprite, 1, x - shoulder_width, 256 - 32 - shoulder_height, -1, -1, (+2 * cos(speed_mod * anim_speed * char_anim)), c_white, 1);

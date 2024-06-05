@@ -19,7 +19,7 @@ if global.intro = true {
 	story = "pie1";
 }
 
-if obj_timeTracker.night_bool = true {
+if obj_time_tracker.night_bool = true {
 	story = "pie2";
 }
 character = obj_pierre.emotion_drawer;

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (x > obj_cameraManager.camera_target - 620) && (x < obj_cameraManager.camera_target + 620) {
+if (x > obj_camera_manager.camera_target - 620) && (x < obj_camera_manager.camera_target + 620) {
 
 draw_sprite_ext(spr_conductorArm, 0, x - 75, y - 65, 1, 1, 265, c_white, 1);
 

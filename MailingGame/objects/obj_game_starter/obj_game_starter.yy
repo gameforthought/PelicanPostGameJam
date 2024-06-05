@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_gameStarter",
+  "%Name":"obj_game_starter",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":27,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_gameStarter",
+  "name":"obj_game_starter",
   "overriddenProperties":[],
   "parent":{
     "name":"game_management",

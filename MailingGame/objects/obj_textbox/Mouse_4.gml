@@ -27,7 +27,7 @@ if point_in_rectangle(mouse_x, mouse_y, vx + (xpos + 140 - 15), 225 - 30, vx + (
 	
 		up = false;
 	
-		if obj_timeTracker.night_bool = true {
+		if obj_time_tracker.night_bool = true {
 			var _transition = {
 			grow: false,
 			next_room: ending_room_imagine,

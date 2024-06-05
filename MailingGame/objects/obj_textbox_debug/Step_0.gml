@@ -28,7 +28,7 @@ y_anim = EaseInBack(y_step, 0, 256, 45);
 
 if up = false && y_anim > 255 {
 	if room = demo_room {
-		obj_timeTracker.day_progress += 1;
+		obj_time_tracker.day_progress += 1;
 	}
 	obj_door.open = false;
 	global.pause = 0;

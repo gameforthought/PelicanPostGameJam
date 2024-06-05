@@ -3,7 +3,7 @@ var wind =  global.wind * 1.5;
 var sway = 0.5 * (sin(0.001 * pi * sway_time));
 
 
-if (x > obj_cameraManager.camera_target - 620) && (x < obj_cameraManager.camera_target + 620) {
+if (x > obj_camera_manager.camera_target - 620) && (x < obj_camera_manager.camera_target + 620) {
 //canopy leaves
 draw_sprite_ext(spr_tree_leaves, big_leaves, x + growth_val_array[(round(segments * 0.85))] + 8.5 * (wind + sway), y - (20 * (round(segments * 0.85))), 1.5, 1.5, 0, darker_b, 1);
 
