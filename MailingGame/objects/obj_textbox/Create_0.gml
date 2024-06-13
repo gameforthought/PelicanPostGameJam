@@ -4,6 +4,12 @@ show_debug_message("textbox")
 image_alpha = 0;
 windowScale = global.window_scale;
 
+//choice_array = ["Yes", "No", "Maybe"];
+
+choice_array = [];
+
+button_array = [];
+
 
 
 
@@ -59,3 +65,4 @@ if dir = 1 {
 } else {
 	xpos = 18;	
 }
+

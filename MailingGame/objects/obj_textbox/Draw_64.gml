@@ -1,6 +1,9 @@
 /// Render the textbox and the text
 // You can write your code in this editor
 
+var choice_length = array_length(choice_array);
+
+
 //color the nametag
 draw_set_color(color);
 //draw_rectangle((xpos + 24) * windowScale, 17 * windowScale, (xpos + 103) * windowScale, 48 * windowScale, false)
@@ -36,13 +39,37 @@ var vx = camera_get_view_x(view_camera[0]);
 var vy = camera_get_view_y(view_camera[0]);
 
 
+if choice_length = 0 {
+
 draw_set_color(color);
 //draw button
 //if forward = true {
 	//draw_rectangle((xpos + 140 - 13) * windowScale, (y_anim + 224) * windowScale, (xpos + 140 + 14) * windowScale, (y_anim + 228 - 29) * windowScale, false)
-	draw_sprite_ext(spr_next_bt, 1, (xpos + 140) * windowScale, (y_anim + 225) * windowScale, windowScale, windowScale, hover, color, 1);
-	draw_sprite_ext(spr_next_bt, 0, (xpos + 140) * windowScale, (y_anim + 225) * windowScale, windowScale, windowScale, hover, c_white, 1);
+	draw_sprite_ext(spr_next_bt, 1, (xpos + 140) * windowScale, (y_anim + 225) * windowScale, windowScale, windowScale, button_array[0][2], color, 1);
+	draw_sprite_ext(spr_next_bt, 0, (xpos + 140) * windowScale, (y_anim + 225) * windowScale, windowScale, windowScale, button_array[0][2], c_white, 1);
 //}
+
+} else {
+	
+	draw_sprite_ext(spr_choice, 1, (xpos - 42) * windowScale, (y_anim + 256 - 49 + 32) * windowScale, windowScale, windowScale, 0, c_white, 1);
+	
+	for (var i = 0; i < choice_length; i++) {
+		draw_sprite_ext(spr_choice, 0, (xpos - 42) * windowScale, (y_anim + 256 - 49 - (32 * i)) * windowScale, windowScale, windowScale, 0, c_white, 1);
+		
+		var choice = scribble(choice_array[i]);
+		
+		choice.align(fa_left, fa_middle);
+		
+		choice.draw((xpos - 42 + 48) * windowScale, (y_anim + 256 - 49 + 16 - (32 * i)) * windowScale);
+		
+		draw_sprite_ext(spr_choice_bt, 1, (xpos - 42 + 24) * windowScale, (y_anim + 256 - 49 + 32 - (32 * i)) * windowScale, windowScale, windowScale, button_array[i + 1][2], #5a7fc8, 1);
+		draw_sprite_ext(spr_choice_bt, 0, (xpos - 42 + 24) * windowScale, (y_anim + 256 - 49 + 32 - (32 * i)) * windowScale, windowScale, windowScale, button_array[i + 1][2], c_white, 1);
+		
+	}
+	
+	draw_sprite_ext(spr_choice, 2, (xpos - 42) * windowScale, (y_anim + 256 - 49 - (32 * (choice_length))) * windowScale, windowScale, windowScale, 0, c_white, 1);
+	
+}
 
 //draw character speech indicator
 

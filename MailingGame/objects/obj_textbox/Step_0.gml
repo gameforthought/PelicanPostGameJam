@@ -8,16 +8,43 @@ x = vx + xpos;
 y = vy + y_anim;
 
 
+var choice_length = array_length(choice_array);
+button_array[0] = [xpos + 140, y_anim + 225];
+
+if point_in_rectangle(mouse_x, mouse_y, vx + (xpos + 140 - 15), 225 - 30, vx + (xpos + 140 + 15), 225) {
+	button_array[0][2] = -5;	
+} else {
+	button_array[0][2] = 0;
+}
+
+if choice_length > 0 {
+	
+	for (var i = 0; i < choice_length; i++) {
+		button_array[i + 1] = [(xpos - 42 + 24), (y_anim + 256 - 49 + 32 - (32 * i))];
+		
+		
+		if point_in_rectangle(mouse_x, mouse_y, vx + (button_array[i + 1][0] - 15), 
+		button_array[i + 1][1] - 30, 
+		vx + (button_array[i + 1][0] + 15),
+		button_array[i + 1][1]) {
+			
+			button_array[i + 1][2] = -5;	
+		} else {
+			button_array[i + 1][2] = 0;
+		}
+	}
+	
+	
+	
+} else {
+	array_resize(button_array, 1);
+}
 
 bounce = 2 * sin(step);
 
 step += 0.1;
 
-if point_in_rectangle(mouse_x, mouse_y, vx + (xpos + 140 - 15), 225 - 30, vx + (xpos + 140 + 15), 225) {
-	hover = -5;	
-} else {
-	hover = 0;
-}
+
 
 if up = true && y_step > 0 {
 	y_step -= 1;	

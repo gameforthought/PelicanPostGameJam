@@ -14,8 +14,8 @@
 #macro SCRIBBLE_DEFAULT_WAVE_FREQUENCY      50       //Default wave frequency. Larger values create more "humps" over a certain number of characters
 #macro SCRIBBLE_DEFAULT_WAVE_SPEED          0.1      //Default wave speed. Larger numbers cause characters to move up and down more rapidly
 
-#macro SCRIBBLE_DEFAULT_SHAKE_SIZE          1        //Default shake amplitude, in pixels
-#macro SCRIBBLE_DEFAULT_SHAKE_SPEED         0.4      //Default shake speed. Larger values cause characters to move around more rapidly
+#macro SCRIBBLE_DEFAULT_SHAKE_SIZE          1.3        //Default shake amplitude, in pixels
+#macro SCRIBBLE_DEFAULT_SHAKE_SPEED         0.35      //Default shake speed. Larger values cause characters to move around more rapidly
 
 #macro SCRIBBLE_DEFAULT_RAINBOW_WEIGHT      0.5      //Default rainbow blend weight. 0 does not show any rainbow effect at all, and 1 will blend a glyph's colour fully with the rainbow colour
 #macro SCRIBBLE_DEFAULT_RAINBOW_SPEED       0.01     //Default rainbow speed. Larger values cause characters to change colour more rapidly
