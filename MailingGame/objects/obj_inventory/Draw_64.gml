@@ -26,7 +26,7 @@ draw_sprite_ext(spr_inventory, 0, x, y * windowScale, windowScale, windowScale, 
 
 for (var i = 0; i < INVENTORY_SLOTS; i++)
 {
-	var xx = x + 69 + (i mod row_length) * 36;
+	var xx = x + 69 + (i mod row_length) * 34;
 	var yy = y + 84 + (i div row_length) * 35;
 	var hover = (obj_mouse.inventory_hover == id) && (obj_mouse.slot_hover == i)
 	
@@ -73,13 +73,13 @@ for (var i = 0; i < INVENTORY_SLOTS; i++)
 		draw_set_font(ft_gui);
 		draw_set_halign(fa_right);
 		draw_set_color(c_black);
-		draw_text(x + 422 * windowScale, (y + 152 + 11) * windowScale, inventory[i].to);
-		draw_text(x + 422 * windowScale, (y + 174 + 11) * windowScale, inventory[i].from);
+		draw_text(x + 418 * windowScale, (y + 152 + 11) * windowScale, inventory[i].to);
+		draw_text(x + 418 * windowScale, (y + 174 + 11) * windowScale, inventory[i].from);
 		
 		draw_set_halign(fa_left);
 		
 		var line_height = string_height(inventory[i].desc);
-		draw_text_ext(x + 247 * windowScale, (y + 75) * windowScale, inventory[i].desc, line_height - 6, 170 * windowScale);
+		draw_text_ext(x + 262 * windowScale, (y + 75) * windowScale, inventory[i].desc, line_height - 6, 156 * windowScale);
 	}
 	
 }

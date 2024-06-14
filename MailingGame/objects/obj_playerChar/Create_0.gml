@@ -50,4 +50,10 @@ emotion_drawer = -1;
 y_scale = 1;
 
 
+inventory = -1;
+if instance_exists(obj_inventory) {
+	inventory = obj_inventory.inventory[0];
+}
+
+
 

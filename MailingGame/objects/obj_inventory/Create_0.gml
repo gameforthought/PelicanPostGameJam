@@ -6,14 +6,15 @@ inventory = array_create(INVENTORY_SLOTS, -1);
 //randomize();
 
 
-inventory[0] = {
-	key: "Bea1",
-	subimage: 0,
-	to: "Beatrice",
-	from: "UC Books",
-	desc: "A small box from a book publisher",
-};
+//inventory[0] = {
+//	key: "Bea1",
+//	subimage: 0,
+//	to: "Beatrice",
+//	from: "UC Books",
+//	desc: "A small box from a book publisher",
+//};
 
+give_item(-1, ["Bea1","package","Beatrice","UC Books","A small box from a book publisher"], -1)
 give_item(-1, ["cly1","package","Clyde","Gnome Feed","Feeds gnomes"], -1)
 
 x = 0;
