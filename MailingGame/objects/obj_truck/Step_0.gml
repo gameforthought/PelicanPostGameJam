@@ -171,8 +171,16 @@ image_alpha = textbox_alpha;
 var layer_id = layer_get_id("speedlines");
 var bg_id = layer_background_get_id(layer_id);
 
+var layer2_id = layer_get_id("speedlines2");
+var bg2_id = layer_background_get_id(layer2_id);
+
+
+
 layer_background_alpha(bg_id, lerp(0, 0.5 - 0.05 * (obj_time_tracker.sunset_progress / 10) - 0.08 * (obj_time_tracker.night_progress / 10), (abs(hspd)) /maxhspd));
 layer_hspeed(layer_id, -hspd / 1.5);
+
+layer_background_alpha(bg2_id, lerp(0, 0.5 - 0.05 * (obj_time_tracker.sunset_progress / 10) - 0.08 * (obj_time_tracker.night_progress / 10), (abs(hspd)) /maxhspd));
+layer_hspeed(layer2_id, -hspd / 0.75);
 
 
 

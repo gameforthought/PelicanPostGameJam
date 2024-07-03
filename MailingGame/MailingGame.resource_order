@@ -300,6 +300,7 @@
     {"name":"spr_testHouse","order":18,"path":"sprites/spr_testHouse/spr_testHouse.yy",},
     {"name":"spr_text_button","order":10,"path":"sprites/spr_text_button/spr_text_button.yy",},
     {"name":"spr_title","order":9,"path":"sprites/spr_title/spr_title.yy",},
+    {"name":"spr_titleletters","order":17,"path":"sprites/spr_titleletters/spr_titleletters.yy",},
     {"name":"spr_train_station","order":5,"path":"sprites/spr_train_station/spr_train_station.yy",},
     {"name":"spr_train_tracks","order":1,"path":"sprites/spr_train_tracks/spr_train_tracks.yy",},
     {"name":"spr_train_wheel","order":2,"path":"sprites/spr_train_wheel/spr_train_wheel.yy",},

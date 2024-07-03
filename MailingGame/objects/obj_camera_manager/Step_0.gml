@@ -22,7 +22,9 @@ if instance_exists(obj_textbox) {
 		dialogue_change = -70;	
 	}
 } 
-else {
+else if instance_exists(obj_title_screen) {
+	dialogue_change = 20;
+} else {
 	dialogue_change = 0;
 }
 

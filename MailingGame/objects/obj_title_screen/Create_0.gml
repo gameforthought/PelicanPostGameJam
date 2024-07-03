@@ -7,6 +7,68 @@ shift_step = 0;
 
 windowScale = window_get_height() / room_height;
 
+
+decoration = [
+{
+x_pos: -20,
+y_pos: 123,
+v: 0,
+h: -1,
+rot: 90,
+subimage: 2
+},
+{
+x_pos: 358,
+y_pos: 2,
+v: -1.5,
+h: 1.5,
+rot: 157,
+subimage: 2
+},
+{
+x_pos: -25,
+y_pos: 148,
+v: 0,
+h: -1,
+rot: 167,
+subimage: 1
+},
+{
+x_pos: 113,
+y_pos: 40,
+v: -1.5,
+h: -1.5,
+rot: 200,
+subimage: 0
+},
+{
+x_pos: 17,
+y_pos: 314,
+v: 1,
+h: -1,
+rot: 20,
+subimage: 3
+},
+{
+x_pos: 258,
+y_pos: 305,
+v: 1.5,
+h: 0,
+rot: -5,
+subimage: 0
+},
+{
+x_pos: 416,
+y_pos: 162,
+v: 0,
+h: 1,
+rot: 83,
+subimage: 1
+},
+
+
+]
+
 start_struct = {
 	color: #5a7fc8,
 	text: "Let's Go!",
