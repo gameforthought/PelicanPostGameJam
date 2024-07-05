@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"next_line",
+  "%Name":"InkFunctions",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"next_line",
+  "name":"InkFunctions",
   "parent":{
     "name":"Dialogue_Scripts",
     "path":"folders/Scripts/Dialogue_Scripts.yy",

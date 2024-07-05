@@ -25,6 +25,5 @@ function load_story(knot_to_load) {
 	//ink_observe_variable("gnome_count", gnomes_changed);
 	
 	//}
-	
 	return textbox;
 }

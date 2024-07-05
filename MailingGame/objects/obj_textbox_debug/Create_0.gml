@@ -9,7 +9,7 @@ type_speed = (0.5);
 box_width = 118;
 scribble_font_set_default("ft_gui");
 
-next_line();
+InkFunctions();
 richtext = scribble("[delay]" + text_to_display);
 richtext.wrap(box_width * windowScale);
 richtext.line_height(-1, string_height(text_to_display) - 5);
