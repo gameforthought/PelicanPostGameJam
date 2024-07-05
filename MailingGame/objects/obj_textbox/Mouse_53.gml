@@ -53,8 +53,8 @@ for (var i = 0; i < choice_length; i++) {
 			typewriter.sound_per_char([sd_type], pitch - 0.1, pitch + 0.1, " !.,?-;:()");
 			forward = false;
 		}
-		else if (ink_choice_count == 0) {
-	
+		else {
+	show_debug_message("AAAAAAAAAAAAAAAA");
 			up = false;
 	
 			if obj_time_tracker.night_bool = true {

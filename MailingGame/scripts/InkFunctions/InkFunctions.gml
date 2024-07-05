@@ -1,7 +1,6 @@
 ///Loads and returns the next line of dialogue
 ///TODO: expand functionality to account for choices
 function next_line(){
-	show_debug_message("fkdsafkdsajfdsaj");
 	choice_array = [];
 	if (ink_can_continue()){
 		
@@ -38,8 +37,9 @@ function next_line(){
 			
 			
 		}
+		//if text is done, cue end of textbox
+		else up = false;
 		
-		//else instance_destroy();
 		//this line of code is used to destroy a textbox when ready 
 	}
 }
