@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 open = false;
-door_stage = 48;
+door_stage = 45;
 door_speed = 1.5;
 audio_sound_gain(sd_knock, 2, 0)
 
@@ -23,3 +23,5 @@ character = -1;
 
 
 shine_step = 0;
+
+knob_length = 8;

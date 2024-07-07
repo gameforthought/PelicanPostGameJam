@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+var width = 45;
+
+
 if open = true {
 	door_stage -= door_speed;
 	
@@ -13,12 +16,12 @@ if !audio_is_playing(sd_door_open) && global.intro = false && room = demo_room {
 	audio_play_sound(sd_door_open, 0, false);	
 }	
 }
-door_stage = clamp(door_stage, 0, 48);
+door_stage = clamp(door_stage, 0, width);
 
 
 //indicator
 
-if instance_exists(obj_playerChar) && point_distance(x - 24, y, obj_playerChar.x, y) < 80 {
+if instance_exists(obj_playerChar) && point_distance(x - (width / 2), y, obj_playerChar.x, y) < 80 {
 	indicator = true;
 	
 } else {

@@ -21,6 +21,7 @@
   "height":153,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"0a6463e0-1367-4a52-8127-3b5ab7ba7f01","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"0a6463e0-1367-4a52-8127-3b5ab7ba7f01","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"5df5c4e5-a2c1-4d9c-9482-cb88d21587ab","blendMode":0,"displayName":"default","isLocked":false,"name":"5df5c4e5-a2c1-4d9c-9482-cb88d21587ab","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_post_office_interior",

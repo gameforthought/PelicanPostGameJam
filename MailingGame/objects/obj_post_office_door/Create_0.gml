@@ -3,6 +3,8 @@
 
 shine_step = 0;
 
+knob_length = 7;
+
 open = true;
 door_stage = 0;
 door_speed = 1.5;

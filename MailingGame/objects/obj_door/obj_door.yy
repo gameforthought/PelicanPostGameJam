@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_suzannah_door",
-    "path":"sprites/spr_suzannah_door/spr_suzannah_door.yy",
+    "name":"spr_library_door",
+    "path":"sprites/spr_library_door/spr_library_door.yy",
   },
   "spriteMaskId":null,
   "visible":true,

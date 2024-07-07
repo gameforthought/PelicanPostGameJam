@@ -3,8 +3,10 @@
 
 
 open = false;
-door_stage = 48;
+door_stage = 45;
 door_speed = 1.5;
+
+knob_length = 8;
 
 shine_step = 0;
 
@@ -18,7 +20,7 @@ story = "bea1";
 
 
 sprite = spr_library_door;
-color = #d9c498;
+color = #501733;
 knock_time = 80;
 
 char_struct = {

@@ -2,8 +2,10 @@
 // You can write your code in this editor
 
 open = false;
-door_stage = 48;
+door_stage = 45;
 door_speed = 1.5;
+
+knob_length = 10;
 
 shine_step = 0;
 
@@ -19,7 +21,7 @@ bounce = 0;
 step = 0;
 
 sprite = spr_clyde_door;
-color = #239348;
+color = #104C40;
 knock_time = 80;
 
 
