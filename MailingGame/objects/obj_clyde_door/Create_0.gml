@@ -36,6 +36,6 @@ char_struct = {
 	eye_y: 2,
 };
 
-character = instance_create_depth(x - 24, 0, layer_get_depth(layer) + 350, obj_character_par, char_struct);
+character = instance_create_depth(x - 24, 0, layer_get_depth("houses") + 10, obj_character_par, char_struct);
 
 
