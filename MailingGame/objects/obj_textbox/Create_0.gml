@@ -7,6 +7,7 @@ windowScale = global.window_scale;
 //choice_array = ["Yes", "No", "Maybe"];
 
 choice_array = [];
+choice_length = 0;
 
 button_array = [];
 

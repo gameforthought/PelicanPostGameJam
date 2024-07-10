@@ -2,6 +2,7 @@
 ///TODO: expand functionality to account for choices
 function next_line(){
 	choice_array = [];
+	choice_count = 0;
 	if (ink_can_continue()){
 		
 		//load the text, emotion tag, and character tag
@@ -22,7 +23,7 @@ function next_line(){
 	}
 	else {
 		//check if the text is paused at a choice
-		var choice_count = ink_choice_count();
+		choice_count = ink_choice_count();
 		if (choice_count > 0){
 			
 			//README: The strings for each of the choices can be accessed in ink_choice(i)
@@ -38,7 +39,10 @@ function next_line(){
 			
 		}
 		//if text is done, cue end of textbox
-		else up = false;
+		else {
+			up = false;
+			show_debug_message("End of text");
+		}
 		
 		//this line of code is used to destroy a textbox when ready 
 	}

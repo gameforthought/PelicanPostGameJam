@@ -8,9 +8,10 @@ x = vx + xpos;
 y = vy + y_anim;
 
 
-var choice_length = array_length(choice_array);
+choice_length = array_length(choice_array);
 button_array[0] = [xpos + 140, y_anim + 225];
 
+//detect if the player is hovering the next button
 if point_in_rectangle(mouse_x, mouse_y, vx + (xpos + 140 - 15), 225 - 30, vx + (xpos + 140 + 15), 225) {
 	button_array[0][2] = -5;	
 } else {
@@ -55,6 +56,7 @@ if up = false {
 
 y_anim = EaseInBack(y_step, 0, 256, 45);
 
+//destroy the textbox when done
 if up = false && y_anim > 255 {
 	if room = demo_room {
 		obj_time_tracker.day_progress += 1;
@@ -97,8 +99,15 @@ switch name_tag {
 
 
 //if hit the tilde key, skip the dialogue
-if (keyboard_check_pressed("1")){
+if (keyboard_check_pressed(ord("1"))){
 	skip_dialogue();	
+}
+
+if (keyboard_check_pressed(ord("A"))){
+	if (ink_can_continue()){
+		show_debug_message("Can continue");
+	}
+	else show_debug_message("No can continue");
 }
 //spd_increase();
 
