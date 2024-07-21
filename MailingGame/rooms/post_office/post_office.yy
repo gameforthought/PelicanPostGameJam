@@ -9,7 +9,6 @@
     {"name":"inst_618C593","path":"rooms/post_office/post_office.yy",},
     {"name":"inst_5E1976DC","path":"rooms/post_office/post_office.yy",},
     {"name":"inst_5F3FA618","path":"rooms/post_office/post_office.yy",},
-    {"name":"inst_13B519F2","path":"rooms/post_office/post_office.yy",},
     {"name":"inst_349C223F","path":"rooms/post_office/post_office.yy",},
     {"name":"inst_773005E1","path":"rooms/post_office/post_office.yy",},
     {"name":"inst_79F710C0","path":"rooms/post_office/post_office.yy",},
@@ -18,6 +17,7 @@
     {"name":"inst_1B3EBDF8","path":"rooms/post_office/post_office.yy",},
     {"name":"inst_7B4C5B69","path":"rooms/post_office/post_office.yy",},
     {"name":"inst_501DF5C4","path":"rooms/post_office/post_office.yy",},
+    {"name":"inst_13B519F2","path":"rooms/post_office/post_office.yy",},
   ],
   "isDnd":false,
   "layers":[

@@ -1,6 +1,10 @@
-/// @description movement
+/// @description Movement
 // You can write your code in this editor
 //checks if movement is paused
+
+
+
+#region State Machine + Movement
 
 if pepper_state == PlayerState.FreeMove{
 	//get left or right key press and change speed and orientation accordingly
@@ -142,6 +146,10 @@ if abs(hspd) > 0 {
 }
 }
 
+#endregion
+
+#region Animation
+
 //character animation
 char_anim += 1;
 
@@ -208,3 +216,5 @@ if instance_exists(obj_textbox) && pepper_state = PlayerState.NoMove {
 if emotion_drawer != -1 {
 	blink = 2;
 }
+
+#endregion

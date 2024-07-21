@@ -129,6 +129,7 @@
     {"name":"obj_pierre_dialogue","order":4,"path":"objects/obj_pierre_dialogue/obj_pierre_dialogue.yy",},
     {"name":"obj_pierre","order":29,"path":"objects/obj_pierre/obj_pierre.yy",},
     {"name":"obj_pine_gen","order":20,"path":"objects/obj_pine_gen/obj_pine_gen.yy",},
+    {"name":"obj_player_manager","order":5,"path":"objects/obj_player_manager/obj_player_manager.yy",},
     {"name":"obj_playerChar","order":1,"path":"objects/obj_playerChar/obj_playerChar.yy",},
     {"name":"obj_post_office_clock","order":19,"path":"objects/obj_post_office_clock/obj_post_office_clock.yy",},
     {"name":"obj_post_office_door","order":3,"path":"objects/obj_post_office_door/obj_post_office_door.yy",},
