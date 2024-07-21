@@ -167,6 +167,7 @@
     {"id":{"name":"obj_ocean_foreground","path":"objects/obj_ocean_foreground/obj_ocean_foreground.yy",},},
     {"id":{"name":"obj_ocean_highlight","path":"objects/obj_ocean_highlight/obj_ocean_highlight.yy",},},
     {"id":{"name":"obj_ocean","path":"objects/obj_ocean/obj_ocean.yy",},},
+    {"id":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},},
     {"id":{"name":"obj_pierre_dialogue","path":"objects/obj_pierre_dialogue/obj_pierre_dialogue.yy",},},
     {"id":{"name":"obj_pierre","path":"objects/obj_pierre/obj_pierre.yy",},},
     {"id":{"name":"obj_pine_gen","path":"objects/obj_pine_gen/obj_pine_gen.yy",},},

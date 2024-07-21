@@ -1,12 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-start_shift = 0;
+shift_dir = -1;
 shift = 0;
-shift_step = 0;
+shift_step = 60;
 
+global.pause = true;
+
+//windowScale = window_get_height() / room_height;
 windowScale = 2
-
 
 decoration = [
 {
@@ -71,8 +73,8 @@ subimage: 1
 
 start_struct = {
 	color: #5a7fc8,
-	text: "Let's Go!",
-	event_obj: obj_title_screen,
+	text: "Resume",
+	event_obj: obj_pause,
 	event: ev_alarm,
 	event_num: 0
 };
@@ -80,7 +82,7 @@ start_struct = {
 //options_struct = {
 //	color: #d9c498,
 //	text: "Options",
-//	event_obj: obj_title_screen,
+//	event_obj: obj_pause,
 //	event: ev_alarm,
 //	event_num: 0
 //};
@@ -88,7 +90,7 @@ start_struct = {
 close_struct = {
 	color: #ca4d35,
 	text: "Quit",
-	event_obj: obj_title_screen,
+	event_obj: obj_pause,
 	event: ev_alarm,
 	event_num: 2
 };
