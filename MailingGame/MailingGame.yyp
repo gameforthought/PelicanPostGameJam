@@ -206,6 +206,7 @@
     {"id":{"name":"DialogueTesting","path":"rooms/DialogueTesting/DialogueTesting.yy",},},
     {"id":{"name":"ending_room_imagine","path":"rooms/ending_room_imagine/ending_room_imagine.yy",},},
     {"id":{"name":"GaleTestingRoom","path":"rooms/GaleTestingRoom/GaleTestingRoom.yy",},},
+    {"id":{"name":"initialization_room","path":"rooms/initialization_room/initialization_room.yy",},},
     {"id":{"name":"post_office","path":"rooms/post_office/post_office.yy",},},
     {"id":{"name":"__input_axis_is_directional","path":"scripts/__input_axis_is_directional/__input_axis_is_directional.yy",},},
     {"id":{"name":"__input_binding_get_label","path":"scripts/__input_binding_get_label/__input_binding_get_label.yy",},},
@@ -780,6 +781,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"initialization_room","path":"rooms/initialization_room/initialization_room.yy",},},
     {"roomId":{"name":"demo_room","path":"rooms/demo_room/demo_room.yy",},},
     {"roomId":{"name":"GaleTestingRoom","path":"rooms/GaleTestingRoom/GaleTestingRoom.yy",},},
     {"roomId":{"name":"post_office","path":"rooms/post_office/post_office.yy",},},
