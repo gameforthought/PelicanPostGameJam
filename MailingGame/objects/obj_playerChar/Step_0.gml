@@ -2,7 +2,8 @@
 // You can write your code in this editor
 //checks if movement is paused
 
-
+// PLAYER MANAGER INPUT DEMO/TEST:
+if (input_up_pressed()) show_debug_message("Going up!");
 
 #region State Machine + Movement
 

@@ -11,7 +11,10 @@ move_dir = 1;
 if instance_exists(obj_truck) {
 	camera_target = obj_truck.x + move_dir * (camera_get_view_width(camera) / 6);
 } else {
-	camera_target = obj_playerChar.x + move_dir * (camera_get_view_width(camera) / 6);
+	// NOTE: Fix later so that camera isn't dependent on character existing when created,
+	//		 temporarily addressed by using the value 0
+	//camera_target = obj_playerChar.x + move_dir * (camera_get_view_width(camera) / 6);
+	camera_target = 0 + move_dir * (camera_get_view_width(camera) / 6);
 }
 
 camera_var = camera_target;

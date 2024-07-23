@@ -161,6 +161,7 @@
     {"name":"DialogueTesting","order":1,"path":"rooms/DialogueTesting/DialogueTesting.yy",},
     {"name":"ending_room_imagine","order":4,"path":"rooms/ending_room_imagine/ending_room_imagine.yy",},
     {"name":"GaleTestingRoom","order":3,"path":"rooms/GaleTestingRoom/GaleTestingRoom.yy",},
+    {"name":"initialization_room","order":5,"path":"rooms/initialization_room/initialization_room.yy",},
     {"name":"post_office","order":2,"path":"rooms/post_office/post_office.yy",},
     {"name":"__input_axis_is_directional","order":9,"path":"scripts/__input_axis_is_directional/__input_axis_is_directional.yy",},
     {"name":"__input_binding_get_label","order":10,"path":"scripts/__input_binding_get_label/__input_binding_get_label.yy",},
