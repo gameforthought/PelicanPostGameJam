@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+depth += 100;
+
 show_debug_message("textbox")
 image_alpha = 0;
 windowScale = global.window_scale;

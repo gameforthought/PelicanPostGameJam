@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+depth -= 100;
+
 global.pause = 1;
 
 if !variable_instance_exists(id, "grow") {
