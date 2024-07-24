@@ -6,8 +6,9 @@ function ExitTruck(){
 		start_orient: image_xscale,	
 		pepper_state: PlayerState.FreeMove
 	}
-	instance_create_layer(x - image_xscale * 8, y - 16, "Player", obj_playerChar, _struct);
+	var pepper = instance_create_layer(x - image_xscale * 8, y - 16, "Player", obj_playerChar, _struct);
 	
+	obj_camera_manager.target_character = pepper.id;
 	truck_state = PlayerState.NoMove();
 	}
 	//var _struct = {

@@ -52,12 +52,12 @@ if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))) {
 			hspd = 0;	
 		}
 	}
-	show_debug_message("Truck speed: " + string(hspd));
+	//show_debug_message("Truck speed: " + string(hspd));
 	hspd = clamp(hspd, -maxhspd, maxhspd);
 }
 //if the truck is in cutscene state, move it to the destination
 else if (truck_state == PlayerState.CutsceneMove){
-	show_debug_message("Parking!");
+	//show_debug_message("Parking!");
 	//if the truck is already close to the parking spot, slow it down
 	if (abs(parking_dest - x) < parking_lenience){
 		//check if 

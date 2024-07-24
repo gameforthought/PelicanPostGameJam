@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description summon menu
 // You can write your code in this editor
 
 if global.pause = 0 && !instance_exists(obj_room_transition) {
