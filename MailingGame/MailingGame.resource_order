@@ -132,6 +132,7 @@
     {"name":"obj_pine_gen","order":20,"path":"objects/obj_pine_gen/obj_pine_gen.yy",},
     {"name":"obj_player_manager","order":5,"path":"objects/obj_player_manager/obj_player_manager.yy",},
     {"name":"obj_playerChar","order":1,"path":"objects/obj_playerChar/obj_playerChar.yy",},
+    {"name":"obj_playerSpawner","order":32,"path":"objects/obj_playerSpawner/obj_playerSpawner.yy",},
     {"name":"obj_post_office_clock","order":19,"path":"objects/obj_post_office_clock/obj_post_office_clock.yy",},
     {"name":"obj_post_office_door","order":3,"path":"objects/obj_post_office_door/obj_post_office_door.yy",},
     {"name":"obj_posUI_container","order":1,"path":"objects/obj_posUI_container/obj_posUI_container.yy",},

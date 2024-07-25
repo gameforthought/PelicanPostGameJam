@@ -3,9 +3,6 @@
 
 #region Player Manager
 
-	// !! TEMPORARY, DON'T ALWAYS WANT TO CREATE CHARACTERS W/ ASSIGNED PLAYER !!
-	player = obj_player_manager;
-
 	// Check if this character has a reference to the player manager and it exists
 	player_exists = function()
 	{

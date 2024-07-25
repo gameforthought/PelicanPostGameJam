@@ -64,7 +64,7 @@
     {"name":"inst_12966F5E","path":"rooms/demo_room/demo_room.yy",},
     {"name":"inst_73B39BA5","path":"rooms/demo_room/demo_room.yy",},
     {"name":"inst_3B23D494","path":"rooms/demo_room/demo_room.yy",},
-    {"name":"inst_2AA4F14B","path":"rooms/demo_room/demo_room.yy",},
+    {"name":"inst_246F38EC","path":"rooms/demo_room/demo_room.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -165,7 +165,7 @@
       ],"depth":1300,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"sidewalk_foreground","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"dust","depth":1400,"effectEnabled":false,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"dust","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Player","depth":1500,"effectEnabled":true,"effectType":"_filter_outline","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_2AA4F14B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2AA4F14B","objectId":{"name":"obj_playerChar","path":"objects/obj_playerChar/obj_playerChar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":224.0,},
+        {"$GMRInstance":"v1","%Name":"inst_246F38EC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_246F38EC","objectId":{"name":"obj_playerSpawner","path":"objects/obj_playerSpawner/obj_playerSpawner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":224.0,},
       ],"layers":[],"name":"Player","properties":[
         {"name":"g_OutlineColour","type":1,"value":"#FFFFFFFF",},
         {"name":"g_OutlineRadius","type":0,"value":"2.5",},

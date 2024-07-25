@@ -9,10 +9,6 @@ if (open = true)
 	//	obj_playerChar.x = x;
 	//}
 	
-	// This door now creates the player object when entering the post office;
-	// plan to have dedicated character spawners (or use the doors as spawners)
-	if (room = post_office) obj_player_manager.character_create(x, 224, "Player", obj_playerChar);
-	
 	_transition = { player: true }
 }
  
