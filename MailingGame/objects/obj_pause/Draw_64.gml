@@ -18,7 +18,24 @@ for (var i = 0; i < array_length(decoration); i++) {
 		
 }
 
+
+draw_sprite_ext(spr_p_objective_bg, 0, (9) * windowScale, (256 + shift) * windowScale, windowScale, windowScale, 0, c_white, 1);
+
+for (var i = 0; i < array_length(obj_objective_manager.array); i++) {
+	
+	draw_sprite_ext(spr_objective_frame, 0, (9) * windowScale, ((256 - 160) + (i * 24) + shift) * windowScale, windowScale, windowScale, 0, c_white, 1);
+	
+	
+	var _label = scribble(obj_objective_manager.array[i].text);
+		_label.starting_format("ft_gui", c_black);
+		
+		_label.draw((9 + 46) * windowScale, ((256 - 160 + 4) + (i * 24) + shift) * windowScale);
+	
+	
+}
+
+
+//black bars
 draw_sprite_stretched_ext(spr_title, 0, -30 * windowScale, -30 * windowScale, 1000 * windowScale, 30 * windowScale, c_black, 1);
 draw_sprite_stretched_ext(spr_title, 0, -30 * windowScale, 256 * windowScale, 1000 * windowScale, 30 * windowScale, c_black, 1)
 
-draw_sprite_ext(spr_title, 0, (218 + shift) * windowScale, 9 * windowScale, windowScale, windowScale, 0, c_white, 1);

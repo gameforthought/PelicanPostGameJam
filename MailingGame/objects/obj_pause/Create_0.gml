@@ -67,6 +67,14 @@ h: 1,
 rot: 83,
 subimage: 1
 },
+{
+x_pos: 440,
+y_pos: 50,
+v: -1,
+h: 1,
+rot: -10,
+subimage: 3
+},
 
 
 ]

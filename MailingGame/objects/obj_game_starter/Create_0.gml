@@ -17,11 +17,15 @@ global.player_state = PlayerState.NoMove;
 
 instance_create_layer(x,y, "Background", obj_time_tracker);
 
+instance_create_depth(x,y, 0, obj_objective_manager);
+
 instance_create_depth(x,y, 0, obj_dialogue_manager);
 
 instance_create_depth(x,y, 0, obj_music_manager);
 
 instance_create_depth(x,y, 0, obj_player_manager);
+
+
 
 // Go to game room and display intro logo
 room_goto_next();

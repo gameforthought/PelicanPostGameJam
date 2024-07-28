@@ -10,6 +10,9 @@ scribble_typists_add_event("door_set_knot", door_set_knot);
 scribble_typists_add_event("give_item", give_item);
 scribble_typists_add_event("remove_item", remove_item);
 
+scribble_typists_add_event("objective_create", objective_create);
+scribble_typists_add_event("objective_complete", objective_complete);
+
 
 
 //set_dialogue_character();

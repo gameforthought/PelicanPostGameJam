@@ -44,6 +44,10 @@ function give_item(_element, _parameter_array, _character_index) {
 	show_debug_message(string(_item))
 	
 	obj_inventory.inventory[_item] = _struct;
+	
+	var objective_struct = {text: "Delivery for [c_" + string_lower(to_name) + "]" + to_name,}
+	
+	array_push(obj_objective_manager.array, objective_struct);
 
 }
 
@@ -55,6 +59,10 @@ function remove_item(_element, _parameter_array, _character_index) {
 	
 	for (var i = 0; i < array_length(obj_inventory.inventory); i++) {
 		if obj_inventory.inventory[i] != -1 && obj_inventory.inventory[i].key = knot_key {
+			
+			var _objective = "Delivery for [c_" + string_lower(obj_inventory.inventory[i].to) + "]" + obj_inventory.inventory[i].to;
+			
+			objective_complete(-1, [_objective], -1);
 			array_delete(obj_inventory.inventory, i, 1);
 			array_push(obj_inventory.inventory, -1);
 		}
@@ -65,5 +73,29 @@ function door_set_knot(_element, _parameter_array, _character_index) {
 	var door = asset_get_index(_parameter_array[0]);
 	var knot_key = _parameter_array[1];
 	door.story = knot_key;
+}
+
+function objective_create(_element, _parameter_array, _character_index) {
+	//var _text = _parameter_array[0];
+	
+	var _text = _parameter_array;
+	
+	var struct = {
+		text: _text,
+	};
+	
+	array_push(obj_objective_manager.array, struct)
+	
+}
+
+function objective_complete(_element, _parameter_array, _character_index) {
+	var _text = _parameter_array[0];
+	
+	for (var i = 0; i < array_length(obj_objective_manager.array); i++) {
+		if obj_objective_manager.array[i].text = _text {
+			array_delete(obj_objective_manager.array, i, 1);
+		}
+	}
+	
 }
 
