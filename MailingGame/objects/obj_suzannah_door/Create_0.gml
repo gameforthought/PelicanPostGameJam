@@ -20,7 +20,7 @@ step = 0;
 
 sprite = spr_suzannah_door;
 color = #bf5e66;
-knock_time = 300;
+knock_time = 140;
 
 
 char_struct = {

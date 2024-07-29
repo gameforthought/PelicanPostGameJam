@@ -1,6 +1,11 @@
 /// Render the textbox and the text
 // You can write your code in this editor
 
+var _bar_pos = lerp(30, 0, y_step / 45);
+
+draw_sprite_stretched_ext(spr_title, 0, -30 * windowScale, (-30  + _bar_pos) * windowScale, 1000 * windowScale, 30 * windowScale, c_black, 1);
+draw_sprite_stretched_ext(spr_title, 0, -30 * windowScale, (256 - _bar_pos) * windowScale, 1000 * windowScale, 30 * windowScale, c_black, 1)
+
 var choice_length = array_length(choice_array);
 
 

@@ -46,9 +46,22 @@ Removes an item from the player's inventory
 Loads a coversation into the specified door
 [door_set_knot,{door name},{knot name}]
 
+Adds an objective for the player
+[objective_create,{objective text}]
+
+Completes an objective
+[objective_complete,{objective text}]
+
+NOTES ABOUT OBJECTIVES:
+adding or removing an item automatically creates or completes the 
+corresponding objective. you can use scribble formatting in the objective text
+if you use "< >" instead of "[ ]" ie "<c_beatrice>"
+
+
 List of doors:
 obj_beatrice_door
 obj_suzannah_door
+obj_clyde_door
 
 */
 
@@ -150,7 +163,7 @@ So she put you up to this?  Then tell her I don't need her concern. #Suzannah #n
 
 ... #Suzannah #neutral
 
-Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And try not to trip on the rocks. [door_set_knot,obj_beatrice_door,bea2] #Suzannah #neutral
+Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And try not to trip on the rocks. [objective_create,Return to <c_beatrice>Beatrice] [door_set_knot,obj_beatrice_door,bea2] #Suzannah #neutral
 
 Of course, take care! #Pepper #neutral
 
@@ -160,7 +173,7 @@ Of course, take care! #Pepper #neutral
 
 === bea2 ===
 
-Oh, you're back!  And now that it's later in the day I'm simply [wheel]brimming[/] with energy!  [wave]Woo hoo[/]! #Beatrice #happy #open
+[objective_complete,Return to <c_beatrice>Beatrice]Oh, you're back!  And now that it's later in the day I'm simply [wheel]brimming[/] with energy!  [wave]Woo hoo[/]! #Beatrice #happy #open
 
 That makes one of us... #Pepper #sleepy
 
@@ -280,7 +293,7 @@ As long as you can see them they won't move, so you can just grab it. #Clyde #ne
 
 Then, bring it back here! #Clyde #neutral
 
-I see.  Well, I'll keep my eye out for your... gnomes. #Pepper #neutral
+I see.  Well, I'll keep my eye out for your... gnomes. [objective_create,Find the gnome] #Pepper #neutral
 
 Wonderful, thanks a million!  Take care now! #Clyde #happy
 

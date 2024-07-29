@@ -11,7 +11,7 @@ clock_move_step = clamp(clock_move_step, 0, transition_time);
 
 y = EaseInBack_Smaller(clock_move_step, 256, 356, transition_time);
 
-if global.pause  = 0 {
+if global.pause = 0 {
 	if (keyboard_check(vk_left) || keyboard_check(vk_right)) || keyboard_check(ord("D"))  || keyboard_check(ord("A")){
 		alarm[0] = 160;	
 		clock_vis = false;

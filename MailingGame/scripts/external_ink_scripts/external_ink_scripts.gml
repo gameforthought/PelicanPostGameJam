@@ -78,7 +78,10 @@ function door_set_knot(_element, _parameter_array, _character_index) {
 function objective_create(_element, _parameter_array, _character_index) {
 	//var _text = _parameter_array[0];
 	
-	var _text = _parameter_array;
+	var _text = _parameter_array[0];
+	
+	_text = string_replace(_text, "<", "[");
+	_text = string_replace(_text, ">", "]");
 	
 	var struct = {
 		text: _text,
@@ -90,6 +93,9 @@ function objective_create(_element, _parameter_array, _character_index) {
 
 function objective_complete(_element, _parameter_array, _character_index) {
 	var _text = _parameter_array[0];
+	
+	_text = string_replace(_text, "<", "[");
+	_text = string_replace(_text, ">", "]");
 	
 	for (var i = 0; i < array_length(obj_objective_manager.array); i++) {
 		if obj_objective_manager.array[i].text = _text {
