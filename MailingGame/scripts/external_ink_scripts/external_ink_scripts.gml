@@ -45,9 +45,9 @@ function give_item(_element, _parameter_array, _character_index) {
 	
 	obj_inventory.inventory[_item] = _struct;
 	
-	var objective_struct = {text: "Delivery for [c_" + string_lower(to_name) + "]" + to_name,}
+	var objective = ["Delivery for [c_" + string_lower(to_name) + "]" + to_name];
 	
-	array_push(obj_objective_manager.array, objective_struct);
+	objective_create(-1, objective, -1)
 
 }
 
@@ -87,7 +87,13 @@ function objective_create(_element, _parameter_array, _character_index) {
 		text: _text,
 	};
 	
-	array_push(obj_objective_manager.array, struct)
+	array_push(obj_objective_manager.array, struct);
+	
+	var _modal_struct = {
+				complete: false, 
+				text: _text
+				};
+			instance_create_layer(0, 0, "positional_gui", obj_objective_modal, _modal_struct);
 	
 }
 
@@ -100,6 +106,12 @@ function objective_complete(_element, _parameter_array, _character_index) {
 	for (var i = 0; i < array_length(obj_objective_manager.array); i++) {
 		if obj_objective_manager.array[i].text = _text {
 			array_delete(obj_objective_manager.array, i, 1);
+			
+			var _modal_struct = {
+				complete: true, 
+				text: _text
+				};
+			instance_create_layer(0, 0, "positional_gui", obj_objective_modal, _modal_struct);
 		}
 	}
 	

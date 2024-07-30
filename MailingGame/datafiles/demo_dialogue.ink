@@ -102,7 +102,7 @@ Anyways, sorry for rambling at you.  Can I help you? #Beatrice #neutral
 
 Yes, actually I have a package for you. #Pepper #neutral
 
-Oh, silly me, of course that's why you're here!  Thank you, dear![remove_item,Bea1] #Beatrice #laugh
+Oh, silly me, of course that's why you're here!  Thank you, dear![remove_item,bea1] #Beatrice #laugh
 
 Of course! #Pepper #happy
 
@@ -120,7 +120,7 @@ She's what most would call a hermit. #Beatrice #sad
 
 She wasn't always that way... but now she barely comes to town, if ever. #Beatrice #sad
 
-I haven't gotten to check on her in a while.  Could you take this letter to her? [give_item,Suz1,letter,Suzannah,Beatrice,A letter addressed in a curly script][door_set_knot,obj_suzannah_door,suz1] #Beatrice #neutral
+I haven't gotten to check on her in a while.  Could you take this letter to her?[give_item,suz1,letter,Suzannah,Beatrice,A letter addressed in a curly script][door_set_knot,obj_suzannah_door,suz1] #Beatrice #neutral
 
 Oh, of course! #Pepper #neutral
 
@@ -151,7 +151,7 @@ Can't say I recognize that voice.  Who are you? #Suzannah #neutral
 
 I'm [c_pepper]Pepper[/], the new mailman.  I have a delivery for you.  It's a letter. #Pepper #neutral
 
-...a letter?[remove_item,Suz1] #Suzannah #neutral #open
+...a letter?[remove_item,suz1] #Suzannah #neutral #open
 
 ... #Suzannah #neutral
 
@@ -215,7 +215,7 @@ Good night [c_pepper]Pepper[/c], thank you so much for your help today!  #Beatri
 
 ===cly1===
 
-Hi, delivery fo- [remove_item,cly1] #Pepper #neutral
+Hi, delivery fo- #Pepper #neutral
 
 [shake]They're gone.[/] #Clyde #fear
 
@@ -231,7 +231,7 @@ I can't say I do.  #Pepper #neutral
 
 Well then my dear, today's your lucky day!  Allow me to enlighten you. #Clyde #neutral
 
-I do have to get back to my deliv- #Pepper #neutral
+I do have to get back to my deliv-[remove_item,cly1] #Pepper #neutral
 
 Don't be silly!  Now, as I was saying... #Clyde #laugh
 
@@ -269,7 +269,7 @@ Congratulations, you're my new partner! #Clyde #happy
 
 Wh- you can't just- #Pepper #surprise
 
-Sure I can!  You're gonna help me find the gnomes!  #Clyde #neutral
+Sure I can!  You're gonna help me find the gnomes![objective_create,Find the gnome]  #Clyde #neutral
 
 Anyways, the name's [c_clyde]Clyde[/].  It's a pleasure, partner! #Clyde #happy
 
@@ -293,7 +293,7 @@ As long as you can see them they won't move, so you can just grab it. #Clyde #ne
 
 Then, bring it back here! #Clyde #neutral
 
-I see.  Well, I'll keep my eye out for your... gnomes. [objective_create,Find the gnome] #Pepper #neutral
+I see.  Well, I'll keep my eye out for your... gnomes. #Pepper #neutral
 
 Wonderful, thanks a million!  Take care now! #Clyde #happy
 
@@ -358,11 +358,11 @@ Each morning, you'll come in here and get your packages for the day. #Pierre #ne
 
 Seems like a light day today, so you shouldn't have too much trouble. #Pierre #neutral
 
-Oh, this is for [c_beatrice]Beatrice![/]  You'll find her at the library.  #Pierre #happy
-
-And this here is for [c_clyde]Clyde[/].  You'll find him at his house down the road, past the library.
+Oh, this is for [c_beatrice]Beatrice![/]  You'll find her at the library.[give_item,bea1,package,Beatrice,UC Books,A small box from a book publisher]  #Pierre #happy
 
 She's a sweetheart, if not a little... batty.  Heh. #Pierre #neutral
+
+And this here is for [c_clyde]Clyde[/].  You'll find him at his house down the road, past the library.[give_item,cly1,package,Clyde,Gnome Feed,Feeds gnomes]
 
 Now, for the delivery process.  When you arrive at a house, you'll knock on the door. #Pierre #neutral
 
@@ -390,7 +390,7 @@ Actually, [c_pepper]Pepper[/], one last thing before you go #Pierre #neutral
 
 Hmm?  #Pepper #neutral
 
-Stop back here after you finish your deliveries tonight.  I want to hear about how it goes!  #Pierre #neutral
+Stop back here after you finish your deliveries tonight.  I want to hear about how it goes![objective_create,Return to <c_pierre>Pierre]  #Pierre #neutral
 
 Oh, sure thing!  See you then!  #Pepper #happy
 
@@ -398,7 +398,7 @@ Oh, sure thing!  See you then!  #Pepper #happy
 
 ===pie2===
 
-Welcome back!  #Pierre #happy
+Welcome back![objective_complete,Return to <c_pierre>Pierre]  #Pierre #happy
 
 Hey, [c_pierre]Pierre[/].  #Pepper #neutral
 

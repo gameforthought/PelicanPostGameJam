@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if room != post_office {
 
 //draw_sprite_stretched(
 //	spr_inventory,
@@ -72,9 +73,14 @@ for (var i = 0; i < INVENTORY_SLOTS; i++)
 		
 		draw_set_font(ft_gui);
 		draw_set_halign(fa_right);
-		draw_set_color(c_black);
+		
+		draw_set_color(color_lookup(inventory[i].to));
 		draw_text(x + 418 * windowScale, (y + 152 + 11) * windowScale, inventory[i].to);
+		
+		draw_set_color(color_lookup(inventory[i].from));
 		draw_text(x + 418 * windowScale, (y + 174 + 11) * windowScale, inventory[i].from);
+		
+		draw_set_color(c_black);
 		
 		draw_set_halign(fa_left);
 		
@@ -82,6 +88,9 @@ for (var i = 0; i < INVENTORY_SLOTS; i++)
 		draw_text_ext(x + 262 * windowScale, (y + 75) * windowScale, inventory[i].desc, line_height - 6, 156 * windowScale);
 	}
 	
+}
+
+
 }
 	
 	
