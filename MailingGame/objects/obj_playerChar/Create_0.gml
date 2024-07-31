@@ -52,8 +52,13 @@
 
 #endregion
 
+onGround = true;
+
 hspd = 0;
-hspd_prev = 0;
+hspd_prev = hspd;
+
+yspd = 0;
+yspd_prev = yspd;
 
 //initializing movement stats
 road_start = 0;
@@ -68,8 +73,6 @@ if room = post_office {
 	road_start = 58;
 	road_end = room_width - 60;
 }
-
-yspd = 0;
 
 if instance_exists(obj_truck) = true {	
 	obj_truck.alarm[0] = 20;
@@ -86,12 +89,6 @@ if variable_instance_exists(id, "start_orient") {
 
 char_anim = 0;
 blink = 0;
-
-walk = false;
-
-idle = true;
-
-jump = false;
 
 swing_num = 0;
 swing = 0;

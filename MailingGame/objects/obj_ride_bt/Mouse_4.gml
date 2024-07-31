@@ -8,6 +8,14 @@ obj_camera_manager.target_character = obj_truck.id;
 
 // Destroy the current instance of pepper through the player manager
 obj_player_manager.character_destroy();
+// Set the truck as the active character in the player manager
+if (instance_exists(obj_truck))
+{
+	// Get the id of the first obj_truck instance
+	var _character = obj_truck.id;
+	
+	obj_player_manager.character_set(_character);
+}
 
 audio_play_sound(sd_truck_door, 0, false);
 audio_sound_gain(sd_main_percussion, 1, 2000);

@@ -8,7 +8,7 @@ if instance_exists(obj_playerChar) {
 	dir = -1 * obj_playerChar.image_xscale;
 	scale = random_range(0.4, 0.8);
 	
-	if obj_playerChar.jump = true {
+	if obj_playerChar.onGround = false {
 		decay = 0.3;
 		if x > obj_playerChar.x {
 			dir = 1;	

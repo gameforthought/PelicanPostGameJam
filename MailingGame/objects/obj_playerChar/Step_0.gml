@@ -2,195 +2,177 @@
 // You can write your code in this editor
 //checks if movement is paused
 
-// PLAYER MANAGER INPUT DEMO/TEST:
-if (input_up_pressed()) show_debug_message("Going up!");
-
 #region State Machine + Movement
 
-if pepper_state == PlayerState.FreeMove{
-	//get left or right key press and change speed and orientation accordingly
-	if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))){
-		if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {} else {
-		hspd += haccel;
-		}
-		if hspd > 0 {
-			image_xscale = 1;
-		}
-	
-	}
+	#region Pre-Movement Setup
 
-	if (keyboard_check(vk_left)) || (keyboard_check(ord("A"))) {
-		if (keyboard_check(vk_right)) || (keyboard_check(ord("D"))){} else {
-		hspd -= haccel;
-		}
-		if hspd < 0 {
-			image_xscale = -1;
-		}
-	}
+	// Track if player is on ground
+	onGround = place_meeting(x, y + 1, obj_colliderbox);
 	
+	// Update variables to store h/v speed of previous frame
+	hspd_prev = hspd;
+	yspd_prev = yspd;
+
+	#endregion
+
+switch (pepper_state)
+{
+	case PlayerState.FreeMove:
 	
-//jump
-if ((keyboard_check_pressed(vk_up)) || (keyboard_check_pressed(ord("W")))) {
-	if (place_meeting(x, y, obj_colliderbox)) {
-		yspd = -1 * jump_height;
-		jump = true;
-		audio_play_sound(sd_jump,0,false);
-		for (var i = 0; i < 15; i += 1) {
-			if jump = true {
-				instance_create_layer(x - (image_xscale * irandom_range(-20, 30)), y + irandom_range(0, -6), "dust", obj_grounddust);
+		#region Horizontal Movement
+		
+		// Get player input direction
+		// (1 = right, 0 = none, -1 = left)
+		var _moveDir = input_right_held() - input_left_held();
+		
+		// Move & face left/right
+		hspd += haccel * _moveDir;
+		if (_moveDir != 0) image_xscale = _moveDir;
+		
+		// Apply deceleration when not moving
+		if (_moveDir == 0 && hspd != 0)
+		{
+			hspd -= sign(hspd) * 3 * haccel;
+			
+			// Round horizontal speed to 0
+			if (hspd > -0.2) && (hspd < 0.2)
+			{
+				hspd = 0;
 			}
 		}
-	}
-}
+		
+		// Clamp horizontal speed to maximum speed
+		hspd = clamp(hspd, -maxhspd, maxhspd);
+		
+		#endregion
+		
+		#region Vertical Movement
+		
+		// Jump
+		if (input_up_pressed() && onGround)
+		{
+			yspd = -jump_height;
+			audio_play_sound(sd_jump,0,false);
+			
+			// Create dust particles when jumping
+			for (var i = 0; i < 15; i += 1)
+			{
+				instance_create_layer(
+					x - (image_xscale * irandom_range(-20, 30)),
+					y + irandom_range(0, -6),
+					"dust", obj_grounddust
+				);
+			}
+		}
+		
+		#endregion
+			
+		break;
 	
+	// If pepper is in a cutscene, handle that movement here
+	case PlayerState.CutsceneMove:
+	
+		// Once pepper reaches the destination, change states and face target
+		if (abs(move_dest - x) < (maxhspd * 2))
+		{
+			pepper_state = PlayerState.NoMove;
+			hspd = 0;
+			
+			var _door = instance_nearest(x,y, obj_door);
+			image_xscale = sign(_door.x - x)
+		}
+		// Move pepper towards the destination if she hasn't reached it yet
+		else
+		{
+			var _moveDir = sign(move_dest - x)
+			hspd = maxhspd * _moveDir * 0.8;
+			image_xscale = _moveDir;
+		}
+	
+		break;
+		
+	case PlayerState.NoMove:
+	
+		break;
 }
 
-//if pepper is in a cutscene, handle that movement here
-if pepper_state == PlayerState.CutsceneMove {
-
-show_debug_message(string(move_dest));
-	if (abs(move_dest - x) < (maxhspd * 2)){
-		pepper_state = PlayerState.NoMove;
-		hspd = 0;
-		var _door = instance_nearest(x,y, obj_door);
-		if _door.x > x {
-			image_xscale = 1;
-		} else {
-			image_xscale = -1;	
+// Ground collision
+if (place_meeting(x, y + yspd, obj_colliderbox))
+{
+	// Stop all vertical movement
+	yspd = 0;
+	
+	// If player was in the air on the previous frame,
+	// create dust particles when landing
+	if (yspd_prev != 0)
+	{
+		for (var i = 0; i < 8; i += 1)
+		{
+			instance_create_layer(x - (image_xscale * irandom_range(-20 - (10 * abs(hspd)), 20)), y, "dust", obj_grounddust);
 		}
 	}
-	//move pepper towards the destination if she hasn't reached it yet
-	else if (move_dest > x){
-		hspd = maxhspd * 0.8;
-		image_xscale = 1;
-	}
-	else if (move_dest < x) {
-		hspd = -maxhspd * 0.8;
-		image_xscale = -1;
-	}
 	
-}
-
-//if the player is not holding down a movement key and is not in a cutscene, decelerate
-if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(ord("D"))  && !keyboard_check(ord("A")) && !(pepper_state == PlayerState.CutsceneMove){
-	
-	if hspd != 0 {
-	    hspd -= sign(hspd) * 3 * haccel;
-	
-		if (hspd > -0.2) && (hspd < 0.2) {
-			hspd = 0;	
+	// Create dust trail while moving
+	if (abs(hspd) > 0)
+	{
+		if (irandom_range(0, 8 / abs(hspd)) = 0)
+		{
+			instance_create_layer(x - (image_xscale * irandom_range(5, 20)), y - 2, "dust", obj_grounddust);
 		}
 	}
 }
-
-hspd = clamp(hspd, -maxhspd, maxhspd);
-
-//if the player is moving, 
-if (keyboard_check(vk_left) || keyboard_check(vk_right)) || keyboard_check(ord("D"))  || keyboard_check(ord("A")){
-	
-	if hspd != 0 {
-
-		if hspd > hspd_prev {
-
-			image_xscale = 1;
-		} else if hspd < hspd_prev {
-
-			image_xscale = -1;
-		}
-
+else
+{
+	// Apply gravity in the air
+	if (yspd < jump_height)
+	{
+		yspd += grav;
 	}
-
 }
 
-
-hspd_prev = hspd;
-
-
-
-
-
+// Apply h/v speed to player x/y
 x += hspd;
-
-x = clamp(x, road_start, road_end);
-//show_debug_message(string(sign(hspd)))
-
-
-
-
-
-
 y += yspd;
 
-//ground collision
-if (place_meeting(x, y + yspd, obj_colliderbox)) {
-for (var i = 0; i < 8; i += 1) {
-	if jump = true {
-		instance_create_layer(x - (image_xscale * irandom_range(-20 - (10 * abs(hspd)), 20)), y, "dust", obj_grounddust);
-	}
-}
-jump = false;
-yspd = 0;
-
-
-if abs(hspd) > 0 {
-	if irandom_range(0, 8 / abs(hspd)) = 0 {
-		instance_create_layer(x - (image_xscale * irandom_range(5, 20)), y - 2, "dust", obj_grounddust);
-	}
-	
-}
-
-
-} else {
-	if (yspd < jump_height) {
-	yspd += grav;
-	
-}
-}
+// Clamp x position to the start and end of the road (keep player from going out-of-bounds)
+x = clamp(x, road_start, road_end);
 
 #endregion
 
 #region Animation
 
-//character animation
+// Update character animation frame
 char_anim += 1;
 
-if char_anim > 252 {
-char_anim = 0;	
+if (char_anim > 252)
+{
+	char_anim = 0;	
 }
 
-if char_anim > 240 {
-blink = 1;	
-} else {
-	blink = 0;
-}
+// Blink on frames 241-252
+blink = char_anim > 240;
 
 
-if yspd = 0 {
-	if abs(hspd) > 0 {
-		walk = true;
-		
-		idle = false;
-	} else {
-		walk = false;
-		idle = true;
-	}
-}
-
-if walk = true && jump = false {
+if (onGround && hspd != 0)
+{
+	// Play walk animation
 	sprite_index = spr_playerLegs_walk;
 	image_speed = lerp(0, 0.3, abs(hspd) / maxhspd);
 	swing_width = 40;
 } else {
 	image_speed = 0;
-	if jump = true {
-		sprite_index = spr_playerLegs_jump;
-	} else {
+	if (onGround)
+	{
+		// Play idle animation
 		sprite_index = spr_playerLegs_idle;
 		swing_width = 10;
+	} else {
+		// Play jump animation
+		sprite_index = spr_playerLegs_jump;
 	}
 }
 
-//swing arms
+// Swing arms
 swing_num += 0.5 + 0.4 * abs(hspd);
 
 swing = swing_width * sin(0.1 * swing_num);
