@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 if dissolve = true {
-	image_alpha -= 0.02;	
+	image_alpha -= 0.02;
+	y -= 0.2;
 }
 
 if instance_exists(obj_playerChar) && distance_to_object(obj_playerChar) < 320 {

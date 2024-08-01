@@ -117,3 +117,14 @@ function objective_complete(_element, _parameter_array, _character_index) {
 	
 }
 
+function gnome_create() {
+	
+	array_shuffle_ext(obj_objective_manager.potential_gnomes);
+	var _struct = array_pop(obj_objective_manager.potential_gnomes);
+	
+	instance_create_depth(_struct.x_pos, _struct.y_pos, _struct.dep, obj_gnome);
+	
+	objective_create(-1, ["Find a gnome"], -1);
+	
+}
+

@@ -231,9 +231,9 @@ I can't say I do.  #Pepper #neutral
 
 Well then my dear, today's your lucky day!  Allow me to enlighten you. #Clyde #neutral
 
-I do have to get back to my deliv-[remove_item,cly1] #Pepper #neutral
+I do have to get back to my deliv- #Pepper #neutral
 
-Don't be silly!  Now, as I was saying... #Clyde #laugh
+Don't be silly! [remove_item,cly1] Now, as I was saying... #Clyde #laugh
 
 Oh boy... #Pepper #sigh
 
@@ -269,7 +269,7 @@ Congratulations, you're my new partner! #Clyde #happy
 
 Wh- you can't just- #Pepper #surprise
 
-Sure I can!  You're gonna help me find the gnomes![objective_create,Find the gnome]  #Clyde #neutral
+Sure I can!  You're gonna help me find the gnomes![gnome_create]  #Clyde #neutral
 
 Anyways, the name's [c_clyde]Clyde[/].  It's a pleasure, partner! #Clyde #happy
 
@@ -301,9 +301,9 @@ Wonderful, thanks a million!  Take care now! #Clyde #happy
 
 ===cly2===
 
-Ah, well if it isn't my dear partner!  How goes- [remove_item,cly2] #Clyde #neutral
+Ah, well if it isn't my dear partner!  How goes- #Clyde #neutral
 
-Oh, look what you have here!  You've done it!  Thanks, partner! #Clyde #happy
+Oh, look what you have here!  You've done it!  Thanks, partner![remove_item,cly2] #Clyde #happy
 
 ... #Pepper #fear
 

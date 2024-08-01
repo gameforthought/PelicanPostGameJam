@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //checks if movement is paused
-if global.pause = 0 {
+//if global.pause = 0 {
 
 //get left or right key press and change variables accordingly
 if instance_exists(obj_playerChar) {} else {
@@ -115,7 +115,7 @@ if (!keyboard_check(vk_left) && !keyboard_check(vk_right)) && !keyboard_check(or
 
 
 }
-}
+//pause}
 
 if dismount_anim = true {
 	squash += 1;

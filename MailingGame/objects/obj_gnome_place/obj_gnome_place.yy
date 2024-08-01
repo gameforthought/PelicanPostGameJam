@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_objective_manager",
+  "%Name":"obj_gnome_place",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_objective_manager",
+  "name":"obj_gnome_place",
   "overriddenProperties":[],
   "parent":{
-    "name":"game_management",
-    "path":"folders/Objects/game_management.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
-  "persistent":true,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_gnome",
+    "path":"sprites/spr_gnome/spr_gnome.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

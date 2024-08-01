@@ -85,7 +85,7 @@ switch (pepper_state)
 		else
 		{
 			var _moveDir = sign(move_dest - x)
-			hspd = maxhspd * _moveDir * 0.8;
+			hspd = maxhspd * _moveDir * 0.5;
 			image_xscale = _moveDir;
 		}
 	
