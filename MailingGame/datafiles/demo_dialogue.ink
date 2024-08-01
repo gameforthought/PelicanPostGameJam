@@ -303,7 +303,7 @@ Wonderful, thanks a million!  Take care now! #Clyde #happy
 
 Ah, well if it isn't my dear partner!  How goes- #Clyde #neutral
 
-Oh, look what you have here!  You've done it!  Thanks, partner![remove_item,cly2] #Clyde #happy
+Oh, look what you have here!  You've done it!  Thanks, partner! #Clyde #happy
 
 ... #Pepper #fear
 
@@ -329,7 +329,7 @@ At this point, I guess I'm committed... #Pepper #sigh
 
 Anyways, here's your gnome.  #Pepper #neutral
 
-Thank you [c_pepper]Pepper![/]  Come here, Bartholomew. #Clyde #happy
+Thank you [c_pepper]Pepper![/]  Come here, Bartholomew.[remove_item,cly2] #Clyde #happy
 
 Take care, now! #Clyde #happy #closed
 
