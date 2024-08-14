@@ -31,7 +31,9 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"maxhspd","filters":[],"listItems":[],"multiselect":false,"name":"maxhspd","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"6","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"minhspd","filters":[],"listItems":[],"multiselect":false,"name":"minhspd","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.2","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"haccel","filters":[],"listItems":[],"multiselect":false,"name":"haccel","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.06","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"hdecel","filters":[],"listItems":[],"multiselect":false,"name":"hdecel","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.18","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"truck_state","filters":[],"listItems":[],"multiselect":false,"name":"truck_state","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"PlayerState.NoMove","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"parking_dest","filters":[],"listItems":[],"multiselect":false,"name":"parking_dest","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"parking_lenience","filters":[],"listItems":[],"multiselect":false,"name":"parking_lenience","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":1,},

@@ -25,20 +25,25 @@ switch (pepper_state)
 		// (1 = right, 0 = none, -1 = left)
 		var _moveDir = input_right_held() - input_left_held();
 		
-		// Move & face left/right
-		hspd += haccel * _moveDir;
-		if (_moveDir != 0) image_xscale = _moveDir;
+		// While moving, face move direction and accelerate
+		if (_moveDir != 0)
+		{
+			// Add acceleration rate to horizontal speed
+			// NOTE: horizontal speed will later be capped
+			hspd += haccel * _moveDir;
+			
+			// Face moving direction
+			image_xscale = _moveDir;
+		}
 		
 		// Apply deceleration when not moving
 		if (_moveDir == 0 && hspd != 0)
 		{
-			hspd -= sign(hspd) * 3 * haccel;
+			// Subtract decelration rate from horizontal speed
+			hspd -= sign(hspd) * hdecel;
 			
-			// Round horizontal speed to 0
-			if (hspd > -0.2) && (hspd < 0.2)
-			{
-				hspd = 0;
-			}
+			// If below minimum speed, set speed to 0
+			if (hspd * sign(hspd) < minhspd) hspd = 0;
 		}
 		
 		// Clamp horizontal speed to maximum speed
