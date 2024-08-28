@@ -4,13 +4,12 @@
 //checks if movement is paused
 //if global.pause = 0 {
 
-//get left or right key press and change variables accordingly
-if (instance_exists(obj_playerChar))
+#region State Machine + Movement
+
+// While truck is in control...
+if (player_exists())
 {
-	
-}
-else
-{
+	// Truck movement sounds
 	audio_stop_sound(sd_truck);
 	if !audio_is_playing(sd_truck)
 	{
@@ -18,87 +17,78 @@ else
 	}
 	audio_sound_gain(sd_truck, 0.6 * (abs(hspd) / 8), 0);
 	
-	if (truck_state == PlayerState.FreeMove)
+	// Do state machine
+	switch (truck_state)
 	{
-		#region Horizontal Movement
+		case PlayerState.FreeMove:
 		
-		// Get player input direction
-		// (1 = right, 0 = none, -1 = left)
-		var _moveDir = input_right_held() - input_left_held();
-		
-		// While moving, face move direction and accelerate
-		if (_moveDir != 0)
-		{
-			// Add acceleration rate to horizontal speed
-			// NOTE: horizontal speed will later be capped
-			hspd += haccel * _moveDir;
+			#region Horizontal Movement
 			
-			// Accelerate FASTER while turning
-			// NOTE: This behavior is exclusive to the truck's movement
-			if (sign(hspd) != _moveDir)
+			// Get player input direction
+			// (1 = right, 0 = none, -1 = left)
+			var _moveDir = input_right_held() - input_left_held();
+			
+			// While moving, face move direction and accelerate
+			if (_moveDir != 0)
 			{
-				hspd += haccel * abs(hspd) * _moveDir;
+				// Add acceleration rate to horizontal speed
+				// NOTE: horizontal speed will later be capped
+				hspd += haccel * _moveDir;
+				
+				// Accelerate FASTER while turning
+				// NOTE: This behavior is exclusive to the truck's movement
+				if (sign(hspd) != _moveDir)
+				{
+					hspd += haccel * abs(hspd) * _moveDir;
+				}
+				
+				// Face moving direction
+				image_xscale = _moveDir;
 			}
 			
-			// Face moving direction
-			image_xscale = _moveDir;
-		}
-		
-		// Apply deceleration when not moving
-		if (_moveDir == 0 && hspd != 0)
-		{
-			// Subtract decelration rate from horizontal speed
-			hspd -= sign(hspd) * hdecel;
-			
-			// If below minimum speed, set speed to 0
-			if (hspd * sign(hspd) < minhspd) hspd = 0;
-		}
-		
-		// Clamp horizontal speed to maximum speed
-		hspd = clamp(hspd, -maxhspd, maxhspd);
-		
-		#endregion
-	}
-	//if the truck is in cutscene state, move it to the destination
-	else if (truck_state == PlayerState.CutsceneMove)
-	{
-		//show_debug_message("Parking!");
-		//if the truck is already close to the parking spot, slow it down
-		if (abs(parking_dest - x) < parking_lenience)
-		{
-			//check if 
-			_sign = sign(hspd);
-			hspd -= sign(hspd) * haccel * 5;
-		
-			if (_sign != sign(hspd))
+			// Apply deceleration when not moving
+			if (_moveDir == 0 && hspd != 0)
 			{
-				hspd = 0;
-			
-				ExitTruck();
+				// Subtract decelration rate from horizontal speed
+				hspd -= sign(hspd) * hdecel;
+				
+				// If below minimum speed, set speed to 0
+				if (hspd * sign(hspd) < minhspd) hspd = 0;
 			}
-		}
-		//else move the truck closer to the parking spot
-		else
-		{
-			hspd += sign(parking_dest - x) * haccel / 2;
-		}
+			
+			// Clamp horizontal speed to maximum speed
+			hspd = clamp(hspd, -maxhspd, maxhspd);
+			
+			#endregion
+		
+			break;
+			
+		case PlayerState.CutsceneMove:
+		
+			// If the truck is already close to the parking spot, slow it down...
+			if (abs(parking_dest - x) < parking_lenience)
+			{
+				// Check if truck has nearly reached parking spot
+				var _sign = sign(hspd);
+				hspd -= sign(hspd) * haccel * 5;
+			
+				// Exit truck at parking spot
+				if (_sign != sign(hspd))
+				{
+					hspd = 0;
+					ExitTruck();
+				}
+			}
+			// ...else move the truck closer to the parking spot
+			else
+			{
+				hspd += sign(parking_dest - x) * haccel / 2;
+			}
+			
+			break;
 	}
 
-
-	//if the player is at the end of the road, don't let them move past it
-	if (x <= road_start || x >= road_end)
-	{
-		//hspd = 0;
-
-		//also exit the truck if hitting the end of the road in cutscene mode
-		if (truck_state == PlayerState.CutsceneMove)
-		{
-			hspd = 0;
-			ExitTruck();
-		}
-	}
-
-	// Horizontal Collision
+	// Horizontal movement and collision with barrier object
 	if (place_meeting(x + hspd, y, obj_truck_barrier))
 	{
 		while (!place_meeting(x + sign(hspd), y, obj_truck_barrier))
@@ -106,12 +96,14 @@ else
 			x += sign(hspd);
 		}
 		hspd = 0;
-	}
 		
-
+		// During cutscenes, exit the truck once car is parked
+		if (truck_state == PlayerState.CutsceneMove) ExitTruck();
+	}
+	
 	x += hspd;
-	//x = clamp(x, road_start, road_end);
 
+	#endregion
 
 	//dust
 	if (abs(hspd) > 0)

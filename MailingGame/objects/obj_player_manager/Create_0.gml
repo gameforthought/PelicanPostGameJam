@@ -12,10 +12,7 @@
 	
 		// Create character object and update player manager's character variable
 		var _character = instance_create_layer(_x, _y, _layer, _obj, _config);
-		character = _character;
-		
-		// Set camera target to new character
-		obj_camera_manager.target_character = _character;
+		character_set(_character);
 	
 		return _character;
 	
@@ -24,10 +21,16 @@
 	// Unlink the current character and player, then establish a link with the given character
 	character_set = function(_character)
 	{
-		if (character != undefined && instance_exists(character)) character.player_remove();
+		if (character != undefined && instance_exists(character))
+		{
+			character.player_remove();
+		}
 		
 		_character.player = self.id;
 		character = _character;
+		
+		// Set camera target to new character
+		obj_camera_manager.target_character = _character;
 	}
 	
 	// Unlink the current character from this player manager

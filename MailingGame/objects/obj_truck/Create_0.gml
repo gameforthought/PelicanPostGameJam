@@ -3,6 +3,9 @@
 
 #region Player Manager
 
+	// TEMP: spawn this truck with character spawner later
+	player = undefined;
+
 	// Check if this character has a reference to the player manager and it exists
 	player_exists = function()
 	{
