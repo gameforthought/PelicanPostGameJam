@@ -127,7 +127,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.8.0.169",
   },
   "name":"MailingGame",
   "resources":[
@@ -213,6 +213,7 @@
     {"id":{"name":"ending_room_imagine","path":"rooms/ending_room_imagine/ending_room_imagine.yy",},},
     {"id":{"name":"GaleTestingRoom","path":"rooms/GaleTestingRoom/GaleTestingRoom.yy",},},
     {"id":{"name":"initialization_room","path":"rooms/initialization_room/initialization_room.yy",},},
+    {"id":{"name":"library","path":"rooms/library/library.yy",},},
     {"id":{"name":"post_office","path":"rooms/post_office/post_office.yy",},},
     {"id":{"name":"__input_axis_is_directional","path":"scripts/__input_axis_is_directional/__input_axis_is_directional.yy",},},
     {"id":{"name":"__input_binding_get_label","path":"scripts/__input_binding_get_label/__input_binding_get_label.yy",},},
@@ -734,6 +735,7 @@
     {"id":{"name":"spr_large_rock","path":"sprites/spr_large_rock/spr_large_rock.yy",},},
     {"id":{"name":"spr_laugh","path":"sprites/spr_laugh/spr_laugh.yy",},},
     {"id":{"name":"spr_library_door","path":"sprites/spr_library_door/spr_library_door.yy",},},
+    {"id":{"name":"spr_library_interior","path":"sprites/spr_library_interior/spr_library_interior.yy",},},
     {"id":{"name":"spr_library","path":"sprites/spr_library/spr_library.yy",},},
     {"id":{"name":"spr_light_mote","path":"sprites/spr_light_mote/spr_light_mote.yy",},},
     {"id":{"name":"spr_mountain","path":"sprites/spr_mountain/spr_mountain.yy",},},
@@ -797,8 +799,9 @@
     {"roomId":{"name":"demo_room","path":"rooms/demo_room/demo_room.yy",},},
     {"roomId":{"name":"GaleTestingRoom","path":"rooms/GaleTestingRoom/GaleTestingRoom.yy",},},
     {"roomId":{"name":"post_office","path":"rooms/post_office/post_office.yy",},},
-    {"roomId":{"name":"DialogueTesting","path":"rooms/DialogueTesting/DialogueTesting.yy",},},
+    {"roomId":{"name":"library","path":"rooms/library/library.yy",},},
     {"roomId":{"name":"ending_room_imagine","path":"rooms/ending_room_imagine/ending_room_imagine.yy",},},
+    {"roomId":{"name":"DialogueTesting","path":"rooms/DialogueTesting/DialogueTesting.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
