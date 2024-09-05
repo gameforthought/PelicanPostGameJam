@@ -65,7 +65,6 @@ if up = false && y_anim > 255 {
 	global.pause = 0;
 	
 	obj_playerChar.pepper_state = PlayerState.FreeMove;
-	show_debug_message("bango");
 	instance_destroy();
 }
 

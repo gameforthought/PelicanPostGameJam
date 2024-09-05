@@ -53,7 +53,11 @@ global.pause = 1;
 
 //get direction the character is facing
 if instance_exists(obj_playerChar) {
-	dir = obj_playerChar.image_xscale;	
+	//dir = obj_playerChar.image_xscale;
+	
+	var _door = instance_nearest(obj_playerChar.x, obj_playerChar.y, obj_door);
+	
+	dir = sign(_door.x - obj_playerChar.x);
 } else {
 	dir = obj_truck.image_xscale;	
 }
