@@ -20,8 +20,11 @@ inventory = array_create(INVENTORY_SLOTS, -1);
 //give_item(-1, ["Bea1","package","Beatrice","UC Books","A small box from a book publisher"], -1)
 //give_item(-1, ["cly1","package","Clyde","Gnome Feed","Feeds gnomes"], -1)
 
+y_bottom = 300;
+
 x = 0;
-y = 256;
+y = y_bottom;
+
 
 windowScale = global.window_scale;
 

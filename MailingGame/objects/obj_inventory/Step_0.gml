@@ -3,7 +3,7 @@
 
 if room != post_office {
 
-y = EaseInBack(animation_step, 0, 256, 45);
+y = EaseInBack(animation_step, 0, y_bottom, 45);
 
 animation_step += animation_dir;
 
