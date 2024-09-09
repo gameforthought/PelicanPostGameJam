@@ -59,6 +59,16 @@ if (player_exists())
 			// Clamp horizontal speed to maximum speed
 			hspd = clamp(hspd, -maxhspd, maxhspd);
 			
+			// Horizontal movement and collision with barrier object
+			if (place_meeting(x + hspd, y, obj_truck_barrier))
+			{
+				while (!place_meeting(x + sign(hspd), y, obj_truck_barrier))
+				{
+					x += sign(hspd);
+				}
+				hspd = 0;
+			}
+			
 			#endregion
 		
 			break;
@@ -68,12 +78,13 @@ if (player_exists())
 			// If the truck is already close to the parking spot, slow it down...
 			if (abs(parking_dest - x) < parking_lenience)
 			{
-				// Check if truck has nearly reached parking spot
-				var _sign = sign(hspd);
-				hspd -= sign(hspd) * haccel * 5;
+				// Get direction of horizontal speed
+				var _initialDir = sign(hspd);
+				// Apply deceleration
+				hspd -= sign(hspd) * hdecel * 2;
 			
-				// Exit truck at parking spot
-				if (_sign != sign(hspd))
+				// If moved to or past parking spot, park truck
+				if (_initialDir != sign(hspd))
 				{
 					hspd = 0;
 					ExitTruck();
@@ -85,20 +96,13 @@ if (player_exists())
 				hspd += sign(parking_dest - x) * haccel / 2;
 			}
 			
+			// Exit truck if colliding with barrier
+			if (place_meeting(x + hspd, y, obj_truck_barrier))
+			{
+				hspd = 0;
+				ExitTruck();
+			}
 			break;
-	}
-
-	// Horizontal movement and collision with barrier object
-	if (place_meeting(x + hspd, y, obj_truck_barrier))
-	{
-		while (!place_meeting(x + sign(hspd), y, obj_truck_barrier))
-		{
-			x += sign(hspd);
-		}
-		hspd = 0;
-		
-		// During cutscenes, exit the truck once car is parked
-		if (truck_state == PlayerState.CutsceneMove) ExitTruck();
 	}
 	
 	x += hspd;
