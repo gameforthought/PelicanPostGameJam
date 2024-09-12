@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"external_ink_scripts",
+  "%Name":"save_game",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"external_ink_scripts",
+  "name":"save_game",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
