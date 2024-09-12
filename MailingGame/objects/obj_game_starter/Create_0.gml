@@ -25,6 +25,8 @@ instance_create_depth(x,y, 0, obj_music_manager);
 
 instance_create_depth(x,y, 0, obj_player_manager);
 
+instance_create_depth(x,y, 0, obj_hud);
+
 
 
 // Go to game room and display intro logo
