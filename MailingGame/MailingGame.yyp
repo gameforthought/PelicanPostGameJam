@@ -129,7 +129,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.6.0.157",
   },
   "name":"MailingGame",
   "resources":[
@@ -806,8 +806,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"initialization_room","path":"rooms/initialization_room/initialization_room.yy",},},
-    {"roomId":{"name":"demo_room","path":"rooms/demo_room/demo_room.yy",},},
     {"roomId":{"name":"GaleTestingRoom","path":"rooms/GaleTestingRoom/GaleTestingRoom.yy",},},
+    {"roomId":{"name":"demo_room","path":"rooms/demo_room/demo_room.yy",},},
     {"roomId":{"name":"post_office","path":"rooms/post_office/post_office.yy",},},
     {"roomId":{"name":"library","path":"rooms/library/library.yy",},},
     {"roomId":{"name":"ending_room_imagine","path":"rooms/ending_room_imagine/ending_room_imagine.yy",},},

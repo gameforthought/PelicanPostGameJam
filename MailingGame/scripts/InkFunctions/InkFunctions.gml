@@ -30,6 +30,7 @@ function next_line(){
 			//Call ink_choose_choice(i) to make a choice
 			//show_debug_message("Num choices: " + choice_count.string());
 			
+			show_debug_message("Choices detected");
 			
 			//populate the textbox's choice_array
 			for (var i=0; i<choice_count;i++){
@@ -50,10 +51,10 @@ function next_line(){
 
 //make the input choice, then progress the textbox to the next piece of dialogue
 function choose_choice(choice){
-	show_debug_message("Shoaboinboing");
 	ink_choose_choice(choice);
 	if (ink_can_continue()){	
-		show_debug_message("PLEEEEEEEEEEEEEEEEEEEEeease");
+		show_debug_message("Choice chosen; progressing to next line");
+	next_line();
 	next_line();
 	}
 	else show_debug_message("Can't progress past choice");
