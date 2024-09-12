@@ -17,6 +17,7 @@ scribble_typists_add_event("objective_complete", objective_complete);
 scribble_typists_add_event("gnome_create", gnome_create);
 
 
+scribble_typists_add_event("event_set", event_set);
 
 //set_dialogue_character();
 //bind game and ink file variables

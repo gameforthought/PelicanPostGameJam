@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"external_ink_scripts",
+  "%Name":"event_system",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"external_ink_scripts",
+  "name":"event_system",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

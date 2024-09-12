@@ -1,5 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
+
 function give_item(_element, _parameter_array, _character_index) {
 	
 	var knot_key = _parameter_array[0];
@@ -77,7 +79,6 @@ function door_set_knot(_element, _parameter_array, _character_index) {
 
 function objective_create(_element, _parameter_array, _character_index) {
 	//var _text = _parameter_array[0];
-	
 	var _text = _parameter_array[0];
 	
 	_text = string_replace(_text, "<", "[");
@@ -127,4 +128,15 @@ function gnome_create() {
 	objective_create(-1, ["Find a gnome"], -1);
 	
 }
+function event_set(_element, _parameter_array, _character_index) {
+	var _text = _parameter_array[0];
+	
+	_text = string_replace(_text, "<", "[");
+	_text = string_replace(_text, ">", "]");
+	
+	show_debug_message("entered");
+	//global.event_array[_i,_j] = _set_to;
 
+	show_debug_message("success");
+	
+}

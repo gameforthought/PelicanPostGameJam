@@ -52,6 +52,9 @@ Adds an objective for the player
 Completes an objective
 [objective_complete,{objective text}]
 
+Inputs into events 
+[event_set,{x},{y},{input}]
+
 NOTES ABOUT OBJECTIVES:
 adding or removing an item automatically creates or completes the 
 corresponding objective. you can use scribble formatting in the objective text
@@ -132,7 +135,7 @@ That's where her house is! #Beatrice #neutral
 
 I think I can remember that. #Pepper #neutral
 
-Good luck! #Beatrice #happy
+Good luck![event_set,0,0,1] #Beatrice #happy
 
 ->DONE
 
@@ -168,6 +171,7 @@ Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And 
 Of course, take care! #Pepper #neutral
 
 ...yeah.  #Suzannah #neutral
+[event_set,0,3,1]
 
 -> DONE
 
@@ -210,6 +214,7 @@ Oh, [c_pepper]Pepper[/c], dear, that'd be so wonderful!  #Beatrice #happy
 I'd be happy to!  It's getting late for me though, good night!  #Pepper #neutral
 
 Good night [c_pepper]Pepper[/c], thank you so much for your help today!  #Beatrice #happy
+[event_set,0,2,1]
 
 ->DONE
 
@@ -296,6 +301,8 @@ Then, bring it back here! #Clyde #neutral
 I see.  Well, I'll keep my eye out for your... gnomes. #Pepper #neutral
 
 Wonderful, thanks a million!  Take care now! #Clyde #happy
+
+[event_set,0,0,1]
 
 ->DONE
 
@@ -393,6 +400,8 @@ Hmm?  #Pepper #neutral
 Stop back here after you finish your deliveries tonight.  I want to hear about how it goes![objective_create,Return to <c_pierre>Pierre]  #Pierre #neutral
 
 Oh, sure thing!  See you then!  #Pepper #happy
+[event_set,0,0,1]
+
 
 ->DONE
 
@@ -455,5 +464,6 @@ I'll see you tomorrow, then?  #Pierre #neutral
 Yup!  See you tomorrow! Take care! #Pepper #happy
 
 Thanks, [c_pepper]Pepper.[/]  You too.  #Pierre #happy
+[event_set,0,1,1]
 
 ->DONE
