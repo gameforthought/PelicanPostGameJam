@@ -4,3 +4,4 @@
 
 #macro PP_RED #ca4d35
 #macro PP_BLUE #5a7fc8
+#macro PP_TAN #d9c498

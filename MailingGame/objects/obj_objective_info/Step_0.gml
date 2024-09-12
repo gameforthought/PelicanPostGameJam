@@ -20,7 +20,11 @@ shift_step = clamp(shift_step, 0, 70);
 
 shift = EaseInOutBack(shift_step, 0, 300, 60);
 
-
+if shift_step >= 60 {
+	visible = false;
+} else {
+	visible = true;
+}
 
 if shift_step > 60 {
 	

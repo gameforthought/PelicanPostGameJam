@@ -12,6 +12,12 @@ shift_step += shift_dir;
 
 shift_step = clamp(shift_step, 0, 70);
 
+if shift_step >= 60 {
+	visible = false;
+} else {
+	visible = true;
+}
+
 
 shift = EaseInOutBack(shift_step, 0, 300, 60);
 

@@ -5,6 +5,8 @@ shift_dir = -1;
 shift = 0;
 shift_step = 60;
 
+visible = false;
+
 global.pause = true;
 
 //windowScale = window_get_height() / room_height;

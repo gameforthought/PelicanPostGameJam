@@ -6,6 +6,7 @@ depth += 10;
 shift_dir = -1;
 shift = 0;
 shift_step = 60;
+visible = false;
 
 
 //windowScale = window_get_height() / room_height;
