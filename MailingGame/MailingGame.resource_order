@@ -127,6 +127,7 @@
     {"name":"obj_lamp_light","order":2,"path":"objects/obj_lamp_light/obj_lamp_light.yy",},
     {"name":"obj_lamppost","order":17,"path":"objects/obj_lamppost/obj_lamppost.yy",},
     {"name":"obj_landscape_stretch","order":5,"path":"objects/obj_landscape_stretch/obj_landscape_stretch.yy",},
+    {"name":"obj_menu_manager","order":8,"path":"objects/obj_menu_manager/obj_menu_manager.yy",},
     {"name":"obj_mouse","order":2,"path":"objects/obj_mouse/obj_mouse.yy",},
     {"name":"obj_music_manager","order":4,"path":"objects/obj_music_manager/obj_music_manager.yy",},
     {"name":"obj_objective_info","order":1,"path":"objects/obj_objective_info/obj_objective_info.yy",},

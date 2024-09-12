@@ -129,7 +129,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.0.157",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"MailingGame",
   "resources":[
@@ -169,6 +169,7 @@
     {"id":{"name":"obj_lamp_light","path":"objects/obj_lamp_light/obj_lamp_light.yy",},},
     {"id":{"name":"obj_lamppost","path":"objects/obj_lamppost/obj_lamppost.yy",},},
     {"id":{"name":"obj_landscape_stretch","path":"objects/obj_landscape_stretch/obj_landscape_stretch.yy",},},
+    {"id":{"name":"obj_menu_manager","path":"objects/obj_menu_manager/obj_menu_manager.yy",},},
     {"id":{"name":"obj_mouse","path":"objects/obj_mouse/obj_mouse.yy",},},
     {"id":{"name":"obj_music_manager","path":"objects/obj_music_manager/obj_music_manager.yy",},},
     {"id":{"name":"obj_objective_info","path":"objects/obj_objective_info/obj_objective_info.yy",},},
@@ -806,8 +807,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"initialization_room","path":"rooms/initialization_room/initialization_room.yy",},},
-    {"roomId":{"name":"GaleTestingRoom","path":"rooms/GaleTestingRoom/GaleTestingRoom.yy",},},
     {"roomId":{"name":"demo_room","path":"rooms/demo_room/demo_room.yy",},},
+    {"roomId":{"name":"GaleTestingRoom","path":"rooms/GaleTestingRoom/GaleTestingRoom.yy",},},
     {"roomId":{"name":"post_office","path":"rooms/post_office/post_office.yy",},},
     {"roomId":{"name":"library","path":"rooms/library/library.yy",},},
     {"roomId":{"name":"ending_room_imagine","path":"rooms/ending_room_imagine/ending_room_imagine.yy",},},

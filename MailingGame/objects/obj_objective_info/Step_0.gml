@@ -35,7 +35,8 @@ if shift_step > 60 {
 if point_in_rectangle(mouse_x, mouse_y, vx + (close_x - 15), close_y + shift - 30, vx + (close_x + 15), close_y + shift) {
 	close_rot = -5;
 	if mouse_check_button_pressed(mb_left) {
-		shift_dir = 1;
+		obj_menu_manager.close_menu();
+		//shift_dir = 1;
 	}
 } else {
 	close_rot = 0;
