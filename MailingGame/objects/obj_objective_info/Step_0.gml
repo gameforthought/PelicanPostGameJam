@@ -49,7 +49,7 @@ for (var i = 0; i < array_length(obj_objective_manager.array); i++) {
 	if point_in_rectangle(mouse_x, mouse_y,  vx + (9 + 27), ((256 - 160) + (i * 24) + shift), 
 	vx + (9 + 218 - 27), ((256 - 160 + 24) + (i * 24) + shift)) {
 		
-		desc_text = obj_objective_manager.array[i].text;
+		desc_text = obj_objective_manager.array[i].desc;
 		_obj_hover = true;
 		
 	}

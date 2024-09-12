@@ -47,7 +47,7 @@ Loads a coversation into the specified door
 [door_set_knot,{door name},{knot name}]
 
 Adds an objective for the player
-[objective_create,{objective text}]
+[objective_create,{objective text},{objective description},{priority (0-10, default 1)}]
 
 Completes an objective
 [objective_complete,{objective text}]
@@ -166,7 +166,7 @@ So she put you up to this?  Then tell her I don't need her concern. #Suzannah #n
 
 ... #Suzannah #neutral
 
-Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And try not to trip on the rocks. [objective_create,Return to <c_beatrice>Beatrice] [door_set_knot,obj_beatrice_door,bea2] #Suzannah #neutral
+Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And try not to trip on the rocks. [objective_create,Return to <c_beatrice>Beatrice,<c_beatrice>Beatrice</> wants to know how your visit to <c_suzannah>Suzannah</> went] [door_set_knot,obj_beatrice_door,bea2] #Suzannah #neutral
 
 Of course, take care! #Pepper #neutral
 
@@ -397,7 +397,7 @@ Actually, [c_pepper]Pepper[/], one last thing before you go #Pierre #neutral
 
 Hmm?  #Pepper #neutral
 
-Stop back here after you finish your deliveries tonight.  I want to hear about how it goes![objective_create,Return to <c_pierre>Pierre]  #Pierre #neutral
+Stop back here after you finish your deliveries tonight.  I want to hear about how it goes![objective_create,Return to <c_pierre>Pierre,Return to <c_pierre>Pierre</> at the end of the day,10]  #Pierre #neutral
 
 Oh, sure thing!  See you then!  #Pepper #happy
 [event_set,0,0,1]
