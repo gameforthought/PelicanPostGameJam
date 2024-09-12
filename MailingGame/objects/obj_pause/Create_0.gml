@@ -9,6 +9,49 @@ visible = false;
 
 global.pause = true;
 
+
+//button functions
+close = function() {
+	shift_dir = 1;
+}
+
+quit = function() {
+	if shift_step = 0 {
+	game_end();
+}
+}
+
+
+button_x = 412;
+
+button_array = [
+
+{
+	color: #5a7fc8,
+	text: scribble("Resume"),
+	func: close,
+	rot: 0,
+},
+{
+	color: #ca4d35,
+	text: scribble("Quit"),
+	func: quit,
+	rot: 0,
+},
+];
+
+for (var i = 0; i < array_length(button_array); i++) {
+	
+	button_array[i].text.starting_format("ft_gui", c_white);
+	button_array[i].text.origin(0, 15);
+	button_array[i].text.wrap(114);
+	
+	button_array[i].y_pos = 155 + 32 * i;
+	
+}
+
+
+
 //windowScale = window_get_height() / room_height;
 windowScale = 2
 
@@ -81,33 +124,33 @@ subimage: 3
 
 ]
 
-start_struct = {
-	color: #5a7fc8,
-	text: "Resume",
-	event_obj: obj_pause,
-	event: ev_alarm,
-	event_num: 0
-};
-
-//options_struct = {
-//	color: #d9c498,
-//	text: "Options",
+//start_struct = {
+//	color: #5a7fc8,
+//	text: "Resume",
 //	event_obj: obj_pause,
 //	event: ev_alarm,
 //	event_num: 0
 //};
 
-close_struct = {
-	color: #ca4d35,
-	text: "Quit",
-	event_obj: obj_pause,
-	event: ev_alarm,
-	event_num: 2
-};
+////options_struct = {
+////	color: #d9c498,
+////	text: "Options",
+////	event_obj: obj_pause,
+////	event: ev_alarm,
+////	event_num: 0
+////};
 
-start_button = instance_create_depth(355, 155, depth - 100, obj_text_button_par, start_struct);
+//close_struct = {
+//	color: #ca4d35,
+//	text: "Quit",
+//	event_obj: obj_pause,
+//	event: ev_alarm,
+//	event_num: 2
+//};
 
-//options_button = instance_create_layer(355, 155 + 32, layer_get_name(layer), obj_text_button_par, options_struct);
+//start_button = instance_create_depth(355, 155, depth - 100, obj_text_button_par, start_struct);
 
-close_button = instance_create_depth(355, 155 + 32, depth - 100, obj_text_button_par, close_struct);
-//64
+////options_button = instance_create_layer(355, 155 + 32, layer_get_name(layer), obj_text_button_par, options_struct);
+
+//close_button = instance_create_depth(355, 155 + 32, depth - 100, obj_text_button_par, close_struct);
+////64

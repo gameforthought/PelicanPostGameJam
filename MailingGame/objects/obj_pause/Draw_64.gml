@@ -35,6 +35,25 @@ for (var i = 0; i < array_length(obj_objective_manager.array); i++) {
 }
 
 
+//draw buttons
+for (var i = 0; i < array_length(button_array); i++) {
+	
+	var _button = button_array[i];
+	
+	draw_sprite_ext(spr_text_button, 1, windowScale * (button_x + shift), 
+	windowScale * (_button.y_pos), 
+	windowScale * 1, windowScale * 1, _button.rot, _button.color, 1);
+	
+	draw_sprite_ext(spr_text_button, 0, windowScale * (button_x + shift), 
+	windowScale * (_button.y_pos), 
+	windowScale * 1, windowScale * 1, _button.rot, c_white, 1);
+	
+	_button.text.draw((button_x + 10 - 57 + shift) * windowScale, (_button.y_pos) * windowScale);
+	_button.text.transform(1, 1, _button.rot);
+	
+}
+
+
 //black bars
 draw_sprite_stretched_ext(spr_title, 0, -30 * windowScale, -30 * windowScale, 1000 * windowScale, 30 * windowScale, c_black, 1);
 draw_sprite_stretched_ext(spr_title, 0, -30 * windowScale, 256 * windowScale, 1000 * windowScale, 30 * windowScale, c_black, 1)
