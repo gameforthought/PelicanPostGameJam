@@ -14,21 +14,24 @@ windowScale = 2
 
 //button functions
 tasks = function() {
-	if !instance_exists(obj_objective_info) {
-		instance_create_layer(0, 256, "positional_gui", obj_objective_info);
-	}
+	obj_menu_manager.open_menu(obj_objective_info);
+	//if !instance_exists(obj_objective_info) {
+	//	instance_create_layer(0, 256, "positional_gui", obj_objective_info);
+	//}
 }
 
 address = function() {
-	if !instance_exists(obj_objective_info) {
-		instance_create_layer(0, 256, "positional_gui", obj_objective_info);
-	}
+	obj_menu_manager.open_menu(obj_objective_info);
+	//if !instance_exists(obj_objective_info) {
+	//	instance_create_layer(0, 256, "positional_gui", obj_objective_info);
+	//}
 }
 
 pause = function() {
-	if !instance_exists(obj_pause) {
-		instance_create_layer(0, 256, "positional_gui", obj_pause);
-	}
+	obj_menu_manager.open_menu(obj_pause);
+	//if !instance_exists(obj_pause) {
+	//	instance_create_layer(0, 256, "positional_gui", obj_pause);
+	//}
 }
 
 
