@@ -21,6 +21,6 @@ close_menu = function()
 	if (currentMenu == undefined) return;
 	
 	// Close the current menu and update the current menu variable.
-	currentMenu.shift_dir = 1; // TEMP - replace with a .close() method call
+	currentMenu.close(); // TEMP - replace with a .close() method call
 	currentMenu = undefined;
 }

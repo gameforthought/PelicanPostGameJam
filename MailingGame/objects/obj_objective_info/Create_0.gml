@@ -9,6 +9,10 @@ shift_step = 60;
 visible = false;
 
 
+close = function() {
+	shift_dir = 1;
+}
+
 //windowScale = window_get_height() / room_height;
 windowScale = 2
 

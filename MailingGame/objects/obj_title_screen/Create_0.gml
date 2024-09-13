@@ -30,7 +30,7 @@ button_array = [
 {
 	color: #5a7fc8,
 	text: scribble("Let's Go!"),
-	func: close,
+	func: obj_menu_manager.close_menu,
 	rot: 0,
 },
 {
