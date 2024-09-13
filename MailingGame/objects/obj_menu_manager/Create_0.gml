@@ -21,6 +21,6 @@ close_menu = function()
 	if (currentMenu == undefined) return;
 	
 	// Close the current menu and update the current menu variable.
-	currentMenu.close(); // TEMP - replace with a .close() method call
+	if (instance_exists(currentMenu)) currentMenu.close();
 	currentMenu = undefined;
 }
