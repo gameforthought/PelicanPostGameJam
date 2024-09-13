@@ -27,9 +27,12 @@
 #region Input
 
 	// Get input from player manager.
+	// If gameplay is paused, do not take certain inputs.
 	// If this character is not linked to the player manager, do not take input.
 	input_left_held = function()
 	{
+		//if (GameplayPaused()) return false;
+		
 		if (player_exists())
 		{
 			return player.input_left_held();
@@ -38,6 +41,8 @@
 	}
 	input_right_held = function()
 	{
+		//if (GameplayPaused()) return false;
+		
 		if (player_exists())
 		{
 			return player.input_right_held();
@@ -46,6 +51,8 @@
 	}
 	input_up_pressed = function()
 	{
+		//if (GameplayPaused()) return false;
+		
 		if (player_exists())
 		{
 			return player.input_up_pressed();
