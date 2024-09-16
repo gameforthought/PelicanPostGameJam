@@ -60,6 +60,31 @@ adding or removing an item automatically creates or completes the
 corresponding objective. you can use scribble formatting in the objective text
 if you use "< >" instead of "[ ]" ie "<c_beatrice>"
 
+NOTES ABOUT CHOICES: 
+In present implementation, square brackets have a special 
+    meaning for formatting that supercedes the scribble effect activation
+For instance, the line
+    + [Happy] I'm so happy yay
+    
+    will produce the choice "Happy"
+    and the follow up line "I'm so happy yay"
+This means that you cannot use more than one set of square brackets
+    in a choice, nor can you currently call scribble effects.
+Because of this, I've chosen to implement the gamemaker side of the
+    text display to always make two calls to Next_Line()
+    when making a choice.
+This means that all choices will currently need to be formatted as:
+    + Happy
+        I'm so happy yay
+This is mainly to allow writers to still call any desired scribble
+    effects in the followup line until we can figure out a workaround.
+To look more closely at how this formatting works, take a look at the 
+->DebugChoice knot
+
+TLDR: Don't use square brackets with choices for now
+    (but they're fine to use in followup lines)
+
+
 
 List of doors:
 obj_beatrice_door

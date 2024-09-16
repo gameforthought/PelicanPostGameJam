@@ -25,17 +25,17 @@ if shift_step > 60 {
 //button hover and click
 for (var i = 0; i < array_length(button_array); i++) {
 
-var _x = 328 + i * 42;
-var _y = 256 - 6;
+	var _x = 328 + i * 42;
+	var _y = 256 - 6;
 
 
-if point_in_rectangle(mouse_x, mouse_y, vx + (_x - 15), _y - 30 + shift, vx + (_x + 15), _y + shift) {
-	button_array[i].rot = -5;
-	if mouse_check_button_pressed(mb_left) {
-		button_array[i].func();
+	if point_in_rectangle(mouse_x, mouse_y, vx + (_x - 15), _y - 30 + shift, vx + (_x + 15), _y + shift) {
+		button_array[i].rot = -5;
+		if mouse_check_button_pressed(mb_left) {
+			button_array[i].func();
+		}
+	} else {
+		button_array[i].rot = 0;
 	}
-} else {
-	button_array[i].rot = 0;
-}
 
 }

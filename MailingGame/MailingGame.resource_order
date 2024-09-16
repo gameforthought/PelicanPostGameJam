@@ -582,6 +582,7 @@
     {"name":"string_length_scribble","order":4,"path":"scripts/string_length_scribble/string_length_scribble.yy",},
     {"name":"string_width_scribble_ext","order":6,"path":"scripts/string_width_scribble_ext/string_width_scribble_ext.yy",},
     {"name":"string_width_scribble","order":5,"path":"scripts/string_width_scribble/string_width_scribble.yy",},
+    {"name":"try_summon_truck","order":13,"path":"scripts/try_summon_truck/try_summon_truck.yy",},
     {"name":"__shd_scribble_bake_outline_4dir","order":1,"path":"shaders/__shd_scribble_bake_outline_4dir/__shd_scribble_bake_outline_4dir.yy",},
     {"name":"__shd_scribble_bake_outline_8dir_2px","order":3,"path":"shaders/__shd_scribble_bake_outline_8dir_2px/__shd_scribble_bake_outline_8dir_2px.yy",},
     {"name":"__shd_scribble_bake_outline_8dir","order":2,"path":"shaders/__shd_scribble_bake_outline_8dir/__shd_scribble_bake_outline_8dir.yy",},

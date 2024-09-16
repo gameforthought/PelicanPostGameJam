@@ -34,10 +34,15 @@ pause = function() {
 	//}
 }
 
+summon = function() {
+	show_debug_message("Hit the summon button!");
+	try_summon_truck();
+}
+
 
 button_array = [
 {
-	func: 1, //summon
+	func: summon,
 	color: PP_TAN,
 	icon: 2,
 	pos: 0,
