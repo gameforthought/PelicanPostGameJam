@@ -24,3 +24,8 @@ close_menu = function()
 	if (instance_exists(currentMenu)) currentMenu.close();
 	currentMenu = undefined;
 }
+
+/*	TEMP: Since there is no title screen yet (which would require a title screen room),
+	the title screen is created in the main gameplay room. This variable exists so that
+	the title screen only appears the first time the gameplay room is loaded. */
+showTitleScreen = true;

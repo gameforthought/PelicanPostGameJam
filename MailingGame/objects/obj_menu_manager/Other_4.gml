@@ -1,6 +1,11 @@
 /// @desc Title screen creation
 
-/*	The title screen is a special case where it should be opened the first
-	time the main gameplay room is loaded. */
+/*	TEMP: Since there is no title screen yet (which would require a title screen room),
+	the title screen is created in the main gameplay room. This statement exists so that
+	the title screen only appears the first time the gameplay room is loaded. */
 	
-if (room == demo_room) open_menu(obj_title_screen);
+if (room == demo_room && showTitleScreen)
+{
+	showTitleScreen = false;
+	open_menu(obj_title_screen);
+}
