@@ -25,7 +25,7 @@ if shift_step > 60 {
 //button hover and click
 for (var i = 0; i < array_length(button_array); i++) {
 
-	var _x = 328 + i * 42;
+	var _x = 480 - 30 - i * 42;
 	var _y = 256 - 6;
 
 

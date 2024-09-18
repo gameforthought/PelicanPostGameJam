@@ -41,27 +41,27 @@ summon = function() {
 
 
 button_array = [
-{
-	func: summon,
-	color: PP_TAN,
-	icon: 2,
-	pos: 0,
-	rot: 0,
-},
+//{
+//	func: summon,
+//	color: PP_TAN,
+//	icon: 2,
+//	pos: 0,
+//	rot: 0,
+//},
 {
 	func: tasks,
-	color: PP_RED,
+	color: PP_BLUE,
 	icon: 3,
 	pos: 1,
 	rot: 0,
 },
-{
-	func: address,
-	color: PP_BLUE,
-	icon: 4,
-	pos: 2,
-	rot: 0,
-},
+//{
+//	func: address,
+//	color: PP_BLUE,
+//	icon: 4,
+//	pos: 2,
+//	rot: 0,
+//},
 {
 	func: pause,
 	color: PP_RED,
@@ -70,4 +70,6 @@ button_array = [
 	rot: 0,
 }
 ];
+
+button_array = array_reverse(button_array);
 
