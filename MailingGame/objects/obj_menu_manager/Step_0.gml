@@ -8,6 +8,11 @@ if currentMenu != undefined {
 	hudAppear = 0;
 }
 
+//checks to make sure a textbox doesn't exist (temp)
+if instance_exists(obj_textbox) {
+	hudAppear = 0;
+}
+
 
 //checks to make sure the player isn't moving
 if (instance_exists(obj_player_manager))

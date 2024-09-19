@@ -2,11 +2,11 @@
 // You can write your code in this editor
 var vx = camera_get_view_x(view_camera[0]);
 
-//temp hud appear
+// hud appear control
 if (obj_menu_manager.hudAppear > 40) {
-	visible = true;	
+	shift_dir = -1;
 } else {
-	visible = false;
+	shift_dir = 1;
 }
 
 
@@ -20,13 +20,15 @@ shift_step += shift_dir;
 shift_step = clamp(shift_step, 0, 70);
 
 
-shift = EaseInOutBack(shift_step, 0, 300, 60);
+shift = EaseInOutBack(shift_step, 0, 100, 60);
 
 
 
 if shift_step > 60 {
 	
-	instance_destroy();	
+	visible = false;
+} else {
+	visible = true;	
 }
 
 
