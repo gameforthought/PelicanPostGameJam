@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if obj_truck.clickable = true && !instance_exists(obj_posUI_container) && global.pause = 0 {
+if obj_truck.clickable = true /* && !instance_exists(obj_posUI_container)*/ && global.pause = 0 {
 	visible = true;
 } else {
 	visible = false;	

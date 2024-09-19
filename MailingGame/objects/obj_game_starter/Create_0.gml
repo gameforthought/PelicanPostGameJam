@@ -25,10 +25,12 @@ instance_create_depth(x,y, 0, obj_music_manager);
 
 instance_create_depth(x,y, 0, obj_player_manager);
 
+instance_create_depth(x,y, 0, obj_menu_manager);
 
+instance_create_depth(x,y, 0, obj_hud);
 
 // Go to game room and display intro logo
-room_goto_next();
+room_goto(demo_room);
 
 if (!is_debug_mode)
 {

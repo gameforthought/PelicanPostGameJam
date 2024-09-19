@@ -5,7 +5,51 @@ start_shift = 0;
 shift = 0;
 shift_step = 0;
 
-windowScale = 2
+windowScale = 2;
+
+//button functions
+close = function() {
+	start_shift = 1;
+	audio_play_sound(sd_door_open, 0, false)
+	with (obj_post_office_door) {
+		event_perform(ev_mouse, ev_left_press);
+	}
+}
+
+quit = function() {
+	if shift_step = 0 {
+	game_end();
+}
+}
+
+
+button_x = 412;
+
+button_array = [
+
+{
+	color: #5a7fc8,
+	text: scribble("Let's Go!"),
+	func: obj_menu_manager.close_menu,
+	rot: 0,
+},
+{
+	color: #ca4d35,
+	text: scribble("Quit"),
+	func: quit,
+	rot: 0,
+},
+];
+
+for (var i = 0; i < array_length(button_array); i++) {
+	
+	button_array[i].text.starting_format("ft_gui", c_white);
+	button_array[i].text.origin(0, 15);
+	button_array[i].text.wrap(114);
+	
+	button_array[i].y_pos = 175 + 32 * i;
+	
+}
 
 
 decoration = [
@@ -69,33 +113,33 @@ subimage: 1
 
 ]
 
-start_struct = {
-	color: #5a7fc8,
-	text: "Let's Go!",
-	event_obj: obj_title_screen,
-	event: ev_alarm,
-	event_num: 0
-};
-
-//options_struct = {
-//	color: #d9c498,
-//	text: "Options",
+//start_struct = {
+//	color: #5a7fc8,
+//	text: "Let's Go!",
 //	event_obj: obj_title_screen,
 //	event: ev_alarm,
 //	event_num: 0
 //};
 
-close_struct = {
-	color: #ca4d35,
-	text: "Quit",
-	event_obj: obj_title_screen,
-	event: ev_alarm,
-	event_num: 2
-};
+////options_struct = {
+////	color: #d9c498,
+////	text: "Options",
+////	event_obj: obj_title_screen,
+////	event: ev_alarm,
+////	event_num: 0
+////};
 
-start_button = instance_create_depth(355, 155, depth - 100, obj_text_button_par, start_struct);
+//close_struct = {
+//	color: #ca4d35,
+//	text: "Quit",
+//	event_obj: obj_title_screen,
+//	event: ev_alarm,
+//	event_num: 2
+//};
 
-//options_button = instance_create_layer(355, 155 + 32, layer_get_name(layer), obj_text_button_par, options_struct);
+//start_button = instance_create_depth(355, 155, depth - 100, obj_text_button_par, start_struct);
 
-close_button = instance_create_depth(355, 155 + 32, depth - 100, obj_text_button_par, close_struct);
-//64
+////options_button = instance_create_layer(355, 155 + 32, layer_get_name(layer), obj_text_button_par, options_struct);
+
+//close_button = instance_create_depth(355, 155 + 32, depth - 100, obj_text_button_par, close_struct);
+////64
