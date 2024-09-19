@@ -5,14 +5,13 @@ This is the second line
 
 
 ===DebugChoice===
+Hiiiiiiii
 Do you want to be stuck here forever?
-+ [Happy] i'm so happy
-    This formatting will not allow you to place scribble effects in the followup line
++ [Infinite loop dimension go]
+    I can do that 
+    shaboi
 ->DebugChoice
-+ Happy two lines
-    I'm so happy 
-    ->DebugChoice
-+  No Thanks
++ No Thanks
     This dude for real thinks they're ever getting out.
     Lol
     Lmao even ->DONE
@@ -20,6 +19,7 @@ Do you want to be stuck here forever?
     The woods
     Teleport ot teh woods
     ->DebugChoice
+
 
 
 ->DONE

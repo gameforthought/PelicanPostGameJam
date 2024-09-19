@@ -47,43 +47,15 @@ Loads a coversation into the specified door
 [door_set_knot,{door name},{knot name}]
 
 Adds an objective for the player
-[objective_create,{objective text},{objective description},{priority (0-10, default 1)}]
+[objective_create,{objective text}]
 
 Completes an objective
 [objective_complete,{objective text}]
-
-Inputs into events 
-[event_set,{x},{y},{input}]
 
 NOTES ABOUT OBJECTIVES:
 adding or removing an item automatically creates or completes the 
 corresponding objective. you can use scribble formatting in the objective text
 if you use "< >" instead of "[ ]" ie "<c_beatrice>"
-
-NOTES ABOUT CHOICES: 
-In present implementation, square brackets have a special 
-    meaning for formatting that supercedes the scribble effect activation
-For instance, the line
-    + [Happy] I'm so happy yay
-    
-    will produce the choice "Happy"
-    and the follow up line "I'm so happy yay"
-This means that you cannot use more than one set of square brackets
-    in a choice, nor can you currently call scribble effects.
-Because of this, I've chosen to implement the gamemaker side of the
-    text display to always make two calls to Next_Line()
-    when making a choice.
-This means that all choices will currently need to be formatted as:
-    + Happy
-        I'm so happy yay
-This is mainly to allow writers to still call any desired scribble
-    effects in the followup line until we can figure out a workaround.
-To look more closely at how this formatting works, take a look at the 
-->DebugChoice knot
-
-TLDR: Don't use square brackets with choices for now
-    (but they're fine to use in followup lines)
-
 
 
 List of doors:
@@ -160,7 +132,7 @@ That's where her house is! #Beatrice #neutral
 
 I think I can remember that. #Pepper #neutral
 
-Good luck![event_set,0,0,1] #Beatrice #happy
+Good luck! #Beatrice #happy
 
 ->DONE
 
@@ -191,12 +163,11 @@ So she put you up to this?  Then tell her I don't need her concern. #Suzannah #n
 
 ... #Suzannah #neutral
 
-Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And try not to trip on the rocks. [objective_create,Return to <c_beatrice>Beatrice,<c_beatrice>Beatrice</> wants to know how your visit to <c_suzannah>Suzannah</> went] [door_set_knot,obj_beatrice_door,bea2] #Suzannah #neutral
+Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And try not to trip on the rocks. [objective_create,Return to <c_beatrice>Beatrice] [door_set_knot,obj_beatrice_door,bea2] #Suzannah #neutral
 
 Of course, take care! #Pepper #neutral
 
 ...yeah.  #Suzannah #neutral
-[event_set,0,3,1]
 
 -> DONE
 
@@ -239,7 +210,6 @@ Oh, [c_pepper]Pepper[/c], dear, that'd be so wonderful!  #Beatrice #happy
 I'd be happy to!  It's getting late for me though, good night!  #Pepper #neutral
 
 Good night [c_pepper]Pepper[/c], thank you so much for your help today!  #Beatrice #happy
-[event_set,0,2,1]
 
 ->DONE
 
@@ -253,9 +223,16 @@ I'm sorry? #Pepper #neutral
 
 The gnomes!  They've escaped, and now Port Pleasant will feel their wrath! #Clyde #fear
 
-The... gnomes?  #Pepper #neutral
++ Curious
+    What Gnomes? 
++ Exasperated 
+    What are you talking about? Gnomes? Escaped? #Pepper #neutral 
++ Amused 
+Well that's something I wasn't expecting to hear today! #Pepper #laugh
+    Gnomes... escaped... #Pepper #neutral
 
-Wait, do you seriously not know about the gnomes? #Clyde #neutral
+
+-Wait, do you seriously not know about the gnomes? #Clyde #neutral
 
 I can't say I do.  #Pepper #neutral
 
@@ -325,9 +302,9 @@ Then, bring it back here! #Clyde #neutral
 
 I see.  Well, I'll keep my eye out for your... gnomes. #Pepper #neutral
 
-Wonderful, thanks a million!  Take care now! #Clyde #happy
+That aside, here's your package.  #Pepper #neutral
 
-[event_set,0,0,1]
+Wonderful, thanks a million!  Take care now! #Clyde #happy
 
 ->DONE
 
@@ -422,11 +399,9 @@ Actually, [c_pepper]Pepper[/], one last thing before you go #Pierre #neutral
 
 Hmm?  #Pepper #neutral
 
-Stop back here after you finish your deliveries tonight.  I want to hear about how it goes![objective_create,Return to <c_pierre>Pierre,Return to <c_pierre>Pierre</> at the end of the day,10]  #Pierre #neutral
+Stop back here after you finish your deliveries tonight.  I want to hear about how it goes![objective_create,Return to <c_pierre>Pierre]  #Pierre #neutral
 
 Oh, sure thing!  See you then!  #Pepper #happy
-[event_set,0,0,1]
-
 
 ->DONE
 
@@ -489,6 +464,5 @@ I'll see you tomorrow, then?  #Pierre #neutral
 Yup!  See you tomorrow! Take care! #Pepper #happy
 
 Thanks, [c_pepper]Pepper.[/]  You too.  #Pierre #happy
-[event_set,0,1,1]
 
 ->DONE
