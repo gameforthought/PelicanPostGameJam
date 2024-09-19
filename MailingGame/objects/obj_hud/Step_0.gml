@@ -2,6 +2,14 @@
 // You can write your code in this editor
 var vx = camera_get_view_x(view_camera[0]);
 
+//temp hud appear
+if (obj_menu_manager.hudAppear > 40) {
+	visible = true;	
+} else {
+	visible = false;
+}
+
+
 
 if shift_dir = -1 && shift_step = 0 {
 	shift_dir = 0;	
@@ -26,7 +34,7 @@ if shift_step > 60 {
 for (var i = 0; i < array_length(button_array); i++) {
 
 	var _x = 480 - 30 - i * 42;
-	var _y = 256 - 6;
+	var _y = 256 - 6 + shift;
 
 
 	if point_in_rectangle(mouse_x, mouse_y, vx + (_x - 15), _y - 30 + shift, vx + (_x + 15), _y + shift) {

@@ -9,6 +9,7 @@ shift = 0;
 shift_step = 60;
 
 
+
 //windowScale = window_get_height() / room_height;
 windowScale = 2
 

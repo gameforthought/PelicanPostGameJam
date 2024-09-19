@@ -3,7 +3,7 @@
 for (var i = 0; i < array_length(button_array); i++) {
 
 var _x = 480 - 30 - i * 42;
-var _y = 256 - 6;
+var _y = 256 - 6  + shift;
 
 draw_sprite_ext(spr_hud_black, 0, _x * windowScale, 256 * windowScale,
 windowScale, windowScale, 0, c_white, 1);

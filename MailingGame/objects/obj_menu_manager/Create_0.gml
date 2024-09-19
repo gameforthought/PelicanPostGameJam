@@ -1,5 +1,6 @@
 /// @desc Manage active menu
 currentMenu = undefined;
+hudAppear = 0;
 
 // Create a new menu and update this manager's active menu
 open_menu = function(_menuType)
