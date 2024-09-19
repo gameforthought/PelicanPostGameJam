@@ -185,13 +185,15 @@ I'm [c_pepper]Pepper[/], the new mailman.  I have a delivery for you.  It's a le
 
 That [c_beatrice]bothersome old bat[/]... #Suzannah #angry
 
+
+
 She asked me to bring this to you.  She's worried about you. #Pepper #sad
 
 So she put you up to this?  Then tell her I don't need her concern. #Suzannah #neutral
 
 ... #Suzannah #neutral
 
-Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And try not to trip on the rocks. [objective_create,Return to <c_beatrice>Beatrice,<c_beatrice>Beatrice</> wants to know how your visit to <c_suzannah>Suzannah</> went] [door_set_knot,obj_beatrice_door,bea2] #Suzannah #neutral
+Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And try not to trip on the rocks. [objective_create,Return to <c_beatrice>Beatrice,<c_beatrice>Beatrice</> wants to know how your visit to <c_suzannah>Suzannah</> went,1] [door_set_knot,obj_beatrice_door,bea2] #Suzannah #neutral
 
 Of course, take care! #Pepper #neutral
 
@@ -252,7 +254,7 @@ Hi, delivery fo- #Pepper #neutral
 I'm sorry? #Pepper #neutral
 
 The gnomes!  They've escaped, and now Port Pleasant will feel their wrath! #Clyde #fear
-
+ 
 + Curious
     What Gnomes? 
 + Exasperated 
