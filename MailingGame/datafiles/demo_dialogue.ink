@@ -253,7 +253,15 @@ I'm sorry? #Pepper #neutral
 
 The gnomes!  They've escaped, and now Port Pleasant will feel their wrath! #Clyde #fear
 
-The... gnomes?  #Pepper #neutral
++ Curious
+    What Gnomes? 
++ Exasperated 
+    What are you talking about? Gnomes? Escaped? #Pepper #neutral 
++ Amused 
+    Well that's something I wasn't expecting to hear today! #Pepper #laugh
+    Gnomes... escaped... #Pepper #neutral
+
+-Wait, do you seriously not know about the gnomes? #Clyde #neutral
 
 Wait, do you seriously not know about the gnomes? #Clyde #neutral
 
