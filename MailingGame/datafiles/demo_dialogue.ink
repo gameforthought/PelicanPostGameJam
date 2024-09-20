@@ -185,8 +185,6 @@ I'm [c_pepper]Pepper[/], the new mailman.  I have a delivery for you.  It's a le
 
 That [c_beatrice]bothersome old bat[/]... #Suzannah #angry
 
-
-
 She asked me to bring this to you.  She's worried about you. #Pepper #sad
 
 So she put you up to this?  Then tell her I don't need her concern. #Suzannah #neutral
@@ -307,11 +305,14 @@ Yes, typically. #Pepper #neutral
 
 Congratulations, you're my new partner! #Clyde #happy
 
-Wh- you can't just- #Pepper #surprise
++ Play Along
+    You know what, why not?  Lets catch some gnomes! #Pepper #laugh
+    Huzzah!!  That's the spirit! #Clyde #happy
++ Protest
+    Wh- you can't just- #Pepper #surprise
+    Sure I can!  You're gonna help me find the gnomes![gnome_create]  #Clyde #neutral
 
-Sure I can!  You're gonna help me find the gnomes![gnome_create]  #Clyde #neutral
-
-Anyways, the name's [c_clyde]Clyde[/].  It's a pleasure, partner! #Clyde #happy
+-Anyways, the name's [c_clyde]Clyde[/].  It's a pleasure, partner! #Clyde #happy
 
 ...[c_pepper]Pepper[/].  Nice to meet you. #Pepper #sigh
 
