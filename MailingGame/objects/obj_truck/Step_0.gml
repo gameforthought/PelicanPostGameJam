@@ -7,8 +7,9 @@
 #region State Machine + Movement
 
 // While truck is in control...
-if (player_exists())
+if (player_exists() || summoned)
 {
+	
 	// Truck movement sounds
 	audio_stop_sound(sd_truck);
 	if !audio_is_playing(sd_truck)
@@ -87,7 +88,13 @@ if (player_exists())
 				if (_initialDir != sign(hspd))
 				{
 					hspd = 0;
-					ExitTruck();
+					
+					//end the movement based on whether the truck was summoned or parking regularly
+					if (summoned){
+						summoned =false;
+						reset_truck_stats();
+					}
+					else ExitTruck();
 				}
 			}
 			// ...else move the truck closer to the parking spot
@@ -100,14 +107,22 @@ if (player_exists())
 			if (place_meeting(x + hspd, y, obj_truck_barrier))
 			{
 				hspd = 0;
-				ExitTruck();
+				if (summoned){
+						summoned = false;
+						reset_truck_stats();
+					}
+				else ExitTruck();
 			}
 			break;
 	}
 	
+	
 	x += hspd;
+	
 
 	#endregion
+	
+	
 
 	//dust
 	if (abs(hspd) > 0)
@@ -133,6 +148,16 @@ if (player_exists())
 		squash += 1;	
 	}
 }
+
+#region summoning truck
+
+if (summoned){
+	
+}
+
+#endregion
+
+
 //pause}
 
 if (dismount_anim = true)

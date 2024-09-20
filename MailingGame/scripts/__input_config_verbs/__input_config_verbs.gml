@@ -29,6 +29,8 @@ function __input_config_verbs()
             //shoot: input_binding_mouse_button(mb_left),
             
             pause: input_binding_key(vk_escape),
+			
+			truck: input_binding_key("V"),
         },
         
         gamepad:

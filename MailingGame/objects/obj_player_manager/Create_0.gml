@@ -71,5 +71,10 @@
 	{
 		return input_check_pressed("pause");
 	}
+	
+	input_truck_pressed = function()
+	{
+		return input_check_pressed("truck");
+	}
 
 #endregion
