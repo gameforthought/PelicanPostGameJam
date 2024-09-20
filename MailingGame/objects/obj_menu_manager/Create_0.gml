@@ -9,7 +9,10 @@ open_menu = function(_menuType)
 	if (currentMenu != undefined) return undefined;
 	
 	// Create the new menu and update the current menu variable.
-	var _menu = instance_create_layer(0, 0, "positional_gui", _menuType);
+	var _menu = instance_create_layer(0, 0, "positional_gui", _menuType,
+	{
+		active : true
+	});
 	currentMenu = _menu;
 	
 	return _menu;
@@ -22,7 +25,11 @@ close_menu = function()
 	if (currentMenu == undefined) return;
 	
 	// Close the current menu and update the current menu variable.
-	if (instance_exists(currentMenu)) currentMenu.close();
+	if (instance_exists(currentMenu))
+	{
+		currentMenu.active = false;
+		currentMenu.close();
+	}
 	currentMenu = undefined;
 }
 
