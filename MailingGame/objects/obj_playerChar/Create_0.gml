@@ -56,6 +56,16 @@
 		}
 		return false;
 	}
+	input_truck_pressed = function()
+	{
+		//if (GameplayPaused()) return false;
+
+		if (player_exists())
+		{
+			return player.input_truck_pressed();
+		}
+		return false;
+	}
 
 #endregion
 

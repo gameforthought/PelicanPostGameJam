@@ -70,7 +70,16 @@ switch (pepper_state)
 			}
 		}
 		
+		
+		
 		#endregion
+		
+		#region truck
+		//try to summon truck
+		if (input_truck_pressed())
+		{
+			try_summon_truck();
+		}
 			
 		break;
 	

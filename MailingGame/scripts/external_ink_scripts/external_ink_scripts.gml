@@ -82,7 +82,11 @@ function objective_create(_element, _parameter_array, _character_index) {
 	//var _text = _parameter_array[0];
 	var _text = _parameter_array[0];
 	var _desc = _parameter_array[1];
-	var _pos = real(_parameter_array[2]);
+	var _pos = 1;
+	
+	if array_length(_parameter_array) > 2 {
+		_pos = real(_parameter_array[2]);
+	}
 	
 	_text = string_replace_all(_text, "<", "[");
 	_text = string_replace_all(_text, ">", "]");
