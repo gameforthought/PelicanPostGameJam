@@ -11,7 +11,7 @@ if clickable = true {
 		});
 	} else {
 		instance_create_layer(mouse_x, mouse_y, "positional_gui", obj_posUI_container, {
-			array: ["walk"], 	
+			array: ["walk", "inventory"], 	
 		});
 	}
 	} 

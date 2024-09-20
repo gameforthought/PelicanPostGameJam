@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_hud_black",
   "bboxMode":0,
-  "bbox_bottom":44,
+  "bbox_bottom":89,
   "bbox_left":0,
   "bbox_right":24,
   "bbox_top":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":45,
+  "height":90,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"fcd82104-4d5a-485b-a327-e309c454f399","blendMode":0,"displayName":"default","isLocked":false,"name":"fcd82104-4d5a-485b-a327-e309c454f399","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},

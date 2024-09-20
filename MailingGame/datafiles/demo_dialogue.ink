@@ -254,7 +254,7 @@ I'm sorry? #Pepper #neutral
 The gnomes!  They've escaped, and now Port Pleasant will feel their wrath! #Clyde #fear
  
 + Curious
-    What Gnomes? 
+    What Gnomes? #Pepper #confused
 + Exasperated 
     What are you talking about? Gnomes? Escaped? #Pepper #neutral 
 + Amused 
@@ -262,8 +262,6 @@ The gnomes!  They've escaped, and now Port Pleasant will feel their wrath! #Clyd
     Gnomes... escaped... #Pepper #neutral
 
 -Wait, do you seriously not know about the gnomes? #Clyde #neutral
-
-Wait, do you seriously not know about the gnomes? #Clyde #neutral
 
 I can't say I do.  #Pepper #neutral
 
@@ -336,9 +334,7 @@ Then, bring it back here! #Clyde #neutral
 
 I see.  Well, I'll keep my eye out for your... gnomes. #Pepper #neutral
 
-Wonderful, thanks a million!  Take care now! #Clyde #happy
-
-[event_set,0,0,1]
+Wonderful, thanks a million!  Take care now![event_set,0,0,1] #Clyde #happy
 
 ->DONE
 
@@ -435,9 +431,7 @@ Hmm?  #Pepper #neutral
 
 Stop back here after you finish your deliveries tonight.  I want to hear about how it goes![objective_create,Return to <c_pierre>Pierre,Return to <c_pierre>Pierre</> at the end of the day,10]  #Pierre #neutral
 
-Oh, sure thing!  See you then!  #Pepper #happy
-[event_set,0,0,1]
-
+Oh, sure thing!  See you then![event_set,0,0,1]  #Pepper #happy
 
 ->DONE
 
@@ -499,7 +493,6 @@ I'll see you tomorrow, then?  #Pierre #neutral
 
 Yup!  See you tomorrow! Take care! #Pepper #happy
 
-Thanks, [c_pepper]Pepper.[/]  You too.  #Pierre #happy
-[event_set,0,1,1]
+Thanks, [c_pepper]Pepper.[/]  You too.[event_set,0,1,1]  #Pierre #happy
 
 ->DONE

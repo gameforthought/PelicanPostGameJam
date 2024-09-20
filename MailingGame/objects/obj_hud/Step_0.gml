@@ -3,7 +3,7 @@
 var vx = camera_get_view_x(view_camera[0]);
 
 // hud appear control
-if (obj_menu_manager.hudAppear > 40) {
+if (obj_menu_manager.hudAppear > 20) {
 	shift_dir = -1;
 } else {
 	shift_dir = 1;
