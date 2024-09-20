@@ -56,23 +56,25 @@ draw_set_color(color);
 
 } else {
 	
-	draw_sprite_ext(spr_choice, 1, (xpos - 42) * windowScale, (y_anim + 256 - 49 + 32) * windowScale, windowScale, windowScale, 0, c_white, 1);
+	var _choice_dir = dir * 39;
+	
+	draw_sprite_ext(spr_choice, 1, (xpos - _choice_dir) * windowScale, (y_anim + 256 - 49 + 32) * windowScale, windowScale, windowScale, 0, c_white, 1);
 	
 	for (var i = 0; i < choice_length; i++) {
-		draw_sprite_ext(spr_choice, 0, (xpos - 42) * windowScale, (y_anim + 256 - 49 - (32 * i)) * windowScale, windowScale, windowScale, 0, c_white, 1);
+		draw_sprite_ext(spr_choice, 0, (xpos - _choice_dir) * windowScale, (y_anim + 256 - 49 - (32 * i)) * windowScale, windowScale, windowScale, 0, c_white, 1);
 		
 		var choice = scribble(choice_array[i]);
 		
 		choice.align(fa_left, fa_middle);
 		
-		choice.draw((xpos - 42 + 48) * windowScale, (y_anim + 256 - 49 + 16 - (32 * i)) * windowScale);
+		choice.draw((xpos - _choice_dir + 48) * windowScale, (y_anim + 256 - 49 + 16 - (32 * i)) * windowScale);
 		
-		draw_sprite_ext(spr_choice_bt, 1, (xpos - 42 + 24) * windowScale, (y_anim + 256 - 49 + 32 - (32 * i)) * windowScale, windowScale, windowScale, button_array[i + 1][2], #5a7fc8, 1);
-		draw_sprite_ext(spr_choice_bt, 0, (xpos - 42 + 24) * windowScale, (y_anim + 256 - 49 + 32 - (32 * i)) * windowScale, windowScale, windowScale, button_array[i + 1][2], c_white, 1);
+		draw_sprite_ext(spr_choice_bt, 1, (xpos - _choice_dir + 24) * windowScale, (y_anim + 256 - 49 + 32 - (32 * i)) * windowScale, windowScale, windowScale, button_array[i + 1][2], #5a7fc8, 1);
+		draw_sprite_ext(spr_choice_bt, 0, (xpos - _choice_dir + 24) * windowScale, (y_anim + 256 - 49 + 32 - (32 * i)) * windowScale, windowScale, windowScale, button_array[i + 1][2], c_white, 1);
 		
 	}
 	
-	draw_sprite_ext(spr_choice, 2, (xpos - 42) * windowScale, (y_anim + 256 - 49 - (32 * (choice_length))) * windowScale, windowScale, windowScale, 0, c_white, 1);
+	draw_sprite_ext(spr_choice, 2, (xpos - _choice_dir) * windowScale, (y_anim + 256 - 49 - (32 * (choice_length))) * windowScale, windowScale, windowScale, 0, c_white, 1);
 	
 }
 

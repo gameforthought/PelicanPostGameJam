@@ -21,7 +21,9 @@ if point_in_rectangle(mouse_x, mouse_y, vx + (xpos + 140 - 15), 225 - 30, vx + (
 if choice_length > 0 {
 	
 	for (var i = 0; i < choice_length; i++) {
-		button_array[i + 1] = [(xpos - 42 + 24), (y_anim + 256 - 49 + 32 - (32 * i))];
+		
+		var _choice_dir = dir * 39;
+		button_array[i + 1] = [(xpos - _choice_dir + 24), (y_anim + 256 - 49 + 32 - (32 * i))];
 		
 		
 		if point_in_rectangle(mouse_x, mouse_y, vx + (button_array[i + 1][0] - 15), 
