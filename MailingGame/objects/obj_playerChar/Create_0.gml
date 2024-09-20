@@ -28,7 +28,7 @@
 	// If this character is not linked to the player manager, do not take input.
 	input_left_held = function()
 	{
-		//if (GameplayPaused()) return false;
+		if (GameplayPaused()) return false;
 		
 		if (player_exists())
 		{
@@ -38,7 +38,7 @@
 	}
 	input_right_held = function()
 	{
-		//if (GameplayPaused()) return false;
+		if (GameplayPaused()) return false;
 		
 		if (player_exists())
 		{
@@ -48,7 +48,7 @@
 	}
 	input_up_pressed = function()
 	{
-		//if (GameplayPaused()) return false;
+		if (GameplayPaused()) return false;
 		
 		if (player_exists())
 		{
@@ -58,7 +58,7 @@
 	}
 	input_truck_pressed = function()
 	{
-		//if (GameplayPaused()) return false;
+		if (GameplayPaused()) return false;
 
 		if (player_exists())
 		{
