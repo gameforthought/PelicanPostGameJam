@@ -2,7 +2,10 @@
 // You can write your code in this editor
 
 if wait = false {
-move_step -= move_dir * 1.5;
+	move_step -= move_dir * 1.5;
+	visible = true;
+} else {
+	visible = false;	
 }
 
 if instance_number(obj_objective_modal) = 1 {

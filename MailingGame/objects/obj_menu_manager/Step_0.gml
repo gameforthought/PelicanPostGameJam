@@ -9,7 +9,7 @@ if currentMenu != undefined {
 }
 
 //checks to make sure a textbox doesn't exist (temp)
-if instance_exists(obj_textbox) {
+if instance_exists(obj_textbox) || instance_exists(obj_room_transition) || (obj_inventory.animation_step = 0) {
 	hudAppear = 0;
 }
 

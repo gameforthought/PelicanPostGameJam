@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_text_button_par",
+  "%Name":"obj_truck_menu",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_text_button_par",
+  "name":"obj_truck_menu",
   "overriddenProperties":[],
   "parent":{
-    "name":"deprecated",
-    "path":"folders/Objects/ui/deprecated.yy",
+    "name":"ui",
+    "path":"folders/Objects/ui.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_text_button",
-    "path":"sprites/spr_text_button/spr_text_button.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
