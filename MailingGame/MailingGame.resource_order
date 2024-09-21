@@ -676,6 +676,7 @@
     {"name":"spr_surprise","order":2,"path":"sprites/spr_surprise/spr_surprise.yy",},
     {"name":"spr_suzannah_door","order":10,"path":"sprites/spr_suzannah_door/spr_suzannah_door.yy",},
     {"name":"spr_suzannah_nt","order":1,"path":"sprites/spr_suzannah_nt/spr_suzannah_nt.yy",},
+    {"name":"spr_task_number","order":2,"path":"sprites/spr_task_number/spr_task_number.yy",},
     {"name":"spr_testHouse","order":18,"path":"sprites/spr_testHouse/spr_testHouse.yy",},
     {"name":"spr_text_button","order":9,"path":"sprites/spr_text_button/spr_text_button.yy",},
     {"name":"spr_title","order":8,"path":"sprites/spr_title/spr_title.yy",},
