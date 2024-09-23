@@ -52,6 +52,14 @@ Adds an objective for the player
 Completes an objective
 [objective_complete,{objective text}]
 
+Adds character info to the player's address book 
+[character_info,{character name (case sensative)},{info to add}]
+
+- meet: the first time the character's name is said MUST BE CALLED FIRST
+- job: the first time their role/job is introduced
+- location: the first time you get directions or visit them
+- photo: the first time you see them
+
 Inputs into events 
 [event_set,{x},{y},{input}]
 
@@ -102,13 +110,13 @@ VAR character = "bea1"
 
 
 === bea1 ===
-Oh dear, being nocturnal is [slant]not[/] fun with a day job... #Beatrice #sleepy #open
+[character_info,Beatrice,photo]Oh dear, being nocturnal is [slant]not[/] fun with a day job... #Beatrice #sleepy #open
 
 [wave]O-Oh my[/]!  A new face!  What a nice surprise! #Beatrice #surprised
 
 Apologies, dear. #Beatrice #blush
 
-I'm [c_beatrice]Beatrice[/], the town librarian.  It's nice to meet you! #Beatrice #happy
+I'm [c_beatrice]Beatrice[/], the town librarian[character_info,Beatrice,job].  It's nice to meet you! #Beatrice #happy
 
 Who might you be? #Beatrice #neutral
 
@@ -142,7 +150,7 @@ But while you're still here, could I ask you a favor, dear? #Beatrice #neutral
 
 Sure, what can I help you with? #Pepper #neutral
 
-You see... I have a friend on the edge of town.  Her name is [c_suzannah]Suzannah[/]. #Beatrice #neutral
+You see... I have a friend on the edge of town.  Her name is [c_suzannah]Suzannah[/][character_info,Suzannah,meet]. #Beatrice #neutral
 
 She's what most would call a hermit. #Beatrice #sad
 
@@ -156,7 +164,7 @@ Wonderful!  Thank you so much! #Beatrice #happy
 
 If you go to the right past this library, all the way past Shoreside Station on the far edge of town you'll come to a beach.  #Beatrice #neutral
 
-That's where her house is! #Beatrice #neutral
+That's where her house is[character_info,Suzannah,location]! #Beatrice #neutral
 
 I think I can remember that. #Pepper #neutral
 
@@ -179,7 +187,7 @@ Can't say I recognize that voice.  Who are you? #Suzannah #neutral
 
 I'm [c_pepper]Pepper[/], the new mailman.  I have a delivery for you.  It's a letter. #Pepper #neutral
 
-...a letter?[remove_item,suz1] #Suzannah #neutral #open
+...a letter?[remove_item,suz1][character_info,Suzannah,photo] #Suzannah #neutral #open
 
 ... #Suzannah #neutral
 
@@ -245,7 +253,7 @@ Good night [c_pepper]Pepper[/c], thank you so much for your help today!  #Beatri
 
 ===cly1===
 
-Hi, delivery fo- #Pepper #neutral
+[character_info,Clyde,photo]Hi, delivery fo- #Pepper #neutral
 
 [shake]They're gone.[/] #Clyde #fear
 
@@ -381,7 +389,7 @@ Can't believe I'm dealing with sentient gnomes my first day on the job! #Pepper 
 
 ===pie1===
 
-Ah, you must be the new mailman!  [c_pepper]Pepper[/], was it? #Pierre #neutral
+[character_info,Pierre,meet][character_info,Pierre,photo][character_info,Pierre,job][character_info,Pierre,location]Ah, you must be the new mailman!  [c_pepper]Pepper[/], was it? #Pierre #neutral
 
 Yup, nice to meet you! #Pepper #happy
 
@@ -397,11 +405,11 @@ Each morning, you'll come in here and get your packages for the day. #Pierre #ne
 
 Seems like a light day today, so you shouldn't have too much trouble. #Pierre #neutral
 
-Oh, this is for [c_beatrice]Beatrice![/]  You'll find her at the library.[give_item,bea1,package,Beatrice,UC Books,A small box from a book publisher]  #Pierre #happy
+Oh, this is for [c_beatrice]Beatrice![/][character_info,Beatrice,meet] You'll find her at the library.[character_info,Beatrice,location][give_item,bea1,package,Beatrice,UC Books,A small box from a book publisher]  #Pierre #happy
 
 She's a sweetheart, if not a little... batty.  Heh. #Pierre #neutral
 
-And this here is for [c_clyde]Clyde[/].  You'll find him at his house down the road, past the library.[give_item,cly1,package,Clyde,Gnome Feed,Feeds gnomes]
+And this here is for [c_clyde]Clyde[/][character_info,Clyde,meet].  You'll find him at his house down the road, past the library.[character_info,Clyde,location][give_item,cly1,package,Clyde,Gnome Feed,Feeds gnomes]
 
 Now, for the delivery process.  When you arrive at a house, you'll knock on the door. #Pierre #neutral
 

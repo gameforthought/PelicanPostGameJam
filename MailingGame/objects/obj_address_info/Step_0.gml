@@ -32,7 +32,7 @@ if shift_step > 60 {
 }
 
 for (var i = 0; i < array_length(button_array); i++) {
-	var xx = 82 + (i mod 3) * 38;
+	var xx = vx + 80 + (i mod 3) * 38;
 	var yy = (104 + (i div 3) * 38) + shift;
 	
 	if point_in_rectangle(mouse_x, mouse_y, xx - 17.5, yy - 35, xx + 17.5, yy) {

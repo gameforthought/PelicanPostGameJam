@@ -9,23 +9,15 @@ shift_step = 60;
 visible = false;
 
 //windowScale = window_get_height() / room_height;
-windowScale = 2
+windowScale = 2;
 
 
 close = function() {
 	shift_dir = 1;
 }
 
-info_struct = {
-	name: "Beatrice",
-	job: "Librarian",
-	location: "At the library in the middle of town",
-	photo: 2,
-	met: true,
-	rot: 0,
-}
+button_array = obj_objective_manager.met_characters;
 
-button_array = [info_struct];
 
 current_clicked = undefined;
 name = undefined;

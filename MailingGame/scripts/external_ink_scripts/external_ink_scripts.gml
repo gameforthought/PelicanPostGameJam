@@ -163,3 +163,62 @@ function event_set(_element, _parameter_array, _character_index) {
 	show_debug_message("success");
 	
 }
+
+function character_info(_element, _parameter_array, _character_index) {
+	var _char = _parameter_array[0];
+	var _func = _parameter_array[1];
+	
+	switch _func {
+		case "meet":
+		var _full_text;
+		var _photo;
+		for (var i = 0; i < array_length(obj_objective_manager.char_info); i++) {
+			if obj_objective_manager.char_info[i].name = _char {
+				 _full_text = obj_objective_manager.char_info[i].array_pos;
+				 _photo = obj_objective_manager.char_info[i].photo;
+			}
+		}
+		
+		var _struct = {
+			name: _char,
+			job: "???",
+			location: "???",
+			photo: _photo,
+			met: false,
+			full: _full_text,
+			rot: 0,
+		};
+			array_push(obj_objective_manager.met_characters, _struct);
+		break;
+		case "job":
+		for (var i = 0; i < array_length(obj_objective_manager.met_characters); i++) {
+			if obj_objective_manager.met_characters[i].name = _char {
+				var _full_pos = obj_objective_manager.met_characters[i].full
+				obj_objective_manager.met_characters[i].job = obj_objective_manager.char_info[_full_pos].job;
+			}
+		}
+		
+		break;
+		
+		case "location":
+		for (var i = 0; i < array_length(obj_objective_manager.met_characters); i++) {
+			if obj_objective_manager.met_characters[i].name = _char {
+				var _full_pos = obj_objective_manager.met_characters[i].full
+				obj_objective_manager.met_characters[i].location = obj_objective_manager.char_info[_full_pos].location;
+			}
+		}
+		
+		break;
+		case "photo":
+		for (var i = 0; i < array_length(obj_objective_manager.met_characters); i++) {
+			if obj_objective_manager.met_characters[i].name = _char {
+				
+				obj_objective_manager.met_characters[i].met = true;
+			}
+		}
+		
+		break;
+		
+	}
+	
+};

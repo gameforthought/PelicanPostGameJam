@@ -16,7 +16,7 @@ draw_sprite_ext(spr_address_ui, 0, (9) * windowScale, (256 + shift) * windowScal
 
 //buttons
 for (var i = 0; i < array_length(button_array); i++) {
-	var xx = 82 + (i mod 3) * 38;
+	var xx = 80 + (i mod 3) * 38;
 	var yy = (104 + (i div 3) * 38) + shift;
 	
 	draw_sprite_ext(spr_address_buttons, button_array[i].photo - 2, (xx) * windowScale, (yy) * windowScale, windowScale, windowScale, button_array[i].rot, c_white, 1);
@@ -33,7 +33,11 @@ if current_clicked != undefined {
 	location.draw(234 * windowScale, (178 + shift) * windowScale);
 	
 	draw_sprite_ext(spr_address_photo, 1, (226) * windowScale, (46 + shift) * windowScale, windowScale, windowScale, 0, _color, 1);
-	draw_sprite_ext(spr_address_photo, current_clicked.photo, (226) * windowScale, (46 + shift) * windowScale, windowScale, windowScale, 0, c_white, 1);
+	
+	if current_clicked.met {
+		draw_sprite_ext(spr_address_photo, current_clicked.photo, (226) * windowScale, (46 + shift) * windowScale, windowScale, windowScale, 0, c_white, 1);
+	}
+	
 	draw_sprite_ext(spr_address_photo, 0, (226) * windowScale, (46 + shift) * windowScale, windowScale, windowScale, 0, c_white, 1);
 	
 	
