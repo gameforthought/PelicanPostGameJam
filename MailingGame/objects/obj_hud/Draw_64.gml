@@ -22,13 +22,13 @@ if button_array[i].icon = 3 {
 	var _tasks = array_length(obj_objective_manager.array)
 	if _tasks > 0 {
 		draw_sprite_ext(spr_task_number, 0, (_x - 13) * windowScale,
-		(_y - 28) * windowScale, windowScale, windowScale, 0, c_white, 1);
+		(_y - 23) * windowScale, windowScale, windowScale, 0, c_white, 1);
 		
 		draw_set_halign(fa_center);
 		draw_set_color(c_white);
 		draw_set_font(ft_gui);
 		draw_text((_x - 12) * windowScale,
-		(_y - 35) * windowScale, string(_tasks));
+		(_y - 31) * windowScale, string(_tasks));
 		
 	}
 }

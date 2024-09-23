@@ -22,7 +22,7 @@ tasks = function() {
 }
 
 address = function() {
-	obj_menu_manager.open_menu(obj_objective_info);
+	obj_menu_manager.open_menu(obj_address_info);
 	//if !instance_exists(obj_objective_info) {
 	//	instance_create_layer(0, 256, "positional_gui", obj_objective_info);
 	//}
@@ -50,19 +50,19 @@ button_array = [
 //	rot: 0,
 //},
 {
-	func: tasks,
-	color: PP_BLUE,
-	icon: 3,
+	func: address,
+	color: PP_RED,
+	icon: 4,
 	pos: 1,
 	rot: 0,
 },
-//{
-//	func: address,
-//	color: PP_BLUE,
-//	icon: 4,
-//	pos: 2,
-//	rot: 0,
-//},
+{
+	func: tasks,
+	color: PP_BLUE,
+	icon: 3,
+	pos: 2,
+	rot: 0,
+},
 {
 	func: pause,
 	color: PP_RED,
