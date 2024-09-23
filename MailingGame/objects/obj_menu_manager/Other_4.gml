@@ -9,3 +9,9 @@ if (room == demo_room && showTitleScreen)
 	showTitleScreen = false;
 	open_menu(obj_title_screen);
 }
+
+if !instance_exists(currentMenu) {
+	
+	currentMenu = undefined;
+	
+}

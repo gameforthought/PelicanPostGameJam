@@ -19,7 +19,7 @@ for (var i = 0; i < array_length(button_array); i++) {
 	var xx = 80 + (i mod 3) * 38;
 	var yy = (104 + (i div 3) * 38) + shift;
 	
-	draw_sprite_ext(spr_address_buttons, button_array[i].photo - 2, (xx) * windowScale, (yy) * windowScale, windowScale, windowScale, button_array[i].rot, c_white, 1);
+	draw_sprite_ext(spr_address_buttons, button_array[i].photo - 3, (xx) * windowScale, (yy) * windowScale, windowScale, windowScale, button_array[i].rot, c_white, 1);
 }
 
 //info
@@ -36,6 +36,8 @@ if current_clicked != undefined {
 	
 	if current_clicked.met {
 		draw_sprite_ext(spr_address_photo, current_clicked.photo, (226) * windowScale, (46 + shift) * windowScale, windowScale, windowScale, 0, c_white, 1);
+	} else {
+		draw_sprite_ext(spr_address_photo, 2, (226) * windowScale, (46 + shift) * windowScale, windowScale, windowScale, 0, c_white, 1);
 	}
 	
 	draw_sprite_ext(spr_address_photo, 0, (226) * windowScale, (46 + shift) * windowScale, windowScale, windowScale, 0, c_white, 1);

@@ -316,7 +316,7 @@ Congratulations, you're my new partner! #Clyde #happy
     Huzzah!!  That's the spirit! #Clyde #happy
 + Protest
     Wh- you can't just- #Pepper #surprise
-    Sure I can!  You're gonna help me find the gnomes![gnome_create]  #Clyde #neutral
+    Sure I can!  You're gonna help me find the gnomes!  #Clyde #neutral
 
 -Anyways, the name's [c_clyde]Clyde[/].  It's a pleasure, partner! #Clyde #happy
 
@@ -324,7 +324,7 @@ Congratulations, you're my new partner! #Clyde #happy
 
 Oh, this is too perfect!  #Clyde #happy
 
-I'm sure the first is out there as we speak, waiting for you to track it down! #Clyde #neutral
+I'm sure the first is out there as we speak, waiting for you to track it down![gnome_create] #Clyde #neutral
 
 So... how do I know where to find these gnomes? #Pepper #neutral
 
