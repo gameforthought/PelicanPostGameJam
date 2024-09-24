@@ -9,6 +9,8 @@ y = vy + y_anim;
 
 
 choice_length = array_length(choice_array);
+
+
 button_array[0] = [xpos + 140, y_anim + 225];
 
 //detect if the player is hovering the next button
@@ -105,6 +107,16 @@ if (keyboard_check_pressed(ord("A"))){
 		show_debug_message("Can continue");
 	}
 	else show_debug_message("No can continue");
+}
+
+
+if choice_length > 0 {
+	name_tag = "Pepper";
+	obj_playerChar.emotion_drawer.emotion = "confused";
+	
+	richtext = scribble("[wave][slant][#766659]How should I respond?[/]");
+	richtext.wrap(box_width * 2);
+	richtext.line_height(-1, string_height(text_to_display) - 3);
 }
 //spd_increase();
 
