@@ -3,6 +3,7 @@
 function next_line(){
 	choice_array = [];
 	choice_count = 0;
+	choice_preview_array = [];
 	if (ink_can_continue()){
 		
 		//load the text, emotion tag, and character tag
@@ -31,12 +32,22 @@ function next_line(){
 			//show_debug_message("Num choices: " + choice_count.string());
 			
 			show_debug_message("Choices detected");
-			
-			//populate the textbox's choice_array
+			temp_ink_json = ink_save_state();
+			choice_preview_array = [];
+			//populate the textbox's choice_array and choice_preview_array
 			for (var i=0; i<choice_count;i++){
 			choice_array[i] = ink_choice(i);
+			
+			//go to the next line of dialogue for each choice and save the text
+			ink_choose_choice(i);
+			ink_continue();
+			choice_preview_array[i] = ink_continue();
+			//then return to the previous state
+			ink_load_state(temp_ink_json);
+			show_debug_message(string("Choice number {0}: {1}", i, choice_preview_array[i]));
 			}
 			
+
 			
 		}
 		//if text is done, cue end of textbox

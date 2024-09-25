@@ -33,7 +33,7 @@ if choice_length > 0 {
 		vx + (button_array[i + 1][0] + 15),
 		button_array[i + 1][1]) {
 			
-			button_array[i + 1][2] = -5;	
+			button_array[i + 1][2] = -5;
 		} else {
 			button_array[i + 1][2] = 0;
 		}
