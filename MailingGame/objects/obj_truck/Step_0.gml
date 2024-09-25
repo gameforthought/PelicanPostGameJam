@@ -76,6 +76,7 @@ if (player_exists() || summoned)
 			
 		case PlayerState.CutsceneMove:
 		
+			
 			// If the truck is already close to the parking spot, slow it down...
 			if (abs(parking_dest - x) < parking_lenience)
 			{
