@@ -7,6 +7,7 @@ var vy = camera_get_view_y(view_camera[0]);
 x = vx + xpos;
 y = vy + y_anim;
 
+var _choice_hover = undefined;
 
 choice_length = array_length(choice_array);
 
@@ -34,6 +35,8 @@ if choice_length > 0 {
 		button_array[i + 1][1]) {
 			
 			button_array[i + 1][2] = -5;
+			
+			_choice_hover = i;
 		} else {
 			button_array[i + 1][2] = 0;
 		}
@@ -114,7 +117,12 @@ if choice_length > 0 {
 	name_tag = "Pepper";
 	obj_playerChar.emotion_drawer.emotion = "confused";
 	
-	richtext = scribble("[wave][slant][#766659]How should I respond?[/]");
+	var _preview = "How should I respond?";
+	
+	if _choice_hover != undefined {
+		_preview = choice_preview_array[_choice_hover];	
+	}
+	richtext = scribble("[wave][slant][#766659][speed,1.5]" + _preview + "[/]");
 	richtext.wrap(box_width * 2);
 	richtext.line_height(-1, string_height(text_to_display) - 3);
 }
