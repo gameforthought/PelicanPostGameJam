@@ -314,25 +314,30 @@ Congratulations, you're my new partner! #Clyde #happy
 + Play Along
     You know what, why not?  Lets catch some gnomes! #Pepper #laugh
     Huzzah!!  That's the spirit! #Clyde #happy
+    The name's Clyde.  It's a pleasure, partner! #Clyde #happy
+    I'm Pepper.  It's nice to meet you! #Pepper #happy
+    
 + Protest
     Wh- you can't just- #Pepper #surprise
     Sure I can!  You're gonna help me find the gnomes!  #Clyde #neutral
+    Anyways, the name's [c_clyde]Clyde[/].  It's a pleasure, partner! #Clyde #happ
+    ...[c_pepper]Pepper[/].  Nice to meet you. #Pepper #sigh
 
--Anyways, the name's [c_clyde]Clyde[/].  It's a pleasure, partner! #Clyde #happy
-
-...[c_pepper]Pepper[/].  Nice to meet you. #Pepper #sigh
-
-Oh, this is too perfect!  #Clyde #happy
+-Oh, this is too perfect!  #Clyde #happy
 
 I'm sure the first is out there as we speak, waiting for you to track it down![gnome_create] #Clyde #neutral
 
 So... how do I know where to find these gnomes? #Pepper #neutral
 
-Keep your eyes out for something in town that looks... off.  #Clyde #neutral
+They'll just randomly show up around town sometimes.  #Clyde #neutral
 
-Like something's been tampered with in a strange way. #Clyde #neutral
+They're always hiding... like they're plotting something... #Clyde #neutral
 
-There, if you look hard enough, you'll find a gnome. #Clyde #neutral
+WHICH, THEY ARE!!! #Clyde #surprise
+
+[slant]cough[/] Sorry... dunno what came over me there. #Clyde #blush
+
+Anyways,  as I was saying, if you look hard enough, you'll find a gnome. #Clyde #neutral
 
 So, once I find them, what should I do? #Pepper #neutral
 
