@@ -21,7 +21,6 @@ quit = function() {
 }
 }
 
-
 button_x = 412;
 
 button_array = [
@@ -33,13 +32,13 @@ button_array = [
 	rot: 0,
 },
 
-// FOR DEMO: REMOVED QUIT BUTTON FROM PAUSE MENU
-//{
-//	color: #ca4d35,
-//	text: scribble("Quit"),
-//	func: quit,
-//	rot: 0,
-//},
+// FOR DEMO: REPLACED QUIT BUTTON WITH RESET GAME
+{
+	color: #ca4d35,
+	text: scribble("Reset"),
+	func: obj_idle_timer.ToIdleScreen,
+	rot: 0,
+},
 ];
 
 for (var i = 0; i < array_length(button_array); i++) {

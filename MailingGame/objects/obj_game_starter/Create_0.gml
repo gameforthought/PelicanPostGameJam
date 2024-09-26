@@ -29,6 +29,8 @@ instance_create_depth(x,y, 0, obj_menu_manager);
 
 instance_create_depth(x,y, 0, obj_hud);
 
+instance_create_depth(x,y, 0, obj_idle_timer);
+
 // Go to game room and display intro logo
 room_goto(demo_room);
 
