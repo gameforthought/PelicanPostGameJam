@@ -8,5 +8,5 @@ instance_destroy(obj_music_manager);
 instance_destroy(obj_hud);
 audio_stop_all();
 
-video = video_open("hidrew.mp4");
+video_open("attract_reel.mp4");
 video_enable_loop(true);
