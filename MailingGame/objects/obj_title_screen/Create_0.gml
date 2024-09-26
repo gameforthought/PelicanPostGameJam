@@ -33,12 +33,14 @@ button_array = [
 	func: obj_menu_manager.close_menu,
 	rot: 0,
 },
-{
-	color: #ca4d35,
-	text: scribble("Quit"),
-	func: quit,
-	rot: 0,
-},
+
+// FOR DEMO: REMOVED QUIT BUTTON FROM TITLE
+//{
+//	color: #ca4d35,
+//	text: scribble("Quit"),
+//	func: quit,
+//	rot: 0,
+//},
 ];
 
 for (var i = 0; i < array_length(button_array); i++) {
