@@ -18,7 +18,7 @@ if instance_exists(obj_textbox) || instance_exists(obj_room_transition) || (obj_
 if (instance_exists(obj_player_manager))
 {
 	var _activePlayer = obj_player_manager.character;
-	if (_activePlayer != undefined)
+	if (_activePlayer != undefined && instance_exists(_activePlayer))
 	{
 		if (_activePlayer.hspd != 0)
 		{
