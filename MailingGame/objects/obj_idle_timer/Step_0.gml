@@ -13,5 +13,3 @@ if (room != rgf_24_videoloop)
 	else curTime++;
 }
 else curTime = 0;
-
-show_debug_message(curTime);
