@@ -60,12 +60,13 @@ var vx = camera_get_view_x(view_camera[0]);
 	
 				//if reached the end of the build, end the game
 				if obj_time_tracker.night_bool = true {
-					var _transition = {
-					grow: false,
-					next_room: ending_room_imagine,
-					player: true
-					}
-				instance_create_layer(0, 0, "positional_gui", obj_room_transition, _transition);
+					obj_idle_timer.ToIdleScreen();
+					//	var _transition = {
+					//	grow: false,
+					//	next_room: ending_room_imagine,
+					//	player: true
+					//	}
+					//instance_create_layer(0, 0, "positional_gui", obj_room_transition, _transition);
 	
 				}
 	
