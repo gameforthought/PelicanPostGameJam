@@ -101,9 +101,9 @@ color = color_lookup(name_tag);
 
 
 //if hit the tilde key, skip the dialogue
-if (keyboard_check_pressed(ord("1"))){
-	skip_dialogue();	
-}
+//if (keyboard_check_pressed(ord("1"))){
+//	skip_dialogue();	
+//}
 
 if (keyboard_check_pressed(ord("A"))){
 	if (ink_can_continue()){
