@@ -5,7 +5,7 @@
 //text_to_display = "HI";
 var vx = camera_get_view_x(view_camera[0]);
 
-if typewriter.get_state() = 1 {
+
 
 	//checks if mouse is in button
 
@@ -26,6 +26,7 @@ if typewriter.get_state() = 1 {
 		show_debug_message("Choice " + choice_array[i]);
 	
 		choose_choice(i);
+		
 		update_text_to_display();
 
 		}
@@ -35,6 +36,10 @@ if typewriter.get_state() = 1 {
 	} 
 	//if no choice to be made
 	else {
+		
+		if typewriter.get_state() = 1 {
+		
+		
 		//if hitting the next button
 		if point_in_rectangle(mouse_x, mouse_y, vx + (xpos + 140 - 15), 225 - 30, vx + (xpos + 140 + 15), 225) {
 			
@@ -55,25 +60,23 @@ if typewriter.get_state() = 1 {
 	
 				//if reached the end of the build, end the game
 				if obj_time_tracker.night_bool = true {
-					
-				obj_idle_timer.ToIdleScreen();
-				//	var _transition = {
-				//	grow: false,
-				//	next_room: ending_room_imagine,
-				//	player: true
-				//	}
-				//instance_create_layer(0, 0, "positional_gui", obj_room_transition, _transition);
+					var _transition = {
+					grow: false,
+					next_room: ending_room_imagine,
+					player: true
+					}
+				instance_create_layer(0, 0, "positional_gui", obj_room_transition, _transition);
 	
 				}
 	
 			}
 
 		}
-
-}
-
-} else {
+		} else {
 	if point_in_rectangle(mouse_x, mouse_y, vx + (xpos + 140 - 15), 225 - 30, vx + (xpos + 140 + 15), 225) {
 		typewriter.skip();
 	}
 }
+
+}
+
