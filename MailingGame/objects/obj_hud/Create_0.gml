@@ -6,7 +6,7 @@ depth += 120;
 
 shift_dir = -1;
 shift = 0;
-shift_step = 60;
+shift_step = 40;
 
 
 

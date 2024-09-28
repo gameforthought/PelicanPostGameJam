@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-depth += 50;
+depth = layer_get_depth(layer_get_id("positional_gui")) + 50;
 
 image_alpha = 0;
 

@@ -199,12 +199,13 @@ So she put you up to this?  Then tell her I don't need her concern. #Suzannah #n
 
 ... #Suzannah #neutral
 
-Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And try not to trip on the rocks. [objective_create,Return to <c_beatrice>Beatrice,<c_beatrice>Beatrice</> wants to know how your visit to <c_suzannah>Suzannah</> went,1] [door_set_knot,obj_beatrice_door,bea2] #Suzannah #neutral
+Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And try not to trip on the rocks. [door_set_knot,obj_beatrice_door,bea2] #Suzannah #neutral
 
 Of course, take care! #Pepper #neutral
 
-...yeah.  #Suzannah #neutral
-[event_set,0,3,1]
+...yeah.[event_set,0,3,1]  #Suzannah #neutral #closed
+
+I should probably go back to tell [c_beatrice]Beatrice[/] how this went...[objective_create,Return to <c_beatrice>Beatrice,<c_beatrice>Beatrice</> wants to know how your visit to <c_suzannah>Suzannah</> went,1]  #Pepper #neutral
 
 -> DONE
 
@@ -228,7 +229,7 @@ So what's this party she mentioned? #Pepper #neutral
 
 Well, dear, every year I like to throw a little party for everyone in town. #Beatrice #neutral
 
-Or I used to, anyway, back when people would show up #Beatrice #sad 
+Or I used to, anyway, back when people would show up. #Beatrice #sad 
 
 Everyone brought all kinds of goodies, there'd be games, music, and all manner of festivities! #Beatrice #happy
 
@@ -246,8 +247,7 @@ Oh, [c_pepper]Pepper[/c], dear, that'd be so wonderful!  #Beatrice #happy
 
 I'd be happy to!  It's getting late for me though, good night!  #Pepper #neutral
 
-Good night [c_pepper]Pepper[/c], thank you so much for your help today!  #Beatrice #happy
-[event_set,0,2,1]
+Good night [c_pepper]Pepper[/c], thank you so much for your help today![event_set,0,2,1] #Beatrice #happy
 
 ->DONE
 
@@ -262,7 +262,7 @@ I'm sorry? #Pepper #neutral
 The gnomes!  They've escaped, and now Port Pleasant will feel their wrath! #Clyde #fear
  
 + Curious
-    What Gnomes? #Pepper #confused
+    What gnomes? #Pepper #confused
 + Exasperated 
     What are you talking about? Gnomes? Escaped? #Pepper #neutral 
 + Amused 
@@ -438,11 +438,11 @@ Sounds good, thank you! #Pepper #happy
 
 No problem.  Off you go now, good luck today! #Pierre #happy
 
-Actually, [c_pepper]Pepper[/], one last thing before you go #Pierre #neutral
+Actually, [c_pepper]Pepper[/], one last thing before you go. #Pierre #neutral
 
 Hmm?  #Pepper #neutral
 
-Stop back here after you finish your deliveries tonight.  I want to hear about how it goes![objective_create,Return to <c_pierre>Pierre,Return to <c_pierre>Pierre</> at the end of the day,10]  #Pierre #neutral
+Stop back here after you finish your deliveries tonight.  I want to hear about how it goes![objective_create,Return to <c_pierre>Pierre,Return to <c_pierre>Pierre</> at night when you've finished your tasks,10]  #Pierre #neutral
 
 Oh, sure thing!  See you then![event_set,0,0,1]  #Pepper #happy
 

@@ -34,5 +34,9 @@ animation_dir = 1;
 
 select_rotate = 0;
 
+close_x = 430;
+close_y = -40;
+close_rot = 0;
+
 
 
