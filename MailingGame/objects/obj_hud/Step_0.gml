@@ -20,7 +20,7 @@ shift_step += shift_dir;
 shift_step = clamp(shift_step, 0, 50);
 
 
-shift = EaseInOutBack(shift_step, 0, 50, 40);
+shift = EaseInOutBack(shift_step, 0, 60, 40);
 
 
 
