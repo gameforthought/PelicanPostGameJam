@@ -90,6 +90,8 @@ for (var i = 0; i < INVENTORY_SLOTS; i++)
 	
 }
 
+draw_sprite_ext(spr_close_bt, 0, (close_x) * windowScale, (close_y) * windowScale, windowScale, windowScale, close_rot, c_white, 1);
+
 
 }
 	

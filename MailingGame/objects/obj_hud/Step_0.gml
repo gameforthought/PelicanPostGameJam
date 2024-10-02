@@ -3,7 +3,7 @@
 var vx = camera_get_view_x(view_camera[0]);
 
 // hud appear control
-if (obj_menu_manager.hudAppear > 20) {
+if (obj_menu_manager.hudAppear > 10) {
 	shift_dir = -1;
 } else {
 	shift_dir = 1;
@@ -17,10 +17,10 @@ if shift_dir = -1 && shift_step = 0 {
 
 shift_step += shift_dir;
 
-shift_step = clamp(shift_step, 0, 70);
+shift_step = clamp(shift_step, 0, 50);
 
 
-shift = EaseInOutBack(shift_step, 0, 100, 60);
+shift = EaseInOutBack(shift_step, 0, 50, 40);
 
 
 
