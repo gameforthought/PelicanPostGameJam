@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"Inventory_Functions",
+  "%Name":"Load_Save",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Inventory_Functions",
+  "name":"Load_Save",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

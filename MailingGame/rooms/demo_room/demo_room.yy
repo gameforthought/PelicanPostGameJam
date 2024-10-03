@@ -73,6 +73,7 @@
     {"name":"inst_642E1716","path":"rooms/demo_room/demo_room.yy",},
     {"name":"inst_7CA39F38","path":"rooms/demo_room/demo_room.yy",},
     {"name":"inst_7C2B4137","path":"rooms/demo_room/demo_room.yy",},
+    {"name":"inst_2C5E6276","path":"rooms/demo_room/demo_room.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -154,6 +155,7 @@
     {"$GMRInstanceLayer":"","%Name":"Truck","depth":1100,"effectEnabled":false,"effectType":"_filter_hard_drop_shadow","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_1412B9E1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1412B9E1","objectId":{"name":"obj_truck","path":"objects/obj_truck/obj_truck.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":336.0,"y":240.0,},
         {"$GMRInstance":"","%Name":"inst_B0CB0CA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_B0CB0CA","objectId":{"name":"obj_truck_light","path":"objects/obj_truck_light/obj_truck_light.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":208.0,},
+        {"$GMRInstance":"","%Name":"inst_2C5E6276","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2C5E6276","objectId":{"name":"obj_save_load","path":"objects/obj_save_load/obj_save_load.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-224.0,"y":336.0,},
       ],"layers":[],"name":"Truck","properties":[
         {"name":"g_DisplacementX","type":0,"value":"4",},
         {"name":"g_DisplacementY","type":0,"value":"4",},

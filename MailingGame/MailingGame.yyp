@@ -128,7 +128,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"MailingGame",
   "resources":[
@@ -189,6 +189,7 @@
     {"id":{"name":"obj_prof_char_emote","path":"objects/obj_prof_char_emote/obj_prof_char_emote.yy",},},
     {"id":{"name":"obj_ride_bt","path":"objects/obj_ride_bt/obj_ride_bt.yy",},},
     {"id":{"name":"obj_room_transition","path":"objects/obj_room_transition/obj_room_transition.yy",},},
+    {"id":{"name":"obj_save_load","path":"objects/obj_save_load/obj_save_load.yy",},},
     {"id":{"name":"obj_shader","path":"objects/obj_shader/obj_shader.yy",},},
     {"id":{"name":"obj_sidewalkGenerator","path":"objects/obj_sidewalkGenerator/obj_sidewalkGenerator.yy",},},
     {"id":{"name":"obj_studio_logo","path":"objects/obj_studio_logo/obj_studio_logo.yy",},},
@@ -615,6 +616,7 @@
     {"id":{"name":"input_xy","path":"scripts/input_xy/input_xy.yy",},},
     {"id":{"name":"input_y","path":"scripts/input_y/input_y.yy",},},
     {"id":{"name":"Inventory_Functions","path":"scripts/Inventory_Functions/Inventory_Functions.yy",},},
+    {"id":{"name":"Load_Save","path":"scripts/Load_Save/Load_Save.yy",},},
     {"id":{"name":"load_story","path":"scripts/load_story/load_story.yy",},},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},},
     {"id":{"name":"PlayerState","path":"scripts/PlayerState/PlayerState.yy",},},

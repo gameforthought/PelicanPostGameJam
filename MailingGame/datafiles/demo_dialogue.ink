@@ -135,7 +135,7 @@ That's where her house is! #Beatrice #neutral
 
 I think I can remember that. #Pepper #neutral
 
-Good luck![event_set,0,0,1] #Beatrice #happy
+Good luck![event_set,0,4,1] #Beatrice #happy
 
 ->DONE
 
@@ -302,7 +302,7 @@ I see.  Well, I'll keep my eye out for your... gnomes. #Pepper #neutral
 
 Wonderful, thanks a million!  Take care now! #Clyde #happy
 
-[event_set,0,0,1]
+[event_set,0,5,1]
 
 ->DONE
 
@@ -343,7 +343,7 @@ Take care, now! #Clyde #happy #closed
 What a strange fellow... #Pepper #sigh
 
 Can't believe I'm dealing with sentient gnomes my first day on the job! #Pepper #laugh
-
+[event_set,0,6,1]
 ->DONE
 
 

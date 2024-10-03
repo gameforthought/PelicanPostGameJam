@@ -131,12 +131,12 @@ function gnome_create() {
 function event_set(_element, _parameter_array, _character_index) {
 	var _text = _parameter_array[0];
 	
-	_text = string_replace(_text, "<", "[");
-	_text = string_replace(_text, ">", "]");
+	
 	
 	show_debug_message("entered");
-	//global.event_array[_i,_j] = _set_to;
-
+	
+	global.event_array[_parameter_array[0],_parameter_array[1]] =_parameter_array[2];
+show_debug_message(global.event_array[0,0]);
 	show_debug_message("success");
 	
 }
