@@ -14,6 +14,7 @@ draw_self();
 
 draw_set_color(#d6c74a);
 draw_set_font(ft_header);
+draw_set_halign(fa_left);
 
 draw_text(x + 98, y - 128, station_name);
 

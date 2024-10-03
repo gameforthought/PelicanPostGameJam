@@ -58,8 +58,8 @@ else if instance_exists(obj_title_screen) {
 	camera_target = dialogue_change + target_character.x + move_dir * (camera_get_view_width(camera) / 6);
 	
 	//move_towards_point(camera_target, y, 0.9 * (target_character.hspd * move_dir) + (point_distance(camera_target, y, x, y)) / cam_speed);
-	move_towards_point(camera_target, y, 0.9 * (target_character.hspd * sign(target_character.image_xscale)) + (point_distance(camera_target, y, x, y)) / cam_speed);
-	
+
+	move_towards_point(camera_target, y, 0.9 * (abs(target_character.hspd)) + (point_distance(camera_target, y, x, y)) / cam_speed);
 
 
 

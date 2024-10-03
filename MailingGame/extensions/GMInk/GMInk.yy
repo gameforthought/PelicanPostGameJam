@@ -42,8 +42,6 @@
         {"$GMExtensionFunction":"","%Name":"AsyncScriptReturnDouble","argCount":0,"args":[2,],"documentation":"","externalName":"ScriptReturnDouble","help":"","hidden":false,"kind":1,"name":"AsyncScriptReturnDouble","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
         {"$GMExtensionFunction":"","%Name":"ink_bind_external","argCount":0,"args":[1,2,],"documentation":"","externalName":"BindExternal","help":"","hidden":false,"kind":1,"name":"ink_bind_external","resourceType":"GMExtensionFunction","resourceVersion":"2.0","returnType":2,},
       ],"init":"","kind":1,"name":"GMInk.dll","order":[
-        {"name":"RegisterCallbacks","path":"extensions/GMInk/GMInk.yy",},
-        {"name":"AsyncScriptReturnDouble","path":"extensions/GMInk/GMInk.yy",},
         {"name":"ink_load","path":"extensions/GMInk/GMInk.yy",},
         {"name":"ink_can_continue","path":"extensions/GMInk/GMInk.yy",},
         {"name":"ink_continue","path":"extensions/GMInk/GMInk.yy",},
@@ -65,6 +63,8 @@
         {"name":"ink_variable_set_string","path":"extensions/GMInk/GMInk.yy",},
         {"name":"ink_visit_count","path":"extensions/GMInk/GMInk.yy",},
         {"name":"ink_observe_variable","path":"extensions/GMInk/GMInk.yy",},
+        {"name":"RegisterCallbacks","path":"extensions/GMInk/GMInk.yy",},
+        {"name":"AsyncScriptReturnDouble","path":"extensions/GMInk/GMInk.yy",},
         {"name":"ink_bind_external","path":"extensions/GMInk/GMInk.yy",},
       ],"origname":"","ProxyFiles":[],"resourceType":"GMExtensionFile","resourceVersion":"2.0","uncompress":false,"usesRunnerInterface":false,},
     {"$GMExtensionFile":"","%Name":"GMInk.gml","constants":[],"copyToTargets":-1,"filename":"GMInk.gml","final":"","functions":[

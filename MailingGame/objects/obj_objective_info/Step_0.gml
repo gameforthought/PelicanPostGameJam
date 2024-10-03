@@ -20,7 +20,11 @@ shift_step = clamp(shift_step, 0, 70);
 
 shift = EaseInOutBack(shift_step, 0, 300, 60);
 
-
+if shift_step >= 60 {
+	visible = false;
+} else {
+	visible = true;
+}
 
 if shift_step > 60 {
 	
@@ -31,7 +35,8 @@ if shift_step > 60 {
 if point_in_rectangle(mouse_x, mouse_y, vx + (close_x - 15), close_y + shift - 30, vx + (close_x + 15), close_y + shift) {
 	close_rot = -5;
 	if mouse_check_button_pressed(mb_left) {
-		shift_dir = 1;
+		obj_menu_manager.close_menu();
+		//shift_dir = 1;
 	}
 } else {
 	close_rot = 0;
@@ -45,7 +50,7 @@ for (var i = 0; i < array_length(obj_objective_manager.array); i++) {
 	if point_in_rectangle(mouse_x, mouse_y,  vx + (9 + 27), ((256 - 160) + (i * 24) + shift), 
 	vx + (9 + 218 - 27), ((256 - 160 + 24) + (i * 24) + shift)) {
 		
-		desc_text = obj_objective_manager.array[i].text;
+		desc_text = obj_objective_manager.array[i].desc;
 		_obj_hover = true;
 		
 	}

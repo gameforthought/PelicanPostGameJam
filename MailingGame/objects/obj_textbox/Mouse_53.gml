@@ -5,7 +5,7 @@
 //text_to_display = "HI";
 var vx = camera_get_view_x(view_camera[0]);
 
-if typewriter.get_state() = 1 {
+
 
 	//checks if mouse is in button
 
@@ -26,8 +26,8 @@ if typewriter.get_state() = 1 {
 		show_debug_message("Choice " + choice_array[i]);
 	
 		choose_choice(i);
-	
-
+		
+		update_text_to_display();
 
 		}
 	}
@@ -36,24 +36,26 @@ if typewriter.get_state() = 1 {
 	} 
 	//if no choice to be made
 	else {
+		
+		if typewriter.get_state() = 1 {
+		
+		
 		//if hitting the next button
 		if point_in_rectangle(mouse_x, mouse_y, vx + (xpos + 140 - 15), 225 - 30, vx + (xpos + 140 + 15), 225) {
 			
-			if (ink_can_continue() || choice_count > 0){
+			if (ink_can_continue() || ink_choice_count() > 0){
+				
+				//check if there's any choices
+				next_line_typewriter = false;
+				if (ink_choice_count() == 0) next_line_typewriter = true;
 				//call the next line
 				next_line();
 				//alarm[0] = string_length(text_to_display) * 1.2;
-				richtext = scribble(text_to_display);
-				richtext.wrap(box_width * 2);
-				richtext.line_height(-1, string_height(text_to_display) - 3);
-				typewriter = scribble_typist();
-				typewriter.in(type_speed, 0);
-				pitch = 1;
-				typewriter.sound_per_char([sd_type], pitch - 0.1, pitch + 0.1, " !.,?-;:()");
-				forward = false;
+				if (next_line_typewriter)
+				update_text_to_display();
 			}
 			else {
-		show_debug_message("AAAAAAAAAAAAAAAA");
+		show_debug_message("Textbox ending");
 				up = false;
 	
 				//if reached the end of the build, end the game
@@ -70,11 +72,11 @@ if typewriter.get_state() = 1 {
 			}
 
 		}
-
-}
-
-} else {
+		} else {
 	if point_in_rectangle(mouse_x, mouse_y, vx + (xpos + 140 - 15), 225 - 30, vx + (xpos + 140 + 15), 225) {
 		typewriter.skip();
 	}
 }
+
+}
+

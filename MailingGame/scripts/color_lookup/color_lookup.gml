@@ -6,6 +6,7 @@ function color_lookup(_string){
 	_string = string_lower(_string)
 	
 	switch _string {
+		
 	case "beatrice":
 		_color = #5a4a42;
 	break;

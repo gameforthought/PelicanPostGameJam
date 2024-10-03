@@ -11,8 +11,8 @@
   "name":"obj_text_button_par",
   "overriddenProperties":[],
   "parent":{
-    "name":"ui",
-    "path":"folders/Objects/ui.yy",
+    "name":"deprecated",
+    "path":"folders/Objects/ui/deprecated.yy",
   },
   "parentObjectId":null,
   "persistent":false,

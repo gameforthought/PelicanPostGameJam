@@ -7,7 +7,7 @@ This is the second line
 ===DebugChoice===
 Hiiiiiiii
 Do you want to be stuck here forever?
-+ [Infinite loop dimension go]
++ Infinite loop dimension [go]
     I can do that 
     shaboi
 ->DebugChoice
@@ -23,3 +23,21 @@ Do you want to be stuck here forever?
 
 
 ->DONE
+
+===DebugChoicePreview===
+This is to try and test choice text previewing
+This is the prompt.
+
++ First choice abbreviated [First choice preview]
+    This follows the 1rst choice text I want to preview
+    ->DebugChoicePreview
++ Second choice abbreviated [Second Choice preview]
+    This follows the 2nd choice preview
+    ->DebugChoicePreview
++ Third choice abbreviated 
+    3rd choice Preview-This is the correct implementation!!!
+    This follows the 3rd choice preview
+    ->DebugChoicePreview
+    
+->DONE
+    

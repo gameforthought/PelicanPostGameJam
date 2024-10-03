@@ -15,7 +15,10 @@
     "name":"ui",
     "path":"folders/Objects/ui.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_pause_game",
+    "path":"objects/obj_pause_game/obj_pause_game.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

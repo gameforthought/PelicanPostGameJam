@@ -47,10 +47,18 @@ Loads a coversation into the specified door
 [door_set_knot,{door name},{knot name}]
 
 Adds an objective for the player
-[objective_create,{objective text}]
+[objective_create,{objective text},{objective description},{priority (0-10, default 1)}]
 
 Completes an objective
 [objective_complete,{objective text}]
+
+Adds character info to the player's address book 
+[character_info,{character name (case sensative)},{info to add}]
+
+- meet: the first time the character's name is said MUST BE CALLED FIRST
+- job: the first time their role/job is introduced
+- location: the first time you get directions or visit them
+- photo: the first time you see them
 
 Inputs into events 
 [event_set,{x},{y},{input}]
@@ -59,6 +67,31 @@ NOTES ABOUT OBJECTIVES:
 adding or removing an item automatically creates or completes the 
 corresponding objective. you can use scribble formatting in the objective text
 if you use "< >" instead of "[ ]" ie "<c_beatrice>"
+
+NOTES ABOUT CHOICES: 
+In present implementation, square brackets have a special 
+    meaning for formatting that supercedes the scribble effect activation
+For instance, the line
+    + [Happy] I'm so happy yay
+    
+    will produce the choice "Happy"
+    and the follow up line "I'm so happy yay"
+This means that you cannot use more than one set of square brackets
+    in a choice, nor can you currently call scribble effects.
+Because of this, I've chosen to implement the gamemaker side of the
+    text display to always make two calls to Next_Line()
+    when making a choice.
+This means that all choices will currently need to be formatted as:
+    + Happy
+        I'm so happy yay
+This is mainly to allow writers to still call any desired scribble
+    effects in the followup line until we can figure out a workaround.
+To look more closely at how this formatting works, take a look at the 
+->DebugChoice knot
+
+TLDR: Don't use square brackets with choices for now
+    (but they're fine to use in followup lines)
+
 
 
 List of doors:
@@ -77,13 +110,13 @@ VAR character = "bea1"
 
 
 === bea1 ===
-Oh dear, being nocturnal is [slant]not[/] fun with a day job... #Beatrice #sleepy #open
+[character_info,Beatrice,photo]Oh dear, being nocturnal is [slant]not[/] fun with a day job... #Beatrice #sleepy #open
 
 [wave]O-Oh my[/]!  A new face!  What a nice surprise! #Beatrice #surprised
 
 Apologies, dear. #Beatrice #blush
 
-I'm [c_beatrice]Beatrice[/], the town librarian.  It's nice to meet you! #Beatrice #happy
+I'm [c_beatrice]Beatrice[/], the town librarian[character_info,Beatrice,job].  It's nice to meet you! #Beatrice #happy
 
 Who might you be? #Beatrice #neutral
 
@@ -117,7 +150,7 @@ But while you're still here, could I ask you a favor, dear? #Beatrice #neutral
 
 Sure, what can I help you with? #Pepper #neutral
 
-You see... I have a friend on the edge of town.  Her name is [c_suzannah]Suzannah[/]. #Beatrice #neutral
+You see... I have a friend on the edge of town.  Her name is [c_suzannah]Suzannah[/][character_info,Suzannah,meet]. #Beatrice #neutral
 
 She's what most would call a hermit. #Beatrice #sad
 
@@ -131,7 +164,7 @@ Wonderful!  Thank you so much! #Beatrice #happy
 
 If you go to the right past this library, all the way past Shoreside Station on the far edge of town you'll come to a beach.  #Beatrice #neutral
 
-That's where her house is! #Beatrice #neutral
+That's where her house is[character_info,Suzannah,location]! #Beatrice #neutral
 
 I think I can remember that. #Pepper #neutral
 
@@ -154,7 +187,7 @@ Can't say I recognize that voice.  Who are you? #Suzannah #neutral
 
 I'm [c_pepper]Pepper[/], the new mailman.  I have a delivery for you.  It's a letter. #Pepper #neutral
 
-...a letter?[remove_item,suz1] #Suzannah #neutral #open
+...a letter?[remove_item,suz1][character_info,Suzannah,photo] #Suzannah #neutral #open
 
 ... #Suzannah #neutral
 
@@ -166,12 +199,13 @@ So she put you up to this?  Then tell her I don't need her concern. #Suzannah #n
 
 ... #Suzannah #neutral
 
-Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And try not to trip on the rocks. [objective_create,Return to <c_beatrice>Beatrice] [door_set_knot,obj_beatrice_door,bea2] #Suzannah #neutral
+Thank you for bringing me this. Now off you go, back to [c_beatrice]Bea[/]. And try not to trip on the rocks. [door_set_knot,obj_beatrice_door,bea2] #Suzannah #neutral
 
 Of course, take care! #Pepper #neutral
 
-...yeah.  #Suzannah #neutral
-[event_set,0,3,1]
+...yeah.[event_set,0,3,1]  #Suzannah #neutral #closed
+
+I should probably go back to tell [c_beatrice]Beatrice[/] how this went...[objective_create,Return to <c_beatrice>Beatrice,<c_beatrice>Beatrice</> wants to know how your visit to <c_suzannah>Suzannah</> went,1]  #Pepper #neutral
 
 -> DONE
 
@@ -195,7 +229,7 @@ So what's this party she mentioned? #Pepper #neutral
 
 Well, dear, every year I like to throw a little party for everyone in town. #Beatrice #neutral
 
-Or I used to, anyway, back when people would show up #Beatrice #sad 
+Or I used to, anyway, back when people would show up. #Beatrice #sad 
 
 Everyone brought all kinds of goodies, there'd be games, music, and all manner of festivities! #Beatrice #happy
 
@@ -213,24 +247,29 @@ Oh, [c_pepper]Pepper[/c], dear, that'd be so wonderful!  #Beatrice #happy
 
 I'd be happy to!  It's getting late for me though, good night!  #Pepper #neutral
 
-Good night [c_pepper]Pepper[/c], thank you so much for your help today!  #Beatrice #happy
-[event_set,0,2,1]
+Good night [c_pepper]Pepper[/c], thank you so much for your help today![event_set,0,2,1] #Beatrice #happy
 
 ->DONE
 
 ===cly1===
 
-Hi, delivery fo- #Pepper #neutral
+[character_info,Clyde,photo]Hi, delivery fo- #Pepper #neutral
 
 [shake]They're gone.[/] #Clyde #fear
 
 I'm sorry? #Pepper #neutral
 
 The gnomes!  They've escaped, and now Port Pleasant will feel their wrath! #Clyde #fear
+ 
++ Curious
+    What gnomes? #Pepper #confused
++ Exasperated 
+    What are you talking about? Gnomes? Escaped? #Pepper #neutral 
++ Amused 
+    Well that's something I wasn't expecting to hear today! #Pepper #laugh
+    Gnomes... escaped... #Pepper #neutral
 
-The... gnomes?  #Pepper #neutral
-
-Wait, do you seriously not know about the gnomes? #Clyde #neutral
+-Wait, do you seriously not know about the gnomes? #Clyde #neutral
 
 I can't say I do.  #Pepper #neutral
 
@@ -272,25 +311,33 @@ Yes, typically. #Pepper #neutral
 
 Congratulations, you're my new partner! #Clyde #happy
 
-Wh- you can't just- #Pepper #surprise
++ Play Along
+    You know what, why not?  Lets catch some gnomes! #Pepper #laugh
+    Huzzah!!  That's the spirit! #Clyde #happy
+    The name's Clyde.  It's a pleasure, partner! #Clyde #happy
+    I'm Pepper.  It's nice to meet you! #Pepper #happy
+    
++ Protest
+    Wh- you can't just- #Pepper #surprise
+    Sure I can!  You're gonna help me find the gnomes!  #Clyde #neutral
+    Anyways, the name's [c_clyde]Clyde[/].  It's a pleasure, partner! #Clyde #happ
+    ...[c_pepper]Pepper[/].  Nice to meet you. #Pepper #sigh
 
-Sure I can!  You're gonna help me find the gnomes![gnome_create]  #Clyde #neutral
+-Oh, this is too perfect!  #Clyde #happy
 
-Anyways, the name's [c_clyde]Clyde[/].  It's a pleasure, partner! #Clyde #happy
-
-...[c_pepper]Pepper[/].  Nice to meet you. #Pepper #sigh
-
-Oh, this is too perfect!  #Clyde #happy
-
-I'm sure the first is out there as we speak, waiting for you to track it down! #Clyde #neutral
+I'm sure the first is out there as we speak, waiting for you to track it down![gnome_create] #Clyde #neutral
 
 So... how do I know where to find these gnomes? #Pepper #neutral
 
-Keep your eyes out for something in town that looks... off.  #Clyde #neutral
+They'll just randomly show up around town sometimes.  #Clyde #neutral
 
-Like something's been tampered with in a strange way. #Clyde #neutral
+They're always hiding... like they're plotting something... #Clyde #neutral
 
-There, if you look hard enough, you'll find a gnome. #Clyde #neutral
+WHICH, THEY ARE!!! #Clyde #surprise
+
+[slant]cough[/] Sorry... dunno what came over me there. #Clyde #blush
+
+Anyways,  as I was saying, if you look hard enough, you'll find a gnome. #Clyde #neutral
 
 So, once I find them, what should I do? #Pepper #neutral
 
@@ -300,9 +347,7 @@ Then, bring it back here! #Clyde #neutral
 
 I see.  Well, I'll keep my eye out for your... gnomes. #Pepper #neutral
 
-Wonderful, thanks a million!  Take care now! #Clyde #happy
-
-[event_set,0,5,1]
+Wonderful, thanks a million!  Take care now![event_set,0,0,1] #Clyde #happy
 
 ->DONE
 
@@ -349,7 +394,7 @@ Can't believe I'm dealing with sentient gnomes my first day on the job! #Pepper 
 
 ===pie1===
 
-Ah, you must be the new mailman!  [c_pepper]Pepper[/], was it? #Pierre #neutral
+[character_info,Pierre,meet][character_info,Pierre,photo][character_info,Pierre,job][character_info,Pierre,location]Ah, you must be the new mailman!  [c_pepper]Pepper[/], was it? #Pierre #neutral
 
 Yup, nice to meet you! #Pepper #happy
 
@@ -365,11 +410,11 @@ Each morning, you'll come in here and get your packages for the day. #Pierre #ne
 
 Seems like a light day today, so you shouldn't have too much trouble. #Pierre #neutral
 
-Oh, this is for [c_beatrice]Beatrice![/]  You'll find her at the library.[give_item,bea1,package,Beatrice,UC Books,A small box from a book publisher]  #Pierre #happy
+Oh, this is for [c_beatrice]Beatrice![/][character_info,Beatrice,meet] You'll find her at the library.[character_info,Beatrice,location][give_item,bea1,package,Beatrice,UC Books,A small box from a book publisher]  #Pierre #happy
 
 She's a sweetheart, if not a little... batty.  Heh. #Pierre #neutral
 
-And this here is for [c_clyde]Clyde[/].  You'll find him at his house down the road, past the library.[give_item,cly1,package,Clyde,Gnome Feed,Feeds gnomes]
+And this here is for [c_clyde]Clyde[/][character_info,Clyde,meet].  You'll find him at his house down the road, past the library.[character_info,Clyde,location][give_item,cly1,package,Clyde,Gnome Feed,Feeds gnomes]
 
 Now, for the delivery process.  When you arrive at a house, you'll knock on the door. #Pierre #neutral
 
@@ -393,15 +438,13 @@ Sounds good, thank you! #Pepper #happy
 
 No problem.  Off you go now, good luck today! #Pierre #happy
 
-Actually, [c_pepper]Pepper[/], one last thing before you go #Pierre #neutral
+Actually, [c_pepper]Pepper[/], one last thing before you go. #Pierre #neutral
 
 Hmm?  #Pepper #neutral
 
-Stop back here after you finish your deliveries tonight.  I want to hear about how it goes![objective_create,Return to <c_pierre>Pierre]  #Pierre #neutral
+Stop back here after you finish your deliveries tonight.  I want to hear about how it goes![objective_create,Return to <c_pierre>Pierre,Return to <c_pierre>Pierre</> at night when you've finished your tasks,10]  #Pierre #neutral
 
-Oh, sure thing!  See you then!  #Pepper #happy
-[event_set,0,0,1]
-
+Oh, sure thing!  See you then![event_set,0,0,1]  #Pepper #happy
 
 ->DONE
 
@@ -463,7 +506,6 @@ I'll see you tomorrow, then?  #Pierre #neutral
 
 Yup!  See you tomorrow! Take care! #Pepper #happy
 
-Thanks, [c_pepper]Pepper.[/]  You too.  #Pierre #happy
-[event_set,0,1,1]
+Thanks, [c_pepper]Pepper.[/]  You too.[event_set,0,1,1]  #Pierre #happy
 
 ->DONE

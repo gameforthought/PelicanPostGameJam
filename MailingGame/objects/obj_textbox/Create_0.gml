@@ -9,6 +9,7 @@ windowScale = global.window_scale;
 //choice_array = ["Yes", "No", "Maybe"];
 
 choice_array = [];
+choice_preview_array = [];
 choice_length = 0;
 
 button_array = [];
@@ -73,3 +74,17 @@ if dir = 1 {
 	xpos = 18;	
 }
 
+
+
+
+update_text_to_display = function()
+{
+	richtext = scribble(text_to_display);
+				richtext.wrap(box_width * 2);
+				richtext.line_height(-1, string_height(text_to_display) - 3);
+				typewriter = scribble_typist();
+				typewriter.in(type_speed, 0);
+				pitch = 1;
+				typewriter.sound_per_char([sd_type], pitch - 0.1, pitch + 0.1, " !.,?-;:()");
+				forward = false;
+}

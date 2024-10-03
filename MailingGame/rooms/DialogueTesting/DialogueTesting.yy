@@ -12,8 +12,8 @@
     {"name":"inst_5A863DFB","path":"rooms/DialogueTesting/DialogueTesting.yy",},
     {"name":"inst_72A6B85B","path":"rooms/DialogueTesting/DialogueTesting.yy",},
     {"name":"inst_656F7249","path":"rooms/DialogueTesting/DialogueTesting.yy",},
-    {"name":"inst_5BC20C59","path":"rooms/DialogueTesting/DialogueTesting.yy",},
     {"name":"inst_6C2538B8","path":"rooms/DialogueTesting/DialogueTesting.yy",},
+    {"name":"inst_5BC20C59","path":"rooms/DialogueTesting/DialogueTesting.yy",},
   ],
   "isDnd":false,
   "layers":[

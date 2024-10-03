@@ -16,6 +16,7 @@ scribble_typists_add_event("objective_complete", objective_complete);
 
 scribble_typists_add_event("gnome_create", gnome_create);
 
+scribble_typists_add_event("character_info", character_info);
 
 scribble_typists_add_event("event_set", event_set);
 

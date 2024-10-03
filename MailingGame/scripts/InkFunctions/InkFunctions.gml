@@ -3,6 +3,7 @@
 function next_line(){
 	choice_array = [];
 	choice_count = 0;
+	choice_preview_array = [];
 	if (ink_can_continue()){
 		
 		//load the text, emotion tag, and character tag
@@ -30,12 +31,23 @@ function next_line(){
 			//Call ink_choose_choice(i) to make a choice
 			//show_debug_message("Num choices: " + choice_count.string());
 			
-			
-			//populate the textbox's choice_array
+			show_debug_message("Choices detected");
+			temp_ink_json = ink_save_state();
+			choice_preview_array = [];
+			//populate the textbox's choice_array and choice_preview_array
 			for (var i=0; i<choice_count;i++){
 			choice_array[i] = ink_choice(i);
+			
+			//go to the next line of dialogue for each choice and save the text
+			ink_choose_choice(i);
+			ink_continue();
+			choice_preview_array[i] = ink_continue();
+			//then return to the previous state
+			ink_load_state(temp_ink_json);
+			show_debug_message(string("Choice number {0}: {1}", i, choice_preview_array[i]));
 			}
 			
+
 			
 		}
 		//if text is done, cue end of textbox
@@ -50,10 +62,10 @@ function next_line(){
 
 //make the input choice, then progress the textbox to the next piece of dialogue
 function choose_choice(choice){
-	show_debug_message("Shoaboinboing");
 	ink_choose_choice(choice);
 	if (ink_can_continue()){	
-		show_debug_message("PLEEEEEEEEEEEEEEEEEEEEeease");
+		show_debug_message("Choice chosen; progressing to next line");
+	next_line();
 	next_line();
 	}
 	else show_debug_message("Can't progress past choice");

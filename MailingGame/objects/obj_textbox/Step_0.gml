@@ -7,8 +7,11 @@ var vy = camera_get_view_y(view_camera[0]);
 x = vx + xpos;
 y = vy + y_anim;
 
+var _choice_hover = undefined;
 
 choice_length = array_length(choice_array);
+
+
 button_array[0] = [xpos + 140, y_anim + 225];
 
 //detect if the player is hovering the next button
@@ -21,7 +24,9 @@ if point_in_rectangle(mouse_x, mouse_y, vx + (xpos + 140 - 15), 225 - 30, vx + (
 if choice_length > 0 {
 	
 	for (var i = 0; i < choice_length; i++) {
-		button_array[i + 1] = [(xpos - 42 + 24), (y_anim + 256 - 49 + 32 - (32 * i))];
+		
+		var _choice_dir = dir * 39;
+		button_array[i + 1] = [(xpos - _choice_dir + 24), (y_anim + 256 - 49 + 32 - (32 * i))];
 		
 		
 		if point_in_rectangle(mouse_x, mouse_y, vx + (button_array[i + 1][0] - 15), 
@@ -29,7 +34,9 @@ if choice_length > 0 {
 		vx + (button_array[i + 1][0] + 15),
 		button_array[i + 1][1]) {
 			
-			button_array[i + 1][2] = -5;	
+			button_array[i + 1][2] = -5;
+			
+			_choice_hover = i;
 		} else {
 			button_array[i + 1][2] = 0;
 		}
@@ -103,6 +110,21 @@ if (keyboard_check_pressed(ord("A"))){
 		show_debug_message("Can continue");
 	}
 	else show_debug_message("No can continue");
+}
+
+
+if choice_length > 0 {
+	name_tag = "Pepper";
+	obj_playerChar.emotion_drawer.emotion = "confused";
+	
+	var _preview = "How should I respond?";
+	
+	if _choice_hover != undefined {
+		_preview = choice_preview_array[_choice_hover];	
+	}
+	richtext = scribble("[wave][slant][#766659][speed,1.5]" + _preview + "[/]");
+	richtext.wrap(box_width * 2);
+	richtext.line_height(-1, string_height(text_to_display) - 3);
 }
 //spd_increase();
 
