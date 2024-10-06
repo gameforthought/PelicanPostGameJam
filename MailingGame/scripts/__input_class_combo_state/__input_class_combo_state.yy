@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"__input_class_combo_state",
   "isCompatibility":false,
   "isDnD":false,

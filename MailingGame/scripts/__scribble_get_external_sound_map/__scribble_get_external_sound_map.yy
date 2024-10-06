@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"__scribble_get_external_sound_map",
   "isCompatibility":false,
   "isDnD":false,

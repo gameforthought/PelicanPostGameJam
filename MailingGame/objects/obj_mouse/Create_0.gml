@@ -41,6 +41,10 @@ mouse_over = function(view_x, view_y)
 				var xx = view_x + 69 + (i mod row_length) * 36;
 				var yy = view_y + 84 + (i div row_length) * 35;
 				
+				if(i == 8){
+					yy += 35;
+				}
+				
 				if(point_in_circle(mx,my,xx,yy,12))
 				{
 					other.slot_hover = i;
@@ -59,9 +63,16 @@ state_free = function(view_x, view_y)
 	//Select an item if slot is not empty
 		if (mouse_check_button(mb_left)) && (slot_hover	!= -1) && (inventory_hover.inventory[slot_hover] != -1 && slot_hover == slot_select)
 	{
+		//Enter drag state
+		state = state_drag;
+		item_drag = inventory_hover.inventory[slot_hover];
+		inventory_drag = inventory_hover;
+		slot_drag = slot_hover;
+		
+		
 		if(!mouse_down){
 			show_debug_message(string(slot_hover)+ " deselected");
-		//enter drag state
+		
 		//state = slot_select;
 			slot_select = -1;
 			mouse_down = true;
@@ -84,14 +95,15 @@ state_free = function(view_x, view_y)
 		
 
 }
-/*
-state_drag = function()
+
+state_drag = function(view_x, view_y)
 {
-	mouse_over();
+	mouse_over(view_x, view_y);
 	if(!mouse_check_button(mb_left))
 	{
 		//swap with slot if hovering
-		if(slot_hover != -1 and slot_hover != inventory_hover) inventory_swap(inventory_drag, slot_drag, inventory_hover, slot_hover);
+		if(slot_hover != -1) inventory_swap(inventory_drag, slot_drag, inventory_hover, slot_hover);
+		/*
 		else
 		{
 			if(slot_select == id){
@@ -102,6 +114,7 @@ state_drag = function()
 			}
 			//show_debug_message("slot selected" + string(slot_select));
 		}
+		*/
 		//Return to free state
 		state = state_free;
 		item_drag = -1;
@@ -110,7 +123,7 @@ state_drag = function()
 		
 	}
 }
-*/
+
 
 
 

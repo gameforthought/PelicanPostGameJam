@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"input_combo_params_set_side_on",
   "isCompatibility":false,
   "isDnD":false,

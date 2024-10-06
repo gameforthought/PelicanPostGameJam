@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"input_combo_params_set_top_down",
   "isCompatibility":false,
   "isDnD":false,

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 depth += 80;
 
-#macro INVENTORY_SLOTS 8
+#macro INVENTORY_SLOTS 9
 row_length = 4;
 inventory = array_create(INVENTORY_SLOTS, -1);
 

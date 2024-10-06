@@ -29,6 +29,9 @@ for (var i = 0; i < INVENTORY_SLOTS; i++)
 {
 	var xx = x + 69 + (i mod row_length) * 34;
 	var yy = y + 84 + (i div row_length) * 35;
+	if(i == 8){
+		yy += 35;
+	}
 	var hover = (obj_mouse.inventory_hover == id) && (obj_mouse.slot_hover == i)
 	
 	var display_info = false;

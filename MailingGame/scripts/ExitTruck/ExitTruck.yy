@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"ExitTruck",
   "isCompatibility":false,
   "isDnD":false,

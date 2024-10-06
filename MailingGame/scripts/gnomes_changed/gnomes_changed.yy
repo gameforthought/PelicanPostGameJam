@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"gnomes_changed",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"InkFunctions",
   "isCompatibility":false,
   "isDnD":false,
