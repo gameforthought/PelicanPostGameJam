@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"try_summon_truck",
   "isCompatibility":false,
   "isDnD":false,

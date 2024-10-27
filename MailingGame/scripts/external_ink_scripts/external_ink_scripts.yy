@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"external_ink_scripts",
   "isCompatibility":false,
   "isDnD":false,

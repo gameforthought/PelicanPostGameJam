@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"GameplayPaused",
   "isCompatibility":false,
   "isDnD":false,
