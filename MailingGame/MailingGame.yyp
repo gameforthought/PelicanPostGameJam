@@ -131,7 +131,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"MailingGame",
   "resources":[
@@ -206,6 +206,8 @@
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},},
     {"id":{"name":"obj_time_tracker","path":"objects/obj_time_tracker/obj_time_tracker.yy",},},
     {"id":{"name":"obj_title_screen","path":"objects/obj_title_screen/obj_title_screen.yy",},},
+    {"id":{"name":"obj_tooltip_manager","path":"objects/obj_tooltip_manager/obj_tooltip_manager.yy",},},
+    {"id":{"name":"obj_tooltip","path":"objects/obj_tooltip/obj_tooltip.yy",},},
     {"id":{"name":"obj_train_station","path":"objects/obj_train_station/obj_train_station.yy",},},
     {"id":{"name":"obj_train","path":"objects/obj_train/obj_train.yy",},},
     {"id":{"name":"obj_tree_gen","path":"objects/obj_tree_gen/obj_tree_gen.yy",},},

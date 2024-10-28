@@ -162,6 +162,8 @@
     {"name":"obj_textbox_debug","order":12,"path":"objects/obj_textbox_debug/obj_textbox_debug.yy",},
     {"name":"obj_textbox","order":10,"path":"objects/obj_textbox/obj_textbox.yy",},
     {"name":"obj_time_tracker","order":3,"path":"objects/obj_time_tracker/obj_time_tracker.yy",},
+    {"name":"obj_tooltip_manager","order":10,"path":"objects/obj_tooltip_manager/obj_tooltip_manager.yy",},
+    {"name":"obj_tooltip","order":11,"path":"objects/obj_tooltip/obj_tooltip.yy",},
     {"name":"obj_train_station","order":15,"path":"objects/obj_train_station/obj_train_station.yy",},
     {"name":"obj_train","order":8,"path":"objects/obj_train/obj_train.yy",},
     {"name":"obj_tree_gen","order":18,"path":"objects/obj_tree_gen/obj_tree_gen.yy",},
