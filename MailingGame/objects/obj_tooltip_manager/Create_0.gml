@@ -29,7 +29,7 @@ hide_tooltip = function()
 	if (tooltipActive == undefined) return;
 	
 	// TEMP - the tooltip object will have a hide animation so it won't be destroyed directly from here 
-	instance_destroy(tooltipActive);
+	tooltipActive.complete();
 	tooltipActive = undefined;
 }
 
@@ -44,12 +44,12 @@ function Tooltip(displayText, showCondition, hideCondition) constructor
 
 // Add initial tooltip(s)
 add_tooltip(
-	"press wasd or arrows to move",
+	"Use [scale, 2][wave][spr_tooltip_icons, 0][spr_tooltip_icons, 1][/] or [scale, 2][wave][spr_tooltip_icons, 2][spr_tooltip_icons, 3][/] to walk",
 	function(){ return room == post_office; },
-	function(){ return input_check_pressed("left"); },
+	function(){ return input_check_pressed("left"); }
 );
 add_tooltip(
 	"again",
 	function(){ return room == post_office; },
-	function(){ return input_check_pressed("left"); },
+	function(){ return input_check_pressed("left"); }
 );
