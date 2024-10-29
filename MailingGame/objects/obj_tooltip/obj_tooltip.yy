@@ -6,8 +6,8 @@
   "name":"obj_tooltip",
   "overriddenProperties":[],
   "parent":{
-    "name":"game_management",
-    "path":"folders/Objects/game_management.yy",
+    "name":"ui",
+    "path":"folders/Objects/ui.yy",
   },
   "parentObjectId":null,
   "persistent":false,
