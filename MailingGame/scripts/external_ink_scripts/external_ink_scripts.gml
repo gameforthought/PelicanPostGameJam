@@ -159,7 +159,7 @@ function event_set(_element, _parameter_array, _character_index) {
 	show_debug_message("entered");
 	
 	global.event_array[_parameter_array[0],_parameter_array[1]] =_parameter_array[2];
-show_debug_message(global.event_array[0,0]);
+show_debug_message(global.event_array[_parameter_array[0],_parameter_array[1]]);
 	show_debug_message("success");
 	
 }

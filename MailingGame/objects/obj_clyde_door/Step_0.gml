@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-if gnome_collected = 1 && global.event_array[0,5] =  1{
+if gnome_collected > 0 && global.event_array[0,0] = 1{
 	story = "cly2";
-	gnome_collected = 0;	
+	gnome_collected--;	
 }
