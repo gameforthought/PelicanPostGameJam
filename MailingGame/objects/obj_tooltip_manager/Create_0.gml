@@ -44,12 +44,12 @@ function Tooltip(displayText, showCondition, hideCondition) constructor
 
 // Add initial tooltip(s)
 add_tooltip(
-	"Use [scale, 2][wave][spr_tooltip_icons, 0][spr_tooltip_icons, 1][/] or [scale, 2][wave][spr_tooltip_icons, 2][spr_tooltip_icons, 3][/] to walk",
+	"Use [scale, 2][wave][spr_tooltip_icons, 1][spr_tooltip_icons, 0][/] or [scale, 2][wave][spr_tooltip_icons, 2][spr_tooltip_icons, 3][/] to walk",
 	function(){ return room == post_office; },
 	function(){ return input_check_pressed("left"); }
 );
 add_tooltip(
-	"again",
+	"Click[scale, 2][wave][spr_tooltip_icons, 4][/] on things with [scale, 2][wave][spr_tooltip_icons, 5][/]",
 	function(){ return room == post_office; },
 	function(){ return input_check_pressed("left"); }
 );

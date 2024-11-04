@@ -14,7 +14,7 @@ x_flip = choose(-1, 1);
 y_flip = choose(-1, 1);
 
 x_pos = 240 - (width / 2);
-y_pos = -50;
+y_pos = 256  + 50;
 
 move_dir = 1;
 
@@ -32,11 +32,11 @@ if instance_exists(obj_textbox) {
 transition_time = 120;
 move_step = transition_time;
 
-if instance_number(obj_tooltip) > 1 {
-	wait = true;	
-} else {
-	wait = false;	
-}
+//if instance_number(obj_tooltip) > 1 {
+//	wait = true;	
+//} else {
+//	wait = false;	
+//}
 
 function complete() {
 	move_dir = -1;
