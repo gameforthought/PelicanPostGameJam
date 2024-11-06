@@ -25,6 +25,9 @@ ride_func = function() {
 		obj_player_manager.character_set(_character);
 	}
 
+	// Remove the enter truck tooltip if it exists
+	obj_tooltip_manager.hide_tooltip_by_id("tt_truck");
+
 	audio_play_sound(sd_truck_door, 0, false);
 	audio_sound_gain(sd_main_percussion, 1, 2000);
 	}

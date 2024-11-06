@@ -4,9 +4,9 @@ tooltipActive = undefined;
 tooltipList = ds_list_create();
 
 // Create a tooltip struct and add it to the tooltip list
-add_tooltip = function(displayText, showCondition, hideCondition)
+add_tooltip = function(eventID, displayText, showCondition, hideCondition = function() { return false })
 {
-	var _tooltip = new Tooltip(displayText, showCondition, hideCondition);
+	var _tooltip = new Tooltip(eventID, displayText, showCondition, hideCondition);
 	ds_list_add(tooltipList, _tooltip);
 	
 	return _tooltip;
@@ -28,28 +28,44 @@ hide_tooltip = function()
 	// Do not attempt to hide the tooltip if there is none
 	if (tooltipActive == undefined) return;
 	
-	// TEMP - the tooltip object will have a hide animation so it won't be destroyed directly from here 
+	// Hide the tooltip
 	tooltipActive.complete();
 	tooltipActive = undefined;
 }
 
+// Attempt to hide the current active tooltip if it matches the given event id
+hide_tooltip_by_id = function(eventID)
+{
+	// Do not attempt to hide the tooltip if there is none
+	if (tooltipActive == undefined) return;
+	
+	// If active tooltip has given event id, hide the tooltip
+	if (tooltipActive.event_id == eventID) hide_tooltip();
+}
+
 
 // Tooltip Constructor
-function Tooltip(displayText, showCondition, hideCondition) constructor
+function Tooltip(eventID, displayText, showCondition, hideCondition) constructor
 {
-	text = displayText;
-	show = showCondition;
-	hide = hideCondition;
+	event_id	= eventID; 
+	text		= displayText;
+	show		= showCondition;
+	hide		= hideCondition;
 }
 
 // Add initial tooltip(s)
 add_tooltip(
+	"tt_walk",
 	"Use [scale, 2][wave][spr_tooltip_icons, 1][spr_tooltip_icons, 0][/] or [scale, 2][wave][spr_tooltip_icons, 2][spr_tooltip_icons, 3][/] to walk",
 	function(){ return room == post_office; },
-	function(){ return input_check_pressed("left"); }
+	function()
+	{
+		if(instance_exists(obj_playerChar)) return obj_playerChar.hspd != 0;
+		return false;
+	}
 );
 add_tooltip(
+	"tt_pierre",
 	"Click[scale, 2][wave][spr_tooltip_icons, 4][/] on things with [scale, 2][wave][spr_tooltip_icons, 5][/]",
-	function(){ return room == post_office; },
-	function(){ return input_check_pressed("left"); }
+	function(){ return room == post_office; }
 );

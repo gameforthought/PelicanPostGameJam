@@ -74,7 +74,7 @@ switch (pepper_state)
 		
 		#endregion
 		
-		#region truck
+		#region Truck
 		//try to summon truck
 		if (input_truck_pressed())
 		{
@@ -82,6 +82,8 @@ switch (pepper_state)
 		}
 			
 		break;
+		
+		#endregion
 	
 	// If pepper is in a cutscene, handle that movement here
 	case PlayerState.CutsceneMove:
