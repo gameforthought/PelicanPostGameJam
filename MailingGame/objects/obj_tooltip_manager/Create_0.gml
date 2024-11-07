@@ -19,7 +19,7 @@ show_tooltip = function(struct)
 	if (tooltipActive != undefined) return;
 	
 	// TEMP - x, y, and depth are subject to change
-	tooltipActive = instance_create_depth(x, y, depth, obj_tooltip, struct);
+	tooltipActive = instance_create_layer(x, y, "positional_gui", obj_tooltip, struct);
 }
 
 // Hide the current active tooltip and set tooltipActive to undefined

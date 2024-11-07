@@ -314,8 +314,8 @@ Congratulations, you're my new partner! #Clyde #happy
 + Play Along
     You know what, why not?  Lets catch some gnomes! #Pepper #laugh
     Huzzah!!  That's the spirit! #Clyde #happy
-    The name's Clyde.  It's a pleasure, partner! #Clyde #happy
-    I'm Pepper.  It's nice to meet you! #Pepper #happy
+    The name's [c_clyde]Clyde[/].  It's a pleasure, partner! #Clyde #happy
+    I'm [c_pepper]Pepper[/].  It's nice to meet you! #Pepper #happy
     
 + Protest
     Wh- you can't just- #Pepper #surprise

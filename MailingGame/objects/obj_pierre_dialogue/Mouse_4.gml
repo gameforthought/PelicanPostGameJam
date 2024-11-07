@@ -12,7 +12,7 @@ if indicator = true && instance_exists(obj_textbox) = false && story != -1 {
 	obj_tooltip_manager.hide_tooltip_by_id("tt_pierre");
 	obj_tooltip_manager.add_tooltip(
 		"tt_truck",
-		"drew add words here :^)",
+		"Click the truck to get in",
 		function() { return instance_exists(obj_truck); }
 	);
 	

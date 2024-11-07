@@ -28,7 +28,7 @@ if shift_step > 60 {
 	
 	visible = false;
 } else {
-	visible = true;	
+	visible = true;
 }
 
 
