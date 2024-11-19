@@ -387,8 +387,8 @@ Take care, now! #Clyde #happy #closed
 
 What a strange fellow... #Pepper #sigh
 
-Can't believe I'm dealing with sentient gnomes my first day on the job! #Pepper #laugh
-[event_set,0,6,1]
+Can't believe I'm dealing with sentient gnomes my first day on the job!
+[event_set,0,6,1] #Pepper #laugh
 ->DONE
 
 
