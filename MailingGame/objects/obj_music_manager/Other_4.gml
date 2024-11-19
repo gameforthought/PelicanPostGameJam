@@ -14,3 +14,10 @@ if room = post_office || global.intro = true {
 		audio_sound_gain(sd_interior, 0.2, 8000);
 	}
 }
+
+if (room == sf_24_videoloop)
+{
+	// Prevent overlapping music on game restart.
+	audio_stop_all();
+	audio_destroy_sync_group(main_room_sg);
+}
