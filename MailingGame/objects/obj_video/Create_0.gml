@@ -4,7 +4,6 @@
 // room or upon game restart.
 instance_destroy(obj_menu_manager);
 instance_destroy(obj_player_manager);
-instance_destroy(obj_music_manager);
 instance_destroy(obj_hud);
 audio_stop_all();
 
