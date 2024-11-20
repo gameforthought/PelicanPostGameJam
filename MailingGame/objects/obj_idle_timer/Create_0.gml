@@ -1,6 +1,6 @@
 ///@desc Idle screen config
 curTime = 0;
-timeToIdle = 2700; // (45s * 60fps) 
+timeToIdle = 2700; // (45s * 60fps)
 
 _transition = {
 	grow: false,

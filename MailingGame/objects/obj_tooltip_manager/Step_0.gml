@@ -17,7 +17,12 @@ if (tooltipActive == undefined)
 // If there is an active tooltip, check if its hide condition is met
 else
 {
-	if (tooltipActive.hide())
+	// Object is defined but does not exist
+	if (!instance_exists(tooltipActive))
+	{
+		tooltipActive = undefined;
+	}
+	else if (tooltipActive.hide())
 	{
 		hide_tooltip();
 	}
